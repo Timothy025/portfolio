@@ -140,10 +140,10 @@ export default function About() {
                   <h2 className="text-2xl font-bold mb-6 font-space-grotesk">Professional Bio</h2>
                   <div className="prose prose-lg max-w-none">
                     <p className="text-muted-foreground leading-relaxed mb-6">
-                      I'm Timothy Jerald Xavier, a creative and user-centric UI/UX Designer with over 2 years of experience turning complex challenges into elegant and engaging user experiences.
+                      I&apos;m Timothy Jerald Xavier, a creative and user-centric UI/UX Designer with over 2 years of experience turning complex challenges into elegant and engaging user experiences.
                     </p>
                     <p className="text-muted-foreground leading-relaxed mb-6">
-                      I specialize in SaaS, Web3, and enterprise platforms, and love working across research, design systems, and prototyping. Whether it's crafting responsive dashboards or animating micro-interactions, I bring a blend of logic and creativity into every pixel.
+                      I specialize in SaaS, Web3, and enterprise platforms, and love working across research, design systems, and prototyping. Whether it&apos;s crafting responsive dashboards or animating micro-interactions, I bring a blend of logic and creativity into every pixel.
                     </p>
                   </div>
                 </CardContent>
