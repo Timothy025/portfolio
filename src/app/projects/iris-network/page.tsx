@@ -1,7 +1,7 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { ArrowLeft, Zap, MapPin, Activity, User, Bell, Settings, TrendingUp, Database, Search, AlertTriangle, ArrowRight } from "lucide-react"
+import { ArrowLeft, Zap, MapPin, Activity, User, Settings, TrendingUp, Database, Search, ArrowRight } from "lucide-react"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
@@ -54,13 +54,6 @@ export default function IrisNetworkCaseStudy() {
       icon: Database,
       features: ["Usage Analytics", "Revenue Reports", "Performance Metrics", "Predictive Insights"]
     }
-  ]
-
-  const chargingData = [
-    { metric: "Active Stations", value: "1,247", change: "+12.3%", icon: Zap, color: "text-[#32B34F]" },
-    { metric: "Charging Sessions", value: "8,901", change: "+8.7%", icon: Activity, color: "text-[#83DA6F]" },
-    { metric: "Revenue Today", value: "$45,678", change: "+15.2%", icon: TrendingUp, color: "text-[#53ABF8]" },
-    { metric: "Network Uptime", value: "99.8%", change: "+0.2%", icon: Database, color: "text-[#32B34F]" }
   ]
 
   return (

@@ -1,7 +1,7 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { ArrowLeft, CreditCard, Users, Settings, TrendingUp, Database, Search, AlertTriangle, ArrowRight, FileText, Calendar, Target, CheckCircle, Activity, Shield } from "lucide-react"
+import { ArrowLeft, CreditCard, Users, Settings, TrendingUp, Search, FileText, CheckCircle, Activity, Shield } from "lucide-react"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
@@ -54,13 +54,6 @@ export default function PayEZCaseStudy() {
       icon: TrendingUp,
       features: ["Payment Analytics", "Revenue Reports", "User Insights", "Performance Metrics"]
     }
-  ]
-
-  const paymentData = [
-    { metric: "Total Transactions", value: "2.4M", change: "+25.3%", icon: CreditCard, color: "text-[#4A69D8]" },
-    { metric: "Transaction Value", value: "$45.2M", change: "+18.7%", icon: TrendingUp, color: "text-[#4A69D8]" },
-    { metric: "Active Users", value: "847K", change: "+12.5%", icon: Users, color: "text-[#4A69D8]" },
-    { metric: "Success Rate", value: "99.8%", change: "+0.2%", icon: CheckCircle, color: "text-[#4A69D8]" }
   ]
 
   return (

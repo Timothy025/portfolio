@@ -56,13 +56,6 @@ export default function WitnessChainCaseStudy() {
     }
   ]
 
-  const miningMetrics = [
-    { metric: "Active Miners", value: "12,847", change: "+15.2%", icon: Zap, color: "text-[#7CFF92]" },
-    { metric: "Total Rewards", value: "2.3M WC", change: "+8.5%", icon: Coins, color: "text-[#7CFF92]" },
-    { metric: "Network Hash", value: "45.2 TH/s", change: "+12.3%", icon: TrendingUp, color: "text-[#7CFF92]" },
-    { metric: "User Satisfaction", value: "4.8/5", change: "+0.2", icon: Check, color: "text-[#7CFF92]" }
-  ]
-
   return (
     <div className="min-h-screen bg-gradient-to-br from-background via-background to-muted/20">
       {/* Hero Section */}

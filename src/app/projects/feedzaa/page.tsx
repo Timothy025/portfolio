@@ -1,7 +1,7 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { ArrowLeft, ChefHat, ShoppingCart, Users, Star, MapPin, Clock, Heart, Search, Filter, ArrowRight, Settings, Activity } from "lucide-react"
+import { ArrowLeft, ChefHat, ShoppingCart, Users, Star, MapPin, Clock, Search, ArrowRight, Settings, Activity } from "lucide-react"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"

@@ -4,7 +4,7 @@ import { motion, useScroll, useTransform } from "framer-motion"
 import { useRef, useState } from "react"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
-import { ArrowRight, Download, Sparkles, Code, Palette, Zap, Clock, Figma, Brush } from "lucide-react"
+import { ArrowRight, Download, Sparkles, Code, Palette, Clock, Figma, Brush } from "lucide-react"
 import { downloadResume } from "@/lib/utils"
 
 export default function Home() {
