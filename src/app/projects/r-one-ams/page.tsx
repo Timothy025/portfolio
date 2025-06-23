@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
-import { ArrowLeft, Database, AlertTriangle, Wrench, FileText, Settings, MapPin, Check, Search, Palette, Rocket, ArrowRight, Building2, Users, TrendingUp, CheckCircle, Calendar, Target, Activity } from "lucide-react"
+import { ArrowLeft, Package, Users, Settings, TrendingUp, Database, Search, ArrowRight, FileText, Calendar, Target, Activity, Building2, CheckCircle } from "lucide-react"
 import Link from "next/link"
 
 export default function ROneAMS() {

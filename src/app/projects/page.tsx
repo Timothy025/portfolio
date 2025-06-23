@@ -22,7 +22,7 @@ const projects: Project[] = [
     title: "Feedzaa",
     description: "A chef-driven food commerce platform empowering culinary creators to build digital kitchens and manage orders online. Designed intuitive chef-facing UI for food entrepreneurs.",
     tags: ["UI/UX Design", "Food Commerce", "Mobile App", "Figma"],
-    image: "/feedzaa-mockup.jpg",
+    image: "/logos/Feedzaa.png",
     link: "/projects/feedzaa",
     category: "Mobile Design"
   },
@@ -31,7 +31,7 @@ const projects: Project[] = [
     title: "Iris Sense",
     description: "Intuitive dashboards for Charge Point Operators to visualize station performance, revenue, and user engagement. Simplifies complex metrics into actionable visual insights.",
     tags: ["UI/UX Design", "Data Visualization", "Dashboard", "Figma"],
-    image: "/iris-sense-mockup.jpg",
+    image: "/logos/Sense.png",
     link: "/projects/iris-sense",
     category: "Web Design"
   },
@@ -40,7 +40,7 @@ const projects: Project[] = [
     title: "Iris Network",
     description: "EV smart charging platform enhancing adoption through intuitive design. Redesigned interface for better usability, visual appeal, and scalability.",
     tags: ["UI/UX Design", "EV Charging", "Platform Redesign", "Figma"],
-    image: "/iris-network-mockup.jpg",
+    image: "/logos/netwrok.png",
     link: "/projects/iris-network",
     category: "Web Design"
   },
@@ -49,7 +49,7 @@ const projects: Project[] = [
     title: "Iris R-one",
     description: "An asset management tool for CPOs to track chargers similar to JIRA, enabling real-time tracking, issue management, maintenance scheduling, and firmware updates.",
     tags: ["Asset Management", "Issue Tracking", "Maintenance", "Prototyping"],
-    image: "/r-one-ams-mockup.jpg",
+    image: "/logos/R-one.png",
     link: "/projects/r-one-ams",
     category: "Web Design"
   },
@@ -58,7 +58,7 @@ const projects: Project[] = [
     title: "WitnessChain",
     description: "A Web3 application designed to reward users with crypto tokens for their participation. Users contribute to the network by toggling a mining switch in the app, which activates passive mining based on their data or activity.",
     tags: ["UI/UX Design", "Web3", "Crypto Mining", "Mobile App"],
-    image: "/witnesschain-mockup.jpg",
+    image: "/logos/Witnesschain.png",
     link: "/projects/witnesschain",
     category: "Mobile Design"
   },
@@ -67,7 +67,7 @@ const projects: Project[] = [
     title: "OMS",
     description: "B2B platform for Sodexo food retail managers to streamline order tracking, revenue monitoring, and performance analysis with clean, multi-device interfaces.",
     tags: ["B2B Platform", "Order Management", "Sodexo", "Figma"],
-    image: "/oms-mockup.jpg",
+    image: "/logos/OMS.png",
     link: "/projects/oms-order-management",
     category: "Web Design"
   },
@@ -76,7 +76,7 @@ const projects: Project[] = [
     title: "PayEZ",
     description: "A unified payment gateway that seamlessly integrates UPI and cryptocurrency payments, providing users with multiple payment options in a single platform.",
     tags: ["UI/UX Design", "Payment Gateway", "Crypto", "Mobile App"],
-    image: "/payez-mockup.jpg",
+    image: "/logos/PayEz.png",
     link: "/projects/payez",
     category: "Mobile Design"
   }
@@ -113,8 +113,12 @@ export default function Projects() {
             >
               <Card className="group h-full border-0 shadow-xl bg-background/50 backdrop-blur-sm hover:shadow-2xl transition-all duration-300 overflow-hidden">
                 <div className="relative overflow-hidden">
-                  <div className="w-full h-48 bg-gradient-to-br from-blue-500/20 to-cyan-500/20 flex items-center justify-center">
-                    <div className="text-4xl font-bold text-blue-500/30">Preview</div>
+                  <div className="w-full h-48 bg-gradient-to-br from-blue-500/20 to-cyan-500/20 flex items-center justify-center p-4">
+                    <img 
+                      src={project.image} 
+                      alt={`${project.title} logo`}
+                      className="max-w-full max-h-full object-contain"
+                    />
                   </div>
                   <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                 </div>

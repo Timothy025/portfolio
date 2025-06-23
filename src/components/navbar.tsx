@@ -32,7 +32,7 @@ export function Navbar() {
           <Link href="/" className="flex items-center space-x-2">
             <motion.div
               whileHover={{ scale: 1.05 }}
-              className="text-xl font-bold bg-gradient-to-r from-blue-500 to-cyan-500 bg-clip-text text-transparent"
+              className="text-xl font-droga bg-gradient-to-r from-blue-500 to-cyan-500 bg-clip-text text-transparent"
             >
               TJX
             </motion.div>
