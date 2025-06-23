@@ -1,7 +1,7 @@
 "use client"
 
 import { motion, useScroll, useTransform } from "framer-motion"
-import { useRef, useState } from "react"
+import { useRef, useState, useEffect } from "react"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { ArrowRight, Download, Sparkles, Code, Palette, Clock, Figma, Brush } from "lucide-react"
@@ -20,6 +20,7 @@ export default function Home() {
   const scale = useTransform(scrollYProgress, [0, 1], [1, 0.8])
 
   const [isHovered, setIsHovered] = useState(false)
+  const [isClient, setIsClient] = useState(false)
 
   const floatingIcons = [
     { icon: Code, delay: 0, x: -80, y: -60 },
@@ -32,6 +33,10 @@ export default function Home() {
     "UI/UX Design", "Product Design", "Figma", "Prototyping",
     "Design Systems", "User Research", "Responsive Design", "Micro-interactions"
   ]
+
+  useEffect(() => {
+    setIsClient(true)
+  }, [])
 
   return (
     <div ref={containerRef} className="min-h-screen relative overflow-hidden">
@@ -68,28 +73,30 @@ export default function Home() {
         />
         
         {/* Particle Effect */}
-        <div className="absolute inset-0 overflow-hidden">
-          {Array.from({ length: 20 }).map((_, i) => (
-            <motion.div
-              key={i}
-              className="absolute w-1 h-1 bg-blue-500/30 rounded-full"
-              animate={{
-                x: [0, Math.random() * window.innerWidth],
-                y: [0, Math.random() * window.innerHeight],
-                opacity: [0, 1, 0]
-              }}
-              transition={{
-                duration: Math.random() * 10 + 10,
-                repeat: Infinity,
-                delay: Math.random() * 5
-              }}
-              style={{
-                left: Math.random() * 100 + '%',
-                top: Math.random() * 100 + '%'
-              }}
-            />
-          ))}
-        </div>
+        {isClient && (
+          <div className="absolute inset-0 overflow-hidden">
+            {Array.from({ length: 20 }).map((_, i) => (
+              <motion.div
+                key={i}
+                className="absolute w-1 h-1 bg-blue-500/30 rounded-full"
+                animate={{
+                  x: [0, Math.random() * window.innerWidth],
+                  y: [0, Math.random() * window.innerHeight],
+                  opacity: [0, 1, 0]
+                }}
+                transition={{
+                  duration: Math.random() * 10 + 10,
+                  repeat: Infinity,
+                  delay: Math.random() * 5
+                }}
+                style={{
+                  left: Math.random() * 100 + '%',
+                  top: Math.random() * 100 + '%'
+                }}
+              />
+            ))}
+          </div>
+        )}
       </div>
 
       {/* Main Content */}

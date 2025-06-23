@@ -1,7 +1,7 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { ArrowLeft, Zap, Coins, Users, Settings, Database, Search, ArrowRight, FileText, Activity, Shield, User, Bell, ToggleLeft, Wallet } from "lucide-react"
+import { ArrowLeft, Zap, Coins, Users, Settings, Activity, Shield, ToggleLeft, Wallet } from "lucide-react"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
@@ -213,7 +213,7 @@ export default function WitnessChainCaseStudy() {
                   <CardContent className="space-y-6">
                     <p className="text-lg text-muted-foreground leading-relaxed">
                       I led the UI/UX design for the WitnessChain mobile app, focusing on simplifying Web3 complexity 
-                      into a playful and accessible experience. I created an immersive "start mining" interaction using 
+                      into a playful and accessible experience. I created an immersive &quot;start mining&quot; interaction using 
                       glow animations and a toggle switch themed with #7CFF92.
                     </p>
                     <p className="text-lg text-muted-foreground leading-relaxed">
