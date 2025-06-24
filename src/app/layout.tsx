@@ -17,6 +17,11 @@ const spaceGrotesk = Space_Grotesk({
 export const metadata: Metadata = {
   title: "Timothy Jerald Xavier - UI/UX Designer",
   description: "UI/UX Designer with a passion for meaningful interfaces and impactful digital products.",
+  icons: {
+    icon: '/browser_top.png',
+    shortcut: '/browser_top.png',
+    apple: '/browser_top.png',
+  },
 };
 
 export default function RootLayout({
@@ -26,6 +31,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <head>
+        <link rel="icon" href="/browser_top.png" type="image/png" />
+      </head>
       <body
         className={`${inter.variable} ${spaceGrotesk.variable} antialiased min-h-screen bg-background text-foreground`}
       >
