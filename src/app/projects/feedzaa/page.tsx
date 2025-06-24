@@ -1,7 +1,7 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { ArrowLeft, ChefHat, ShoppingCart, Users, Star, MapPin, Clock, Search, ArrowRight, Settings, Activity } from "lucide-react"
+import { ArrowLeft, ChefHat, Users, Star, MapPin, Search, ArrowRight, Settings, Activity } from "lucide-react"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
@@ -33,7 +33,7 @@ export default function FeedzaaCaseStudy() {
     {
       title: "Ordering System",
       description: "Seamless food ordering experience",
-      icon: ShoppingCart,
+      icon: Users,
       features: ["Menu Browsing", "Cart Management", "Payment Processing", "Order Tracking"]
     },
     {
@@ -54,13 +54,6 @@ export default function FeedzaaCaseStudy() {
       icon: MapPin,
       features: ["Delivery Tracking", "Location Services", "Time Estimates", "Status Updates"]
     }
-  ]
-
-  const platformData = [
-    { metric: "Active Chefs", value: "2,847", change: "+15.2%", icon: ChefHat, color: "text-[#DB3E19]" },
-    { metric: "Total Orders", value: "45,678", change: "+23.7%", icon: ShoppingCart, color: "text-[#F7D71C]" },
-    { metric: "User Rating", value: "4.8/5", change: "+0.2", icon: Star, color: "text-[#DB3E19]" },
-    { metric: "Delivery Time", value: "32 min", change: "-8%", icon: Clock, color: "text-[#F7D71C]" }
   ]
 
   return (
@@ -151,9 +144,6 @@ export default function FeedzaaCaseStudy() {
               </Badge>
               <Badge variant="outline" className="px-3 py-1">
                 Delivery System
-              </Badge>
-              <Badge variant="outline" className="px-3 py-1">
-                Figma
               </Badge>
             </motion.div>
           </motion.div>

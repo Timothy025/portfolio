@@ -1,26 +1,26 @@
 "use client"
 
 import { motion } from "framer-motion"
+import { ArrowLeft, Building2, Users, Settings, TrendingUp, Search, ArrowRight, FileText, Activity } from "lucide-react"
+import Link from "next/link"
 import { Button } from "@/components/ui/button"
-import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card"
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
-import { ArrowLeft, Users, Settings, TrendingUp, Database, Search, ArrowRight, FileText, Calendar, Target, Activity, Building2, CheckCircle } from "lucide-react"
-import Link from "next/link"
 
 export default function ROneAMS() {
   const informationArchitecture = [
     {
-      title: "Dashboard Overview",
-      description: "Real-time asset monitoring and analytics",
+      title: "Asset Overview",
+      description: "Comprehensive asset tracking and management",
       icon: Building2,
-      features: ["Asset Overview", "Performance Metrics", "Financial Analytics", "Operational Status"]
+      features: ["Asset Registration", "Location Tracking", "Status Monitoring", "Maintenance History"]
     },
     {
-      title: "Asset Management",
-      description: "Comprehensive asset lifecycle management",
-      icon: Database,
-      features: ["Asset Registry", "Maintenance Tracking", "Depreciation", "Location Management"]
+      title: "Financial Management",
+      description: "Asset valuation and financial tracking",
+      icon: TrendingUp,
+      features: ["Depreciation Tracking", "Cost Analysis", "ROI Calculations", "Budget Management"]
     },
     {
       title: "User Management",
@@ -32,7 +32,7 @@ export default function ROneAMS() {
       title: "Reporting System",
       description: "Comprehensive reporting and analytics",
       icon: FileText,
-      features: ["Financial Reports", "Operational Reports", "Custom Dashboards", "Export Functions"]
+      features: ["Asset Reports", "Financial Reports", "Performance Metrics", "Custom Dashboards"]
     },
     {
       title: "System Configuration",
@@ -40,13 +40,6 @@ export default function ROneAMS() {
       icon: Settings,
       features: ["System Settings", "Workflow Configuration", "Integration Setup", "Backup Management"]
     }
-  ]
-
-  const assetMetrics = [
-    { metric: "Total Assets", value: "2,847", change: "+5.2%", icon: Building2, color: "text-[#F76258]" },
-    { metric: "Asset Value", value: "$45.2M", change: "+8.7%", icon: TrendingUp, color: "text-[#E74803]" },
-    { metric: "Active Users", value: "156", change: "+12.3%", icon: Users, color: "text-[#E79703]" },
-    { metric: "System Uptime", value: "99.9%", change: "+0.1%", icon: CheckCircle, color: "text-[#F76258]" }
   ]
 
   return (

@@ -1,7 +1,7 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { ArrowLeft, Package, Users, Settings, TrendingUp, Database, Search, ArrowRight, FileText, Calendar, Target, CheckCircle, Activity } from "lucide-react"
+import { ArrowLeft, Package, Users, Settings, Activity, Database, ArrowRight, Search } from "lucide-react"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
@@ -23,44 +23,37 @@ export default function OMSOrderManagementCaseStudy() {
     }
   }
 
-  const infoArchitecture = [
+  const informationArchitecture = [
     {
       title: "Order Management",
-      description: "Complete order lifecycle management",
+      description: "End-to-end order processing workflow",
       icon: Package,
-      features: ["Order Creation", "Status Tracking", "Inventory Check", "Fulfillment"]
+      features: ["Order Creation", "Status Tracking", "Inventory Management", "Fulfillment"]
     },
     {
       title: "Inventory Control",
-      description: "Real-time inventory management",
+      description: "Real-time stock management and tracking",
       icon: Database,
-      features: ["Stock Levels", "Warehouse Management", "Reordering", "Analytics"]
+      features: ["Stock Levels", "Reorder Points", "Warehouse Management", "Supplier Integration"]
     },
     {
-      title: "User Management",
-      description: "Role-based access and permissions",
+      title: "Customer Management",
+      description: "Customer data and relationship management",
       icon: Users,
-      features: ["User Roles", "Access Control", "Permissions", "Audit Trails"]
+      features: ["Customer Profiles", "Order History", "Communication", "Support Tickets"]
     },
     {
-      title: "Reporting System",
-      description: "Comprehensive reporting and analytics",
-      icon: FileText,
-      features: ["Order Reports", "Inventory Reports", "Performance Metrics", "Custom Dashboards"]
+      title: "Analytics & Reporting",
+      description: "Business intelligence and performance metrics",
+      icon: Activity,
+      features: ["Sales Reports", "Performance Analytics", "Trend Analysis", "Custom Dashboards"]
     },
     {
-      title: "System Configuration",
-      description: "Platform settings and customization",
+      title: "Integration Hub",
+      description: "Third-party system integrations",
       icon: Settings,
-      features: ["System Settings", "Workflow Configuration", "Integration Setup", "Backup Management"]
+      features: ["ERP Integration", "Payment Gateways", "Shipping Providers", "Accounting Systems"]
     }
-  ]
-
-  const orderData = [
-    { metric: "Total Orders", value: "12,847", change: "+18.5%", icon: Package, color: "text-[#00229E]" },
-    { metric: "Order Value", value: "$2.4M", change: "+12.3%", icon: TrendingUp, color: "text-[#00229E]" },
-    { metric: "Active Users", value: "234", change: "+8.7%", icon: Users, color: "text-[#00229E]" },
-    { metric: "System Uptime", value: "99.9%", change: "+0.1%", icon: CheckCircle, color: "text-[#00229E]" }
   ]
 
   return (
@@ -339,7 +332,7 @@ export default function OMSOrderManagementCaseStudy() {
 
                       {/* Navigation Flow */}
                       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                        {infoArchitecture.map((section, index) => (
+                        {informationArchitecture.map((section, index) => (
                           <motion.div
                             key={index}
                             initial={{ opacity: 0, y: 20 }}
@@ -390,7 +383,7 @@ export default function OMSOrderManagementCaseStudy() {
                       <div className="mt-12">
                         <h4 className="text-xl font-semibold mb-6 text-center">Order Management Journey Flow</h4>
                         <div className="flex flex-wrap justify-center items-center gap-4">
-                          {infoArchitecture.map((section, index) => (
+                          {informationArchitecture.map((section, index) => (
                             <div key={index} className="flex items-center">
                               <div className="bg-muted/50 border border-border/50 rounded-lg px-4 py-2">
                                 <div className="flex items-center gap-2">
@@ -398,7 +391,7 @@ export default function OMSOrderManagementCaseStudy() {
                                   <span className="text-sm font-medium">{section.title}</span>
                                 </div>
                               </div>
-                              {index < infoArchitecture.length - 1 && (
+                              {index < informationArchitecture.length - 1 && (
                                 <ArrowRight className="w-4 h-4 text-muted-foreground mx-2" />
                               )}
                             </div>

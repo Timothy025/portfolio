@@ -1,7 +1,7 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { ArrowLeft, Zap, Coins, Users, Settings, Activity, Shield, ToggleLeft, Wallet } from "lucide-react"
+import { ArrowLeft, Zap, Coins, Users, Star, Settings, Activity } from "lucide-react"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
@@ -51,7 +51,7 @@ export default function WitnessChainCaseStudy() {
     {
       title: "Notifications",
       description: "Alerts and security notices",
-      icon: Shield,
+      icon: Star,
       features: ["Reward Alerts", "Mining Activity", "Security Notices", "Network Updates"]
     }
   ]

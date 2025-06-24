@@ -1,7 +1,7 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { ArrowLeft, Eye, BarChart3, TrendingUp, Users, MapPin, Filter, Download, Settings, Activity, Search, ArrowRight, Database } from "lucide-react"
+import { ArrowLeft, Eye, BarChart3, TrendingUp, Users, Activity, Settings, Search, ArrowRight, Database } from "lucide-react"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
@@ -23,10 +23,10 @@ export default function IrisSenseCaseStudy() {
     }
   }
 
-  const infoArchitecture = [
+  const informationArchitecture = [
     {
       title: "Dashboard Overview",
-      description: "Real-time analytics and KPI monitoring",
+      description: "Real-time analytics and key metrics",
       icon: BarChart3,
       features: ["Revenue Analytics", "Energy Consumption", "Station Overview", "User Engagement"]
     },
@@ -54,13 +54,6 @@ export default function IrisSenseCaseStudy() {
       icon: Activity,
       features: ["System Health", "Performance Monitoring", "Error Tracking", "Uptime Analytics"]
     }
-  ]
-
-  const kpiData = [
-    { label: "Total Revenue", value: "$2.4M", change: "+12.5%", icon: TrendingUp, color: "text-[#F7CF58]" },
-    { label: "Active Stations", value: "847", change: "+8.2%", icon: MapPin, color: "text-[#F09343]" },
-    { label: "Energy Delivered", value: "45.2M kWh", change: "+15.3%", icon: Activity, color: "text-[#EB5851]" },
-    { label: "User Satisfaction", value: "4.8/5", change: "+0.3", icon: Users, color: "text-[#F7CF58]" }
   ]
 
   return (
@@ -340,7 +333,7 @@ export default function IrisSenseCaseStudy() {
 
                       {/* Navigation Flow */}
                       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                        {infoArchitecture.map((section, index) => (
+                        {informationArchitecture.map((section, index) => (
                           <motion.div
                             key={index}
                             initial={{ opacity: 0, y: 20 }}
@@ -391,7 +384,7 @@ export default function IrisSenseCaseStudy() {
                       <div className="mt-12">
                         <h4 className="text-xl font-semibold mb-6 text-center">CPO Journey Flow</h4>
                         <div className="flex flex-wrap justify-center items-center gap-4">
-                          {infoArchitecture.map((section, index) => (
+                          {informationArchitecture.map((section, index) => (
                             <div key={index} className="flex items-center">
                               <div className="bg-muted/50 border border-border/50 rounded-lg px-4 py-2">
                                 <div className="flex items-center gap-2">
@@ -399,7 +392,7 @@ export default function IrisSenseCaseStudy() {
                                   <span className="text-sm font-medium">{section.title}</span>
                                 </div>
                               </div>
-                              {index < infoArchitecture.length - 1 && (
+                              {index < informationArchitecture.length - 1 && (
                                 <ArrowRight className="w-4 h-4 text-muted-foreground mx-2" />
                               )}
                             </div>
