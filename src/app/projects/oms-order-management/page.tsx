@@ -283,154 +283,21 @@ export default function OMSOrderManagementCaseStudy() {
                 className="space-y-8"
               >
                 <h3 className="text-2xl font-bold text-center">OMS Dashboard Interface</h3>
-                <Card className="border-0 shadow-lg bg-background/50 backdrop-blur-sm overflow-hidden">
-                  <CardContent className="p-0">
-                    <div className="relative w-full h-[600px] bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 overflow-hidden">
-                      {/* Dashboard Header */}
-                      <div className="absolute top-0 left-0 right-0 h-16 bg-slate-800/50 backdrop-blur-sm border-b border-slate-700 flex items-center justify-between px-6">
-                        <div className="flex items-center gap-3">
-                          <div className="w-8 h-8 bg-gradient-to-r from-[#FFFFFF] to-[#00229E] rounded-lg flex items-center justify-center">
-                            <Package className="w-5 h-5 text-white" />
-                          </div>
-                          <span className="text-white font-semibold">OMS - Order Management System</span>
-                        </div>
-                        <div className="flex items-center gap-4">
-                          <Calendar className="w-5 h-5 text-slate-400" />
-                          <FileText className="w-5 h-5 text-slate-400" />
-                          <div className="w-8 h-8 bg-slate-700 rounded-full" />
-                        </div>
-                      </div>
-
-                      {/* KPI Cards */}
-                      <div className="absolute top-20 left-6 right-6">
-                        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
-                          {orderData.map((order, index) => (
-                            <motion.div
-                              key={index}
-                              initial={{ opacity: 0, y: 20 }}
-                              animate={{ opacity: 1, y: 0 }}
-                              transition={{ duration: 0.5, delay: index * 0.1 }}
-                              className="bg-slate-800/50 backdrop-blur-sm rounded-lg p-4 border border-slate-700"
-                            >
-                              <div className="flex items-center justify-between mb-2">
-                                <order.icon className={`w-5 h-5 ${order.color}`} />
-                                <span className="text-xs text-green-400">{order.change}</span>
-                              </div>
-                              <div className="text-2xl font-bold text-white mb-1">{order.value}</div>
-                              <div className="text-sm text-slate-400">{order.metric}</div>
-                            </motion.div>
-                          ))}
-                        </div>
-                      </div>
-
-                      {/* Main Content Area */}
-                      <div className="absolute top-48 left-6 right-6 bottom-6">
-                        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 h-full">
-                          {/* Order Overview */}
-                          <div className="lg:col-span-2 bg-slate-800/50 backdrop-blur-sm rounded-lg p-6 border border-slate-700">
-                            <div className="flex items-center justify-between mb-4">
-                              <h4 className="text-white font-semibold">Order Overview</h4>
-                              <Target className="w-5 h-5 text-[#00229E]" />
-                            </div>
-                            <div className="grid grid-cols-2 gap-4">
-                              <div className="space-y-3">
-                                <div className="flex items-center justify-between">
-                                  <span className="text-slate-400 text-sm">Pending Orders</span>
-                                  <span className="text-white font-semibold">247</span>
-                                </div>
-                                <div className="flex items-center justify-between">
-                                  <span className="text-slate-400 text-sm">Processing</span>
-                                  <span className="text-white font-semibold">156</span>
-                                </div>
-                                <div className="flex items-center justify-between">
-                                  <span className="text-slate-400 text-sm">Shipped</span>
-                                  <span className="text-white font-semibold">892</span>
-                                </div>
-                              </div>
-                              <div className="space-y-3">
-                                <div className="flex items-center justify-between">
-                                  <span className="text-slate-400 text-sm">Delivered</span>
-                                  <span className="text-white font-semibold">1,089</span>
-                                </div>
-                                <div className="flex items-center justify-between">
-                                  <span className="text-slate-400 text-sm">Cancelled</span>
-                                  <span className="text-white font-semibold">23</span>
-                                </div>
-                                <div className="flex items-center justify-between">
-                                  <span className="text-slate-400 text-sm">Returns</span>
-                                  <span className="text-white font-semibold">12</span>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-
-                          {/* Inventory Summary */}
-                          <div className="bg-slate-800/50 backdrop-blur-sm rounded-lg p-6 border border-slate-700">
-                            <div className="flex items-center justify-between mb-4">
-                              <h4 className="text-white font-semibold">Inventory Summary</h4>
-                              <Database className="w-5 h-5 text-[#00229E]" />
-                            </div>
-                            <div className="space-y-4">
-                              <div className="text-center">
-                                <div className="text-3xl font-bold text-white">15,847</div>
-                                <div className="text-sm text-slate-400">Total Items</div>
-                              </div>
-                              <div className="space-y-2">
-                                <div className="flex items-center justify-between">
-                                  <span className="text-slate-400 text-sm">In Stock</span>
-                                  <span className="text-white">12,234</span>
-                                </div>
-                                <div className="flex items-center justify-between">
-                                  <span className="text-slate-400 text-sm">Low Stock</span>
-                                  <span className="text-[#00229E]">234</span>
-                                </div>
-                                <div className="flex items-center justify-between">
-                                  <span className="text-slate-400 text-sm">Out of Stock</span>
-                                  <span className="text-red-400">45</span>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-
-                          {/* Recent Orders */}
-                          <div className="lg:col-span-3 bg-slate-800/50 backdrop-blur-sm rounded-lg p-6 border border-slate-700">
-                            <div className="flex items-center justify-between mb-4">
-                              <h4 className="text-white font-semibold">Recent Orders</h4>
-                              <Activity className="w-5 h-5 text-[#00229E]" />
-                            </div>
-                            <div className="space-y-3">
-                              {[
-                                { order: "#OMS-001", customer: "Sodexo Campus", status: "Processing", value: "$2,450" },
-                                { order: "#OMS-002", customer: "Sodexo Corporate", status: "Shipped", value: "$1,890" },
-                                { order: "#OMS-003", customer: "Sodexo Healthcare", status: "Delivered", value: "$3,120" },
-                                { order: "#OMS-004", customer: "Sodexo Events", status: "Pending", value: "$890" }
-                              ].map((order, index) => (
-                                <motion.div
-                                  key={index}
-                                  initial={{ opacity: 0, x: -20 }}
-                                  animate={{ opacity: 1, x: 0 }}
-                                  transition={{ duration: 0.5, delay: index * 0.1 }}
-                                  className="flex items-center justify-between p-3 bg-slate-700/50 rounded-lg"
-                                >
-                                  <div>
-                                    <div className="text-white font-medium">{order.order}</div>
-                                    <div className="text-sm text-slate-400">{order.customer}</div>
-                                  </div>
-                                  <div className="text-right">
-                                    <div className="text-white font-semibold">{order.value}</div>
-                                    <Badge variant={order.status === 'Delivered' ? 'default' : order.status === 'Processing' ? 'secondary' : 'outline'} className="text-xs">
-                                      {order.status}
-                                    </Badge>
-                                  </div>
-                                </motion.div>
-                              ))}
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </CardContent>
-                </Card>
+                <div className="flex justify-center">
+                  <motion.div
+                    initial={{ opacity: 0, scale: 0.9 }}
+                    whileInView={{ opacity: 1, scale: 1 }}
+                    transition={{ duration: 0.8, delay: 0.2 }}
+                    viewport={{ once: true }}
+                    className="relative"
+                  >
+                    <img
+                      src="/oms.png"
+                      alt="OMS Dashboard Interface"
+                      className="max-w-full h-auto rounded-lg shadow-2xl"
+                    />
+                  </motion.div>
+                </div>
               </motion.div>
             </TabsContent>
 

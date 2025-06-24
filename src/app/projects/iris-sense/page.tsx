@@ -284,144 +284,21 @@ export default function IrisSenseCaseStudy() {
                 className="space-y-8"
               >
                 <h3 className="text-2xl font-bold text-center">Dashboard Preview</h3>
-                <Card className="border-0 shadow-lg bg-background/50 backdrop-blur-sm overflow-hidden">
-                  <CardContent className="p-0">
-                    <div className="relative w-full h-[600px] bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 overflow-hidden">
-                      {/* Dashboard Header */}
-                      <div className="absolute top-0 left-0 right-0 h-16 bg-slate-800/50 backdrop-blur-sm border-b border-slate-700 flex items-center justify-between px-6">
-                        <div className="flex items-center gap-3">
-                          <div className="w-8 h-8 bg-gradient-to-r from-[#F7CF58] via-[#F09343] to-[#EB5851] rounded-lg flex items-center justify-center">
-                            <Eye className="w-5 h-5 text-white" />
-                          </div>
-                          <span className="text-white font-semibold">Iris Sense Dashboard</span>
-                        </div>
-                        <div className="flex items-center gap-4">
-                          <Filter className="w-5 h-5 text-slate-400" />
-                          <Download className="w-5 h-5 text-slate-400" />
-                          <div className="w-8 h-8 bg-slate-700 rounded-full" />
-                        </div>
-                      </div>
-
-                      {/* KPI Cards */}
-                      <div className="absolute top-20 left-6 right-6">
-                        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
-                          {kpiData.map((kpi, index) => (
-                            <motion.div
-                              key={index}
-                              initial={{ opacity: 0, y: 20 }}
-                              animate={{ opacity: 1, y: 0 }}
-                              transition={{ duration: 0.5, delay: index * 0.1 }}
-                              className="bg-slate-800/50 backdrop-blur-sm rounded-lg p-4 border border-slate-700"
-                            >
-                              <div className="flex items-center justify-between mb-2">
-                                <kpi.icon className={`w-5 h-5 ${kpi.color}`} />
-                                <span className="text-xs text-green-400">{kpi.change}</span>
-                              </div>
-                              <div className="text-2xl font-bold text-white mb-1">{kpi.value}</div>
-                              <div className="text-sm text-slate-400">{kpi.label}</div>
-                            </motion.div>
-                          ))}
-                        </div>
-                      </div>
-
-                      {/* Charts Section */}
-                      <div className="absolute top-48 left-6 right-6 bottom-6">
-                        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 h-full">
-                          {/* Revenue Chart */}
-                          <div className="bg-slate-800/50 backdrop-blur-sm rounded-lg p-6 border border-slate-700">
-                            <div className="flex items-center justify-between mb-4">
-                              <h4 className="text-white font-semibold">Revenue Analytics</h4>
-                              <BarChart3 className="w-5 h-5 text-[#F7CF58]" />
-                            </div>
-                            <div className="space-y-3">
-                              {[80, 65, 90, 75, 85, 70].map((height, index) => (
-                                <motion.div
-                                  key={index}
-                                  initial={{ width: 0 }}
-                                  animate={{ width: `${height}%` }}
-                                  transition={{ duration: 1, delay: index * 0.1 }}
-                                  className="h-3 bg-gradient-to-r from-[#F7CF58] via-[#F09343] to-[#EB5851] rounded-full"
-                                />
-                              ))}
-                            </div>
-                          </div>
-
-                          {/* Energy Usage Chart */}
-                          <div className="bg-slate-800/50 backdrop-blur-sm rounded-lg p-6 border border-slate-700">
-                            <div className="flex items-center justify-between mb-4">
-                              <h4 className="text-white font-semibold">Energy Consumption</h4>
-                              <TrendingUp className="w-5 h-5 text-[#F09343]" />
-                            </div>
-                            <div className="relative h-32">
-                              <svg className="w-full h-full" viewBox="0 0 100 40">
-                                <motion.path
-                                  initial={{ pathLength: 0 }}
-                                  animate={{ pathLength: 1 }}
-                                  transition={{ duration: 2, delay: 0.5 }}
-                                  d="M0,30 L20,25 L40,20 L60,15 L80,10 L100,5"
-                                  stroke="url(#gradient)"
-                                  strokeWidth="2"
-                                  fill="none"
-                                />
-                                <defs>
-                                  <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%">
-                                    <stop offset="0%" stopColor="#F7CF58" />
-                                    <stop offset="50%" stopColor="#F09343" />
-                                    <stop offset="100%" stopColor="#EB5851" />
-                                  </linearGradient>
-                                </defs>
-                              </svg>
-                            </div>
-                          </div>
-
-                          {/* Station Map */}
-                          <div className="bg-slate-800/50 backdrop-blur-sm rounded-lg p-6 border border-slate-700">
-                            <div className="flex items-center justify-between mb-4">
-                              <h4 className="text-white font-semibold">Station Overview</h4>
-                              <MapPin className="w-5 h-5 text-[#EB5851]" />
-                            </div>
-                            <div className="grid grid-cols-3 gap-2">
-                              {Array.from({ length: 9 }).map((_, index) => (
-                                <motion.div
-                                  key={index}
-                                  initial={{ scale: 0 }}
-                                  animate={{ scale: 1 }}
-                                  transition={{ duration: 0.3, delay: index * 0.05 }}
-                                  className={`w-full h-8 rounded ${
-                                    index % 3 === 0 ? 'bg-[#F7CF58]/30' : 
-                                    index % 3 === 1 ? 'bg-[#F09343]/30' : 'bg-[#EB5851]/30'
-                                  } border border-slate-600`}
-                                />
-                              ))}
-                            </div>
-                          </div>
-
-                          {/* User Metrics */}
-                          <div className="bg-slate-800/50 backdrop-blur-sm rounded-lg p-6 border border-slate-700">
-                            <div className="flex items-center justify-between mb-4">
-                              <h4 className="text-white font-semibold">User Engagement</h4>
-                              <Users className="w-5 h-5 text-[#F7CF58]" />
-                            </div>
-                            <div className="space-y-3">
-                              <div className="flex items-center justify-between">
-                                <span className="text-slate-400 text-sm">Active Users</span>
-                                <span className="text-white font-semibold">2,847</span>
-                              </div>
-                              <div className="flex items-center justify-between">
-                                <span className="text-slate-400 text-sm">Sessions</span>
-                                <span className="text-white font-semibold">8,901</span>
-                              </div>
-                              <div className="flex items-center justify-between">
-                                <span className="text-slate-400 text-sm">Avg. Session</span>
-                                <span className="text-white font-semibold">4m 32s</span>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </CardContent>
-                </Card>
+                <div className="flex justify-center">
+                  <motion.div
+                    initial={{ opacity: 0, scale: 0.9 }}
+                    whileInView={{ opacity: 1, scale: 1 }}
+                    transition={{ duration: 0.8, delay: 0.2 }}
+                    viewport={{ once: true }}
+                    className="relative"
+                  >
+                    <img
+                      src="/sense.png"
+                      alt="Iris Sense Dashboard Preview"
+                      className="max-w-full h-auto rounded-lg shadow-2xl"
+                    />
+                  </motion.div>
+                </div>
               </motion.div>
             </TabsContent>
 

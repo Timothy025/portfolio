@@ -276,44 +276,38 @@ export default function IrisNetworkCaseStudy() {
                 className="space-y-8"
               >
                 <h3 className="text-2xl font-bold text-center">Iris Network Platform UI</h3>
-                <div className="space-y-8">
-                  {/* Dashboard Screen */}
-                  <Card className="border-0 shadow-lg bg-background/50 backdrop-blur-sm">
-                    <CardHeader>
-                      <CardTitle className="flex items-center gap-2">
-                        <div className="w-3 h-6 bg-gray-800 rounded-sm" />
-                        Dashboard Overview
-                      </CardTitle>
-                    </CardHeader>
-                    <CardContent>
-                      <div className="relative mx-auto w-full rounded-lg border-2 border-gray-300 shadow-2xl overflow-hidden">
-                        <img 
-                          src="/network_web.png" 
-                          alt="Iris Network Dashboard" 
-                          className="w-full h-auto object-contain"
-                        />
-                      </div>
-                    </CardContent>
-                  </Card>
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
+                  {/* Web Dashboard */}
+                  <motion.div
+                    initial={{ opacity: 0, scale: 0.9 }}
+                    whileInView={{ opacity: 1, scale: 1 }}
+                    transition={{ duration: 0.8, delay: 0.2 }}
+                    viewport={{ once: true }}
+                    className="relative text-center"
+                  >
+                    <h4 className="text-xl font-semibold mb-4">Web Mockup</h4>
+                    <img
+                      src="/network_web.png"
+                      alt="Iris Network Dashboard"
+                      className="max-w-full h-auto rounded-lg shadow-2xl"
+                    />
+                  </motion.div>
 
-                  {/* Mobile App Screen */}
-                  <Card className="border-0 shadow-lg bg-background/50 backdrop-blur-sm">
-                    <CardHeader>
-                      <CardTitle className="flex items-center gap-2">
-                        <Zap className="w-5 h-5 text-[#32B34F]" />
-                        Mobile App Interface
-                      </CardTitle>
-                    </CardHeader>
-                    <CardContent>
-                      <div className="relative mx-auto w-64 rounded-3xl border-8 border-gray-800 shadow-2xl overflow-hidden">
-                        <img 
-                          src="/network_mobile.png" 
-                          alt="Iris Network Mobile App" 
-                          className="w-full h-auto object-contain"
-                        />
-                      </div>
-                    </CardContent>
-                  </Card>
+                  {/* Mobile App */}
+                  <motion.div
+                    initial={{ opacity: 0, scale: 0.9 }}
+                    whileInView={{ opacity: 1, scale: 1 }}
+                    transition={{ duration: 0.8, delay: 0.4 }}
+                    viewport={{ once: true }}
+                    className="relative text-center"
+                  >
+                    <h4 className="text-xl font-semibold mb-4">Mobile Mockup</h4>
+                    <img
+                      src="/network_mobile.png"
+                      alt="Iris Network Mobile App"
+                      className="max-w-xs h-auto rounded-lg shadow-2xl mx-auto"
+                    />
+                  </motion.div>
                 </div>
               </motion.div>
             </TabsContent>

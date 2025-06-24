@@ -278,123 +278,20 @@ export default function WitnessChainCaseStudy() {
                 className="space-y-8"
               >
                 <h3 className="text-2xl font-bold text-center">WitnessChain Mobile Interface</h3>
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-                  {/* Home Screen */}
-                  <Card className="border-0 shadow-lg bg-background/50 backdrop-blur-sm">
-                    <CardHeader>
-                      <CardTitle className="flex items-center gap-2">
-                        <Zap className="w-5 h-5 text-[#7CFF92]" />
-                        Home Screen
-                      </CardTitle>
-                    </CardHeader>
-                    <CardContent>
-                      <div className="relative mx-auto w-64 h-96 bg-gradient-to-br from-gray-900 to-black rounded-3xl border-8 border-gray-800 shadow-2xl overflow-hidden">
-                        <div className="absolute inset-0 bg-gradient-to-br from-[#7CFF92]/10 to-emerald-500/10" />
-                        <div className="absolute top-4 left-1/2 transform -translate-x-1/2 w-16 h-1 bg-gray-600 rounded-full" />
-                        <div className="absolute inset-4 bg-gray-900 rounded-2xl flex flex-col">
-                          {/* Header */}
-                          <div className="bg-gradient-to-r from-[#7CFF92] to-emerald-500 text-black p-4 rounded-t-2xl">
-                            <div className="flex items-center justify-between">
-                              <h4 className="font-bold">WitnessChain</h4>
-                              <Zap className="w-5 h-5" />
-                            </div>
-                          </div>
-                          {/* Content */}
-                          <div className="flex-1 p-4 space-y-6">
-                            <div className="text-center">
-                              <div className="text-2xl font-bold text-white mb-2">Welcome, Miner!</div>
-                              <div className="text-sm text-gray-400">Ready to start earning?</div>
-                            </div>
-                            
-                            {/* Mining Toggle */}
-                            <div className="text-center space-y-4">
-                              <div className="relative">
-                                <motion.div
-                                  animate={{
-                                    boxShadow: [
-                                      "0 0 20px rgba(124, 255, 146, 0.3)",
-                                      "0 0 40px rgba(124, 255, 146, 0.6)",
-                                      "0 0 20px rgba(124, 255, 146, 0.3)"
-                                    ]
-                                  }}
-                                  transition={{ duration: 2, repeat: Infinity }}
-                                  className="w-16 h-16 bg-[#7CFF92] rounded-full mx-auto flex items-center justify-center"
-                                >
-                                  <ToggleLeft className="w-8 h-8 text-black" />
-                                </motion.div>
-                              </div>
-                              <div className="text-[#7CFF92] font-semibold">Mining Active</div>
-                            </div>
-
-                            {/* Stats */}
-                            <div className="space-y-3">
-                              <div className="flex justify-between items-center p-3 bg-gray-800 rounded-lg">
-                                <span className="text-gray-400">Earned Today</span>
-                                <span className="text-[#7CFF92] font-bold">127.5 WC</span>
-                              </div>
-                              <div className="flex justify-between items-center p-3 bg-gray-800 rounded-lg">
-                                <span className="text-gray-400">Total Earned</span>
-                                <span className="text-[#7CFF92] font-bold">2,847.3 WC</span>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </CardContent>
-                  </Card>
-
-                  {/* Rewards Screen */}
-                  <Card className="border-0 shadow-lg bg-background/50 backdrop-blur-sm">
-                    <CardHeader>
-                      <CardTitle className="flex items-center gap-2">
-                        <Coins className="w-5 h-5 text-[#7CFF92]" />
-                        Rewards Dashboard
-                      </CardTitle>
-                    </CardHeader>
-                    <CardContent>
-                      <div className="relative mx-auto w-64 h-96 bg-gradient-to-br from-gray-900 to-black rounded-3xl border-8 border-gray-800 shadow-2xl overflow-hidden">
-                        <div className="absolute inset-0 bg-gradient-to-br from-[#7CFF92]/10 to-emerald-500/10" />
-                        <div className="absolute top-4 left-1/2 transform -translate-x-1/2 w-16 h-1 bg-gray-600 rounded-full" />
-                        <div className="absolute inset-4 bg-gray-900 rounded-2xl flex flex-col">
-                          {/* Header */}
-                          <div className="bg-gradient-to-r from-[#7CFF92] to-emerald-500 text-black p-4 rounded-t-2xl">
-                            <div className="flex items-center justify-between">
-                              <h4 className="font-bold">Rewards</h4>
-                              <Coins className="w-5 h-5" />
-                            </div>
-                          </div>
-                          {/* Content */}
-                          <div className="flex-1 p-4 space-y-4">
-                            <div className="text-center">
-                              <div className="text-3xl font-bold text-[#7CFF92] mb-1">2,847.3</div>
-                              <div className="text-sm text-gray-400">Total WC Tokens</div>
-                            </div>
-                            
-                            <div className="space-y-3">
-                              <div className="bg-gray-800 rounded-lg p-3">
-                                <div className="flex items-center justify-between mb-2">
-                                  <span className="text-gray-400 text-sm">Available to Claim</span>
-                                  <span className="text-[#7CFF92] font-bold">847.3 WC</span>
-                                </div>
-                                <Button className="w-full bg-[#7CFF92] text-black hover:bg-[#7CFF92]/90">
-                                  <Wallet className="w-4 h-4 mr-2" />
-                                  Claim Rewards
-                                </Button>
-                              </div>
-                              
-                              <div className="bg-gray-800 rounded-lg p-3">
-                                <div className="flex items-center justify-between">
-                                  <span className="text-gray-400 text-sm">Wallet Connected</span>
-                                  <div className="w-3 h-3 bg-[#7CFF92] rounded-full"></div>
-                                </div>
-                                <div className="text-xs text-gray-500 mt-1">0x7CFF...92a1</div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </CardContent>
-                  </Card>
+                <div className="flex justify-center">
+                  <motion.div
+                    initial={{ opacity: 0, scale: 0.9 }}
+                    whileInView={{ opacity: 1, scale: 1 }}
+                    transition={{ duration: 0.8, delay: 0.2 }}
+                    viewport={{ once: true }}
+                    className="relative"
+                  >
+                    <img
+                      src="/witnesschain.png"
+                      alt="WitnessChain Mobile Interface"
+                      className="max-w-full h-auto rounded-lg shadow-2xl"
+                    />
+                  </motion.div>
                 </div>
               </motion.div>
             </TabsContent>

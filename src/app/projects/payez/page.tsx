@@ -280,55 +280,21 @@ export default function PayEZCaseStudy() {
                 className="space-y-8"
               >
                 <h3 className="text-2xl font-bold text-center">PayEZ Mobile App Interface</h3>
-                <Card className="border-0 shadow-lg bg-background/50 backdrop-blur-sm overflow-hidden">
-                  <CardContent className="p-0">
-                    <div className="relative mx-auto w-64 h-96 bg-gradient-to-br from-gray-900 to-black rounded-3xl border-8 border-gray-800 shadow-2xl overflow-hidden">
-                      <div className="absolute inset-0 bg-gradient-to-br from-[#FFFFFF]/10 via-[#061753]/10 to-[#4A69D8]/10" />
-                      <div className="absolute top-4 left-1/2 transform -translate-x-1/2 w-16 h-1 bg-gray-600 rounded-full" />
-                      <div className="absolute inset-4 bg-gray-900 rounded-2xl flex flex-col">
-                        {/* Header */}
-                        <div className="bg-gradient-to-r from-[#FFFFFF] via-[#061753] to-[#4A69D8] text-white p-4 rounded-t-2xl">
-                          <div className="flex items-center justify-between">
-                            <h4 className="font-bold">PayEZ</h4>
-                            <CreditCard className="w-5 h-5" />
-                          </div>
-                        </div>
-                        {/* Content */}
-                        <div className="flex-1 p-4 space-y-4">
-                          <div className="text-center">
-                            <div className="text-lg font-bold text-white">Quick Pay</div>
-                            <div className="text-sm text-gray-400">Choose payment method</div>
-                          </div>
-                          <div className="space-y-3">
-                            {[
-                              { method: "UPI Payment", icon: "🏦", status: "Available" },
-                              { method: "Bitcoin", icon: "₿", status: "Available" },
-                              { method: "Ethereum", icon: "Ξ", status: "Available" },
-                              { method: "USDT", icon: "💎", status: "Available" }
-                            ].map((payment, index) => (
-                              <motion.div
-                                key={index}
-                                initial={{ opacity: 0, x: -20 }}
-                                animate={{ opacity: 1, x: 0 }}
-                                transition={{ duration: 0.5, delay: index * 0.1 }}
-                                className="flex items-center justify-between p-3 bg-gray-800 rounded-lg"
-                              >
-                                <div className="flex items-center gap-3">
-                                  <span className="text-2xl">{payment.icon}</span>
-                                  <div>
-                                    <div className="text-white font-medium">{payment.method}</div>
-                                    <div className="text-sm text-gray-400">Instant transfer</div>
-                                  </div>
-                                </div>
-                                <div className="text-sm text-[#4A69D8]">{payment.status}</div>
-                              </motion.div>
-                            ))}
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </CardContent>
-                </Card>
+                <div className="flex justify-center">
+                  <motion.div
+                    initial={{ opacity: 0, scale: 0.9 }}
+                    whileInView={{ opacity: 1, scale: 1 }}
+                    transition={{ duration: 0.8, delay: 0.2 }}
+                    viewport={{ once: true }}
+                    className="relative"
+                  >
+                    <img
+                      src="/payez.png"
+                      alt="PayEZ Mobile App Interface"
+                      className="max-w-full h-auto rounded-lg shadow-2xl"
+                    />
+                  </motion.div>
+                </div>
               </motion.div>
             </TabsContent>
 

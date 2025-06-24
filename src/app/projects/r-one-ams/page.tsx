@@ -284,149 +284,43 @@ export default function ROneAMS() {
                 className="space-y-8"
               >
                 <h3 className="text-2xl font-bold text-center">R-one AMS Dashboard</h3>
-                <Card className="border-0 shadow-lg bg-background/50 backdrop-blur-sm overflow-hidden">
-                  <CardContent className="p-0">
-                    <div className="relative w-full h-[600px] bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 overflow-hidden">
-                      {/* Dashboard Header */}
-                      <div className="absolute top-0 left-0 right-0 h-16 bg-slate-800/50 backdrop-blur-sm border-b border-slate-700 flex items-center justify-between px-6">
-                        <div className="flex items-center gap-3">
-                          <div className="w-8 h-8 bg-gradient-to-r from-[#F76258] via-[#E74803] to-[#E79703] rounded-lg flex items-center justify-center">
-                            <Building2 className="w-5 h-5 text-white" />
-                          </div>
-                          <span className="text-white font-semibold">R-one Asset Management System</span>
-                        </div>
-                        <div className="flex items-center gap-4">
-                          <Calendar className="w-5 h-5 text-slate-400" />
-                          <FileText className="w-5 h-5 text-slate-400" />
-                          <div className="w-8 h-8 bg-slate-700 rounded-full" />
-                        </div>
-                      </div>
-
-                      {/* KPI Cards */}
-                      <div className="absolute top-20 left-6 right-6">
-                        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
-                          {assetMetrics.map((asset, index) => (
-                            <motion.div
-                              key={index}
-                              initial={{ opacity: 0, y: 20 }}
-                              animate={{ opacity: 1, y: 0 }}
-                              transition={{ duration: 0.5, delay: index * 0.1 }}
-                              className="bg-slate-800/50 backdrop-blur-sm rounded-lg p-4 border border-slate-700"
-                            >
-                              <div className="flex items-center justify-between mb-2">
-                                <asset.icon className={`w-5 h-5 ${asset.color}`} />
-                                <span className="text-xs text-green-400">{asset.change}</span>
-                              </div>
-                              <div className="text-2xl font-bold text-white mb-1">{asset.value}</div>
-                              <div className="text-sm text-slate-400">{asset.metric}</div>
-                            </motion.div>
-                          ))}
-                        </div>
-                      </div>
-
-                      {/* Main Content Area */}
-                      <div className="absolute top-48 left-6 right-6 bottom-6">
-                        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 h-full">
-                          {/* Asset Overview */}
-                          <div className="lg:col-span-2 bg-slate-800/50 backdrop-blur-sm rounded-lg p-6 border border-slate-700">
-                            <div className="flex items-center justify-between mb-4">
-                              <h4 className="text-white font-semibold">Asset Overview</h4>
-                              <Target className="w-5 h-5 text-[#F76258]" />
-                            </div>
-                            <div className="grid grid-cols-2 gap-4">
-                              <div className="space-y-3">
-                                <div className="flex items-center justify-between">
-                                  <span className="text-slate-400 text-sm">Equipment</span>
-                                  <span className="text-white font-semibold">1,247</span>
-                                </div>
-                                <div className="flex items-center justify-between">
-                                  <span className="text-slate-400 text-sm">Vehicles</span>
-                                  <span className="text-white font-semibold">892</span>
-                                </div>
-                                <div className="flex items-center justify-between">
-                                  <span className="text-slate-400 text-sm">Buildings</span>
-                                  <span className="text-white font-semibold">156</span>
-                                </div>
-                              </div>
-                              <div className="space-y-3">
-                                <div className="flex items-center justify-between">
-                                  <span className="text-slate-400 text-sm">Software</span>
-                                  <span className="text-white font-semibold">552</span>
-                                </div>
-                                <div className="flex items-center justify-between">
-                                  <span className="text-slate-400 text-sm">Furniture</span>
-                                  <span className="text-white font-semibold">1,089</span>
-                                </div>
-                                <div className="flex items-center justify-between">
-                                  <span className="text-slate-400 text-sm">Other</span>
-                                  <span className="text-white font-semibold">234</span>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-
-                          {/* Financial Summary */}
-                          <div className="bg-slate-800/50 backdrop-blur-sm rounded-lg p-6 border border-slate-700">
-                            <div className="flex items-center justify-between mb-4">
-                              <h4 className="text-white font-semibold">Financial Summary</h4>
-                              <TrendingUp className="w-5 h-5 text-[#E74803]" />
-                            </div>
-                            <div className="space-y-4">
-                              <div className="text-center">
-                                <div className="text-3xl font-bold text-white">$45.2M</div>
-                                <div className="text-sm text-slate-400">Total Asset Value</div>
-                              </div>
-                              <div className="space-y-2">
-                                <div className="flex items-center justify-between">
-                                  <span className="text-slate-400 text-sm">Depreciation</span>
-                                  <span className="text-white">$2.1M</span>
-                                </div>
-                                <div className="flex items-center justify-between">
-                                  <span className="text-slate-400 text-sm">Maintenance</span>
-                                  <span className="text-white">$890K</span>
-                                </div>
-                                <div className="flex items-center justify-between">
-                                  <span className="text-slate-400 text-sm">ROI</span>
-                                  <span className="text-[#E79703]">12.3%</span>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-
-                          {/* Recent Activities */}
-                          <div className="lg:col-span-3 bg-slate-800/50 backdrop-blur-sm rounded-lg p-6 border border-slate-700">
-                            <div className="flex items-center justify-between mb-4">
-                              <h4 className="text-white font-semibold">Recent Activities</h4>
-                              <Activity className="w-5 h-5 text-[#E79703]" />
-                            </div>
-                            <div className="space-y-3">
-                              {[
-                                { action: "Asset Added", item: "Server Rack #A-247", time: "2 hours ago" },
-                                { action: "Maintenance Due", item: "Vehicle #V-892", time: "4 hours ago" },
-                                { action: "Depreciation Updated", item: "Building #B-156", time: "6 hours ago" },
-                                { action: "User Access Granted", item: "John Smith", time: "8 hours ago" }
-                              ].map((activity, index) => (
-                                <motion.div
-                                  key={index}
-                                  initial={{ opacity: 0, x: -20 }}
-                                  animate={{ opacity: 1, x: 0 }}
-                                  transition={{ duration: 0.5, delay: index * 0.1 }}
-                                  className="flex items-center justify-between p-3 bg-slate-700/50 rounded-lg"
-                                >
-                                  <div>
-                                    <div className="text-white font-medium">{activity.action}</div>
-                                    <div className="text-sm text-slate-400">{activity.item}</div>
-                                  </div>
-                                  <div className="text-sm text-slate-400">{activity.time}</div>
-                                </motion.div>
-                              ))}
-                            </div>
-                          </div>
-                        </div>
-                      </div>
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
+                  {/* Web Dashboard */}
+                  <motion.div
+                    initial={{ opacity: 0, scale: 0.9 }}
+                    whileInView={{ opacity: 1, scale: 1 }}
+                    transition={{ duration: 0.8, delay: 0.2 }}
+                    viewport={{ once: true }}
+                    className="relative text-center flex flex-col items-center"
+                  >
+                    <h4 className="text-xl font-semibold mb-4">Web Mockup</h4>
+                    <div className="w-full max-w-lg">
+                      <img
+                        src="/r-one_web.png"
+                        alt="R-one AMS Web Dashboard"
+                        className="w-full h-auto rounded-lg shadow-2xl"
+                      />
                     </div>
-                  </CardContent>
-                </Card>
+                  </motion.div>
+
+                  {/* Mobile App */}
+                  <motion.div
+                    initial={{ opacity: 0, scale: 0.9 }}
+                    whileInView={{ opacity: 1, scale: 1 }}
+                    transition={{ duration: 0.8, delay: 0.4 }}
+                    viewport={{ once: true }}
+                    className="relative text-center flex flex-col items-center"
+                  >
+                    <h4 className="text-xl font-semibold mb-4">Mobile Mockup</h4>
+                    <div className="w-full max-w-xs">
+                      <img
+                        src="/r-one_mobile.png"
+                        alt="R-one AMS Mobile App"
+                        className="w-full h-auto rounded-lg shadow-2xl"
+                      />
+                    </div>
+                  </motion.div>
+                </div>
               </motion.div>
             </TabsContent>
 
