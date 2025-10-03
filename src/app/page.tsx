@@ -295,7 +295,7 @@ export default function Home() {
         <div className="max-w-4xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
-              { number: "2+", label: "Years Experience", icon: Clock },
+              { number: "3+", label: "Years Experience", icon: Clock },
               { number: "15+", label: "Projects Completed", icon: Code },
               { number: "100%", label: "Client Satisfaction", icon: Sparkles }
             ].map((stat, index) => (
