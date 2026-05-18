@@ -1,0 +1,586 @@
+# Product Design Case Studies
+
+# RMS — Remote Monitoring System
+
+## Overview
+
+RMS is an enterprise-grade remote monitoring platform designed to monitor and manage EV charging infrastructure operations in real time.
+
+---
+
+## Problem
+
+EV operators faced multiple operational challenges:
+
+* No centralized monitoring system
+* Delayed fault detection
+* Lack of real-time charger visibility
+* Difficulty managing charger uptime
+* Complex operational workflows
+* Poor visibility into charger health and alerts
+
+---
+
+## Solution
+
+Designed a scalable monitoring system that enabled:
+
+* Real-time charger monitoring
+* Live operational dashboards
+* Fault and alert management
+* Charger health visibility
+* Centralized operational control
+* Scalable enterprise workflows
+
+---
+
+## Information Architecture
+
+```text
+RMS
+│
+├── Dashboard
+├── Charger Monitoring
+│   ├── Live Status
+│   ├── Charger Health
+│   ├── Faults
+│   └── Alerts
+│
+├── Operations
+│   ├── Monitoring
+│   ├── Diagnostics
+│   └── Remote Actions
+│
+├── Reports
+├── Notifications
+└── Settings
+```
+
+---
+
+## Key Contributions
+
+* Enterprise dashboard design
+* Monitoring workflows
+* Alert management UX
+* Charger operational visibility
+* Scalable information architecture
+* Real-time data visualization
+
+---
+
+## AI Assisted Workflow
+
+Used AI tools including Cursor and Antigravity to accelerate:
+
+* Rapid prototyping
+* Interaction flow generation
+* Frontend prototype exploration
+* UX iteration workflows
+
+---
+
+# R-One — Asset Management Platform
+
+## Overview
+
+R-One is an asset management platform focused on charger lifecycle management, operational maintenance, and infrastructure visibility.
+
+---
+
+## Problem
+
+Enterprise operators struggled with:
+
+* Decentralized charger asset tracking
+* Maintenance workflow inefficiencies
+* Limited visibility into charger status
+* Poor firmware tracking
+* Operational downtime management
+
+---
+
+## Solution
+
+Created a centralized asset management experience enabling:
+
+* Charger lifecycle monitoring
+* Asset health tracking
+* Maintenance workflows
+* Firmware management
+* Operational reporting
+* Real-time infrastructure visibility
+
+---
+
+## Information Architecture
+
+```text
+R-One
+│
+├── Dashboard
+├── Assets
+│   ├── Chargers
+│   ├── Connectors
+│   ├── Firmware
+│   └── Asset Health
+│
+├── Maintenance
+├── Alerts
+├── Logs
+├── Reports
+└── Settings
+```
+
+---
+
+## Key Contributions
+
+* Asset management UX
+* Dashboard systems
+* Maintenance workflows
+* Data table systems
+* Operational reporting layouts
+* Enterprise navigation systems
+
+---
+
+## AI Assisted Workflow
+
+Used Cursor and Antigravity for:
+
+* Interactive prototype development
+* Design-to-code experimentation
+* Workflow testing
+* Faster iteration cycles
+
+---
+
+# Network — Charge Management System
+
+## Overview
+
+Network is a Charge Management System designed for Charge Point Operators (CPOs) to manage EV charging infrastructure and customer operations.
+
+---
+
+## Problem
+
+CPOs needed:
+
+* Real-time charging station visibility
+* Session monitoring
+* Charger management workflows
+* User and pricing management
+* Scalable EV infrastructure operations
+
+EV users experienced:
+
+* Poor charger discovery
+* Inconsistent charging experience
+* Limited charging visibility
+
+---
+
+## Solution
+
+Designed a scalable CMS platform providing:
+
+* Real-time charger monitoring
+* Session management
+* Operational dashboards
+* User management systems
+* Pricing and payment visibility
+* Improved charging workflows
+
+---
+
+## Information Architecture
+
+```text
+Network
+│
+├── Dashboard
+├── Charging Stations
+│   ├── Stations
+│   ├── Chargers
+│   ├── Connectors
+│   └── Availability
+│
+├── Sessions
+├── Users
+├── Pricing
+├── Payments
+├── Reports
+└── Settings
+```
+
+---
+
+## Key Contributions
+
+* CMS dashboard design
+* Charger management workflows
+* Session tracking UX
+* Information hierarchy
+* Enterprise operational UI
+* Navigation systems
+
+---
+
+## AI Assisted Workflow
+
+Used Cursor and Antigravity to:
+
+* Build rapid functional prototypes
+* Explore interaction patterns
+* Validate workflows faster
+* Accelerate frontend concepts
+
+---
+
+# Sense — Analytics & Visualization Platform
+
+## Overview
+
+Sense is a data visualization and analytics platform for EV operational insights, charging analytics, and infrastructure reporting.
+
+---
+
+## Problem
+
+Users struggled with:
+
+* Understanding operational data
+* Identifying charger trends
+* Monitoring energy usage
+* Accessing actionable insights
+* Complex reporting systems
+
+---
+
+## Solution
+
+Designed an analytics platform with:
+
+* Interactive dashboards
+* Simplified data visualization
+* Operational reporting systems
+* Charging trend analysis
+* Energy monitoring insights
+* Actionable analytics layouts
+
+---
+
+## Information Architecture
+
+```text
+Sense
+│
+├── Dashboard
+├── Analytics
+│   ├── Charging Trends
+│   ├── Revenue
+│   ├── Energy Usage
+│   └── Session Insights
+│
+├── Reports
+├── Filters
+├── Export Center
+└── Settings
+```
+
+---
+
+## Key Contributions
+
+* Dashboard experience design
+* Chart and visualization systems
+* Data storytelling layouts
+* Filter workflows
+* Enterprise analytics UX
+* Reporting architecture
+
+---
+
+## AI Assisted Workflow
+
+Used Cursor and Antigravity for:
+
+* Prototype acceleration
+* Visualization experimentation
+* Interaction validation
+* Faster UX iteration
+
+---
+
+# Fleet — EV Fleet Management System
+
+## Overview
+
+Fleet is an EV fleet management platform designed for organizations managing electric vehicle operations and charging workflows.
+
+---
+
+## Problem
+
+Fleet operators faced challenges with:
+
+* Vehicle charging visibility
+* Driver management
+* Charging schedules
+* Operational efficiency
+* Fleet energy optimization
+
+---
+
+## Solution
+
+Created a fleet management experience supporting:
+
+* Vehicle monitoring
+* Fleet charging workflows
+* Driver management
+* Charging schedules
+* Operational reporting
+* Fleet analytics
+
+---
+
+## Information Architecture
+
+```text
+Fleet
+│
+├── Dashboard
+├── Vehicles
+├── Drivers
+├── Charging Sessions
+├── Schedules
+├── Analytics
+├── Reports
+└── Settings
+```
+
+---
+
+## Key Contributions
+
+* Fleet operational UX
+* Dashboard systems
+* Charging workflows
+* Scheduling experiences
+* Data management layouts
+* Enterprise navigation design
+
+---
+
+## AI Assisted Workflow
+
+Used Cursor and Antigravity for:
+
+* Functional prototype generation
+* UX flow testing
+* Faster iteration cycles
+* Rapid concept validation
+
+---
+
+# Energy / Aatral — Energy Management Platform
+
+## Overview
+
+Energy / Aatral is an energy management platform focused on smart energy monitoring, load balancing, and charging optimization.
+
+---
+
+## Problem
+
+Organizations struggled with:
+
+* Energy consumption visibility
+* Grid load balancing
+* Charging optimization
+* Monitoring peak energy demand
+* Energy operational insights
+
+---
+
+## Solution
+
+Designed a platform enabling:
+
+* Energy monitoring
+* Smart load balancing
+* Operational energy dashboards
+* Charging optimization workflows
+* Grid visibility systems
+* Energy reporting
+
+---
+
+## Information Architecture
+
+```text
+Energy / Aatral
+│
+├── Dashboard
+├── Grid Monitoring
+├── Energy Usage
+├── Load Balancing
+├── Smart Scheduling
+├── Reports
+├── Alerts
+└── Settings
+```
+
+---
+
+## Key Contributions
+
+* Energy dashboard UX
+* Monitoring workflows
+* Data visualization systems
+* Reporting interfaces
+* Operational layouts
+* Enterprise interaction patterns
+
+---
+
+## AI Assisted Workflow
+
+Used Cursor and Antigravity for:
+
+* Prototype development
+* Frontend experimentation
+* Interaction validation
+* Rapid design iteration
+
+---
+
+# Feedzaa — Food Delivery & Ordering Platform
+
+## Overview
+
+Feedzaa is a food ordering and delivery platform designed to simplify restaurant ordering and customer purchasing workflows.
+
+---
+
+## Problem
+
+Users experienced:
+
+* Complicated ordering flows
+* Poor menu discovery
+* Inefficient checkout experiences
+* Limited order visibility
+
+Restaurants struggled with:
+
+* Order management
+* Delivery coordination
+* Operational tracking
+
+---
+
+## Solution
+
+Designed a platform with:
+
+* Simplified ordering workflows
+* Improved menu browsing
+* Streamlined checkout experience
+* Order tracking visibility
+* Restaurant operational management
+
+---
+
+## Information Architecture
+
+```text
+Feedzaa
+│
+├── Home
+├── Restaurants
+├── Menu
+├── Cart
+├── Checkout
+├── Orders
+├── Tracking
+└── Profile
+```
+
+---
+
+## Key Contributions
+
+* Ordering flow UX
+* Mobile-first experiences
+* Checkout optimization
+* Restaurant discovery layouts
+* Order tracking systems
+* User interaction design
+
+---
+
+# Order Management System — Sodexo
+
+## Overview
+
+An enterprise order management platform designed for Sodexo to manage operational order workflows, tracking, and fulfillment systems.
+
+---
+
+## Problem
+
+Operational teams faced:
+
+* Complex order handling workflows
+* Tracking inefficiencies
+* Delayed operational visibility
+* Difficult order management processes
+* Fragmented reporting systems
+
+---
+
+## Solution
+
+Designed a centralized order management platform enabling:
+
+* Order tracking
+* Workflow management
+* Operational visibility
+* Reporting systems
+* Fulfillment management
+* Process optimization
+
+---
+
+## Information Architecture
+
+```text
+Order Management System
+│
+├── Dashboard
+├── Orders
+│   ├── Active Orders
+│   ├── Completed Orders
+│   ├── Fulfillment
+│   └── Tracking
+│
+├── Reports
+├── Notifications
+├── Operations
+└── Settings
+```
+
+---
+
+## Key Contributions
+
+* Enterprise workflow design
+* Operational dashboard systems
+* Order management UX
+* Reporting experiences
+* Process optimization flows
+* Information architecture

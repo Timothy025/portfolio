@@ -7,6 +7,7 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
+import { ProjectArchitectureMap } from "@/components/project-architecture-map"
 
 export default function FeedzaaCaseStudy() {
   const fadeInUp = {
@@ -272,19 +273,32 @@ export default function FeedzaaCaseStudy() {
                 viewport={{ once: true }}
                 className="space-y-8"
               >
-                <h3 className="text-2xl font-bold text-center">Feedzaa Mobile App Interface</h3>
-                <div className="flex justify-center">
+                <h3 className="text-2xl font-bold text-center">Feedzaa Platform & Mobile App</h3>
+                <div className="flex flex-col lg:flex-row justify-center items-center gap-8">
                   <motion.div
                     initial={{ opacity: 0, scale: 0.9 }}
                     whileInView={{ opacity: 1, scale: 1 }}
                     transition={{ duration: 0.8, delay: 0.2 }}
                     viewport={{ once: true }}
-                    className="relative"
+                    className="relative w-full lg:w-2/3 max-w-4xl"
+                  >
+                    <img
+                      src="/feedzaa_web.png"
+                      alt="Feedzaa Web Interface"
+                      className="w-full h-auto object-cover rounded-xl border border-white/10"
+                    />
+                  </motion.div>
+                  <motion.div
+                    initial={{ opacity: 0, scale: 0.9 }}
+                    whileInView={{ opacity: 1, scale: 1 }}
+                    transition={{ duration: 0.8, delay: 0.4 }}
+                    viewport={{ once: true }}
+                    className="relative w-full max-w-xs"
                   >
                     <img
                       src="/chef_app.png"
                       alt="Feedzaa Mobile App Interface"
-                      className="max-w-full h-auto rounded-lg shadow-2xl"
+                      className="w-full h-auto object-cover rounded-xl border border-white/10"
                     />
                   </motion.div>
                 </div>
@@ -302,98 +316,38 @@ export default function FeedzaaCaseStudy() {
                   <CardHeader>
                     <CardTitle className="text-3xl font-bold flex items-center gap-3">
                       <Activity className="w-8 h-8 text-[#DB3E19]" />
-                      Information Architecture
+                      UI/UX Information Architecture
                     </CardTitle>
                     <CardDescription>
-                      The core navigation structure designed for food commerce users
+                      A designer-led screen structure for culinary discovery, order confidence, and chef operations.
                     </CardDescription>
                   </CardHeader>
-                  <CardContent>
-                    {/* Flowchart Container */}
-                    <div className="relative p-8 bg-muted/30 rounded-xl border border-border/50">
-                      {/* Main App Entry */}
-                      <div className="flex justify-center mb-8">
-                        <motion.div
-                          initial={{ opacity: 0, scale: 0.8 }}
-                          whileInView={{ opacity: 1, scale: 1 }}
-                          transition={{ duration: 0.6 }}
-                          viewport={{ once: true }}
-                          className="bg-gradient-to-r from-[#DB3E19] to-[#F7D71C] text-white p-4 rounded-lg shadow-lg"
-                        >
-                          <div className="flex items-center gap-3">
-                            <ChefHat className="w-6 h-6" />
-                            <span className="font-bold text-lg">Feedzaa Platform</span>
-                          </div>
-                        </motion.div>
-                      </div>
+                  <CardContent className="space-y-12">
+                    <ProjectArchitectureMap
+                      rootLabel="Feedzaa Platform"
+                      rootDescription="Food discovery, ordering, chef operations, and delivery tracking"
+                      sections={infoArchitecture}
+                      primaryColor="#DB3E19"
+                      secondaryColor="#F7D71C"
+                    />
 
-                      {/* Navigation Flow */}
-                      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    {/* User Journey Flow */}
+                    <div className="p-8 bg-muted/10 border border-white/5 rounded-xl text-center space-y-6">
+                      <h4 className="text-xl font-semibold text-white">Food Commerce Journey Flow</h4>
+                      <div className="flex flex-wrap justify-center items-center gap-4">
                         {infoArchitecture.map((section, index) => (
-                          <motion.div
-                            key={index}
-                            initial={{ opacity: 0, y: 20 }}
-                            whileInView={{ opacity: 1, y: 0 }}
-                            transition={{ duration: 0.6, delay: index * 0.1 }}
-                            viewport={{ once: true }}
-                            className="relative"
-                          >
-                            {/* Connection Line */}
-                            {index > 0 && (
-                              <div className="absolute -top-3 left-1/2 transform -translate-x-1/2 w-px h-6 bg-gradient-to-b from-[#DB3E19] to-transparent" />
+                          <div key={index} className="flex items-center">
+                            <div className="bg-muted/50 border border-border/50 rounded-lg px-4 py-2">
+                              <div className="flex items-center gap-2">
+                                <section.icon className="w-4 h-4 text-[#DB3E19]" />
+                                <span className="text-sm font-medium">{section.title}</span>
+                              </div>
+                            </div>
+                            {index < infoArchitecture.length - 1 && (
+                              <ArrowRight className="w-4 h-4 text-muted-foreground mx-2" />
                             )}
-                            
-                            {/* Section Card */}
-                            <div className="bg-background/50 border border-border/50 rounded-lg p-4 hover:border-[#DB3E19] transition-colors">
-                              <div className="flex items-center gap-3 mb-3">
-                                <div className="p-2 bg-[#DB3E19]/20 rounded-lg">
-                                  <section.icon className="w-5 h-5 text-[#DB3E19]" />
-                                </div>
-                                <div>
-                                  <h4 className="font-semibold">{section.title}</h4>
-                                  <p className="text-sm text-muted-foreground">{section.description}</p>
-                                </div>
-                              </div>
-                              
-                              {/* Features List */}
-                              <div className="space-y-2">
-                                {section.features.map((feature, featureIndex) => (
-                                  <motion.div
-                                    key={featureIndex}
-                                    initial={{ opacity: 0, x: -10 }}
-                                    whileInView={{ opacity: 1, x: 0 }}
-                                    transition={{ duration: 0.4, delay: (index * 0.1) + (featureIndex * 0.05) }}
-                                    viewport={{ once: true }}
-                                    className="flex items-center gap-2 text-sm text-muted-foreground"
-                                  >
-                                    <div className="w-1.5 h-1.5 bg-[#DB3E19] rounded-full" />
-                                    {feature}
-                                  </motion.div>
-                                ))}
-                              </div>
-                            </div>
-                          </motion.div>
+                          </div>
                         ))}
-                      </div>
-
-                      {/* User Journey Flow */}
-                      <div className="mt-12">
-                        <h4 className="text-xl font-semibold mb-6 text-center">Food Commerce Journey Flow</h4>
-                        <div className="flex flex-wrap justify-center items-center gap-4">
-                          {infoArchitecture.map((section, index) => (
-                            <div key={index} className="flex items-center">
-                              <div className="bg-muted/50 border border-border/50 rounded-lg px-4 py-2">
-                                <div className="flex items-center gap-2">
-                                  <section.icon className="w-4 h-4 text-[#DB3E19]" />
-                                  <span className="text-sm font-medium">{section.title}</span>
-                                </div>
-                              </div>
-                              {index < infoArchitecture.length - 1 && (
-                                <ArrowRight className="w-4 h-4 text-muted-foreground mx-2" />
-                              )}
-                            </div>
-                          ))}
-                        </div>
                       </div>
                     </div>
                   </CardContent>

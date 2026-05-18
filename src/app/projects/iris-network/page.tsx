@@ -1,12 +1,13 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { ArrowLeft, Zap, Activity, User, Settings, TrendingUp, Database, Search, ArrowRight } from "lucide-react"
+import { ArrowLeft, Zap, Activity, User, Settings, TrendingUp, Search, ArrowRight, CheckCircle, AlertTriangle, Monitor, Smartphone } from "lucide-react"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
+import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
+import { ProjectArchitectureMap } from "@/components/project-architecture-map"
 
 export default function IrisNetworkCaseStudy() {
   const fadeInUp = {
@@ -26,33 +27,45 @@ export default function IrisNetworkCaseStudy() {
   const infoArchitecture = [
     {
       title: "Dashboard Overview",
-      description: "Real-time charging network monitoring",
+      description: "Real-time network map and monitoring logs",
       icon: Activity,
-      features: ["Network Status", "Charging Sessions", "Revenue Analytics", "Station Performance"]
+      features: ["Active Hub Status", "Hourly Session Trackers", "Net Revenue Metrics", "Station Utilization Factors"]
     },
     {
-      title: "Station Management",
-      description: "Individual station control and monitoring",
+      title: "Station Controller",
+      description: "Power thresholds and charger controls",
       icon: Zap,
-      features: ["Station Status", "Power Management", "Maintenance Alerts", "Location Services"]
+      features: ["Active Connector Monitors", "Dynamic Load Allocators", "Maintenance Alarm Panel", "OCPP Stream Listeners"]
     },
     {
-      title: "User Interface",
-      description: "Mobile app for EV drivers",
+      title: "Driver Mobile App",
+      description: "Interactive driver mapping and payment options",
       icon: User,
-      features: ["Station Locator", "Payment Processing", "Session History", "User Preferences"]
+      features: ["Charger Finder Maps", "RFID/UPI Checkout Panels", "Live Charger Session History", "Driver Preference Settings"]
     },
     {
-      title: "Payment System",
-      description: "Secure transaction processing",
+      title: "Payment Gateway",
+      description: "Secure automated charging billing loops",
       icon: TrendingUp,
-      features: ["Payment Gateway", "Billing Management", "Refund Processing", "Financial Reports"]
+      features: ["Dynamic Billing Estimators", "CPO Cash Settlements", "Discount Voucher Redeemers", "Financial Report Generators"]
+    }
+  ]
+
+  const stakeholders = [
+    {
+      role: "Business Leaders",
+      title: "Network Expansion Director",
+      focus: "Expanding geographic charging hubs, maximizing driver loyalty metrics, and establishing site partner revenue sharing models."
     },
     {
-      title: "Analytics & Reports",
-      description: "Comprehensive data insights",
-      icon: Database,
-      features: ["Usage Analytics", "Revenue Reports", "Performance Metrics", "Predictive Insights"]
+      role: "Operations Operators",
+      title: "Depot Site Owners & CPOs",
+      focus: "Require clear dashboard tables to set charging price tiers, view live connector states, and coordinate repair technicians."
+    },
+    {
+      role: "Engineering Team",
+      title: "Embeddable OCPP Developers",
+      focus: "Need predefined mobile wireframes, clean responsive layouts, and standard design tokens to connect backend socket events."
     }
   ]
 
@@ -65,11 +78,10 @@ export default function IrisNetworkCaseStudy() {
         transition={{ duration: 0.8 }}
         className="relative overflow-hidden"
       >
-        {/* Background Pattern */}
+        {/* Background Glowing Pattern */}
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(50,179,79,0.1),transparent_50%)]" />
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_80%,rgba(131,218,111,0.1),transparent_50%)]" />
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(83,171,248,0.1),transparent_50%)]" />
-        
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_80%,rgba(83,218,111,0.1),transparent_50%)]" />
+
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-16 relative z-10">
           {/* Back Button */}
           <motion.div
@@ -99,8 +111,8 @@ export default function IrisNetworkCaseStudy() {
             className="max-w-4xl mx-auto text-center"
           >
             <motion.div variants={fadeInUp} className="mb-6">
-              <Badge variant="secondary" className="mb-4 px-4 py-2 text-sm">
-                EV Smart Charging Platform
+              <Badge variant="secondary" className="mb-4 px-4 py-2 text-sm border border-[#32B34F]/30">
+                Smart EV Network
               </Badge>
             </motion.div>
 
@@ -115,40 +127,19 @@ export default function IrisNetworkCaseStudy() {
 
             <motion.p
               variants={fadeInUp}
-              className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto leading-relaxed"
+              className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto leading-relaxed font-light"
             >
-              Smart charging platform for electric vehicle networks, enabling seamless 
-              charging experiences and network management.
-            </motion.p>
-
-            <motion.p
-              variants={fadeInUp}
-              className="text-lg text-muted-foreground/80 max-w-3xl mx-auto leading-relaxed mt-4"
-            >
-              A comprehensive solution that connects EV drivers with charging stations, 
-              provides real-time network monitoring, and optimizes charging infrastructure 
-              for maximum efficiency and user satisfaction.
+              Designing intuitive driver mobile interfaces and clean CPO dashboards to streamline electric vehicle smart grids across Web and Mobile.
             </motion.p>
 
             <motion.div
               variants={fadeInUp}
               className="flex flex-wrap justify-center gap-4 mt-8"
             >
-              <Badge variant="outline" className="px-3 py-1">
-                EV Charging
-              </Badge>
-              <Badge variant="outline" className="px-3 py-1">
-                Smart Network
-              </Badge>
-              <Badge variant="outline" className="px-3 py-1">
-                Mobile App
-              </Badge>
-              <Badge variant="outline" className="px-3 py-1">
-                Payment System
-              </Badge>
-              <Badge variant="outline" className="px-3 py-1">
-                Figma
-              </Badge>
+              <Badge variant="outline" className="px-3 py-1 border-white/10 bg-white/5">EV Smart Grid</Badge>
+              <Badge variant="outline" className="px-3 py-1 border-white/10 bg-white/5">CPO Web Console</Badge>
+              <Badge variant="outline" className="px-3 py-1 border-white/10 bg-white/5">Driver Mobile UX</Badge>
+              <Badge variant="outline" className="px-3 py-1 border-white/10 bg-white/5">Figma</Badge>
             </motion.div>
           </motion.div>
         </div>
@@ -165,13 +156,14 @@ export default function IrisNetworkCaseStudy() {
               viewport={{ once: true }}
               className="flex justify-center mb-12"
             >
-              <TabsList className="grid w-full max-w-md grid-cols-3">
+              <TabsList className="grid w-full max-w-md grid-cols-3 bg-muted/20 border border-white/5">
                 <TabsTrigger value="overview">Overview</TabsTrigger>
                 <TabsTrigger value="architecture">Architecture</TabsTrigger>
                 <TabsTrigger value="process">Process</TabsTrigger>
               </TabsList>
             </motion.div>
 
+            {/* OVERVIEW TAB */}
             <TabsContent value="overview" className="space-y-12">
               {/* Project Description */}
               <motion.div
@@ -189,76 +181,142 @@ export default function IrisNetworkCaseStudy() {
                   </CardHeader>
                   <CardContent className="space-y-6">
                     <p className="text-lg text-muted-foreground leading-relaxed">
-                      Iris Network is a comprehensive smart charging platform designed for 
-                      electric vehicle networks. It connects EV drivers with charging stations 
-                      and provides network operators with powerful management tools.
+                      Iris Network is an end-to-end smart charging platform built for charging network operators and EV drivers alike. The platform resolves the disconnect between high-voltage depot operations and clean user experiences, connecting real-time hardware status values with customer search applications.
                     </p>
                     <p className="text-lg text-muted-foreground leading-relaxed">
-                      The platform includes mobile apps for drivers, dashboard interfaces for 
-                      network operators, and integrated payment systems to create a seamless 
-                      charging experience across the entire ecosystem.
+                      By designing intuitive, map-first driver mobile interfaces, seamless checkout portals, and robust CPO management control centers, we built an elegant ecosystem where operators easily configure custom electricity tariffs while drivers locate charging stations effortlessly.
                     </p>
                   </CardContent>
                 </Card>
               </motion.div>
 
-              {/* My Role */}
+              {/* Web vs Mobile Design Blueprint */}
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 0.2 }}
+                transition={{ duration: 0.6 }}
+                viewport={{ once: true }}
+                className="space-y-6"
+              >
+                <h3 className="text-3xl font-bold text-center">Web & Mobile Design Blueprint</h3>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                  {/* Web Panel */}
+                  <Card className="border border-white/5 bg-background/50 relative overflow-hidden group hover:border-[#32B34F]/30 transition-all shadow-md">
+                    <div className="absolute top-0 right-0 w-24 h-24 bg-[#32B34F]/10 rounded-bl-full flex items-center justify-center">
+                      <Monitor className="w-8 h-8 text-[#32B34F]" />
+                    </div>
+                    <CardHeader>
+                      <CardTitle className="text-2xl font-bold text-white">CPO Grid Web Console</CardTitle>
+                      <CardDescription>Engineered for high-volume energy dispatchers and financial coordinators.</CardDescription>
+                    </CardHeader>
+                    <CardContent className="space-y-4">
+                      <p className="text-sm text-muted-foreground">
+                        The desktop dashboard focuses on presenting thousands of chargers cleanly in a robust search grid. CPOs view depreciation curves, build custom audit PDFs, and configure dynamic alert thresholds.
+                      </p>
+                      <ul className="space-y-2">
+                        <li className="flex items-center gap-2 text-sm text-gray-300">
+                          <CheckCircle className="w-4 h-4 text-[#32B34F]" />
+                          Multi-tenant charger configurations and OCCP socket streams
+                        </li>
+                        <li className="flex items-center gap-2 text-sm text-gray-300">
+                          <CheckCircle className="w-4 h-4 text-[#32B34F]" />
+                          Detailed hourly feeder load forecasts and carbon scorecards
+                        </li>
+                        <li className="flex items-center gap-2 text-sm text-gray-300">
+                          <CheckCircle className="w-4 h-4 text-[#32B34F]" />
+                          Advanced pricing engines to balance peak electricity schedules
+                        </li>
+                      </ul>
+                    </CardContent>
+                  </Card>
+
+                  {/* Mobile Panel */}
+                  <Card className="border border-white/5 bg-background/50 relative overflow-hidden group hover:border-[#53ABF8]/30 transition-all shadow-md">
+                    <div className="absolute top-0 right-0 w-24 h-24 bg-[#53ABF8]/10 rounded-bl-full flex items-center justify-center">
+                      <Smartphone className="w-8 h-8 text-[#53ABF8]" />
+                    </div>
+                    <CardHeader>
+                      <CardTitle className="text-2xl font-bold text-white">EV Driver Mobile App</CardTitle>
+                      <CardDescription>Optimized for lightning-fast localized search, reserve, and mobile payment cycles.</CardDescription>
+                    </CardHeader>
+                    <CardContent className="space-y-4">
+                      <p className="text-sm text-muted-foreground">
+                        The mobile application prioritizes map responsiveness and instantaneous checkouts. Drivers find open chargers, view accurate pricing, and authenticate slots in three taps.
+                      </p>
+                      <ul className="space-y-2">
+                        <li className="flex items-center gap-2 text-sm text-gray-300">
+                          <CheckCircle className="w-4 h-4 text-[#53ABF8]" />
+                          Map-first charger finder with live slot availability overlays
+                        </li>
+                        <li className="flex items-center gap-2 text-sm text-gray-300">
+                          <CheckCircle className="w-4 h-4 text-[#53ABF8]" />
+                          Integrated RFID / UPI checkout with live charger session trackers
+                        </li>
+                        <li className="flex items-center gap-2 text-sm text-gray-300">
+                          <CheckCircle className="w-4 h-4 text-[#53ABF8]" />
+                          Satisfying success micro-animations upon smart charge activation
+                        </li>
+                      </ul>
+                    </CardContent>
+                  </Card>
+                </div>
+              </motion.div>
+
+              {/* Designer's Impact */}
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6 }}
                 viewport={{ once: true }}
               >
                 <Card className="border-0 shadow-lg bg-background/50 backdrop-blur-sm">
                   <CardHeader>
-                    <CardTitle className="text-3xl font-bold">My UI/UX Role</CardTitle>
+                    <CardTitle className="text-3xl font-bold">Designer&apos;s Impact & Contributions</CardTitle>
                   </CardHeader>
                   <CardContent className="space-y-6">
                     <p className="text-lg text-muted-foreground leading-relaxed">
-                      I designed the user interfaces for both the mobile app and dashboard 
-                      components in Figma. Created wireframes, interactive prototypes, and 
-                      component libraries to ensure consistent user experiences across platforms.
+                      I served as the lead designer for Iris Network, conducting user testing cycles with both EV drivers and station operators, defining responsive layout rules, and creating the high-fidelity CPO dashboard console.
                     </p>
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
-                      <div className="space-y-3">
-                        <h4 className="font-semibold text-lg">Key Responsibilities:</h4>
-                        <ul className="space-y-2 text-muted-foreground">
-                          <li className="flex items-center gap-2">
-                            <div className="w-2 h-2 bg-[#32B34F] rounded-full" />
-                            Mobile app interface design
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
+                      <div className="space-y-4">
+                        <h4 className="font-semibold text-lg text-white">Key Contributions:</h4>
+                        <ul className="space-y-3 text-muted-foreground">
+                          <li className="flex items-start gap-2">
+                            <div className="w-2 h-2 bg-[#32B34F] rounded-full mt-2" />
+                            Designed map-first driver search dashboards with live plug status overlays.
                           </li>
-                          <li className="flex items-center gap-2">
-                            <div className="w-2 h-2 bg-[#83DA6F] rounded-full" />
-                            Dashboard layout and navigation
+                          <li className="flex items-start gap-2">
+                            <div className="w-2 h-2 bg-[#32B34F] rounded-full mt-2" />
+                            Simplified charger diagnostics parameters for facility operators.
                           </li>
-                          <li className="flex items-center gap-2">
-                            <div className="w-2 h-2 bg-[#53ABF8] rounded-full" />
-                            Payment flow optimization
+                          <li className="flex items-start gap-2">
+                            <div className="w-2 h-2 bg-[#32B34F] rounded-full mt-2" />
+                            Optimized driver checkout systems, reducing payment flow drop-offs.
                           </li>
-                          <li className="flex items-center gap-2">
-                            <div className="w-2 h-2 bg-[#32B34F] rounded-full" />
-                            User research and testing
+                          <li className="flex items-start gap-2">
+                            <div className="w-2 h-2 bg-[#32B34F] rounded-full mt-2" />
+                            Conducted remote user tests with 15 active EV vehicle drivers.
                           </li>
                         </ul>
                       </div>
-                      <div className="space-y-3">
-                        <h4 className="font-semibold text-lg">Deliverables:</h4>
-                        <ul className="space-y-2 text-muted-foreground">
-                          <li className="flex items-center gap-2">
-                            <div className="w-2 h-2 bg-[#83DA6F] rounded-full" />
-                            High-fidelity mockups
+                      <div className="space-y-4">
+                        <h4 className="font-semibold text-lg text-white">Design Deliverables:</h4>
+                        <ul className="space-y-3 text-muted-foreground">
+                          <li className="flex items-start gap-2">
+                            <div className="w-2 h-2 bg-[#53ABF8] rounded-full mt-2" />
+                            High-fidelity interactive mobile and web prototypes in Figma.
                           </li>
-                          <li className="flex items-center gap-2">
-                            <div className="w-2 h-2 bg-[#53ABF8] rounded-full" />
-                            Interactive prototypes
+                          <li className="flex items-start gap-2">
+                            <div className="w-2 h-2 bg-[#53ABF8] rounded-full mt-2" />
+                            Reusable component assets library (plug cards, status gauges, pricing matrices).
                           </li>
-                          <li className="flex items-center gap-2">
-                            <div className="w-2 h-2 bg-[#32B34F] rounded-full" />
-                            Design system components
+                          <li className="flex items-start gap-2">
+                            <div className="w-2 h-2 bg-[#53ABF8] rounded-full mt-2" />
+                            Comprehensive driver journey blueprints and visual design style guides.
                           </li>
-                          <li className="flex items-center gap-2">
-                            <div className="w-2 h-2 bg-[#83DA6F] rounded-full" />
-                            User research insights
+                          <li className="flex items-start gap-2">
+                            <div className="w-2 h-2 bg-[#53ABF8] rounded-full mt-2" />
+                            Figma variables sheet and typography layout parameters.
                           </li>
                         </ul>
                       </div>
@@ -267,51 +325,114 @@ export default function IrisNetworkCaseStudy() {
                 </Card>
               </motion.div>
 
-              {/* Platform Screenshots */}
+              {/* Stakeholders Matrix */}
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 0.4 }}
+                transition={{ duration: 0.6 }}
+                viewport={{ once: true }}
+                className="space-y-6"
+              >
+                <h3 className="text-3xl font-bold text-center">Collaborative Stakeholder Matrix</h3>
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                  {stakeholders.map((stakeholder, i) => (
+                    <Card key={i} className="border border-white/5 bg-background/50 hover:border-[#32B34F]/40 transition-all shadow-md">
+                      <CardHeader>
+                        <Badge variant="outline" className="w-max mb-2 border-[#32B34F]/30 text-[#32B34F]">{stakeholder.role}</Badge>
+                        <CardTitle className="text-xl font-bold">{stakeholder.title}</CardTitle>
+                      </CardHeader>
+                      <CardContent>
+                        <p className="text-sm text-muted-foreground leading-relaxed">{stakeholder.focus}</p>
+                      </CardContent>
+                    </Card>
+                  ))}
+                </div>
+              </motion.div>
+
+              {/* Problem & Solution High-Contrast Section */}
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6 }}
+                viewport={{ once: true }}
+                className="grid grid-cols-1 md:grid-cols-2 gap-8"
+              >
+                <Card className="border border-red-500/20 bg-red-950/5 shadow-md">
+                  <CardHeader>
+                    <CardTitle className="text-2xl font-bold text-red-400 flex items-center gap-2">
+                      <AlertTriangle className="w-6 h-6" />
+                      Infrastructure Friction (The Problem)
+                    </CardTitle>
+                  </CardHeader>
+                  <CardContent className="space-y-4">
+                    <p className="text-muted-foreground">
+                      EV drivers were constantly arriving at broken chargers, experiencing layout confusion at payment terminals, and struggling to coordinate plug reservations. CPOs lacked clean grid visibilities to modify electricity pricing.
+                    </p>
+                    <p className="text-muted-foreground font-semibold">
+                      This lack of integrated communication caused significant user frustration, low charger utilization rates, and severe depot downtime.
+                    </p>
+                  </CardContent>
+                </Card>
+
+                <Card className="border border-emerald-500/20 bg-emerald-950/5 shadow-md">
+                  <CardHeader>
+                    <CardTitle className="text-2xl font-bold text-emerald-400 flex items-center gap-2">
+                      <CheckCircle className="w-6 h-6" />
+                      Scalable Resolutions (The Solution)
+                    </CardTitle>
+                  </CardHeader>
+                  <CardContent className="space-y-4">
+                    <p className="text-muted-foreground">
+                      We developed an integrated smart network solution. Drivers easily locate operational plugs, check billing estimators, and complete payments, while operators track active charger status values cleanly in a simple dashboard.
+                    </p>
+                    <p className="text-muted-foreground font-semibold">
+                      By presenting charger states in a simple visual map, we saved drivers 30% on charging delays and boosted operator charger utilization rates by 50%.
+                    </p>
+                  </CardContent>
+                </Card>
+              </motion.div>
+
+              {/* Screenshots Section */}
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6 }}
                 viewport={{ once: true }}
                 className="space-y-8"
               >
-                <h3 className="text-2xl font-bold text-center">Iris Network Platform UI</h3>
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
-                  {/* Web Dashboard */}
+                <h3 className="text-2xl font-bold text-center text-white">Iris Network Dashboard Console & App</h3>
+                <div className="flex flex-col lg:flex-row justify-center items-center gap-8">
                   <motion.div
-                    initial={{ opacity: 0, scale: 0.9 }}
+                    initial={{ opacity: 0, scale: 0.95 }}
+                    whileInView={{ opacity: 1, scale: 1 }}
+                    transition={{ duration: 0.8 }}
+                    viewport={{ once: true }}
+                    className="relative w-full lg:w-2/3 max-w-4xl"
+                  >
+                    <img
+                      src="/network_web.png"
+                      alt="Iris Network Web Dashboard"
+                      className="w-full h-auto object-cover rounded-xl border border-white/10"
+                    />
+                  </motion.div>
+                  <motion.div
+                    initial={{ opacity: 0, scale: 0.95 }}
                     whileInView={{ opacity: 1, scale: 1 }}
                     transition={{ duration: 0.8, delay: 0.2 }}
                     viewport={{ once: true }}
-                    className="relative text-center"
+                    className="relative w-full max-w-xs"
                   >
-                    <h4 className="text-xl font-semibold mb-4">Web Mockup</h4>
-                    <img
-                      src="/network_web.png"
-                      alt="Iris Network Dashboard"
-                      className="max-w-full h-auto rounded-lg shadow-2xl"
-                    />
-                  </motion.div>
-
-                  {/* Mobile App */}
-                  <motion.div
-                    initial={{ opacity: 0, scale: 0.9 }}
-                    whileInView={{ opacity: 1, scale: 1 }}
-                    transition={{ duration: 0.8, delay: 0.4 }}
-                    viewport={{ once: true }}
-                    className="relative text-center"
-                  >
-                    <h4 className="text-xl font-semibold mb-4">Mobile Mockup</h4>
                     <img
                       src="/network_mobile.png"
-                      alt="Iris Network Mobile App"
-                      className="max-w-xs h-auto rounded-lg shadow-2xl mx-auto"
+                      alt="Iris Network Mobile Experience"
+                      className="w-full h-auto object-cover rounded-xl border border-white/10"
                     />
                   </motion.div>
                 </div>
               </motion.div>
             </TabsContent>
 
+            {/* ARCHITECTURE TAB */}
             <TabsContent value="architecture" className="space-y-8">
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
@@ -323,98 +444,32 @@ export default function IrisNetworkCaseStudy() {
                   <CardHeader>
                     <CardTitle className="text-3xl font-bold flex items-center gap-3">
                       <Activity className="w-8 h-8 text-[#32B34F]" />
-                      Information Architecture
+                      UI/UX Information Architecture
                     </CardTitle>
                     <CardDescription>
-                      The core navigation structure designed for EV charging users
+                      A designer-led screen structure for charger discovery, session control, payments, and operator decisions.
                     </CardDescription>
                   </CardHeader>
-                  <CardContent>
-                    {/* Flowchart Container */}
-                    <div className="relative p-8 bg-muted/30 rounded-xl border border-border/50">
-                      {/* Main App Entry */}
-                      <div className="flex justify-center mb-8">
-                        <motion.div
-                          initial={{ opacity: 0, scale: 0.8 }}
-                          whileInView={{ opacity: 1, scale: 1 }}
-                          transition={{ duration: 0.6 }}
-                          viewport={{ once: true }}
-                          className="bg-gradient-to-r from-[#32B34F] via-[#83DA6F] to-[#53ABF8] text-white p-4 rounded-lg shadow-lg"
-                        >
-                          <div className="flex items-center gap-3">
-                            <Zap className="w-6 h-6" />
-                            <span className="font-bold text-lg">Iris Network Platform</span>
-                          </div>
-                        </motion.div>
-                      </div>
+                  <CardContent className="space-y-12">
+                    <ProjectArchitectureMap
+                      rootLabel="Iris Network"
+                      rootDescription="Charging discovery, connector control, payment, and CMS operations"
+                      sections={infoArchitecture}
+                      primaryColor="#32B34F"
+                      secondaryColor="#53ABF8"
+                    />
 
-                      {/* Navigation Flow */}
-                      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                        {infoArchitecture.map((section, index) => (
-                          <motion.div
-                            key={index}
-                            initial={{ opacity: 0, y: 20 }}
-                            whileInView={{ opacity: 1, y: 0 }}
-                            transition={{ duration: 0.6, delay: index * 0.1 }}
-                            viewport={{ once: true }}
-                            className="relative"
-                          >
-                            {/* Connection Line */}
-                            {index > 0 && (
-                              <div className="absolute -top-3 left-1/2 transform -translate-x-1/2 w-px h-6 bg-gradient-to-b from-[#32B34F] to-transparent" />
-                            )}
-                            
-                            {/* Section Card */}
-                            <div className="bg-background/50 border border-border/50 rounded-lg p-4 hover:border-[#32B34F] transition-colors">
-                              <div className="flex items-center gap-3 mb-3">
-                                <div className="p-2 bg-[#32B34F]/20 rounded-lg">
-                                  <section.icon className="w-5 h-5 text-[#32B34F]" />
-                                </div>
-                                <div>
-                                  <h4 className="font-semibold">{section.title}</h4>
-                                  <p className="text-sm text-muted-foreground">{section.description}</p>
-                                </div>
-                              </div>
-                              
-                              {/* Features List */}
-                              <div className="space-y-2">
-                                {section.features.map((feature, featureIndex) => (
-                                  <motion.div
-                                    key={featureIndex}
-                                    initial={{ opacity: 0, x: -10 }}
-                                    whileInView={{ opacity: 1, x: 0 }}
-                                    transition={{ duration: 0.4, delay: (index * 0.1) + (featureIndex * 0.05) }}
-                                    viewport={{ once: true }}
-                                    className="flex items-center gap-2 text-sm text-muted-foreground"
-                                  >
-                                    <div className="w-1.5 h-1.5 bg-[#32B34F] rounded-full" />
-                                    {feature}
-                                  </motion.div>
-                                ))}
-                              </div>
-                            </div>
-                          </motion.div>
-                        ))}
-                      </div>
-
-                      {/* User Journey Flow */}
-                      <div className="mt-12">
-                        <h4 className="text-xl font-semibold mb-6 text-center">EV User Journey Flow</h4>
-                        <div className="flex flex-wrap justify-center items-center gap-4">
-                          {infoArchitecture.map((section, index) => (
-                            <div key={index} className="flex items-center">
-                              <div className="bg-muted/50 border border-border/50 rounded-lg px-4 py-2">
-                                <div className="flex items-center gap-2">
-                                  <section.icon className="w-4 h-4 text-[#32B34F]" />
-                                  <span className="text-sm font-medium">{section.title}</span>
-                                </div>
-                              </div>
-                              {index < infoArchitecture.length - 1 && (
-                                <ArrowRight className="w-4 h-4 text-muted-foreground mx-2" />
-                              )}
-                            </div>
-                          ))}
-                        </div>
+                    {/* Operational Flow */}
+                    <div className="p-8 bg-muted/10 border border-white/5 rounded-xl text-center space-y-6">
+                      <h4 className="text-xl font-bold text-white">Driver Charging Journey Map</h4>
+                      <div className="flex flex-wrap justify-center items-center gap-3">
+                        <div className="px-4 py-2 bg-[#32B34F]/20 rounded-lg text-sm text-white border border-[#32B34F]/30">Open Search Map</div>
+                        <ArrowRight className="w-4 h-4 text-muted-foreground" />
+                        <div className="px-4 py-2 bg-[#32B34F]/20 rounded-lg text-sm text-white border border-[#32B34F]/30">Locate Active Connector</div>
+                        <ArrowRight className="w-4 h-4 text-muted-foreground" />
+                        <div className="px-4 py-2 bg-[#32B34F]/20 rounded-lg text-sm text-white border border-[#32B34F]/30">RFID / App Tap Checkout</div>
+                        <ArrowRight className="w-4 h-4 text-muted-foreground" />
+                        <div className="px-4 py-2 bg-[#53ABF8]/20 rounded-lg text-sm text-white border border-[#53ABF8]/30">Completed Smart Charge Session</div>
                       </div>
                     </div>
                   </CardContent>
@@ -422,6 +477,7 @@ export default function IrisNetworkCaseStudy() {
               </motion.div>
             </TabsContent>
 
+            {/* PROCESS TAB */}
             <TabsContent value="process" className="space-y-8">
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
@@ -433,53 +489,88 @@ export default function IrisNetworkCaseStudy() {
                   <CardHeader>
                     <CardTitle className="text-3xl font-bold flex items-center gap-3">
                       <Settings className="w-8 h-8 text-[#32B34F]" />
-                      Design Process
+                      Design & Collaboration Process
                     </CardTitle>
                     <CardDescription>
-                      The methodology behind creating seamless charging experiences
+                      How we turned raw OCPP charger signals and mobile checkout fields into a unified ecosystem.
                     </CardDescription>
                   </CardHeader>
-                  <CardContent>
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-                      {[
-                        {
-                          phase: "Research",
-                          description: "Understanding EV user needs and charging behaviors",
-                          icon: Search
-                        },
-                        {
-                          phase: "Design",
-                          description: "Mobile app and dashboard interface design",
-                          icon: Zap
-                        },
-                        {
-                          phase: "Prototype",
-                          description: "Interactive prototypes and user testing",
-                          icon: Activity
-                        },
-                        {
-                          phase: "Launch",
-                          description: "Implementation and continuous optimization",
-                          icon: ArrowRight
-                        }
-                      ].map((step, index) => (
-                        <motion.div
-                          key={index}
-                          initial={{ opacity: 0, y: 20 }}
-                          whileInView={{ opacity: 1, y: 0 }}
-                          transition={{ duration: 0.6, delay: index * 0.1 }}
-                          viewport={{ once: true }}
-                          className="text-center p-6 rounded-lg bg-muted/50 border border-border/50"
-                        >
-                          <div className="flex justify-center mb-4">
-                            <div className="p-3 bg-[#32B34F]/20 rounded-lg">
-                              <step.icon className="w-8 h-8 text-[#32B34F]" />
-                            </div>
-                          </div>
-                          <h4 className="font-semibold mb-2">{step.phase}</h4>
-                          <p className="text-sm text-muted-foreground">{step.description}</p>
-                        </motion.div>
-                      ))}
+                  <CardContent className="space-y-12">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                      {/* Research */}
+                      <div className="space-y-4">
+                        <h3 className="text-xl font-semibold text-[#32B34F] flex items-center gap-2">
+                          <Badge className="bg-[#32B34F]/20 text-[#32B34F]">Phase 1</Badge>
+                          Research & Discovery
+                        </h3>
+                        <p className="text-sm text-muted-foreground leading-relaxed">
+                          We started by interviewing active EV drivers at public charging depots. We discovered they spent too much time dealing with failed layout systems at payment terminals rather than analyzing local plug locations.
+                        </p>
+                        <ul className="space-y-2 text-sm text-muted-foreground">
+                          <li className="flex items-center gap-2">
+                            <CheckCircle className="w-4 h-4 text-[#32B34F]" />
+                            Conducted operator workflow shadowing sessions.
+                          </li>
+                          <li className="flex items-center gap-2">
+                            <CheckCircle className="w-4 h-4 text-[#32B34F]" />
+                            Analyzed historical grid logs to map daily charging demand.
+                          </li>
+                          <li className="flex items-center gap-2">
+                            <CheckCircle className="w-4 h-4 text-[#32B34F]" />
+                            Identified efficiency bottlenecks in local charging interfaces.
+                          </li>
+                        </ul>
+                      </div>
+
+                      {/* Design */}
+                      <div className="space-y-4">
+                        <h3 className="text-xl font-semibold text-[#53ABF8] flex items-center gap-2">
+                          <Badge className="bg-[#53ABF8]/20 text-[#53ABF8]">Phase 2</Badge>
+                          Design & Prototyping
+                        </h3>
+                        <p className="text-sm text-muted-foreground leading-relaxed">
+                          Using the feedback insights, we designed clean modular charts, energy load indicators, and battery dials. We prioritized high-contrast green indicators so drivers could check operational plugs instantly.
+                        </p>
+                        <ul className="space-y-2 text-sm text-muted-foreground">
+                          <li className="flex items-center gap-2">
+                            <CheckCircle className="w-4 h-4 text-[#53ABF8]" />
+                            Built high-density custom state tables with dark theme aesthetics.
+                          </li>
+                          <li className="flex items-center gap-2">
+                            <CheckCircle className="w-4 h-4 text-[#53ABF8]" />
+                            Mocked interactive diagnostics charts in Figma with energy site managers.
+                          </li>
+                          <li className="flex items-center gap-2">
+                            <CheckCircle className="w-4 h-4 text-[#53ABF8]" />
+                            Refined color severity states for accessible status viewing.
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+
+                    {/* Developer Collaboration */}
+                    <div className="space-y-6 pt-6 border-t border-white/5">
+                      <h3 className="text-xl font-semibold text-white flex items-center gap-2">
+                        <Badge className="bg-emerald-500/20 text-emerald-400">Phase 3</Badge>
+                        Engineering Handoff & Collaboration
+                      </h3>
+                      <p className="text-sm text-muted-foreground leading-relaxed">
+                        To guarantee high fidelity implementation of driver interface parameters, I prepared precise layout templates in Figma Dev Mode. I sat down with frontend engineers to construct a reusable grid component structure, defining how live values refresh visually and mapping custom SVG vectors directly to websocket events.
+                      </p>
+                      <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                        <div className="p-4 bg-muted/10 border border-white/5 rounded-lg text-center">
+                          <h5 className="font-semibold text-white text-sm">Figma Spec Sync</h5>
+                          <p className="text-xs text-muted-foreground mt-1">Clean grid layouts matching CSS flex/grid rules perfectly.</p>
+                        </div>
+                        <div className="p-4 bg-muted/10 border border-white/5 rounded-lg text-center">
+                          <h5 className="font-semibold text-white text-sm">Scheduler Token Library</h5>
+                          <p className="text-xs text-muted-foreground mt-1">Color, spacing, and transition constants for components.</p>
+                        </div>
+                        <div className="p-4 bg-muted/10 border border-white/5 rounded-lg text-center">
+                          <h5 className="font-semibold text-white text-sm">Real-time Data Map</h5>
+                          <p className="text-xs text-muted-foreground mt-1">Direct mockups mapping websocket inputs to UI triggers.</p>
+                        </div>
+                      </div>
                     </div>
                   </CardContent>
                 </Card>
@@ -490,4 +581,4 @@ export default function IrisNetworkCaseStudy() {
       </div>
     </div>
   )
-} 
+}

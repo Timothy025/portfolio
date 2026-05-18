@@ -206,7 +206,7 @@ export default function Home() {
               transition={{ duration: 0.8, delay: 0.6 }}
               className="text-lg text-muted-foreground/80 max-w-2xl mx-auto leading-relaxed"
             >
-              UI/UX Designer with a passion for meaningful interfaces and impactful digital products.
+              Product Designer with a passion for meaningful interfaces and impactful digital products.
             </motion.p>
 
             {/* Skills Tags */}

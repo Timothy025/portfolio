@@ -134,121 +134,80 @@ export default function Contact() {
               </Card>
             </motion.div>
 
-            {/* Contact Information */}
+            {/* Contact Information Column */}
             <motion.div
               initial={{ opacity: 0, x: 20 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8, delay: 0.4 }}
               className="space-y-8"
             >
-              {/* Contact Details */}
-              <Card className="border-0 shadow-xl bg-background/50 backdrop-blur-sm">
-                <CardHeader>
-                  <CardTitle className="text-2xl font-bold font-space-grotesk">
-                    Contact Information
-                  </CardTitle>
-                  <p className="text-muted-foreground">
-                    Feel free to reach out through any of these channels.
-                  </p>
-                </CardHeader>
-                <CardContent className="space-y-4">
-                  {contactInfo.map((contact, index) => (
-                    <motion.div
-                      key={contact.label}
-                      initial={{ opacity: 0, x: 20 }}
-                      animate={{ opacity: 1, x: 0 }}
-                      transition={{ duration: 0.5, delay: 0.6 + index * 0.1 }}
-                      className="flex items-center space-x-4 p-4 rounded-lg hover:bg-muted/50 transition-colors"
-                    >
-                      <div className="w-12 h-12 bg-blue-500/10 rounded-lg flex items-center justify-center">
-                        <contact.icon className="w-6 h-6 text-blue-500" />
-                      </div>
-                      <div className="flex-1">
-                        <p className="text-sm text-muted-foreground">{contact.label}</p>
-                        {contact.href ? (
+              {/* Unified Profile & Contact Card */}
+              <Card className="border-0 shadow-xl bg-background/50 backdrop-blur-sm overflow-hidden relative">
+                <CardContent className="p-0">
+                  <div className="h-32 bg-gradient-to-r from-blue-500/20 to-cyan-500/20 w-full" />
+                  <div className="px-8 pb-8 -mt-16 flex flex-col items-center">
+                    <div className="p-1 bg-background rounded-full shadow-lg">
+                      <img 
+                        src="/profile.JPG" 
+                        alt="Timothy Jerald Xavier" 
+                        className="w-32 h-32 md:w-40 md:h-40 rounded-full object-cover border-4 border-background bg-muted"
+                      />
+                    </div>
+                    <h3 className="text-2xl font-bold font-space-grotesk mt-4">Timothy Jerald Xavier</h3>
+                    <p className="text-sm font-medium text-blue-500 mt-1">Product Designer & Developer</p>
+                    
+                    <div className="flex items-center space-x-3 mt-4 text-sm text-muted-foreground">
+                      <div className="flex items-center"><MapPin className="w-4 h-4 mr-1"/> India</div>
+                      <span>•</span>
+                      <div className="flex items-center text-green-500"><div className="w-2 h-2 bg-green-500 rounded-full mr-2" /> Available for work</div>
+                    </div>
+
+                    <div className="w-full h-px bg-border my-6" />
+
+                    <div className="w-full space-y-4">
+                      {contactInfo.map((contact) => (
+                        <div key={contact.label} className="flex items-center p-3 rounded-lg hover:bg-muted/50 transition-colors">
+                          <div className="w-10 h-10 bg-blue-500/10 rounded-full flex items-center justify-center mr-4">
+                            <contact.icon className="w-5 h-5 text-blue-500" />
+                          </div>
+                          <div className="flex-1">
+                            <p className="text-xs text-muted-foreground uppercase tracking-wider">{contact.label}</p>
+                            {contact.href ? (
+                              <Link href={contact.href} className="text-sm font-medium hover:text-blue-500 transition-colors">
+                                {contact.value}
+                              </Link>
+                            ) : (
+                              <p className="text-sm font-medium">{contact.value}</p>
+                            )}
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+
+                    <div className="w-full h-px bg-border my-6" />
+
+                    <div className="w-full flex justify-between items-center">
+                      <div className="flex space-x-2">
+                        {socialLinks.map((social) => (
                           <Link
-                            href={contact.href}
-                            className="text-base font-medium hover:text-blue-500 transition-colors"
+                            key={social.label}
+                            href={social.href}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className={`w-10 h-10 bg-muted/50 rounded-full flex items-center justify-center transition-all duration-300 ${social.color} hover:bg-muted`}
                           >
-                            {contact.value}
+                            <social.icon className="w-5 h-5" />
                           </Link>
-                        ) : (
-                          <p className="text-base font-medium">{contact.value}</p>
-                        )}
+                        ))}
                       </div>
-                    </motion.div>
-                  ))}
-                </CardContent>
-              </Card>
-
-              {/* Social Links */}
-              <Card className="border-0 shadow-xl bg-background/50 backdrop-blur-sm">
-                <CardHeader>
-                  <CardTitle className="text-2xl font-bold font-space-grotesk">
-                    Follow Me
-                  </CardTitle>
-                  <p className="text-muted-foreground">
-                    Connect with me on social platforms to see more of my work.
-                  </p>
-                </CardHeader>
-                <CardContent>
-                  <div className="flex space-x-4">
-                    {socialLinks.map((social, index) => (
-                      <motion.div
-                        key={social.label}
-                        initial={{ opacity: 0, y: 20 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.5, delay: 0.8 + index * 0.1 }}
+                      <Button
+                        size="sm"
+                        className="bg-gradient-to-r from-blue-500 to-cyan-500 hover:from-blue-600 hover:to-cyan-600 text-white"
+                        onClick={downloadResume}
                       >
-                        <Link
-                          href={social.href}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className={`w-12 h-12 bg-muted/50 rounded-lg flex items-center justify-center transition-all duration-300 ${social.color} hover:bg-muted`}
-                        >
-                          <social.icon className="w-6 h-6" />
-                        </Link>
-                      </motion.div>
-                    ))}
-                  </div>
-                </CardContent>
-              </Card>
-
-              {/* Download Resume */}
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: 1.0 }}
-              >
-                <Button
-                  size="lg"
-                  className="w-full bg-gradient-to-r from-blue-500 to-cyan-500 hover:from-blue-600 hover:to-cyan-600 text-white font-medium"
-                  onClick={downloadResume}
-                >
-                  <Download className="w-5 h-5 mr-2" />
-                  Download Resume
-                </Button>
-              </motion.div>
-
-              {/* Quick Response */}
-              <Card className="border-0 shadow-xl bg-gradient-to-r from-blue-500/10 to-cyan-500/10 backdrop-blur-sm">
-                <CardContent className="p-6">
-                  <h3 className="text-lg font-semibold mb-3">Quick Response</h3>
-                  <p className="text-sm text-muted-foreground mb-4">
-                    I typically respond within 24 hours during business days.
-                  </p>
-                  <div className="space-y-2 text-sm">
-                    <div className="flex items-center space-x-2">
-                      <div className="w-2 h-2 bg-green-500 rounded-full" />
-                      <span>Available for new projects</span>
-                    </div>
-                    <div className="flex items-center space-x-2">
-                      <div className="w-2 h-2 bg-blue-500 rounded-full" />
-                      <span>Open to freelance opportunities</span>
-                    </div>
-                    <div className="flex items-center space-x-2">
-                      <div className="w-2 h-2 bg-cyan-500 rounded-full" />
-                      <span>Willing to relocate for the right opportunity</span>
+                        <Download className="w-4 h-4 mr-2" />
+                        Resume CV
+                      </Button>
                     </div>
                   </div>
                 </CardContent>
