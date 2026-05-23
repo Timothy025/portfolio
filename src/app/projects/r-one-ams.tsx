@@ -88,7 +88,7 @@ export default function RoneAmsCaseStudy() {
             >
               <span className="text-[#F76258] text-xs font-semibold tracking-widest uppercase block">Overview</span>
               <p className="border-l-4 border-[#F76258] pl-6 md:pl-8 italic text-justify font-inter leading-relaxed">
-                EV charging reliability is an operations problem: installation quality, proactive maintenance, and fast field resolution. Most CPO teams run these workflows across fragmented tools, which turns downtime into default. Iris R-one was designed as a unified lifecycle management platform connecting central operations (web) and field technicians (mobile) into one operational system.
+                R-One is a comprehensive B2B application designed to centralize and streamline complex operational workflows for large-scale organizations. Built specifically to translate a high volume of complex data into actionable insights. By bringing two distinct worlds—central operations (web) and field execution (mobile)—into a single cohesive interface, the application ensures that vital information flows instantly and effortlessly.
               </p>
             </motion.div>
 
@@ -131,10 +131,10 @@ export default function RoneAmsCaseStudy() {
           <motion.div variants={fadeInUp} className="space-y-3">
             <span className="text-[#F76258] text-xs font-semibold tracking-widest uppercase block">Operational Model / The Challenge</span>
             <h3 className="text-[22px] font-semibold font-space-grotesk tracking-tight leading-tight">
-              The Friction of Fragmented Fleet Operations
+              The Divide Between Central Office and Field Teams
             </h3>
             <p className="text-lg md:text-[20px] text-muted-foreground/80 leading-relaxed w-full text-justify font-inter">
-              As EV charging networks grow, each charger becomes a complex telemetry node. Operations teams struggle to maintain reliability because alarms, work records, and field capacity are isolated.
+              Operational efficiency frequently breaks down when the tools used by field teams and central offices are disconnected. Central management teams faced significant hurdles in maintaining visibility across dispersed operations.
             </p>
           </motion.div>
 
@@ -144,27 +144,27 @@ export default function RoneAmsCaseStudy() {
                 <div key={0} className="space-y-1 pt-4 first:pt-0 border-t first:border-t-0 border-border/10">
                   <h4 className="font-bold text-foreground font-space-grotesk uppercase tracking-wider text-xs flex items-center gap-2">
                     <span className="w-1.5 h-1.5 rounded-full bg-red-500/80 animate-pulse" />
-                    01 / Isolated Operations Data
+                    01 / Fragmented Oversight
                   </h4>
-                  <p className="text-sm pl-3.5 text-justify font-inter">Telemetry logs, maintenance history, and inventory ledgers lived in distinct legacy silos.</p>
+                  <p className="text-sm pl-3.5 text-justify font-inter">Information regarding different locations, assets, and teams was scattered across disparate systems.</p>
                 </div>
   
 
                 <div key={1} className="space-y-1 pt-4 first:pt-0 border-t first:border-t-0 border-border/10">
                   <h4 className="font-bold text-foreground font-space-grotesk uppercase tracking-wider text-xs flex items-center gap-2">
                     <span className="w-1.5 h-1.5 rounded-full bg-red-500/80 animate-pulse" />
-                    02 / Reactive Dispatching Model
+                    02 / Field Context Loss
                   </h4>
-                  <p className="text-sm pl-3.5 text-justify font-inter">Field teams were dispatched only after charger failed, causing prolonged offline durations.</p>
+                  <p className="text-sm pl-3.5 text-justify font-inter">Field teams struggled with clunky interfaces that were hard to read outdoors and use with gloves.</p>
                 </div>
   
 
                 <div key={2} className="space-y-1 pt-4 first:pt-0 border-t first:border-t-0 border-border/10">
                   <h4 className="font-bold text-foreground font-space-grotesk uppercase tracking-wider text-xs flex items-center gap-2">
                     <span className="w-1.5 h-1.5 rounded-full bg-red-500/80 animate-pulse" />
-                    03 / Installation Verification Gaps
+                    03 / Reactive Operations
                   </h4>
-                  <p className="text-sm pl-3.5 text-justify font-inter">Sub-par installation audits led to early component failure and repeating repairs.</p>
+                  <p className="text-sm pl-3.5 text-justify font-inter">Without real-time field visibility, central management relied on reactive maintenance and manual status updates.</p>
                 </div>
   
             </div>
@@ -181,10 +181,10 @@ export default function RoneAmsCaseStudy() {
           <motion.div variants={fadeInUp} className="space-y-3 w-full">
             <span className="text-[#F76258] text-xs font-semibold tracking-widest uppercase block">Operational Model / Reality</span>
             <h3 className="text-[22px] font-semibold font-space-grotesk tracking-tight md:whitespace-nowrap">
-              Two Roles, One Shared Telemetry Loop
+              Two Roles, One Unified Ecosystem
             </h3>
             <p className="text-lg md:text-[20px] text-muted-foreground w-full text-justify font-inter">
-              We structured Iris R-one to serve central operations planners working under complex analytical views, and field technicians executing work under extreme time pressure.
+              The platform was designed around two distinct yet complementary user experiences tailored to the specific needs of central dispatchers and field technicians.
             </p>
           </motion.div>
 
@@ -202,7 +202,7 @@ export default function RoneAmsCaseStudy() {
                 )}
               >
                 <Smartphone className="w-4 h-4 mr-2 flex-shrink-0" />
-                <span className="truncate">Central Dispatcher</span>
+                <span className="truncate">Central Manager (Web)</span>
               </Button>
               <Button
                 onClick={() => setSelectedRole("seller")}
@@ -214,7 +214,7 @@ export default function RoneAmsCaseStudy() {
                 )}
               >
                 <Bot className="w-4 h-4 mr-2 flex-shrink-0" />
-                <span className="truncate">Field Technician</span>
+                <span className="truncate">Field Technician (Mobile)</span>
               </Button>
             </div>
           </motion.div>
@@ -235,31 +235,31 @@ export default function RoneAmsCaseStudy() {
                     </span>
                     <div>
                       <h4 className="text-xl font-bold font-space-grotesk tracking-wide text-foreground">
-                        Central Dispatcher (High-Information Triage)
+                        Central Manager (Web) (High-Level Proactive Control)
                       </h4>
                       <p className="text-xs text-[#F76258] font-mono tracking-wider uppercase">Archetype: "High-Confidence"</p>
                     </div>
                   </div>
                   <p className="text-sm text-muted-foreground/90 leading-relaxed font-inter text-justify font-light">
-                    The Dispatcher coordinates network alarms, schedules maintenance workpacks, and tracks team capacity. The design optimizes for fast searchability and action:
+                    For the central user, the solution prioritizes clarity, data density, and immediate visibility. The focus is to translate complex data into clear actionable insights:
                   </p>
                   <ul className="space-y-3.5">
                     
                       <li key={0} className="flex gap-3 text-sm text-muted-foreground text-justify font-inter">
                         <CheckCircle2 className="w-4 h-4 text-[#F76258] flex-shrink-0 mt-0.5" />
-                        <span>Aggregates regional telemetry streams into a single, ranked alarm view.</span>
+                        <span>Streamlines project creation through guided workflows, reducing administrative setup time.</span>
                       </li>
   
 
                       <li key={1} className="flex gap-3 text-sm text-muted-foreground text-justify font-inter">
                         <CheckCircle2 className="w-4 h-4 text-[#F76258] flex-shrink-0 mt-0.5" />
-                        <span>Calculates live R-scores representing charger operational risk and health.</span>
+                        <span>Transforms maintenance from a reactive chore to a proactive strategy via visual calendars.</span>
                       </li>
   
 
                       <li key={2} className="flex gap-3 text-sm text-muted-foreground text-justify font-inter">
                         <CheckCircle2 className="w-4 h-4 text-[#F76258] flex-shrink-0 mt-0.5" />
-                        <span>Enables drag-and-drop worker dispatching based on capacity and proximity.</span>
+                        <span>Combats information overload with a smart, prioritized alert system across operations.</span>
                       </li>
   
                   </ul>
@@ -269,36 +269,36 @@ export default function RoneAmsCaseStudy() {
                     Overview Screen
                   </div>
                   <div className="border-b border-border/30 pb-3">
-                    <div className="font-bold text-foreground text-xs font-space-grotesk uppercase tracking-wider mb-1">{"⚡ Central Ops Telemetry Console"}</div>
-                    <div className="text-[10px]">{"Filter: Active Alarms • Proximity • High Risk"}</div>
+                    <div className="font-bold text-foreground text-xs font-space-grotesk uppercase tracking-wider mb-1">{"⚡ Central Ops Command Dashboard"}</div>
+                    <div className="text-[10px]">{"Filter: High Priority • Proximity • Active"}</div>
                   </div>
                   
                       <div key={0} className="p-3 rounded-lg bg-card/60 border border-border/40 flex justify-between items-center">
                         <div>
-                          <div className="font-bold text-foreground">🔋 Charger Hub North-4</div>
-                          <div className="text-[10px]">Risk: Critical (R-Score: 23) • Delhi</div>
+                          <div className="font-bold text-foreground">⚠️ Priority Alert: Generator 4</div>
+                          <div className="text-[10px]">Status: Critical Temp • Zone B</div>
                         </div>
                         <div className="text-right font-mono">
-                          <div className="font-bold text-[#F76258] text-xs">Alarm: Current Spike</div>
-                          <div>Tech: 2.3 miles near</div>
+                          <div className="font-bold text-[#F76258] text-xs">Action: Acknowledge</div>
+                          <div>Impact: High</div>
                         </div>
                       </div>
   
 
                       <div key={1} className="p-3 rounded-lg bg-card/60 border border-border/40 flex justify-between items-center">
                         <div>
-                          <div className="font-bold text-foreground">🔌 Fast Charger South-1</div>
-                          <div className="text-[10px]">Risk: High (R-Score: 45) • Noida</div>
+                          <div className="font-bold text-foreground">📋 Project Setup: Site Alpha</div>
+                          <div className="text-[10px]">Status: Draft Saved • 80% Complete</div>
                         </div>
                         <div className="text-right font-mono">
-                          <div className="font-bold text-[#F76258] text-xs">Alarm: Fan Failure</div>
-                          <div>Tech: 4.8 miles near</div>
+                          <div className="font-bold text-[#F76258] text-xs">Action: Resume Setup</div>
+                          <div>Due: Tomorrow</div>
                         </div>
                       </div>
   
                   <div className="p-2.5 rounded-lg bg-[#F76258]/10 border border-[#F76258]/20 flex items-center justify-between text-foreground">
                     <span>Double Confirmation</span>
-                    <span className="font-bold text-xs uppercase tracking-wider">{"Drag to Dispatch Technician"}</span>
+                    <span className="font-bold text-xs uppercase tracking-wider">{"Review Operations Map"}</span>
                   </div>
                 </div>
               </div>
@@ -311,31 +311,31 @@ export default function RoneAmsCaseStudy() {
                     </span>
                     <div>
                       <h4 className="text-xl font-bold font-space-grotesk tracking-wide text-foreground">
-                        Field Technician (Guided Field Execution)
+                        Field Technician (Mobile) (Contextual Field Execution)
                       </h4>
                       <p className="text-xs text-[#F76258] font-mono tracking-wider uppercase">Archetype: "Action-Oriented"</p>
                     </div>
                   </div>
                   <p className="text-sm text-muted-foreground/90 leading-relaxed font-inter text-justify font-light">
-                    The Technician needs a mobile experience that acts as a secure, predictable guide. The app works offline and provides exact diagnostic context to eliminate guesswork:
+                    For the field user, the solution prioritizes physical context and ease of interaction on the go. The interface feels lightweight and tactile:
                   </p>
                   <ul className="space-y-3.5">
                     
                       <li key={0} className="flex gap-3 text-sm text-muted-foreground text-justify font-inter">
                         <CheckCircle2 className="w-4 h-4 text-[#F76258] flex-shrink-0 mt-0.5" />
-                        <span>Presents guided, step-by-step checklists with required audit photo evidence.</span>
+                        <span>Roots all tasks in Map-First Navigation, eliminating the need to dig through text lists.</span>
                       </li>
   
 
                       <li key={1} className="flex gap-3 text-sm text-muted-foreground text-justify font-inter">
                         <CheckCircle2 className="w-4 h-4 text-[#F76258] flex-shrink-0 mt-0.5" />
-                        <span>Displays live telemetry parameters directly on the workpack screen.</span>
+                        <span>Uses Contextual Bottom Sheets to log information without losing spatial context.</span>
                       </li>
   
 
                       <li key={2} className="flex gap-3 text-sm text-muted-foreground text-justify font-inter">
                         <CheckCircle2 className="w-4 h-4 text-[#F76258] flex-shrink-0 mt-0.5" />
-                        <span>Features a simple parts inventory checkout scanner to record hardware updates.</span>
+                        <span>Employs thumb-friendly interaction and camera scanning to replace manual typing.</span>
                       </li>
   
                   </ul>
@@ -453,7 +453,7 @@ export default function RoneAmsCaseStudy() {
                 <div className="w-11 h-11 rounded-full bg-[#F76258]/10 text-[#F76258] flex items-center justify-center font-bold font-space-grotesk text-lg border border-[#F76258]/20">01</div>
                 <div>
                   <h4 className="text-[22px] font-semibold font-space-grotesk tracking-wide text-foreground">
-                    Predictive Telemetry & R-Score
+                    Intelligent Alert Management
                   </h4>
                   <p className="text-xs text-muted-foreground font-mono">undefined</p>
                 </div>
@@ -464,14 +464,14 @@ export default function RoneAmsCaseStudy() {
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 leading-relaxed items-center">
               <div className="lg:col-span-7 space-y-5 font-inter text-[18px] text-muted-foreground/90">
                 <p className="text-justify font-inter">
-                  We designed a unified health indicator (R-score) that evaluates charger temperature, historical faults, and recent usage peaks to assign action items to operators before a physical failure occurs.
+                  To combat information overload for the central user, we designed a smart alert system categorized by severity, ensuring critical safety hazards surface immediately over routine updates.
                 </p>
               </div>
               
               <div className="lg:col-span-5 flex items-center justify-center w-full">
                 
                   <div className="h-28 border border-border/20 rounded-lg bg-card/30 p-2 flex items-end relative overflow-hidden">
-                    <div dangerouslySetInnerHTML={{ __html: "<svg className=\"w-full h-[70%] stroke-[#3b82f6] fill-none stroke-[2]\" viewBox=\"0 0 100 30\">\n                    <path d=\"M 0 10 Q 30 25, 50 5 T 90 20 T 100 10\" />\n                    <circle cx=\"50\" cy=\"5\" r=\"3\" className=\"fill-[#3b82f6] stroke-white stroke-[1]\" />\n                  </svg>" }} className="w-full" />
+                    <div dangerouslySetInnerHTML={{ __html: "<svg className=\"w-full h-[70%] stroke-[#F76258] fill-none stroke-[2]\" viewBox=\"0 0 100 30\">\n                    <path d=\"M 0 10 Q 30 25, 50 5 T 90 20 T 100 10\" />\n                    <circle cx=\"50\" cy=\"5\" r=\"3\" className=\"fill-[#F76258] stroke-white stroke-[1]\" />\n                  </svg>" }} className="w-full" />
                   </div>
   
               </div>
@@ -485,7 +485,7 @@ export default function RoneAmsCaseStudy() {
                 <div className="w-11 h-11 rounded-full bg-[#3EBAF4]/10 text-[#3EBAF4] flex items-center justify-center font-bold font-space-grotesk text-lg border border-[#3EBAF4]/20">02</div>
                 <div>
                   <h4 className="text-[22px] font-semibold font-space-grotesk tracking-wide text-foreground">
-                    Interactive Dispatch Map
+                    Map-First Navigation
                   </h4>
                   <p className="text-xs text-muted-foreground font-mono">undefined</p>
                 </div>
@@ -499,7 +499,7 @@ export default function RoneAmsCaseStudy() {
                 <div className="relative rounded-3xl overflow-hidden border border-border/40 shadow-2xl bg-card max-w-[220px]">
                   <img 
                     src="undefined" 
-                    alt="Interactive Dispatch Map" 
+                    alt="Map-First Navigation" 
                     className="w-full h-auto object-contain transition-transform duration-300 hover:scale-105"
                   />
                 </div>
@@ -508,7 +508,7 @@ export default function RoneAmsCaseStudy() {
               {/* Text Right */}
               <div className="lg:col-span-7 space-y-5 font-inter text-base md:text-[18px] text-muted-foreground/90 order-1 lg:order-2">
                 <p className="text-justify font-inter">
-                  Designed an interactive map interface linking incoming alarms with live field technician coordinates, allowing dispatchers to issue tickets with one click.
+                  For field workers, we replaced traditional text-heavy task lists with a geographical map view, allowing them to see nearby stations and tap to view work immediately.
                 </p>
               </div>
             </div>
@@ -521,7 +521,7 @@ export default function RoneAmsCaseStudy() {
                 <div className="w-11 h-11 rounded-full bg-[#F76258]/10 text-[#F76258] flex items-center justify-center font-bold font-space-grotesk text-lg border border-[#F76258]/20">03</div>
                 <div>
                   <h4 className="text-[22px] font-semibold font-space-grotesk tracking-wide text-foreground">
-                    Guided Workpack Execution
+                    Guided Workflows & Scanning
                   </h4>
                   <p className="text-xs text-muted-foreground font-mono">undefined</p>
                 </div>
@@ -532,14 +532,14 @@ export default function RoneAmsCaseStudy() {
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 leading-relaxed items-center">
               <div className="lg:col-span-7 space-y-5 font-inter text-[18px] text-muted-foreground/90">
                 <p className="text-justify font-inter">
-                  Built a robust mobile workflow that keeps all checklist guides, charger manuals, and wiring schematics cached locally, ensuring uninterrupted work in concrete parking structures.
+                  We broke down complex project setups into step-by-step flows and introduced camera scanning for equipment identification, removing error-prone manual typing from the field.
                 </p>
               </div>
               
               <div className="lg:col-span-5 p-5 bg-[#0B0B0C] border border-border/30 rounded-2xl font-mono text-[10px] text-muted-foreground flex flex-col gap-3">
-                <span className="text-[9px] uppercase tracking-wider text-muted-foreground border-b border-border/20 pb-2">📈 First-Time Fix Rates</span>
+                <span className="text-[9px] uppercase tracking-wider text-muted-foreground border-b border-border/20 pb-2">📈 Field Data Accuracy</span>
                 
-                <div dangerouslySetInnerHTML={{ __html: "<div className=\"h-28 flex items-end justify-between gap-2 px-4 py-2 border border-border/20 rounded-lg bg-card/30\">\n                  <div className=\"w-8 bg-[#3b82f6] rounded-t-sm\" style={{ height: \"65%\" }} />\n                  <div className=\"w-8 bg-[#4b92f6] rounded-t-sm\" style={{ height: \"75%\" }} />\n                  <div className=\"w-8 bg-[#5ba2f6] rounded-t-sm\" style={{ height: \"92%\" }} />\n                  <div className=\"w-8 bg-muted rounded-t-sm\" style={{ height: \"45%\" }} />\n                </div>" }} />
+                <div dangerouslySetInnerHTML={{ __html: "<div className=\"h-28 flex items-end justify-between gap-2 px-4 py-2 border border-border/20 rounded-lg bg-card/30\">\n                  <div className=\"w-8 bg-[#F76258] rounded-t-sm\" style={{ height: \"65%\" }} />\n                  <div className=\"w-8 bg-[#FA8A82] rounded-t-sm\" style={{ height: \"85%\" }} />\n                  <div className=\"w-8 bg-[#FCA59E] rounded-t-sm\" style={{ height: \"95%\" }} />\n                  <div className=\"w-8 bg-muted rounded-t-sm\" style={{ height: \"45%\" }} />\n                </div>" }} />
   
                 <div className="flex justify-between text-[8px] text-muted-foreground font-mono px-2">
                   <span>Mon</span>
@@ -580,14 +580,14 @@ export default function RoneAmsCaseStudy() {
                 <div className="absolute inset-0 bg-gradient-to-br from-[#F76258]/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
                 <div className="relative z-10 space-y-4">
                   <div className="text-4xl font-black font-space-grotesk bg-gradient-to-r from-[#F76258] to-foreground bg-clip-text text-transparent">
-                    15%
+                    60%
                   </div>
                   <div>
                     <h4 className="text-base font-bold font-space-grotesk tracking-wide text-foreground mb-1">
-                      Charger Uptime Gain
+                      Faster Task Completion
                     </h4>
                     <p className="text-xs text-muted-foreground leading-relaxed text-justify font-inter">
-                      Preventative alerts routed to close technicians avoided system failures.
+                      One-tap scanning and bottom-sheet forms reduced screen time for field workers.
                     </p>
                   </div>
                 </div>
@@ -602,14 +602,14 @@ export default function RoneAmsCaseStudy() {
                 <div className="absolute inset-0 bg-gradient-to-br from-[#F76258]/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
                 <div className="relative z-10 space-y-4">
                   <div className="text-4xl font-black font-space-grotesk bg-gradient-to-r from-[#F76258] to-foreground bg-clip-text text-transparent">
-                    0%
+                    100%
                   </div>
                   <div>
                     <h4 className="text-base font-bold font-space-grotesk tracking-wide text-foreground mb-1">
-                      Repeat Fields Trips
+                      Real-Time Visibility
                     </h4>
                     <p className="text-xs text-muted-foreground leading-relaxed text-justify font-inter">
-                      Ensured technicians dispatched carried exact diagnostic context and parts.
+                      Central management stopped relying on end-of-day reports thanks to unified feeds.
                     </p>
                   </div>
                 </div>
@@ -624,14 +624,14 @@ export default function RoneAmsCaseStudy() {
                 <div className="absolute inset-0 bg-gradient-to-br from-[#F76258]/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
                 <div className="relative z-10 space-y-4">
                   <div className="text-4xl font-black font-space-grotesk bg-gradient-to-r from-[#F76258] to-foreground bg-clip-text text-transparent">
-                    2x
+                    80%
                   </div>
                   <div>
                     <h4 className="text-base font-bold font-space-grotesk tracking-wide text-foreground mb-1">
-                      Triage Resolution Speed
+                      Reduction in Data Errors
                     </h4>
                     <p className="text-xs text-muted-foreground leading-relaxed text-justify font-inter">
-                      Unified alarm feed and telemetry enabled operators to diagnose issues immediately.
+                      Replaced manual field typing with camera scanning and large selection toggles.
                     </p>
                   </div>
                 </div>
@@ -659,23 +659,23 @@ export default function RoneAmsCaseStudy() {
             className="space-y-8 text-lg md:text-[20px] leading-relaxed text-muted-foreground/90 font-inter w-full"
           >
             <p className="text-lg md:text-[20px] font-light text-foreground leading-relaxed border-l-4 border-[#F76258] pl-6 italic text-justify w-full font-inter font-light">
-              "EV charger reliability is a workflow orchestration problem, not a technical capability limitation."
+              "Context Over Complexity: Users don't need to see everything; they need to see what is immediately relevant to their role."
             </p>
             <p className="text-base md:text-lg text-muted-foreground font-light pl-6 text-justify font-inter">
-              Unifying operations meant acknowledging that a system is only as reliable as its most isolated user. By building trust cues into the technician mobile app and high-density maps into web console, we aligned the entire team.
+              Designing for the Central User reinforced that visual clarity prevents cognitive overload, while designing for the Field User showed that high contrast and thumb-friendly targets are essential for environmental usability.
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 pt-4 w-full pl-6">
               
                 <div key={0} className="space-y-2 text-justify font-inter">
-                  <h4 className="font-bold text-foreground font-space-grotesk uppercase tracking-wider text-xs">01 / Explainability drives action</h4>
-                  <p className="text-sm text-justify font-inter">Structured dense alarm telemetry into intuitive severity states.</p>
+                  <h4 className="font-bold text-foreground font-space-grotesk uppercase tracking-wider text-xs">01 / A Shared Visual Language</h4>
+                  <p className="text-sm text-justify font-inter">Using the same modern typography and card styles across platforms fostered a sense of unity.</p>
                 </div>
   
 
                 <div key={1} className="space-y-2 text-justify font-inter">
-                  <h4 className="font-bold text-foreground font-space-grotesk uppercase tracking-wider text-xs">02 / Design for decision moments</h4>
-                  <p className="text-sm text-justify font-inter">Positioned diagnostic history next to active checklists, eliminating guesswork.</p>
+                  <h4 className="font-bold text-foreground font-space-grotesk uppercase tracking-wider text-xs">02 / Prioritization is Key</h4>
+                  <p className="text-sm text-justify font-inter">Systems that automatically prioritize urgent tasks are essential for crisis management.</p>
                 </div>
   
             </div>

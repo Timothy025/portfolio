@@ -107,47 +107,47 @@ const projectsData = {
     roleName: "Lead Product Designer",
     platform: "Web Console & Field Mobile",
     techStack: "React, Next.js, Framer Motion, TailWind, Expo",
-    tagline: "End-to-end EV charger lifecycle platform connecting central operations and field technicians into one system.",
-    overview1: "EV charging reliability is an operations problem: installation quality, proactive maintenance, and fast field resolution. Most CPO teams run these workflows across fragmented tools, which turns downtime into default.",
-    overview2: "Iris R-one was designed as a unified lifecycle management platform connecting central operations (web) and field technicians (mobile) into one operational system.",
+    tagline: "A unified digital ecosystem seamlessly connecting central management with on-the-ground field execution.",
+    overview1: "R-One is a comprehensive B2B application designed to centralize and streamline complex operational workflows for large-scale organizations. Built specifically to translate a high volume of complex data into actionable insights.",
+    overview2: "By bringing two distinct worlds—central operations (web) and field execution (mobile)—into a single cohesive interface, the application ensures that vital information flows instantly and effortlessly.",
     stats: [
-      { metric: "15%", label: "Charger Uptime Gain", desc: "Preventative alerts routed to close technicians avoided system failures." },
-      { metric: "0%", label: "Repeat Fields Trips", desc: "Ensured technicians dispatched carried exact diagnostic context and parts." },
-      { metric: "2x", label: "Triage Resolution Speed", desc: "Unified alarm feed and telemetry enabled operators to diagnose issues immediately." }
+      { metric: "60%", label: "Faster Task Completion", desc: "One-tap scanning and bottom-sheet forms reduced screen time for field workers." },
+      { metric: "100%", label: "Real-Time Visibility", desc: "Central management stopped relying on end-of-day reports thanks to unified feeds." },
+      { metric: "80%", label: "Reduction in Data Errors", desc: "Replaced manual field typing with camera scanning and large selection toggles." }
     ],
-    challengeTitle: "The Friction of Fragmented Fleet Operations",
-    challengeDesc: "As EV charging networks grow, each charger becomes a complex telemetry node. Operations teams struggle to maintain reliability because alarms, work records, and field capacity are isolated.",
+    challengeTitle: "The Divide Between Central Office and Field Teams",
+    challengeDesc: "Operational efficiency frequently breaks down when the tools used by field teams and central offices are disconnected. Central management teams faced significant hurdles in maintaining visibility across dispersed operations.",
     breakdowns: [
-      { num: "01 / Isolated Operations Data", desc: "Telemetry logs, maintenance history, and inventory ledgers lived in distinct legacy silos." },
-      { num: "02 / Reactive Dispatching Model", desc: "Field teams were dispatched only after charger failed, causing prolonged offline durations." },
-      { num: "03 / Installation Verification Gaps", desc: "Sub-par installation audits led to early component failure and repeating repairs." }
+      { num: "01 / Fragmented Oversight", desc: "Information regarding different locations, assets, and teams was scattered across disparate systems." },
+      { num: "02 / Field Context Loss", desc: "Field teams struggled with clunky interfaces that were hard to read outdoors and use with gloves." },
+      { num: "03 / Reactive Operations", desc: "Without real-time field visibility, central management relied on reactive maintenance and manual status updates." }
     ],
-    roleSubtitle: "Two Roles, One Shared Telemetry Loop",
-    roleDesc: "We structured Iris R-one to serve central operations planners working under complex analytical views, and field technicians executing work under extreme time pressure.",
+    roleSubtitle: "Two Roles, One Unified Ecosystem",
+    roleDesc: "The platform was designed around two distinct yet complementary user experiences tailored to the specific needs of central dispatchers and field technicians.",
     role1Name: "buyer",
-    role1Label: "Central Dispatcher",
-    role1Archetype: "High-Information Triage",
-    role1Desc: "The Dispatcher coordinates network alarms, schedules maintenance workpacks, and tracks team capacity. The design optimizes for fast searchability and action:",
+    role1Label: "Central Manager (Web)",
+    role1Archetype: "High-Level Proactive Control",
+    role1Desc: "For the central user, the solution prioritizes clarity, data density, and immediate visibility. The focus is to translate complex data into clear actionable insights:",
     role1Items: [
-      "Aggregates regional telemetry streams into a single, ranked alarm view.",
-      "Calculates live R-scores representing charger operational risk and health.",
-      "Enables drag-and-drop worker dispatching based on capacity and proximity."
+      "Streamlines project creation through guided workflows, reducing administrative setup time.",
+      "Transforms maintenance from a reactive chore to a proactive strategy via visual calendars.",
+      "Combats information overload with a smart, prioritized alert system across operations."
     ],
-    role1ScreenTitle: "⚡ Central Ops Telemetry Console",
-    role1ScreenFilter: "Filter: Active Alarms • Proximity • High Risk",
+    role1ScreenTitle: "⚡ Central Ops Command Dashboard",
+    role1ScreenFilter: "Filter: High Priority • Proximity • Active",
     role1ScreenItems: [
-      { name: "🔋 Charger Hub North-4", slot: "Risk: Critical (R-Score: 23) • Delhi", rate: "Alarm: Current Spike", info: "Tech: 2.3 miles near" },
-      { name: "🔌 Fast Charger South-1", slot: "Risk: High (R-Score: 45) • Noida", rate: "Alarm: Fan Failure", info: "Tech: 4.8 miles near" }
+      { name: "⚠️ Priority Alert: Generator 4", slot: "Status: Critical Temp • Zone B", rate: "Action: Acknowledge", info: "Impact: High" },
+      { name: "📋 Project Setup: Site Alpha", slot: "Status: Draft Saved • 80% Complete", rate: "Action: Resume Setup", info: "Due: Tomorrow" }
     ],
-    role1ScreenCta: "Drag to Dispatch Technician",
+    role1ScreenCta: "Review Operations Map",
     role2Name: "seller",
-    role2Label: "Field Technician",
-    role2Archetype: "Guided Field Execution",
-    role2Desc: "The Technician needs a mobile experience that acts as a secure, predictable guide. The app works offline and provides exact diagnostic context to eliminate guesswork:",
+    role2Label: "Field Technician (Mobile)",
+    role2Archetype: "Contextual Field Execution",
+    role2Desc: "For the field user, the solution prioritizes physical context and ease of interaction on the go. The interface feels lightweight and tactile:",
     role2Items: [
-      "Presents guided, step-by-step checklists with required audit photo evidence.",
-      "Displays live telemetry parameters directly on the workpack screen.",
-      "Features a simple parts inventory checkout scanner to record hardware updates."
+      "Roots all tasks in Map-First Navigation, eliminating the need to dig through text lists.",
+      "Uses Contextual Bottom Sheets to log information without losing spatial context.",
+      "Employs thumb-friendly interaction and camera scanning to replace manual typing."
     ],
     role2ScreenTitle: "📱 Tech Mobile Execution App",
     role2ScreenFilter: "Session Status: On-Site Verified",
@@ -156,36 +156,36 @@ const projectsData = {
       { name: "Workpack #430 - KYC Inspect", slot: "Asset ID: CHG-2319 • Slot: C1", rate: "Action: Grounding Test", info: "Evid: Signed form" }
     ],
     role2ScreenCta: "Complete Checklist (↑)",
-    designEvolutionDesc: "To validate R-one’s high-density workflow, we went through exhaustive gray-box interactive testing followed by a robust structural system token mapping in Figma.",
-    wireframeDesc: "Laid out dense web tables and mobile checklist cards. Usability testing revealed that multi-step forms caused technicians to lose context, prompting us to group steps into expanding accordion sheets.",
-    designSystemDesc: "Created Figma variables maps for telemetry indicator colors. Ensured status states and alarm thresholds share identical color variables across design and frontend code.",
-    designMove1Title: "Predictive Telemetry & R-Score",
-    designMove1Sub: "Prioritizing risk before failure",
-    designMove1Desc: "We designed a unified health indicator (R-score) that evaluates charger temperature, historical faults, and recent usage peaks to assign action items to operators before a physical failure occurs.",
-    designMove1GraphTitle: "📊 EV Grid Loading Factor",
-    designMove1Svg: `<svg className="w-full h-[70%] stroke-[#3b82f6] fill-none stroke-[2]" viewBox="0 0 100 30">
+    designEvolutionDesc: "To bridge the gap between heavy enterprise data and fast field execution, we tested gray-box prototypes with both managers and technicians, identifying key cognitive friction points.",
+    wireframeDesc: "Laid out dense web dashboards and mobile task cards. Usability testing revealed that field workers lost context in nested menus, prompting the shift to map-first navigation and bottom sheets.",
+    designSystemDesc: "Created a unified visual language with Figma tokens. We ensured that status colors and interactive elements felt identical across both the high-density web app and the high-contrast mobile app.",
+    designMove1Title: "Intelligent Alert Management",
+    designMove1Sub: "Prioritizing critical signals",
+    designMove1Desc: "To combat information overload for the central user, we designed a smart alert system categorized by severity, ensuring critical safety hazards surface immediately over routine updates.",
+    designMove1GraphTitle: "📊 Alert Response Time",
+    designMove1Svg: `<svg className="w-full h-[70%] stroke-[#F76258] fill-none stroke-[2]" viewBox="0 0 100 30">
                     <path d="M 0 10 Q 30 25, 50 5 T 90 20 T 100 10" />
-                    <circle cx="50" cy="5" r="3" className="fill-[#3b82f6] stroke-white stroke-[1]" />
+                    <circle cx="50" cy="5" r="3" className="fill-[#F76258] stroke-white stroke-[1]" />
                   </svg>`,
-    designMove1GraphFooter: "Telemetry Curve",
-    designMove2Title: "Interactive Dispatch Map",
-    designMove2Sub: "Matching capacity with risk",
-    designMove2Desc: "Designed an interactive map interface linking incoming alarms with live field technician coordinates, allowing dispatchers to issue tickets with one click.",
-    designMove3Title: "Guided Workpack Execution",
-    designMove3Sub: "Offline diagnostic support",
-    designMove3Desc: "Built a robust mobile workflow that keeps all checklist guides, charger manuals, and wiring schematics cached locally, ensuring uninterrupted work in concrete parking structures.",
-    designMove3GraphTitle: "📈 First-Time Fix Rates",
+    designMove1GraphFooter: "Resolution Curve",
+    designMove2Title: "Map-First Navigation",
+    designMove2Sub: "Rooting tasks in reality",
+    designMove2Desc: "For field workers, we replaced traditional text-heavy task lists with a geographical map view, allowing them to see nearby stations and tap to view work immediately.",
+    designMove3Title: "Guided Workflows & Scanning",
+    designMove3Sub: "Reducing field data errors",
+    designMove3Desc: "We broke down complex project setups into step-by-step flows and introduced camera scanning for equipment identification, removing error-prone manual typing from the field.",
+    designMove3GraphTitle: "📈 Field Data Accuracy",
     designMove3GraphSvg: `<div className="h-28 flex items-end justify-between gap-2 px-4 py-2 border border-border/20 rounded-lg bg-card/30">
-                  <div className="w-8 bg-[#3b82f6] rounded-t-sm" style={{ height: "65%" }} />
-                  <div className="w-8 bg-[#4b92f6] rounded-t-sm" style={{ height: "75%" }} />
-                  <div className="w-8 bg-[#5ba2f6] rounded-t-sm" style={{ height: "92%" }} />
+                  <div className="w-8 bg-[#F76258] rounded-t-sm" style={{ height: "65%" }} />
+                  <div className="w-8 bg-[#FA8A82] rounded-t-sm" style={{ height: "85%" }} />
+                  <div className="w-8 bg-[#FCA59E] rounded-t-sm" style={{ height: "95%" }} />
                   <div className="w-8 bg-muted rounded-t-sm" style={{ height: "45%" }} />
                 </div>`,
-    learningQuote: "EV charger reliability is a workflow orchestration problem, not a technical capability limitation.",
-    learningDesc: "Unifying operations meant acknowledging that a system is only as reliable as its most isolated user. By building trust cues into the technician mobile app and high-density maps into web console, we aligned the entire team.",
+    learningQuote: "Context Over Complexity: Users don't need to see everything; they need to see what is immediately relevant to their role.",
+    learningDesc: "Designing for the Central User reinforced that visual clarity prevents cognitive overload, while designing for the Field User showed that high contrast and thumb-friendly targets are essential for environmental usability.",
     checkpoints: [
-      { title: "Explainability drives action", desc: "Structured dense alarm telemetry into intuitive severity states." },
-      { title: "Design for decision moments", desc: "Positioned diagnostic history next to active checklists, eliminating guesswork." }
+      { title: "A Shared Visual Language", desc: "Using the same modern typography and card styles across platforms fostered a sense of unity." },
+      { title: "Prioritization is Key", desc: "Systems that automatically prioritize urgent tasks are essential for crisis management." }
     ]
   },
   "witnesschain": {
