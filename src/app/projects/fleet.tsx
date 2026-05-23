@@ -88,7 +88,7 @@ export default function FleetCaseStudy() {
             >
               <span className="text-[#429AE7] text-xs font-semibold tracking-widest uppercase block">Overview</span>
               <p className="border-l-4 border-[#429AE7] pl-6 md:pl-8 italic text-justify font-inter leading-relaxed">
-                Fleet dispatchers juggle route mapping, driver capacity, and vehicle maintenance schedules across different tabs, causing delayed deliveries. Iris Fleet unifies operations, placing real-time delivery tracking, Mapbox routing maps, and instant driver chat logs into one high-performance dashboard.
+                Fleet dispatchers juggle route mapping, driver capacity, and vehicle maintenance schedules across different tabs, causing delayed deliveries. Iris Fleet unifies operations, placing real time delivery tracking, Mapbox routing maps, and instant driver chat logs into one high performance dashboard.
               </p>
             </motion.div>
 
@@ -155,7 +155,7 @@ export default function FleetCaseStudy() {
                     <span className="w-1.5 h-1.5 rounded-full bg-red-500/80 animate-pulse" />
                     02 / Zero Telemetry Sync
                   </h4>
-                  <p className="text-sm pl-3.5 text-justify font-inter">No real-time truck diagnostics meant drivers broke down mid-route without warning.</p>
+                  <p className="text-sm pl-3.5 text-justify font-inter">No real time truck diagnostics meant drivers broke down mid route without warning.</p>
                 </div>
   
 
@@ -235,13 +235,13 @@ export default function FleetCaseStudy() {
                     </span>
                     <div>
                       <h4 className="text-xl font-bold font-space-grotesk tracking-wide text-foreground">
-                        Logistics Dispatcher (High-Density Dispatch Console)
+                        Logistics Dispatcher (High Density Dispatch Console)
                       </h4>
                       <p className="text-xs text-[#429AE7] font-mono tracking-wider uppercase">Archetype: "High-Confidence"</p>
                     </div>
                   </div>
                   <p className="text-sm text-muted-foreground/90 leading-relaxed font-inter text-justify font-light">
-                    The Dispatcher monitors active trucks, schedules routes, and triages vehicle alerts. The design optimizes for fast multi-tasking:
+                    The Dispatcher monitors active trucks, schedules routes, and triages vehicle alerts. The design optimizes for fast multi tasking:
                   </p>
                   <ul className="space-y-3.5">
                     
@@ -259,7 +259,7 @@ export default function FleetCaseStudy() {
 
                       <li key={2} className="flex gap-3 text-sm text-muted-foreground text-justify font-inter">
                         <CheckCircle2 className="w-4 h-4 text-[#429AE7] flex-shrink-0 mt-0.5" />
-                        <span>Enables fast route adjustments through drag-and-drop shipment cards.</span>
+                        <span>Enables fast route adjustments through drag and drop shipment cards.</span>
                       </li>
   
                   </ul>
@@ -275,19 +275,19 @@ export default function FleetCaseStudy() {
                   
                       <div key={0} className="p-3 rounded-lg bg-card/60 border border-border/40 flex justify-between items-center">
                         <div>
-                          <div className="font-bold text-foreground">🚛 Truck Hub Delhi-West</div>
+                          <div className="font-bold text-foreground">🚛 Truck Hub Delhi West</div>
                           <div className="text-[10px]">Status: Route Delayed • 12 miles near</div>
                         </div>
                         <div className="text-right font-mono">
                           <div className="font-bold text-[#429AE7] text-xs">Cargo: Electronics • active</div>
-                          <div>Action: Re-route Push</div>
+                          <div>Action: Re route Push</div>
                         </div>
                       </div>
   
 
                       <div key={1} className="p-3 rounded-lg bg-card/60 border border-border/40 flex justify-between items-center">
                         <div>
-                          <div className="font-bold text-foreground">🚛 Truck Hub Noida-South</div>
+                          <div className="font-bold text-foreground">🚛 Truck Hub Noida South</div>
                           <div className="text-[10px]">Status: On Time • 4.8 miles near</div>
                         </div>
                         <div className="text-right font-mono">
@@ -329,7 +329,7 @@ export default function FleetCaseStudy() {
 
                       <li key={1} className="flex gap-3 text-sm text-muted-foreground text-justify font-inter">
                         <CheckCircle2 className="w-4 h-4 text-[#429AE7] flex-shrink-0 mt-0.5" />
-                        <span>Integrates one-tap customer calling and signature proof-of-delivery capture.</span>
+                        <span>Integrates one tap customer calling and signature proof of delivery capture.</span>
                       </li>
   
 
@@ -380,7 +380,7 @@ export default function FleetCaseStudy() {
           <motion.div variants={fadeInUp} className="w-full space-y-4">
             <span className="text-[#3EBAF4] text-xs font-semibold tracking-widest uppercase block">Key Solution / Design Evolution</span>
             <h3 className="text-[22px] font-semibold font-space-grotesk tracking-tight">
-              From Low-Fidelity Blueprints to Figma Tokens
+              From Low Fidelity Blueprints to Figma Tokens
             </h3>
             <p className="text-[20px] text-muted-foreground/80 leading-relaxed text-justify font-inter">
               Our design journey represents a deliberate transition from raw structural layouts to fully realized, production-grade visual systems.
@@ -395,7 +395,7 @@ export default function FleetCaseStudy() {
             <div className="p-8 rounded-[2rem] bg-card/30 border border-border/30 backdrop-blur-md flex flex-col justify-between space-y-6">
               <div className="space-y-4">
                 <span className="text-xs text-muted-foreground font-mono uppercase tracking-widest block font-bold">Phase 01 / Wireframe</span>
-                <h4 className="text-xl font-bold font-space-grotesk text-foreground">Gray-Box Prototyping</h4>
+                <h4 className="text-xl font-bold font-space-grotesk text-foreground">Gray Box Prototyping</h4>
                 <p className="text-sm text-muted-foreground/90 leading-relaxed text-justify font-inter">
                   Establishing primary layout grids, content density hierarchies, and low-cognitive user flows without visual distractions.
                 </p>
@@ -421,7 +421,7 @@ export default function FleetCaseStudy() {
               <div className="relative rounded-2xl overflow-hidden border border-border/40 shadow-xl bg-card aspect-[4/3] flex items-center justify-center max-h-[300px]">
                 <img 
                   src="undefined" 
-                  alt="Figma High-Fidelity UI System" 
+                  alt="Figma High Fidelity UI System" 
                   className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
                 />
               </div>
@@ -464,7 +464,7 @@ export default function FleetCaseStudy() {
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 leading-relaxed items-center">
               <div className="lg:col-span-7 space-y-5 font-inter text-[18px] text-muted-foreground/90">
                 <p className="text-justify font-inter">
-                  We integrated a real-time Mapbox GIS map engine. When a delivery delay triggers, the console highlights the exact vehicle coordinates and suggests alternative paths.
+                  We integrated a real time Mapbox GIS map engine. When a delivery delay triggers, the console highlights the exact vehicle coordinates and suggests alternative paths.
                 </p>
               </div>
               
@@ -631,7 +631,7 @@ export default function FleetCaseStudy() {
                       Uptime Sync Rate
                     </h4>
                     <p className="text-xs text-muted-foreground leading-relaxed text-justify font-inter">
-                      Driver coordinates updated on central maps with sub-second latency.
+                      Driver coordinates updated on central maps with sub second latency.
                     </p>
                   </div>
                 </div>
@@ -662,7 +662,7 @@ export default function FleetCaseStudy() {
               "Logistics UX is safety UX. Direct routing paths prevent road distractions."
             </p>
             <p className="text-base md:text-lg text-muted-foreground font-light pl-6 text-justify font-inter">
-              By placing truck diagnostics directly onto spatial map markers and designing offline-first navigation steps, we helped logistics drivers execute their daily rounds safely.
+              By placing truck diagnostics directly onto spatial map markers and designing offline first navigation steps, we helped logistics drivers execute their daily rounds safely.
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 pt-4 w-full pl-6">

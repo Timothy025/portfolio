@@ -88,7 +88,7 @@ export default function IrisNetworkCaseStudy() {
             >
               <span className="text-[#32B34F] text-xs font-semibold tracking-widest uppercase block">Overview</span>
               <p className="border-l-4 border-[#32B34F] pl-6 md:pl-8 italic text-justify font-inter leading-relaxed">
-                Network administrators struggle to identify silent outages and routing anomalies in cloud setups. Sifting through millions of text logs takes precious hours while customers experience sluggish speeds. Iris Network visualizes live node connections, utilizing custom spatial telemetry D3 charts to spot latency spikes and packet loss instantly on a high-fidelity dashboard.
+                Network administrators struggle to identify silent outages and routing anomalies in cloud setups. Sifting through millions of text logs takes precious hours while customers experience sluggish speeds. Iris Network visualizes live node connections, utilizing custom spatial telemetry D3 charts to spot latency spikes and packet loss instantly on a high fidelity dashboard.
               </p>
             </motion.div>
 
@@ -134,7 +134,7 @@ export default function IrisNetworkCaseStudy() {
               The Danger of Blind Network Failures
             </h3>
             <p className="text-lg md:text-[20px] text-muted-foreground/80 leading-relaxed w-full text-justify font-inter">
-              When a multi-region network gateway drops packets, users notice instantly. But for operators, finding the exact broken hop required tracing hops manually using repetitive terminal inputs.
+              When a multi region network gateway drops packets, users notice instantly. But for operators, finding the exact broken hop required tracing hops manually using repetitive terminal inputs.
             </p>
           </motion.div>
 
@@ -155,7 +155,7 @@ export default function IrisNetworkCaseStudy() {
                     <span className="w-1.5 h-1.5 rounded-full bg-red-500/80 animate-pulse" />
                     02 / Isolated Topology Maps
                   </h4>
-                  <p className="text-sm pl-3.5 text-justify font-inter">Static node graphs lacked real-time latency indicators, hiding traffic spikes.</p>
+                  <p className="text-sm pl-3.5 text-justify font-inter">Static node graphs lacked real time latency indicators, hiding traffic spikes.</p>
                 </div>
   
 
@@ -184,7 +184,7 @@ export default function IrisNetworkCaseStudy() {
               Two Roles, One Reliability Standard
             </h3>
             <p className="text-lg md:text-[20px] text-muted-foreground w-full text-justify font-inter">
-              We designed Iris Network to serve control room operators auditing real-time regional packet flows, and network architects planning cloud node topologies.
+              We designed Iris Network to serve control room operators auditing real time regional packet flows, and network architects planning cloud node topologies.
             </p>
           </motion.div>
 
@@ -235,7 +235,7 @@ export default function IrisNetworkCaseStudy() {
                     </span>
                     <div>
                       <h4 className="text-xl font-bold font-space-grotesk tracking-wide text-foreground">
-                        Control Room Operator (High-Information Diagnostic Triage)
+                        Control Room Operator (High Information Diagnostic Triage)
                       </h4>
                       <p className="text-xs text-[#32B34F] font-mono tracking-wider uppercase">Archetype: "High-Confidence"</p>
                     </div>
@@ -247,7 +247,7 @@ export default function IrisNetworkCaseStudy() {
                     
                       <li key={0} className="flex gap-3 text-sm text-muted-foreground text-justify font-inter">
                         <CheckCircle2 className="w-4 h-4 text-[#32B34F] flex-shrink-0 mt-0.5" />
-                        <span>Aggregates multi-region telemetry feeds into a single live connection grid.</span>
+                        <span>Aggregates multi region telemetry feeds into a single live connection grid.</span>
                       </li>
   
 
@@ -275,7 +275,7 @@ export default function IrisNetworkCaseStudy() {
                   
                       <div key={0} className="p-3 rounded-lg bg-card/60 border border-border/40 flex justify-between items-center">
                         <div>
-                          <div className="font-bold text-foreground">⚡ Gateway Delhi-Hub-1</div>
+                          <div className="font-bold text-foreground">⚡ Gateway Delhi Hub-1</div>
                           <div className="text-[10px]">Status: Packet Drop 4.5% • East Wing</div>
                         </div>
                         <div className="text-right font-mono">
@@ -287,7 +287,7 @@ export default function IrisNetworkCaseStudy() {
 
                       <div key={1} className="p-3 rounded-lg bg-card/60 border border-border/40 flex justify-between items-center">
                         <div>
-                          <div className="font-bold text-foreground">⚡ Node Noida-Edge-3</div>
+                          <div className="font-bold text-foreground">⚡ Node Noida Edge-3</div>
                           <div className="text-[10px]">Status: Healthy • North Wing</div>
                         </div>
                         <div className="text-right font-mono">
@@ -323,7 +323,7 @@ export default function IrisNetworkCaseStudy() {
                     
                       <li key={0} className="flex gap-3 text-sm text-muted-foreground text-justify font-inter">
                         <CheckCircle2 className="w-4 h-4 text-[#32B34F] flex-shrink-0 mt-0.5" />
-                        <span>Provides drag-and-drop spatial model panels to test node configurations.</span>
+                        <span>Provides drag and drop spatial model panels to test node configurations.</span>
                       </li>
   
 
@@ -335,7 +335,7 @@ export default function IrisNetworkCaseStudy() {
 
                       <li key={2} className="flex gap-3 text-sm text-muted-foreground text-justify font-inter">
                         <CheckCircle2 className="w-4 h-4 text-[#32B34F] flex-shrink-0 mt-0.5" />
-                        <span>Visualizes packet-size distribution curves across multiple network regions.</span>
+                        <span>Visualizes packet size distribution curves across multiple network regions.</span>
                       </li>
   
                   </ul>
@@ -380,7 +380,7 @@ export default function IrisNetworkCaseStudy() {
           <motion.div variants={fadeInUp} className="w-full space-y-4">
             <span className="text-[#3EBAF4] text-xs font-semibold tracking-widest uppercase block">Key Solution / Design Evolution</span>
             <h3 className="text-[22px] font-semibold font-space-grotesk tracking-tight">
-              From Low-Fidelity Blueprints to Figma Tokens
+              From Low Fidelity Blueprints to Figma Tokens
             </h3>
             <p className="text-[20px] text-muted-foreground/80 leading-relaxed text-justify font-inter">
               Our design journey represents a deliberate transition from raw structural layouts to fully realized, production-grade visual systems.
@@ -395,7 +395,7 @@ export default function IrisNetworkCaseStudy() {
             <div className="p-8 rounded-[2rem] bg-card/30 border border-border/30 backdrop-blur-md flex flex-col justify-between space-y-6">
               <div className="space-y-4">
                 <span className="text-xs text-muted-foreground font-mono uppercase tracking-widest block font-bold">Phase 01 / Wireframe</span>
-                <h4 className="text-xl font-bold font-space-grotesk text-foreground">Gray-Box Prototyping</h4>
+                <h4 className="text-xl font-bold font-space-grotesk text-foreground">Gray Box Prototyping</h4>
                 <p className="text-sm text-muted-foreground/90 leading-relaxed text-justify font-inter">
                   Establishing primary layout grids, content density hierarchies, and low-cognitive user flows without visual distractions.
                 </p>
@@ -421,7 +421,7 @@ export default function IrisNetworkCaseStudy() {
               <div className="relative rounded-2xl overflow-hidden border border-border/40 shadow-xl bg-card aspect-[4/3] flex items-center justify-center max-h-[300px]">
                 <img 
                   src="undefined" 
-                  alt="Figma High-Fidelity UI System" 
+                  alt="Figma High Fidelity UI System" 
                   className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
                 />
               </div>
@@ -464,7 +464,7 @@ export default function IrisNetworkCaseStudy() {
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 leading-relaxed items-center">
               <div className="lg:col-span-7 space-y-5 font-inter text-[18px] text-muted-foreground/90">
                 <p className="text-justify font-inter">
-                  We consolidated raw CLI traceroute strings into interactive, real-time node path visualization. Users can click any hop to view live hardware temperatures and drop rates.
+                  We consolidated raw CLI traceroute strings into interactive, real time node path visualization. Users can click any hop to view live hardware temperatures and drop rates.
                 </p>
               </div>
               
@@ -587,7 +587,7 @@ export default function IrisNetworkCaseStudy() {
                       Faster Incident Triage
                     </h4>
                     <p className="text-xs text-muted-foreground leading-relaxed text-justify font-inter">
-                      Unified routing maps visualised bottlenecks immediately, avoiding text-log crawls.
+                      Unified routing maps visualised bottlenecks immediately, avoiding text log crawls.
                     </p>
                   </div>
                 </div>
@@ -628,7 +628,7 @@ export default function IrisNetworkCaseStudy() {
                   </div>
                   <div>
                     <h4 className="text-base font-bold font-space-grotesk tracking-wide text-foreground mb-1">
-                      Real-time Socket Update
+                      Real time Socket Update
                     </h4>
                     <p className="text-xs text-muted-foreground leading-relaxed text-justify font-inter">
                       WebSocket telemetry feeds updated node states with zero browser lag.
@@ -662,7 +662,7 @@ export default function IrisNetworkCaseStudy() {
               "Network diagnostics is a clarity problem, not a log volume problem."
             </p>
             <p className="text-base md:text-lg text-muted-foreground font-light pl-6 text-justify font-inter">
-              By placing raw logs onto spatial node hops and building high-performance socket charts, we helped operators keep major cloud services online.
+              By placing raw logs onto spatial node hops and building high performance socket charts, we helped operators keep major cloud services online.
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 pt-4 w-full pl-6">

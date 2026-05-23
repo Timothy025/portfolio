@@ -88,7 +88,7 @@ export default function IrisSenseCaseStudy() {
             >
               <span className="text-[#F7CF58] text-xs font-semibold tracking-widest uppercase block">Overview</span>
               <p className="border-l-4 border-[#F7CF58] pl-6 md:pl-8 italic text-justify font-inter leading-relaxed">
-                Industrial facilities operate hundreds of environmental sensors (temperature, pressure, leak detection). Planners are overwhelmed by constant noise and false alarms, causing delayed emergency responses. Iris Sense organizes complex spatial data into a high-fidelity visual dashboard. Planners can triage incidents and verify hardware alerts immediately on an interactive floor map.
+                Industrial facilities operate hundreds of environmental sensors (temperature, pressure, leak detection). Planners are overwhelmed by constant noise and false alarms, causing delayed emergency responses. Iris Sense organizes complex spatial data into a high fidelity visual dashboard. Planners can triage incidents and verify hardware alerts immediately on an interactive floor map.
               </p>
             </motion.div>
 
@@ -164,7 +164,7 @@ export default function IrisSenseCaseStudy() {
                     <span className="w-1.5 h-1.5 rounded-full bg-red-500/80 animate-pulse" />
                     03 / Fragmented Hardware Logs
                   </h4>
-                  <p className="text-sm pl-3.5 text-justify font-inter">Historical calibration data lived in distinct cabinets, hiding wear-and-tear trends.</p>
+                  <p className="text-sm pl-3.5 text-justify font-inter">Historical calibration data lived in distinct cabinets, hiding wear and tear trends.</p>
                 </div>
   
             </div>
@@ -184,7 +184,7 @@ export default function IrisSenseCaseStudy() {
               Unified Operational Control
             </h3>
             <p className="text-lg md:text-[20px] text-muted-foreground w-full text-justify font-inter">
-              We designed Iris Sense to serve central dispatchers and planners, providing a single source of truth for monitoring multiple multi-story warehouses and floor plans.
+              We designed Iris Sense to serve central dispatchers and planners, providing a single source of truth for monitoring multiple multi story warehouses and floor plans.
             </p>
           </motion.div>
 
@@ -204,7 +204,7 @@ export default function IrisSenseCaseStudy() {
                     </span>
                     <div>
                       <h4 className="text-xl font-bold font-space-grotesk tracking-wide text-foreground">
-                        Control Room Operator (High-Density Spatial Triage)
+                        Control Room Operator (High Density Spatial Triage)
                       </h4>
                       <p className="text-xs text-[#F7CF58] font-mono tracking-wider uppercase">Archetype: "High-Confidence"</p>
                     </div>
@@ -228,7 +228,7 @@ export default function IrisSenseCaseStudy() {
 
                       <li key={2} className="flex gap-3 text-sm text-muted-foreground text-justify font-inter">
                         <CheckCircle2 className="w-4 h-4 text-[#F7CF58] flex-shrink-0 mt-0.5" />
-                        <span>Triggers high-visibility red flashing warning sheets when levels breach safe caps.</span>
+                        <span>Triggers high visibility red flashing warning sheets when levels breach safe caps.</span>
                       </li>
   
                   </ul>
@@ -285,7 +285,7 @@ export default function IrisSenseCaseStudy() {
           <motion.div variants={fadeInUp} className="w-full space-y-4">
             <span className="text-[#3EBAF4] text-xs font-semibold tracking-widest uppercase block">Key Solution / Design Evolution</span>
             <h3 className="text-[22px] font-semibold font-space-grotesk tracking-tight">
-              From Low-Fidelity Blueprints to Figma Tokens
+              From Low Fidelity Blueprints to Figma Tokens
             </h3>
             <p className="text-[20px] text-muted-foreground/80 leading-relaxed text-justify font-inter">
               Our design journey represents a deliberate transition from raw structural layouts to fully realized, production-grade visual systems.
@@ -300,7 +300,7 @@ export default function IrisSenseCaseStudy() {
             <div className="p-8 rounded-[2rem] bg-card/30 border border-border/30 backdrop-blur-md flex flex-col justify-between space-y-6">
               <div className="space-y-4">
                 <span className="text-xs text-muted-foreground font-mono uppercase tracking-widest block font-bold">Phase 01 / Wireframe</span>
-                <h4 className="text-xl font-bold font-space-grotesk text-foreground">Gray-Box Prototyping</h4>
+                <h4 className="text-xl font-bold font-space-grotesk text-foreground">Gray Box Prototyping</h4>
                 <p className="text-sm text-muted-foreground/90 leading-relaxed text-justify font-inter">
                   Establishing primary layout grids, content density hierarchies, and low-cognitive user flows without visual distractions.
                 </p>
@@ -326,7 +326,7 @@ export default function IrisSenseCaseStudy() {
               <div className="relative rounded-2xl overflow-hidden border border-border/40 shadow-xl bg-card aspect-[4/3] flex items-center justify-center max-h-[300px]">
                 <img 
                   src="undefined" 
-                  alt="Figma High-Fidelity UI System" 
+                  alt="Figma High Fidelity UI System" 
                   className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
                 />
               </div>
@@ -492,7 +492,7 @@ export default function IrisSenseCaseStudy() {
                       Faster Emergency Triage
                     </h4>
                     <p className="text-xs text-muted-foreground leading-relaxed text-justify font-inter">
-                      Floor-plan integration enabled operators to instantly isolate alarm locations.
+                      Floor plan integration enabled operators to instantly isolate alarm locations.
                     </p>
                   </div>
                 </div>
@@ -536,7 +536,7 @@ export default function IrisSenseCaseStudy() {
                       MQTT Socket Sync
                     </h4>
                     <p className="text-xs text-muted-foreground leading-relaxed text-justify font-inter">
-                      Telemetry events streamed directly with sub-second canvas rendering.
+                      Telemetry events streamed directly with sub second canvas rendering.
                     </p>
                   </div>
                 </div>

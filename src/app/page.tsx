@@ -21,7 +21,7 @@ interface Project {
 const projects: Project[] = [
   {
     id: "r-one-ams",
-    title: "Iris R-one",
+    title: "Iris R one",
     subtitle: "Building an asset management tool for charge-point operators to monitor hardware in real-time.",
     tags: ["Asset Management", "IoT Ops"],
     image: "/thumnail/r-one-thumnail.png",

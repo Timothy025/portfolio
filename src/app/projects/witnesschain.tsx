@@ -88,7 +88,7 @@ export default function WitnesschainCaseStudy() {
             >
               <span className="text-[#7CFF92] text-xs font-semibold tracking-widest uppercase block">Overview</span>
               <p className="border-l-4 border-[#7CFF92] pl-6 md:pl-8 italic text-justify font-inter leading-relaxed">
-                Decentralized networks rely on operators proving physical resource allocation (e.g. location, bandwidth). Current verification methods are opaque and complex, causing operator churn. Witnesschain simplifies DePIN verification, packaging cryptographic location proofs and node telemetry into an intuitive, high-performance monitoring dashboard.
+                Decentralized networks rely on operators proving physical resource allocation (e.g. location, bandwidth). Current verification methods are opaque and complex, causing operator churn. Witnesschain simplifies DePIN verification, packaging cryptographic location proofs and node telemetry into an intuitive, high performance monitoring dashboard.
               </p>
             </motion.div>
 
@@ -146,7 +146,7 @@ export default function WitnesschainCaseStudy() {
                     <span className="w-1.5 h-1.5 rounded-full bg-red-500/80 animate-pulse" />
                     01 / High Scripting Barriers
                   </h4>
-                  <p className="text-sm pl-3.5 text-justify font-inter">Operators were required to execute complex terminal CLI commands, causing huge setup drop-offs.</p>
+                  <p className="text-sm pl-3.5 text-justify font-inter">Operators were required to execute complex terminal CLI commands, causing huge setup drop offs.</p>
                 </div>
   
 
@@ -184,7 +184,7 @@ export default function WitnesschainCaseStudy() {
               Two Roles, One Infrastructure Layer
             </h3>
             <p className="text-lg md:text-[20px] text-muted-foreground w-full text-justify font-inter">
-              Witnesschain serves both institutional validators auditing global physical nodes, and backyard operators running micro-nodes.
+              Witnesschain serves both institutional validators auditing global physical nodes, and backyard operators running micro nodes.
             </p>
           </motion.div>
 
@@ -275,7 +275,7 @@ export default function WitnesschainCaseStudy() {
                   
                       <div key={0} className="p-3 rounded-lg bg-card/60 border border-border/40 flex justify-between items-center">
                         <div>
-                          <div className="font-bold text-foreground">🛡️ Node Witness-A1</div>
+                          <div className="font-bold text-foreground">🛡️ Node Witness A1</div>
                           <div className="text-[10px]">Status: Validation Synced • Noida</div>
                         </div>
                         <div className="text-right font-mono">
@@ -287,7 +287,7 @@ export default function WitnesschainCaseStudy() {
 
                       <div key={1} className="p-3 rounded-lg bg-card/60 border border-border/40 flex justify-between items-center">
                         <div>
-                          <div className="font-bold text-foreground">🛡️ Node Witness-A2</div>
+                          <div className="font-bold text-foreground">🛡️ Node Witness A2</div>
                           <div className="text-[10px]">Status: Epoch Proof Pending • Gurugram</div>
                         </div>
                         <div className="text-right font-mono">
@@ -323,7 +323,7 @@ export default function WitnesschainCaseStudy() {
                     
                       <li key={0} className="flex gap-3 text-sm text-muted-foreground text-justify font-inter">
                         <CheckCircle2 className="w-4 h-4 text-[#7CFF92] flex-shrink-0 mt-0.5" />
-                        <span>Aggregates regional proof-of-location logs into a single spatial map layer.</span>
+                        <span>Aggregates regional proof of location logs into a single spatial map layer.</span>
                       </li>
   
 
@@ -335,7 +335,7 @@ export default function WitnesschainCaseStudy() {
 
                       <li key={2} className="flex gap-3 text-sm text-muted-foreground text-justify font-inter">
                         <CheckCircle2 className="w-4 h-4 text-[#7CFF92] flex-shrink-0 mt-0.5" />
-                        <span>Enables deep-dive inspections into cryptographic validation packets.</span>
+                        <span>Enables deep dive inspections into cryptographic validation packets.</span>
                       </li>
   
                   </ul>
@@ -380,7 +380,7 @@ export default function WitnesschainCaseStudy() {
           <motion.div variants={fadeInUp} className="w-full space-y-4">
             <span className="text-[#3EBAF4] text-xs font-semibold tracking-widest uppercase block">Key Solution / Design Evolution</span>
             <h3 className="text-[22px] font-semibold font-space-grotesk tracking-tight">
-              From Low-Fidelity Blueprints to Figma Tokens
+              From Low Fidelity Blueprints to Figma Tokens
             </h3>
             <p className="text-[20px] text-muted-foreground/80 leading-relaxed text-justify font-inter">
               Our design journey represents a deliberate transition from raw structural layouts to fully realized, production-grade visual systems.
@@ -395,7 +395,7 @@ export default function WitnesschainCaseStudy() {
             <div className="p-8 rounded-[2rem] bg-card/30 border border-border/30 backdrop-blur-md flex flex-col justify-between space-y-6">
               <div className="space-y-4">
                 <span className="text-xs text-muted-foreground font-mono uppercase tracking-widest block font-bold">Phase 01 / Wireframe</span>
-                <h4 className="text-xl font-bold font-space-grotesk text-foreground">Gray-Box Prototyping</h4>
+                <h4 className="text-xl font-bold font-space-grotesk text-foreground">Gray Box Prototyping</h4>
                 <p className="text-sm text-muted-foreground/90 leading-relaxed text-justify font-inter">
                   Establishing primary layout grids, content density hierarchies, and low-cognitive user flows without visual distractions.
                 </p>
@@ -421,7 +421,7 @@ export default function WitnesschainCaseStudy() {
               <div className="relative rounded-2xl overflow-hidden border border-border/40 shadow-xl bg-card aspect-[4/3] flex items-center justify-center max-h-[300px]">
                 <img 
                   src="undefined" 
-                  alt="Figma High-Fidelity UI System" 
+                  alt="Figma High Fidelity UI System" 
                   className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
                 />
               </div>
@@ -453,7 +453,7 @@ export default function WitnesschainCaseStudy() {
                 <div className="w-11 h-11 rounded-full bg-[#7CFF92]/10 text-[#7CFF92] flex items-center justify-center font-bold font-space-grotesk text-lg border border-[#7CFF92]/20">01</div>
                 <div>
                   <h4 className="text-[22px] font-semibold font-space-grotesk tracking-wide text-foreground">
-                    Proof-of-Location Dashboard
+                    Proof of Location Dashboard
                   </h4>
                   <p className="text-xs text-muted-foreground font-mono">undefined</p>
                 </div>
@@ -485,7 +485,7 @@ export default function WitnesschainCaseStudy() {
                 <div className="w-11 h-11 rounded-full bg-[#3EBAF4]/10 text-[#3EBAF4] flex items-center justify-center font-bold font-space-grotesk text-lg border border-[#3EBAF4]/20">02</div>
                 <div>
                   <h4 className="text-[22px] font-semibold font-space-grotesk tracking-wide text-foreground">
-                    One-Click Installer console
+                    One Click Installer console
                   </h4>
                   <p className="text-xs text-muted-foreground font-mono">undefined</p>
                 </div>
@@ -499,7 +499,7 @@ export default function WitnesschainCaseStudy() {
                 <div className="relative rounded-3xl overflow-hidden border border-border/40 shadow-2xl bg-card max-w-[220px]">
                   <img 
                     src="undefined" 
-                    alt="One-Click Installer console" 
+                    alt="One Click Installer console" 
                     className="w-full h-auto object-contain transition-transform duration-300 hover:scale-105"
                   />
                 </div>
@@ -609,7 +609,7 @@ export default function WitnesschainCaseStudy() {
                       Setup Friction Reduction
                     </h4>
                     <p className="text-xs text-muted-foreground leading-relaxed text-justify font-inter">
-                      Bypassed complex CLI script configurations with a single-click install.
+                      Bypassed complex CLI script configurations with a single click install.
                     </p>
                   </div>
                 </div>
@@ -662,7 +662,7 @@ export default function WitnesschainCaseStudy() {
               "Security is only secure if the humans executing the protocol understand what they are confirming."
             </p>
             <p className="text-base md:text-lg text-muted-foreground font-light pl-6 text-justify font-inter">
-              Cryptographic validators are highly complex, but the humans keeping them online require absolute clarity. High-fidelity visual status feedback turned a highly abstract task into a clear, daily habit.
+              Cryptographic validators are highly complex, but the humans keeping them online require absolute clarity. High fidelity visual status feedback turned a highly abstract task into a clear, daily habit.
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 pt-4 w-full pl-6">

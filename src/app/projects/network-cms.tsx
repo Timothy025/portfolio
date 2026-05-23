@@ -79,7 +79,7 @@ export default function NetworkCmsCaseStudy() {
             >
               <span className="text-[#ea580c] text-xs font-semibold tracking-widest uppercase block">Overview</span>
               <p className="border-l-4 border-[#ea580c] pl-6 md:pl-8 italic text-justify font-inter leading-relaxed">
-                Content editors and marketing coordinators struggle to format, review, and publish media assets across disjointed publishing systems. This project aggregates scattered draft folders, real-time revision histories, and custom publication pipelines into a single, high-performance editor console.
+                Content editors and marketing coordinators struggle to format, review, and publish media assets across disjointed publishing systems. This project aggregates scattered draft folders, real time revision histories, and custom publication pipelines into a single, high performance editor console.
               </p>
             </motion.div>
 
@@ -146,7 +146,7 @@ export default function NetworkCmsCaseStudy() {
                     <span className="w-1.5 h-1.5 rounded-full bg-red-500/80 animate-pulse" />
                     02 / Heavy Layout Easing Lag
                   </h4>
-                  <p className="text-sm pl-3.5 text-justify font-inter">Loading dynamic rich-media previews concurrently blocked browser render loops, causing crashes.</p>
+                  <p className="text-sm pl-3.5 text-justify font-inter">Loading dynamic rich media previews concurrently blocked browser render loops, causing crashes.</p>
                 </div>
   
 
@@ -232,7 +232,7 @@ export default function NetworkCmsCaseStudy() {
                     </div>
                   </div>
                   <p className="text-sm text-muted-foreground/90 leading-relaxed font-inter text-justify font-light">
-                    The Writer drafts high-quality copy and inserts layout elements. The design dashboard optimizes for absolute visual clarity:
+                    The Writer drafts high quality copy and inserts layout elements. The design dashboard optimizes for absolute visual clarity:
                   </p>
                   <ul className="space-y-3.5">
                     
@@ -244,13 +244,13 @@ export default function NetworkCmsCaseStudy() {
 
                       <li key={1} className="flex gap-3 text-sm text-muted-foreground text-justify font-inter">
                         <CheckCircle2 className="w-4 h-4 text-[#ea580c] flex-shrink-0 mt-0.5" />
-                        <span>Integrates instant auto-saving modules to eliminate file drops.</span>
+                        <span>Integrates instant auto saving modules to eliminate file drops.</span>
                       </li>
   
 
                       <li key={2} className="flex gap-3 text-sm text-muted-foreground text-justify font-inter">
                         <CheckCircle2 className="w-4 h-4 text-[#ea580c] flex-shrink-0 mt-0.5" />
-                        <span>Highlights dynamic word-count progress trackers on the main screen.</span>
+                        <span>Highlights dynamic word count progress trackers on the main screen.</span>
                       </li>
   
                   </ul>
@@ -371,7 +371,7 @@ export default function NetworkCmsCaseStudy() {
           <motion.div variants={fadeInUp} className="w-full space-y-4">
             <span className="text-[#3EBAF4] text-xs font-semibold tracking-widest uppercase block">Key Solution / Design Evolution</span>
             <h3 className="text-[22px] font-semibold font-space-grotesk tracking-tight">
-              From Low-Fidelity Blueprints to Figma Tokens
+              From Low Fidelity Blueprints to Figma Tokens
             </h3>
             <p className="text-[20px] text-muted-foreground/80 leading-relaxed text-justify font-inter">
               Our design journey represents a deliberate transition from raw structural layouts to fully realized, production-grade visual systems.
@@ -386,7 +386,7 @@ export default function NetworkCmsCaseStudy() {
             <div className="p-8 rounded-[2rem] bg-card/30 border border-border/30 backdrop-blur-md flex flex-col justify-between space-y-6">
               <div className="space-y-4">
                 <span className="text-xs text-muted-foreground font-mono uppercase tracking-widest block font-bold">Phase 01 / Wireframe</span>
-                <h4 className="text-xl font-bold font-space-grotesk text-foreground">Gray-Box Prototyping</h4>
+                <h4 className="text-xl font-bold font-space-grotesk text-foreground">Gray Box Prototyping</h4>
                 <p className="text-sm text-muted-foreground/90 leading-relaxed text-justify font-inter">
                   Establishing primary layout grids, content density hierarchies, and low-cognitive user flows without visual distractions.
                 </p>
@@ -412,7 +412,7 @@ export default function NetworkCmsCaseStudy() {
               <div className="relative rounded-2xl overflow-hidden border border-border/40 shadow-xl bg-card aspect-[4/3] flex items-center justify-center max-h-[300px]">
                 <img 
                   src="undefined" 
-                  alt="Figma High-Fidelity UI System" 
+                  alt="Figma High Fidelity UI System" 
                   className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
                 />
               </div>
@@ -600,7 +600,7 @@ export default function NetworkCmsCaseStudy() {
                       Fewer Publishing Drops
                     </h4>
                     <p className="text-xs text-muted-foreground leading-relaxed text-justify font-inter">
-                      Designed lazy-loaded widgets that prioritize active draft viewports.
+                      Designed lazy loaded widgets that prioritize active draft viewports.
                     </p>
                   </div>
                 </div>
@@ -619,10 +619,10 @@ export default function NetworkCmsCaseStudy() {
                   </div>
                   <div>
                     <h4 className="text-base font-bold font-space-grotesk tracking-wide text-foreground mb-1">
-                      Real-time Editor Sync
+                      Real time Editor Sync
                     </h4>
                     <p className="text-xs text-muted-foreground leading-relaxed text-justify font-inter">
-                      GraphQL subscriptions updated editor states with sub-second latency.
+                      GraphQL subscriptions updated editor states with sub second latency.
                     </p>
                   </div>
                 </div>
@@ -653,7 +653,7 @@ export default function NetworkCmsCaseStudy() {
               "Operations UX is clarity UX. Fluid drafts build publication confidence."
             </p>
             <p className="text-base md:text-lg text-muted-foreground font-light pl-6 text-justify font-inter">
-              By placing editor diagnostics directly onto dynamic canvas panels and designing one-swipe checkout drawer sheets, we helped writers deploy articles safely.
+              By placing editor diagnostics directly onto dynamic canvas panels and designing one swipe checkout drawer sheets, we helped writers deploy articles safely.
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 pt-4 w-full pl-6">

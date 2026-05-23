@@ -88,7 +88,7 @@ export default function PayezCaseStudy() {
             >
               <span className="text-[#4A69D8] text-xs font-semibold tracking-widest uppercase block">Overview</span>
               <p className="border-l-4 border-[#4A69D8] pl-6 md:pl-8 italic text-justify font-inter leading-relaxed">
-                Micro-merchants and casual users experience high payment drop-offs when trying to transfer cash through slow, data-heavy banking portals. PayEZ streamlines P2P payments, utilizing modern layout transitions, wallet management tabs, and one-swipe checkout sheets to secure cash flows.
+                Micro merchants and casual users experience high payment drop offs when trying to transfer cash through slow, data heavy banking portals. PayEZ streamlines P2P payments, utilizing modern layout transitions, wallet management tabs, and one swipe checkout sheets to secure cash flows.
               </p>
             </motion.div>
 
@@ -134,7 +134,7 @@ export default function PayezCaseStudy() {
               The Pain of Sluggish Payment Pipelines
             </h3>
             <p className="text-lg md:text-[20px] text-muted-foreground/80 leading-relaxed w-full text-justify font-inter">
-              Sending money should feel like sending a text. But when users face multi-step verification pages, complex routing codes, and dry tables, transaction drop-offs skyrocket.
+              Sending money should feel like sending a text. But when users face multi step verification pages, complex routing codes, and dry tables, transaction drop offs skyrocket.
             </p>
           </motion.div>
 
@@ -253,7 +253,7 @@ export default function PayezCaseStudy() {
 
                       <li key={1} className="flex gap-3 text-sm text-muted-foreground text-justify font-inter">
                         <CheckCircle2 className="w-4 h-4 text-[#4A69D8] flex-shrink-0 mt-0.5" />
-                        <span>Integrates one-swipe checkout sheets to bypass slow routing checks.</span>
+                        <span>Integrates one swipe checkout sheets to bypass slow routing checks.</span>
                       </li>
   
 
@@ -380,7 +380,7 @@ export default function PayezCaseStudy() {
           <motion.div variants={fadeInUp} className="w-full space-y-4">
             <span className="text-[#3EBAF4] text-xs font-semibold tracking-widest uppercase block">Key Solution / Design Evolution</span>
             <h3 className="text-[22px] font-semibold font-space-grotesk tracking-tight">
-              From Low-Fidelity Blueprints to Figma Tokens
+              From Low Fidelity Blueprints to Figma Tokens
             </h3>
             <p className="text-[20px] text-muted-foreground/80 leading-relaxed text-justify font-inter">
               Our design journey represents a deliberate transition from raw structural layouts to fully realized, production-grade visual systems.
@@ -395,7 +395,7 @@ export default function PayezCaseStudy() {
             <div className="p-8 rounded-[2rem] bg-card/30 border border-border/30 backdrop-blur-md flex flex-col justify-between space-y-6">
               <div className="space-y-4">
                 <span className="text-xs text-muted-foreground font-mono uppercase tracking-widest block font-bold">Phase 01 / Wireframe</span>
-                <h4 className="text-xl font-bold font-space-grotesk text-foreground">Gray-Box Prototyping</h4>
+                <h4 className="text-xl font-bold font-space-grotesk text-foreground">Gray Box Prototyping</h4>
                 <p className="text-sm text-muted-foreground/90 leading-relaxed text-justify font-inter">
                   Establishing primary layout grids, content density hierarchies, and low-cognitive user flows without visual distractions.
                 </p>
@@ -421,7 +421,7 @@ export default function PayezCaseStudy() {
               <div className="relative rounded-2xl overflow-hidden border border-border/40 shadow-xl bg-card aspect-[4/3] flex items-center justify-center max-h-[300px]">
                 <img 
                   src="undefined" 
-                  alt="Figma High-Fidelity UI System" 
+                  alt="Figma High Fidelity UI System" 
                   className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
                 />
               </div>
@@ -485,7 +485,7 @@ export default function PayezCaseStudy() {
                 <div className="w-11 h-11 rounded-full bg-[#3EBAF4]/10 text-[#3EBAF4] flex items-center justify-center font-bold font-space-grotesk text-lg border border-[#3EBAF4]/20">02</div>
                 <div>
                   <h4 className="text-[22px] font-semibold font-space-grotesk tracking-wide text-foreground">
-                    One-Swipe Checkout
+                    One Swipe Checkout
                   </h4>
                   <p className="text-xs text-muted-foreground font-mono">undefined</p>
                 </div>
@@ -499,7 +499,7 @@ export default function PayezCaseStudy() {
                 <div className="relative rounded-3xl overflow-hidden border border-border/40 shadow-2xl bg-card max-w-[220px]">
                   <img 
                     src="undefined" 
-                    alt="One-Swipe Checkout" 
+                    alt="One Swipe Checkout" 
                     className="w-full h-auto object-contain transition-transform duration-300 hover:scale-105"
                   />
                 </div>
@@ -508,7 +508,7 @@ export default function PayezCaseStudy() {
               {/* Text Right */}
               <div className="lg:col-span-7 space-y-5 font-inter text-base md:text-[18px] text-muted-foreground/90 order-1 lg:order-2">
                 <p className="text-justify font-inter">
-                  Designed an interactive payment sliding sheet that executes P2P transfers within sub-seconds, avoiding sluggish page reloads.
+                  Designed an interactive payment sliding sheet that executes P2P transfers within sub seconds, avoiding sluggish page reloads.
                 </p>
               </div>
             </div>
@@ -584,7 +584,7 @@ export default function PayezCaseStudy() {
                   </div>
                   <div>
                     <h4 className="text-base font-bold font-space-grotesk tracking-wide text-foreground mb-1">
-                      Sub-Second P2P Sync
+                      Sub Second P2P Sync
                     </h4>
                     <p className="text-xs text-muted-foreground leading-relaxed text-justify font-inter">
                       Optimized payment routes enabled instant cash transfers.
@@ -609,7 +609,7 @@ export default function PayezCaseStudy() {
                       Fewer Checkout Drops
                     </h4>
                     <p className="text-xs text-muted-foreground leading-relaxed text-justify font-inter">
-                      Simplified form inputs into a single-swipe double-confirmation checkout drawer.
+                      Simplified form inputs into a single swipe double confirmation checkout drawer.
                     </p>
                   </div>
                 </div>
@@ -662,7 +662,7 @@ export default function PayezCaseStudy() {
               "Microfinance UX is trust UX. Frictionless loops convey transaction reliability."
             </p>
             <p className="text-base md:text-lg text-muted-foreground font-light pl-6 text-justify font-inter">
-              By placing balance trends directly onto the home screen and designing one-swipe checkout drawer sheets, we helped users manage cash flows confidently.
+              By placing balance trends directly onto the home screen and designing one swipe checkout drawer sheets, we helped users manage cash flows confidently.
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 pt-4 w-full pl-6">

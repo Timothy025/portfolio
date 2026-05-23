@@ -79,7 +79,7 @@ export default function AnalyticsDashboardCaseStudy() {
             >
               <span className="text-[#2563eb] text-xs font-semibold tracking-widest uppercase block">Overview</span>
               <p className="border-l-4 border-[#2563eb] pl-6 md:pl-8 italic text-justify font-inter leading-relaxed">
-                Data analysts and operations planners are overwhelmed trying to query and analyze business intelligence across disjointed metrics software. This project aggregates multi-source database telemetry, query execution progress, and spatial demographic charts into a single workspace.
+                Data analysts and operations planners are overwhelmed trying to query and analyze business intelligence across disjointed metrics software. This project aggregates multi source database telemetry, query execution progress, and spatial demographic charts into a single workspace.
               </p>
             </motion.div>
 
@@ -146,7 +146,7 @@ export default function AnalyticsDashboardCaseStudy() {
                     <span className="w-1.5 h-1.5 rounded-full bg-red-500/80 animate-pulse" />
                     02 / Heavy Widget Lag
                   </h4>
-                  <p className="text-sm pl-3.5 text-justify font-inter">Loading massive time-series plots concurrently blocked browser render routines, causing freezing.</p>
+                  <p className="text-sm pl-3.5 text-justify font-inter">Loading massive time series plots concurrently blocked browser render routines, causing freezing.</p>
                 </div>
   
 
@@ -226,7 +226,7 @@ export default function AnalyticsDashboardCaseStudy() {
                     </span>
                     <div>
                       <h4 className="text-xl font-bold font-space-grotesk tracking-wide text-foreground">
-                        Business Executive (High-Level Financial Review)
+                        Business Executive (High Level Financial Review)
                       </h4>
                       <p className="text-xs text-[#2563eb] font-mono tracking-wider uppercase">Archetype: "High-Confidence"</p>
                     </div>
@@ -238,7 +238,7 @@ export default function AnalyticsDashboardCaseStudy() {
                     
                       <li key={0} className="flex gap-3 text-sm text-muted-foreground text-justify font-inter">
                         <CheckCircle2 className="w-4 h-4 text-[#2563eb] flex-shrink-0 mt-0.5" />
-                        <span>Replaces dense database logs with a clean, high-contrast revenue status feed.</span>
+                        <span>Replaces dense database logs with a clean, high contrast revenue status feed.</span>
                       </li>
   
 
@@ -250,7 +250,7 @@ export default function AnalyticsDashboardCaseStudy() {
 
                       <li key={2} className="flex gap-3 text-sm text-muted-foreground text-justify font-inter">
                         <CheckCircle2 className="w-4 h-4 text-[#2563eb] flex-shrink-0 mt-0.5" />
-                        <span>Enables fast report exports through a sliding double-confirmation drawer.</span>
+                        <span>Enables fast report exports through a sliding double confirmation drawer.</span>
                       </li>
   
                   </ul>
@@ -266,7 +266,7 @@ export default function AnalyticsDashboardCaseStudy() {
                   
                       <div key={0} className="p-3 rounded-lg bg-card/60 border border-border/40 flex justify-between items-center">
                         <div>
-                          <div className="font-bold text-foreground">🏢 Region Delhi-NCR</div>
+                          <div className="font-bold text-foreground">🏢 Region Delhi NCR</div>
                           <div className="text-[10px]">Status: Target Exceeded • Noida Wing</div>
                         </div>
                         <div className="text-right font-mono">
@@ -278,7 +278,7 @@ export default function AnalyticsDashboardCaseStudy() {
 
                       <div key={1} className="p-3 rounded-lg bg-card/60 border border-border/40 flex justify-between items-center">
                         <div>
-                          <div className="font-bold text-foreground">🏢 Region Gurgaon-West</div>
+                          <div className="font-bold text-foreground">🏢 Region Gurgaon West</div>
                           <div className="text-[10px]">Status: Warning Level • South Wing</div>
                         </div>
                         <div className="text-right font-mono">
@@ -314,19 +314,19 @@ export default function AnalyticsDashboardCaseStudy() {
                     
                       <li key={0} className="flex gap-3 text-sm text-muted-foreground text-justify font-inter">
                         <CheckCircle2 className="w-4 h-4 text-[#2563eb] flex-shrink-0 mt-0.5" />
-                        <span>Features a rich code editor panel with syntax auto-completion.</span>
+                        <span>Features a rich code editor panel with syntax auto completion.</span>
                       </li>
   
 
                       <li key={1} className="flex gap-3 text-sm text-muted-foreground text-justify font-inter">
                         <CheckCircle2 className="w-4 h-4 text-[#2563eb] flex-shrink-0 mt-0.5" />
-                        <span>Visualizes query loading time-distributions using native D3 graphs.</span>
+                        <span>Visualizes query loading time distributions using native D3 graphs.</span>
                       </li>
   
 
                       <li key={2} className="flex gap-3 text-sm text-muted-foreground text-justify font-inter">
                         <CheckCircle2 className="w-4 h-4 text-[#2563eb] flex-shrink-0 mt-0.5" />
-                        <span>Enables drag-and-drop layout configuration to position telemetry blocks.</span>
+                        <span>Enables drag and drop layout configuration to position telemetry blocks.</span>
                       </li>
   
                   </ul>
@@ -371,7 +371,7 @@ export default function AnalyticsDashboardCaseStudy() {
           <motion.div variants={fadeInUp} className="w-full space-y-4">
             <span className="text-[#3EBAF4] text-xs font-semibold tracking-widest uppercase block">Key Solution / Design Evolution</span>
             <h3 className="text-[22px] font-semibold font-space-grotesk tracking-tight">
-              From Low-Fidelity Blueprints to Figma Tokens
+              From Low Fidelity Blueprints to Figma Tokens
             </h3>
             <p className="text-[20px] text-muted-foreground/80 leading-relaxed text-justify font-inter">
               Our design journey represents a deliberate transition from raw structural layouts to fully realized, production-grade visual systems.
@@ -386,7 +386,7 @@ export default function AnalyticsDashboardCaseStudy() {
             <div className="p-8 rounded-[2rem] bg-card/30 border border-border/30 backdrop-blur-md flex flex-col justify-between space-y-6">
               <div className="space-y-4">
                 <span className="text-xs text-muted-foreground font-mono uppercase tracking-widest block font-bold">Phase 01 / Wireframe</span>
-                <h4 className="text-xl font-bold font-space-grotesk text-foreground">Gray-Box Prototyping</h4>
+                <h4 className="text-xl font-bold font-space-grotesk text-foreground">Gray Box Prototyping</h4>
                 <p className="text-sm text-muted-foreground/90 leading-relaxed text-justify font-inter">
                   Establishing primary layout grids, content density hierarchies, and low-cognitive user flows without visual distractions.
                 </p>
@@ -412,7 +412,7 @@ export default function AnalyticsDashboardCaseStudy() {
               <div className="relative rounded-2xl overflow-hidden border border-border/40 shadow-xl bg-card aspect-[4/3] flex items-center justify-center max-h-[300px]">
                 <img 
                   src="undefined" 
-                  alt="Figma High-Fidelity UI System" 
+                  alt="Figma High Fidelity UI System" 
                   className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
                 />
               </div>
@@ -499,7 +499,7 @@ export default function AnalyticsDashboardCaseStudy() {
               {/* Text Right */}
               <div className="lg:col-span-7 space-y-5 font-inter text-base md:text-[18px] text-muted-foreground/90 order-1 lg:order-2">
                 <p className="text-justify font-inter">
-                  Designed interactive sliders that let analysts adjust target margins, avoiding slow database query re-runs.
+                  Designed interactive sliders that let analysts adjust target margins, avoiding slow database query re runs.
                 </p>
               </div>
             </div>
@@ -578,7 +578,7 @@ export default function AnalyticsDashboardCaseStudy() {
                       Faster Query Execution
                     </h4>
                     <p className="text-xs text-muted-foreground leading-relaxed text-justify font-inter">
-                      Consolidated multi-database streams into a single local cache engine.
+                      Consolidated multi database streams into a single local cache engine.
                     </p>
                   </div>
                 </div>
@@ -600,7 +600,7 @@ export default function AnalyticsDashboardCaseStudy() {
                       Fewer Dashboard Crashes
                     </h4>
                     <p className="text-xs text-muted-foreground leading-relaxed text-justify font-inter">
-                      Designed lazy-loaded widgets that prioritize active route viewport charts.
+                      Designed lazy loaded widgets that prioritize active route viewport charts.
                     </p>
                   </div>
                 </div>
@@ -619,10 +619,10 @@ export default function AnalyticsDashboardCaseStudy() {
                   </div>
                   <div>
                     <h4 className="text-base font-bold font-space-grotesk tracking-wide text-foreground mb-1">
-                      Real-time Metrics Sync
+                      Real time Metrics Sync
                     </h4>
                     <p className="text-xs text-muted-foreground leading-relaxed text-justify font-inter">
-                      GraphQL subscriptions updated metrics trends with sub-second latency.
+                      GraphQL subscriptions updated metrics trends with sub second latency.
                     </p>
                   </div>
                 </div>
@@ -653,7 +653,7 @@ export default function AnalyticsDashboardCaseStudy() {
               "Analytics UX is performance UX. Fluid charts build operational confidence."
             </p>
             <p className="text-base md:text-lg text-muted-foreground font-light pl-6 text-justify font-inter">
-              By placing database performance diagnostics directly onto spatial map views and designing one-swipe checkout drawer sheets, we helped executives audit metrics safely.
+              By placing database performance diagnostics directly onto spatial map views and designing one swipe checkout drawer sheets, we helped executives audit metrics safely.
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 pt-4 w-full pl-6">

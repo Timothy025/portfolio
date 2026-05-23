@@ -184,7 +184,7 @@ export default function RmsCaseStudy() {
               Two Roles, One Compliance Layer
             </h3>
             <p className="text-lg md:text-[20px] text-muted-foreground w-full text-justify font-inter">
-              We designed Iris RMS to serve central risk planners coordinating multi-facility regulations, and site auditors inspecting hardware on the floor.
+              We designed Iris RMS to serve central risk planners coordinating multi facility regulations, and site auditors inspecting hardware on the floor.
             </p>
           </motion.div>
 
@@ -235,7 +235,7 @@ export default function RmsCaseStudy() {
                     </span>
                     <div>
                       <h4 className="text-xl font-bold font-space-grotesk tracking-wide text-foreground">
-                        Operations Risk Planner (High-Density Policy Auditing)
+                        Operations Risk Planner (High Density Policy Auditing)
                       </h4>
                       <p className="text-xs text-[#EC008C] font-mono tracking-wider uppercase">Archetype: "High-Confidence"</p>
                     </div>
@@ -380,7 +380,7 @@ export default function RmsCaseStudy() {
           <motion.div variants={fadeInUp} className="w-full space-y-4">
             <span className="text-[#3EBAF4] text-xs font-semibold tracking-widest uppercase block">Key Solution / Design Evolution</span>
             <h3 className="text-[22px] font-semibold font-space-grotesk tracking-tight">
-              From Low-Fidelity Blueprints to Figma Tokens
+              From Low Fidelity Blueprints to Figma Tokens
             </h3>
             <p className="text-[20px] text-muted-foreground/80 leading-relaxed text-justify font-inter">
               Our design journey represents a deliberate transition from raw structural layouts to fully realized, production-grade visual systems.
@@ -395,7 +395,7 @@ export default function RmsCaseStudy() {
             <div className="p-8 rounded-[2rem] bg-card/30 border border-border/30 backdrop-blur-md flex flex-col justify-between space-y-6">
               <div className="space-y-4">
                 <span className="text-xs text-muted-foreground font-mono uppercase tracking-widest block font-bold">Phase 01 / Wireframe</span>
-                <h4 className="text-xl font-bold font-space-grotesk text-foreground">Gray-Box Prototyping</h4>
+                <h4 className="text-xl font-bold font-space-grotesk text-foreground">Gray Box Prototyping</h4>
                 <p className="text-sm text-muted-foreground/90 leading-relaxed text-justify font-inter">
                   Establishing primary layout grids, content density hierarchies, and low-cognitive user flows without visual distractions.
                 </p>
@@ -421,7 +421,7 @@ export default function RmsCaseStudy() {
               <div className="relative rounded-2xl overflow-hidden border border-border/40 shadow-xl bg-card aspect-[4/3] flex items-center justify-center max-h-[300px]">
                 <img 
                   src="undefined" 
-                  alt="Figma High-Fidelity UI System" 
+                  alt="Figma High Fidelity UI System" 
                   className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
                 />
               </div>
@@ -609,7 +609,7 @@ export default function RmsCaseStudy() {
                       Fewer Audit Delays
                     </h4>
                     <p className="text-xs text-muted-foreground leading-relaxed text-justify font-inter">
-                      Simplified audit check sheets with drag-and-drop report builders.
+                      Simplified audit check sheets with drag and drop report builders.
                     </p>
                   </div>
                 </div>

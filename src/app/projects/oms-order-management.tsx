@@ -88,7 +88,7 @@ export default function OmsOrderManagementCaseStudy() {
             >
               <span className="text-[#00229E] text-xs font-semibold tracking-widest uppercase block">Overview</span>
               <p className="border-l-4 border-[#00229E] pl-6 md:pl-8 italic text-justify font-inter leading-relaxed">
-                Warehouse teams struggle to fulfill wholesale orders because stock data, invoices, and shipment tracking are fragmented across different tools. OMS — Sodexo unifies retail supply pipelines, placing stock tracking, automated supplier orders, and real-time shipment updates into a single dashboard.
+                Warehouse teams struggle to fulfill wholesale orders because stock data, invoices, and shipment tracking are fragmented across different tools. OMS — Sodexo unifies retail supply pipelines, placing stock tracking, automated supplier orders, and real time shipment updates into a single dashboard.
               </p>
             </motion.div>
 
@@ -146,7 +146,7 @@ export default function OmsOrderManagementCaseStudy() {
                     <span className="w-1.5 h-1.5 rounded-full bg-red-500/80 animate-pulse" />
                     01 / Disjointed Order Records
                   </h4>
-                  <p className="text-sm pl-3.5 text-justify font-inter">Storefront orders were manually copy-pasted to inventory logs, causing shipping delays.</p>
+                  <p className="text-sm pl-3.5 text-justify font-inter">Storefront orders were manually copy pasted to inventory logs, causing shipping delays.</p>
                 </div>
   
 
@@ -235,7 +235,7 @@ export default function OmsOrderManagementCaseStudy() {
                     </span>
                     <div>
                       <h4 className="text-xl font-bold font-space-grotesk tracking-wide text-foreground">
-                        Warehouse Operator (High-Information Order Triage)
+                        Warehouse Operator (High Information Order Triage)
                       </h4>
                       <p className="text-xs text-[#00229E] font-mono tracking-wider uppercase">Archetype: "High-Confidence"</p>
                     </div>
@@ -253,7 +253,7 @@ export default function OmsOrderManagementCaseStudy() {
 
                       <li key={1} className="flex gap-3 text-sm text-muted-foreground text-justify font-inter">
                         <CheckCircle2 className="w-4 h-4 text-[#00229E] flex-shrink-0 mt-0.5" />
-                        <span>Calculates live stock health metrics to trigger automated supplier re-orders.</span>
+                        <span>Calculates live stock health metrics to trigger automated supplier re orders.</span>
                       </li>
   
 
@@ -380,7 +380,7 @@ export default function OmsOrderManagementCaseStudy() {
           <motion.div variants={fadeInUp} className="w-full space-y-4">
             <span className="text-[#3EBAF4] text-xs font-semibold tracking-widest uppercase block">Key Solution / Design Evolution</span>
             <h3 className="text-[22px] font-semibold font-space-grotesk tracking-tight">
-              From Low-Fidelity Blueprints to Figma Tokens
+              From Low Fidelity Blueprints to Figma Tokens
             </h3>
             <p className="text-[20px] text-muted-foreground/80 leading-relaxed text-justify font-inter">
               Our design journey represents a deliberate transition from raw structural layouts to fully realized, production-grade visual systems.
@@ -395,7 +395,7 @@ export default function OmsOrderManagementCaseStudy() {
             <div className="p-8 rounded-[2rem] bg-card/30 border border-border/30 backdrop-blur-md flex flex-col justify-between space-y-6">
               <div className="space-y-4">
                 <span className="text-xs text-muted-foreground font-mono uppercase tracking-widest block font-bold">Phase 01 / Wireframe</span>
-                <h4 className="text-xl font-bold font-space-grotesk text-foreground">Gray-Box Prototyping</h4>
+                <h4 className="text-xl font-bold font-space-grotesk text-foreground">Gray Box Prototyping</h4>
                 <p className="text-sm text-muted-foreground/90 leading-relaxed text-justify font-inter">
                   Establishing primary layout grids, content density hierarchies, and low-cognitive user flows without visual distractions.
                 </p>
@@ -421,7 +421,7 @@ export default function OmsOrderManagementCaseStudy() {
               <div className="relative rounded-2xl overflow-hidden border border-border/40 shadow-xl bg-card aspect-[4/3] flex items-center justify-center max-h-[300px]">
                 <img 
                   src="undefined" 
-                  alt="Figma High-Fidelity UI System" 
+                  alt="Figma High Fidelity UI System" 
                   className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
                 />
               </div>
@@ -662,7 +662,7 @@ export default function OmsOrderManagementCaseStudy() {
               "Operations UX is systems UX. Smooth fulfillment comes from shared state coherence."
             </p>
             <p className="text-base md:text-lg text-muted-foreground font-light pl-6 text-justify font-inter">
-              By placing stock diagnostics directly onto picking routes and designing high-performance scanner sliders, we helped logistics operators dispatch cargo safely.
+              By placing stock diagnostics directly onto picking routes and designing high performance scanner sliders, we helped logistics operators dispatch cargo safely.
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 pt-4 w-full pl-6">

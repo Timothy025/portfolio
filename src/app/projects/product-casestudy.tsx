@@ -79,7 +79,7 @@ export default function ProductCasestudyCaseStudy() {
             >
               <span className="text-[#4b5563] text-xs font-semibold tracking-widest uppercase block">Overview</span>
               <p className="border-l-4 border-[#4b5563] pl-6 md:pl-8 italic text-justify font-inter leading-relaxed">
-                Product owners and development teams struggle to validate user requirements and feature priorities due to disjointed research logs. This project aggregates qualitative user interview data, interactive affinity maps, and early grey-box wireframes into a single presentation case study.
+                Product owners and development teams struggle to validate user requirements and feature priorities due to disjointed research logs. This project aggregates qualitative user interview data, interactive affinity maps, and early grey box wireframes into a single presentation case study.
               </p>
             </motion.div>
 
@@ -238,7 +238,7 @@ export default function ProductCasestudyCaseStudy() {
                     
                       <li key={0} className="flex gap-3 text-sm text-muted-foreground text-justify font-inter">
                         <CheckCircle2 className="w-4 h-4 text-[#4b5563] flex-shrink-0 mt-0.5" />
-                        <span>Replaces dry settings lists with an interactive gray-box layout preview feed.</span>
+                        <span>Replaces dry settings lists with an interactive gray box layout preview feed.</span>
                       </li>
   
 
@@ -260,7 +260,7 @@ export default function ProductCasestudyCaseStudy() {
                     Overview Screen
                   </div>
                   <div className="border-b border-border/30 pb-3">
-                    <div className="font-bold text-foreground text-xs font-space-grotesk uppercase tracking-wider mb-1">{"🎨 Grey-Box Prototype Review"}</div>
+                    <div className="font-bold text-foreground text-xs font-space-grotesk uppercase tracking-wider mb-1">{"🎨 Grey Box Prototype Review"}</div>
                     <div className="text-[10px]">{"Filter: Active Screens • Delhi Team • User Rating: 4.8/5"}</div>
                   </div>
                   
@@ -326,7 +326,7 @@ export default function ProductCasestudyCaseStudy() {
 
                       <li key={2} className="flex gap-3 text-sm text-muted-foreground text-justify font-inter">
                         <CheckCircle2 className="w-4 h-4 text-[#4b5563] flex-shrink-0 mt-0.5" />
-                        <span>Enables drag-and-drop feedback columns to categorize paint points.</span>
+                        <span>Enables drag and drop feedback columns to categorize paint points.</span>
                       </li>
   
                   </ul>
@@ -342,7 +342,7 @@ export default function ProductCasestudyCaseStudy() {
                   
                       <div key={0} className="p-2.5 rounded-lg bg-card/60 border border-border/30 text-[10px]">
                         <span className="font-bold text-foreground block mb-0.5">Interview #42 - Delhi User</span>
-                        Role: Micro-Prosumer • Delhi Wing • Time: 42 min • Synced
+                        Role: Micro Prosumer • Delhi Wing • Time: 42 min • Synced
                       </div>
   
 
@@ -371,7 +371,7 @@ export default function ProductCasestudyCaseStudy() {
           <motion.div variants={fadeInUp} className="w-full space-y-4">
             <span className="text-[#3EBAF4] text-xs font-semibold tracking-widest uppercase block">Key Solution / Design Evolution</span>
             <h3 className="text-[22px] font-semibold font-space-grotesk tracking-tight">
-              From Low-Fidelity Blueprints to Figma Tokens
+              From Low Fidelity Blueprints to Figma Tokens
             </h3>
             <p className="text-[20px] text-muted-foreground/80 leading-relaxed text-justify font-inter">
               Our design journey represents a deliberate transition from raw structural layouts to fully realized, production-grade visual systems.
@@ -386,7 +386,7 @@ export default function ProductCasestudyCaseStudy() {
             <div className="p-8 rounded-[2rem] bg-card/30 border border-border/30 backdrop-blur-md flex flex-col justify-between space-y-6">
               <div className="space-y-4">
                 <span className="text-xs text-muted-foreground font-mono uppercase tracking-widest block font-bold">Phase 01 / Wireframe</span>
-                <h4 className="text-xl font-bold font-space-grotesk text-foreground">Gray-Box Prototyping</h4>
+                <h4 className="text-xl font-bold font-space-grotesk text-foreground">Gray Box Prototyping</h4>
                 <p className="text-sm text-muted-foreground/90 leading-relaxed text-justify font-inter">
                   Establishing primary layout grids, content density hierarchies, and low-cognitive user flows without visual distractions.
                 </p>
@@ -412,7 +412,7 @@ export default function ProductCasestudyCaseStudy() {
               <div className="relative rounded-2xl overflow-hidden border border-border/40 shadow-xl bg-card aspect-[4/3] flex items-center justify-center max-h-[300px]">
                 <img 
                   src="undefined" 
-                  alt="Figma High-Fidelity UI System" 
+                  alt="Figma High Fidelity UI System" 
                   className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
                 />
               </div>
@@ -455,7 +455,7 @@ export default function ProductCasestudyCaseStudy() {
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 leading-relaxed items-center">
               <div className="lg:col-span-7 space-y-5 font-inter text-[18px] text-muted-foreground/90">
                 <p className="text-justify font-inter">
-                  We consolidated dry spreadsheets into a clean, card-based affinity mapping layout, enabling team directors to locate insights instantly.
+                  We consolidated dry spreadsheets into a clean, card based affinity mapping layout, enabling team directors to locate insights instantly.
                 </p>
               </div>
               
@@ -578,7 +578,7 @@ export default function ProductCasestudyCaseStudy() {
                       User Interviews Logged
                     </h4>
                     <p className="text-xs text-muted-foreground leading-relaxed text-justify font-inter">
-                      Conducted semi-structured sessions to understand deep user friction points.
+                      Conducted semi structured sessions to understand deep user friction points.
                     </p>
                   </div>
                 </div>
@@ -653,7 +653,7 @@ export default function ProductCasestudyCaseStudy() {
               "Product UX is human UX. True insights are discovered at the moments of user friction."
             </p>
             <p className="text-base md:text-lg text-muted-foreground font-light pl-6 text-justify font-inter">
-              By placing user interviews directly onto dynamic affinity cards and designing one-swipe inspection views, we helped product teams deploy visual solutions confidently.
+              By placing user interviews directly onto dynamic affinity cards and designing one swipe inspection views, we helped product teams deploy visual solutions confidently.
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 pt-4 w-full pl-6">

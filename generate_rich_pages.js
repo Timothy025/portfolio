@@ -20,15 +20,15 @@ const projectsData = {
     overview2: "This project was designed as a unified commerce system connecting customer ordering with direct kitchen execution and automated local rider dispatching.",
     stats: [
       { metric: "60%", label: "Faster Order Prep Time", desc: "Consolidated WhatsApp orders into a single live kitchen dashboard, reducing errors." },
-      { metric: "42%", label: "Reduced Checkout Friction", desc: "Simplified customer payments through integrated one-click UPI checkouts." },
+      { metric: "42%", label: "Reduced Checkout Friction", desc: "Simplified customer payments through integrated one click UPI checkouts." },
       { metric: "3x", label: "Increase in Weekly Orders", desc: "Automated recurring orders let customers subscribe to their favorite chefs easily." }
     ],
     challengeTitle: "The Chaos of Backyard Kitchen Operations",
-    challengeDesc: "Home chefs are talented cooks but poor logistical coordinators. Managing active customer chats, menu planning, payment verification, and courier handoffs broke their day-to-day culinary focus.",
+    challengeDesc: "Home chefs are talented cooks but poor logistical coordinators. Managing active customer chats, menu planning, payment verification, and courier handoffs broke their day to day culinary focus.",
     breakdowns: [
       { num: "01 / Manual Order Trapping", desc: "WhatsApp orders were manually transcribed to paper or spreadsheets, causing delayed orders during rush hours." },
       { num: "02 / Reconciling Bank Payments", desc: "Chefs had to stop cooking to manually check bank apps for incoming transfers, causing delays and food spoilage." },
-      { num: "03 / Delivery Rider Disconnect", desc: "No unified delivery integration meant chefs spent hours call-triage coordinating local couriers." }
+      { num: "03 / Delivery Rider Disconnect", desc: "No unified delivery integration meant chefs spent hours call triage coordinating local couriers." }
     ],
     roleSubtitle: "Two Roles, One Local Food Marketplace",
     roleDesc: "We designed the Feedzaa marketplace around two distinct user groups who participate in the same local food network but operate under opposite time constraints.",
@@ -37,15 +37,15 @@ const projectsData = {
     role1Archetype: "Discovery & Instant Checkout",
     role1Desc: "The Buyer wants to discover local home chefs and order food instantly without dealing with messy group chats or unverified links. The design optimizes for absolute checkout speed:",
     role1Items: [
-      "Replaces confusing text broadcast menus with a visually stunning, image-first local chef feed.",
-      "Displays active chef kitchen status (e.g. 'Cooking Now', 'Pre-order for dinner').",
-      "Streamlines order creation into a sliding double-confirmation checkout drawer."
+      "Replaces confusing text broadcast menus with a visually stunning, image first local chef feed.",
+      "Displays active chef kitchen status (e.g. 'Cooking Now', 'Pre order for dinner').",
+      "Streamlines order creation into a sliding double confirmation checkout drawer."
     ],
     role1ScreenTitle: "🍕 Discover Fresh Local Chefs",
     role1ScreenFilter: "Filter: Near Me • Veg Only • Active Kitchen",
     role1ScreenItems: [
       { name: "🍝 Maria's Italian Kitchen", slot: "Status: Cooking Now • 1.2 miles", rate: "Rs. 180 / plate", info: "8 portions left" },
-      { name: "🥟 The Himalayan Dumpling", slot: "Status: Pre-order for Dinner", rate: "Rs. 120 / plate", info: "20 portions left" }
+      { name: "🥟 The Himalayan Dumpling", slot: "Status: Pre order for Dinner", rate: "Rs. 120 / plate", info: "20 portions left" }
     ],
     role1ScreenCta: "Swipe to Place Order [══►]",
     role2Name: "seller",
@@ -53,9 +53,9 @@ const projectsData = {
     role2Archetype: "Fulfillment & Yield Focus",
     role2Desc: "The Chef wants to track incoming orders, schedule menus, and manage delivery riders with zero technical overhead. The design optimizes for cognitive simplicity during busy kitchen hours:",
     role2Items: [
-      "Presents a dense, scannable kitchen queue (New, Preparing, Ready, Out) to prevent order mix-ups.",
+      "Presents a dense, scannable kitchen queue (New, Preparing, Ready, Out) to prevent order mix ups.",
       "Integrates an automated local rider dispatch engine that triggers when food state is marked 'Ready'.",
-      "Features real-time earnings analytics showing today's margins and portion sales."
+      "Features real time earnings analytics showing today's margins and portion sales."
     ],
     role2ScreenTitle: "👩‍🍳 Kitchen Control Center",
     role2ScreenFilter: "Session Status: Kitchen Active",
@@ -64,12 +64,12 @@ const projectsData = {
       { name: "Order #1042 - Garlic Bread", slot: "State: Ready • Time: 2 min", rate: "Rider: Arrived", info: "Fulfillment pending" }
     ],
     role2ScreenCta: "Mark Order Ready (↑)",
-    designEvolutionDesc: "To ensure Feedzaa could scale to non-tech-savvy home chefs, the interface went through extensive gray-box user testing, followed by structural Figma design token mapping.",
-    wireframeDesc: "Decoupled the kitchen dashboard into a cardless, high-density order tracking view. Gray-box prototyping identified that complex nested settings confused chefs during busy hours, prompting us to elevate status buttons to main workspace.",
-    designSystemDesc: "Designed high-contrast, scalable Figma layout variables. Mapped status tokens directly from design to CSS variables, enabling rapid onboarding theme transitions.",
+    designEvolutionDesc: "To ensure Feedzaa could scale to non tech savvy home chefs, the interface went through extensive gray box user testing, followed by structural Figma design token mapping.",
+    wireframeDesc: "Decoupled the kitchen dashboard into a cardless, high density order tracking view. Gray box prototyping identified that complex nested settings confused chefs during busy hours, prompting us to elevate status buttons to main workspace.",
+    designSystemDesc: "Designed high contrast, scalable Figma layout variables. Mapped status tokens directly from design to CSS variables, enabling rapid onboarding theme transitions.",
     designMove1Title: "Unified Kitchen Dashboard",
     designMove1Sub: "Eliminating spreadsheeting",
-    designMove1Desc: "We consolidated WhatsApp chats, spreadsheets, and bank alerts into a single, scannable Kanban-style kitchen control center. Order status updates trigger automated user push-notifications and rider dispatch alerts.",
+    designMove1Desc: "We consolidated WhatsApp chats, spreadsheets, and bank alerts into a single, scannable Kanban style kitchen control center. Order status updates trigger automated user push notifications and rider dispatch alerts.",
     designMove1GraphTitle: "📊 Delivery Time Distribution",
     designMove1Svg: `<svg className="w-full h-[70%] stroke-[#DB3E19] fill-none stroke-[2]" viewBox="0 0 100 30">
                     <path d="M 0 25 Q 15 5, 30 10 T 60 20 T 90 5 T 100 25" />
@@ -92,7 +92,7 @@ const projectsData = {
     learningQuote: "This project taught me that unifying tools isn't enough; you must unify how people think and talk about their business.",
     learningDesc: "Home chefs didn't think in terms of 'inventory APIs' or 'payment corridors'. They thought in terms of 'plates prepared' and 'getting paid'. Aligning our design language with their mental models was the single biggest driver of adoption.",
     checkpoints: [
-      { title: "Speaks the user's language", desc: "Renamed complex payment terms to everyday home-cooking metaphors." },
+      { title: "Speaks the user's language", desc: "Renamed complex payment terms to everyday home cooking metaphors." },
       { title: "Inclusive UX bridges gaps", desc: "Designed simplified touch targets for chefs who manage screens while cooking." }
     ]
   },
@@ -100,19 +100,19 @@ const projectsData = {
     logoLight: "/logos/r-one.svg",
     logoDark: "/logos/r-one.svg",
     safeName: "RoneAms",
-    displayTitle: "R-One",
+    displayTitle: "R One",
     color: "#F76258",
     logoClasses: "max-h-8 sm:max-h-10 lg:max-h-12 w-auto max-w-[110px] sm:max-w-[140px] lg:max-w-[160px]",
     timeline: "4 Months (Winter 2025)",
     roleName: "Lead Product Designer",
     platform: "Web Console & Field Mobile",
     techStack: "React, Next.js, Framer Motion, TailWind, Expo",
-    tagline: "A unified digital ecosystem seamlessly connecting central management with on-the-ground field execution.",
-    overview1: "R-One is a comprehensive B2B application designed to centralize and streamline complex operational workflows for large-scale organizations. Built specifically to translate a high volume of complex data into actionable insights.",
+    tagline: "A unified digital ecosystem seamlessly connecting central management with on the ground field execution.",
+    overview1: "R One is a comprehensive B2B application designed to centralize and streamline complex operational workflows for large scale organizations. Built specifically to translate a high volume of complex data into actionable insights.",
     overview2: "By bringing two distinct worlds—central operations (web) and field execution (mobile)—into a single cohesive interface, the application ensures that vital information flows instantly and effortlessly.",
     stats: [
-      { metric: "60%", label: "Faster Task Completion", desc: "One-tap scanning and bottom-sheet forms reduced screen time for field workers." },
-      { metric: "100%", label: "Real-Time Visibility", desc: "Central management stopped relying on end-of-day reports thanks to unified feeds." },
+      { metric: "60%", label: "Faster Task Completion", desc: "One tap scanning and bottom sheet forms reduced screen time for field workers." },
+      { metric: "100%", label: "Real Time Visibility", desc: "Central management stopped relying on end of day reports thanks to unified feeds." },
       { metric: "80%", label: "Reduction in Data Errors", desc: "Replaced manual field typing with camera scanning and large selection toggles." }
     ],
     challengeTitle: "The Divide Between Central Office and Field Teams",
@@ -120,13 +120,13 @@ const projectsData = {
     breakdowns: [
       { num: "01 / Fragmented Oversight", desc: "Information regarding different locations, assets, and teams was scattered across disparate systems." },
       { num: "02 / Field Context Loss", desc: "Field teams struggled with clunky interfaces that were hard to read outdoors and use with gloves." },
-      { num: "03 / Reactive Operations", desc: "Without real-time field visibility, central management relied on reactive maintenance and manual status updates." }
+      { num: "03 / Reactive Operations", desc: "Without real time field visibility, central management relied on reactive maintenance and manual status updates." }
     ],
     roleSubtitle: "Two Roles, One Unified Ecosystem",
     roleDesc: "The platform was designed around two distinct yet complementary user experiences tailored to the specific needs of central dispatchers and field technicians.",
     role1Name: "buyer",
     role1Label: "Central Manager (Web)",
-    role1Archetype: "High-Level Proactive Control",
+    role1Archetype: "High Level Proactive Control",
     role1Desc: "For the central user, the solution prioritizes clarity, data density, and immediate visibility. The focus is to translate complex data into clear actionable insights:",
     role1Items: [
       "Streamlines project creation through guided workflows, reducing administrative setup time.",
@@ -145,35 +145,35 @@ const projectsData = {
     role2Archetype: "Contextual Field Execution",
     role2Desc: "For the field user, the solution prioritizes physical context and ease of interaction on the go. The interface feels lightweight and tactile:",
     role2Items: [
-      "Roots all tasks in Map-First Navigation, eliminating the need to dig through text lists.",
+      "Roots all tasks in Map First Navigation, eliminating the need to dig through text lists.",
       "Uses Contextual Bottom Sheets to log information without losing spatial context.",
-      "Employs thumb-friendly interaction and camera scanning to replace manual typing."
+      "Employs thumb friendly interaction and camera scanning to replace manual typing."
     ],
     role2ScreenTitle: "📱 Tech Mobile Execution App",
-    role2ScreenFilter: "Session Status: On-Site Verified",
+    role2ScreenFilter: "Session Status: On Site Verified",
     role2ScreenItems: [
       { name: "Workpack #431 - Repl Fan", slot: "Asset ID: CHG-2321 • Slot: A2", rate: "Action: Diagnostic Run", info: "Evid: Photo req" },
       { name: "Workpack #430 - KYC Inspect", slot: "Asset ID: CHG-2319 • Slot: C1", rate: "Action: Grounding Test", info: "Evid: Signed form" }
     ],
     role2ScreenCta: "Complete Checklist (↑)",
-    designEvolutionDesc: "To bridge the gap between heavy enterprise data and fast field execution, we tested gray-box prototypes with both managers and technicians, identifying key cognitive friction points.",
-    wireframeDesc: "Laid out dense web dashboards and mobile task cards. Usability testing revealed that field workers lost context in nested menus, prompting the shift to map-first navigation and bottom sheets.",
-    designSystemDesc: "Created a unified visual language with Figma tokens in strict accordance with WCAG (W2AG) European Accessibility Standards. We ensured that contrast ratios, status colors, and interactive elements felt identical across both the high-density web app and the high-contrast mobile app.",
-    designMove1Title: "Intelligent Alert Management",
-    designMove1Sub: "Prioritizing critical signals",
-    designMove1Desc: "To combat information overload for the central user, we designed a smart alert system categorized by severity, ensuring critical safety hazards surface immediately over routine updates.",
+    designEvolutionDesc: "To bridge the gap between heavy enterprise data and fast field execution, we tested gray box prototypes with both managers and technicians, identifying key cognitive friction points.",
+    wireframeDesc: "Laid out dense web dashboards and mobile task cards. Usability testing revealed that field workers lost context in nested menus, prompting the shift to map first navigation and bottom sheets.",
+    designSystemDesc: "Created a unified visual language with Figma tokens in strict accordance with WCAG (W2AG) European Accessibility Standards. We ensured that contrast ratios, status colors, and interactive elements felt identical across both the high density web app and the high contrast mobile app.",
+    designMove1Title: "Intelligent Alerts & Command Dashboard (Web)",
+    designMove1Sub: "Combating information overload",
+    designMove1Desc: "The heart of the application is a master dashboard that aggregates data into a clean interface. Notifications are categorized by severity, ensuring critical issues—like safety hazards—are surfaced immediately to the top of the central user's dashboard.",
     designMove1GraphTitle: "📊 Alert Response Time",
     designMove1Svg: `<svg className="w-full h-[70%] stroke-[#F76258] fill-none stroke-[2]" viewBox="0 0 100 30">
                     <path d="M 0 10 Q 30 25, 50 5 T 90 20 T 100 10" />
                     <circle cx="50" cy="5" r="3" className="fill-[#F76258] stroke-white stroke-[1]" />
                   </svg>`,
     designMove1GraphFooter: "Resolution Curve",
-    designMove2Title: "Map-First Navigation",
-    designMove2Sub: "Rooting tasks in reality",
-    designMove2Desc: "For field workers, we replaced traditional text-heavy task lists with a geographical map view, allowing them to see nearby stations and tap to view work immediately.",
-    designMove3Title: "Guided Workflows & Scanning",
-    designMove3Sub: "Reducing field data errors",
-    designMove3Desc: "We broke down complex project setups into step-by-step flows and introduced camera scanning for equipment identification, removing error-prone manual typing from the field.",
+    designMove2Title: "Map First Navigation & Contextual Sheets (Mobile)",
+    designMove2Sub: "Rooting tasks in physical location",
+    designMove2Desc: "For field users, the primary view is a geographical map. When executing a task, instructions slide up from the bottom as contextual sheets, allowing users to log information without losing sight of the underlying map or their spatial context.",
+    designMove3Title: "Proactive Maintenance & Scanning (Unified)",
+    designMove3Sub: "From reactive to proactive",
+    designMove3Desc: "Web users create automated preventive maintenance schedules via guided workflows. In the field, technicians use thumb friendly interactions and camera scanning to identify equipment, removing the need for error prone manual typing.",
     designMove3GraphTitle: "📈 Field Data Accuracy",
     designMove3GraphSvg: `<div className="h-28 flex items-end justify-between gap-2 px-4 py-2 border border-border/20 rounded-lg bg-card/30">
                   <div className="w-8 bg-[#F76258] rounded-t-sm" style={{ height: "65%" }} />
@@ -182,7 +182,7 @@ const projectsData = {
                   <div className="w-8 bg-muted rounded-t-sm" style={{ height: "45%" }} />
                 </div>`,
     learningQuote: "Context Over Complexity: Users don't need to see everything; they need to see what is immediately relevant to their role.",
-    learningDesc: "Designing for the Central User reinforced that visual clarity prevents cognitive overload, while designing for the Field User showed that high contrast and thumb-friendly targets are essential for environmental usability.",
+    learningDesc: "Designing for the Central User reinforced that visual clarity prevents cognitive overload, while designing for the Field User showed that high contrast and thumb friendly targets are essential for environmental usability.",
     checkpoints: [
       { title: "A Shared Visual Language", desc: "Using the same modern typography and card styles across platforms fostered a sense of unity." },
       { title: "European Accessibility Compliance", desc: "Designed according to stringent WCAG European standards (W2AG), guaranteeing high contrast and readability for field workers in harsh outdoor environments." },
@@ -201,21 +201,21 @@ const projectsData = {
     techStack: "React, TypeScript, Web3, tailwind, Node.js",
     tagline: "Securing decentralized physical infrastructure networks (DePIN) through cryptographic verification tools.",
     overview1: "Decentralized networks rely on operators proving physical resource allocation (e.g. location, bandwidth). Current verification methods are opaque and complex, causing operator churn.",
-    overview2: "Witnesschain simplifies DePIN verification, packaging cryptographic location proofs and node telemetry into an intuitive, high-performance monitoring dashboard.",
+    overview2: "Witnesschain simplifies DePIN verification, packaging cryptographic location proofs and node telemetry into an intuitive, high performance monitoring dashboard.",
     stats: [
       { metric: "99.8%", label: "Proof Success Rate", desc: "Automated cryptographic handshakes simplified operator confirmation." },
-      { metric: "35%", label: "Setup Friction Reduction", desc: "Bypassed complex CLI script configurations with a single-click install." },
+      { metric: "35%", label: "Setup Friction Reduction", desc: "Bypassed complex CLI script configurations with a single click install." },
       { metric: "4x", label: "Active Operator Count", desc: "Clean visual feedback prompted rural grid operators to maintain active nodes." }
     ],
     challengeTitle: "The Opaque World of Cryptographic Validation",
     challengeDesc: "Node operators keep DePIN networks alive, but current tools offer no visual clarity. Running scripts, checking epoch syncs, and diagnosing packet drops felt like operating blindfolded.",
     breakdowns: [
-      { num: "01 / High Scripting Barriers", desc: "Operators were required to execute complex terminal CLI commands, causing huge setup drop-offs." },
+      { num: "01 / High Scripting Barriers", desc: "Operators were required to execute complex terminal CLI commands, causing huge setup drop offs." },
       { num: "02 / Zero Fault Visualization", desc: "When a node went offline, operators received no clear telemetry, leading to long outages." },
       { num: "03 / Complex Epoch Tracking", desc: "Checking whether location proof claims were accepted required manual transaction lookup." }
     ],
     roleSubtitle: "Two Roles, One Infrastructure Layer",
-    roleDesc: "Witnesschain serves both institutional validators auditing global physical nodes, and backyard operators running micro-nodes.",
+    roleDesc: "Witnesschain serves both institutional validators auditing global physical nodes, and backyard operators running micro nodes.",
     role1Name: "buyer",
     role1Label: "The Node Operator",
     role1Archetype: "Telemetry & Status Focus",
@@ -228,8 +228,8 @@ const projectsData = {
     role1ScreenTitle: "🖥️ Operator Verification Dashboard",
     role1ScreenFilter: "Filter: Active Node • Delhi Area • Epoch 43",
     role1ScreenItems: [
-      { name: "🛡️ Node Witness-A1", slot: "Status: Validation Synced • Noida", rate: "CPU: 42% • RAM: 4.2GB", info: "Uptime: 99.8%" },
-      { name: "🛡️ Node Witness-A2", slot: "Status: Epoch Proof Pending • Gurugram", rate: "CPU: 88% • RAM: 7.9GB", info: "Uptime: 94.2%" }
+      { name: "🛡️ Node Witness A1", slot: "Status: Validation Synced • Noida", rate: "CPU: 42% • RAM: 4.2GB", info: "Uptime: 99.8%" },
+      { name: "🛡️ Node Witness A2", slot: "Status: Epoch Proof Pending • Gurugram", rate: "CPU: 88% • RAM: 7.9GB", info: "Uptime: 94.2%" }
     ],
     role1ScreenCta: "Claim Verification Payout",
     role2Name: "seller",
@@ -237,9 +237,9 @@ const projectsData = {
     role2Archetype: "Network Auditing Focus",
     role2Desc: "The Auditor (often a protocol developer or compliance officer) inspects network integrity. The interface simplifies trace data into interactive spatial grids:",
     role2Items: [
-      "Aggregates regional proof-of-location logs into a single spatial map layer.",
+      "Aggregates regional proof of location logs into a single spatial map layer.",
       "Visualizes network consensus states through clean color indicators.",
-      "Enables deep-dive inspections into cryptographic validation packets."
+      "Enables deep dive inspections into cryptographic validation packets."
     ],
     role2ScreenTitle: "📊 Protocol Audit Dashboard",
     role2ScreenFilter: "Session Status: Grid Synced",
@@ -248,10 +248,10 @@ const projectsData = {
       { name: "Epoch #4320 - Bandwidth Proofs", slot: "State: Consensus Failed • 4 Nodes Alert", rate: "Claims: 980 Verified", info: "Audit status: Warned" }
     ],
     role2ScreenCta: "Audit Selected Epoch (↑)",
-    designEvolutionDesc: "To bring Witnesschain to non-technical operators, we mapped structural DePIN entities into highly intuitive visual components.",
-    wireframeDesc: "Laid out the core telemetry board with cardless layouts. Grey-box testing proved that nested diagnostic menus confused hobbyist operators, prompting us to integrate direct push logs.",
-    designSystemDesc: "Created color-coded Figma design variables representing DePIN status levels. Kept spacing variables strict to avoid cluttering rich telemetry views.",
-    designMove1Title: "Proof-of-Location Dashboard",
+    designEvolutionDesc: "To bring Witnesschain to non technical operators, we mapped structural DePIN entities into highly intuitive visual components.",
+    wireframeDesc: "Laid out the core telemetry board with cardless layouts. Grey box testing proved that nested diagnostic menus confused hobbyist operators, prompting us to integrate direct push logs.",
+    designSystemDesc: "Created color coded Figma design variables representing DePIN status levels. Kept spacing variables strict to avoid cluttering rich telemetry views.",
+    designMove1Title: "Proof of Location Dashboard",
     designMove1Sub: "Visualizing spatial validation",
     designMove1Desc: "We replaced terminal logs with a clean spatial dashboard. Operators can see when their physical location claim is being queried, validated, and signed by surrounding witness nodes.",
     designMove1GraphTitle: "📊 Node Validation Frequency",
@@ -260,7 +260,7 @@ const projectsData = {
                     <circle cx="45" cy="25" r="3" className="fill-[#A855F7] stroke-white stroke-[1]" />
                   </svg>`,
     designMove1GraphFooter: "Validation Curve",
-    designMove2Title: "One-Click Installer console",
+    designMove2Title: "One Click Installer console",
     designMove2Sub: "Replacing shell scripting",
     designMove2Desc: "Designed an interactive installer widget that replaces complex CLI command execution. Users tap a single button to pull local Docker images and deploy their node validator.",
     designMove3Title: "Conversational Triage AI",
@@ -274,7 +274,7 @@ const projectsData = {
                   <div className="w-8 bg-muted rounded-t-sm" style={{ height: "25%" }} />
                 </div>`,
     learningQuote: "Security is only secure if the humans executing the protocol understand what they are confirming.",
-    learningDesc: "Cryptographic validators are highly complex, but the humans keeping them online require absolute clarity. High-fidelity visual status feedback turned a highly abstract task into a clear, daily habit.",
+    learningDesc: "Cryptographic validators are highly complex, but the humans keeping them online require absolute clarity. High fidelity visual status feedback turned a highly abstract task into a clear, daily habit.",
     checkpoints: [
       { title: "Explainability drives action", desc: "Translated technical cryptographic hashes into clear spatial indicators." },
       { title: "Design for decision moments", desc: "Grouped diagnostic logs directly next to active rewards metrics." }
@@ -293,29 +293,29 @@ const projectsData = {
     techStack: "React, Vite, CSS, MQTT Telemetry, Canvas",
     tagline: "Industrial IoT monitoring console translating dense ambient sensor readings into active site operations.",
     overview1: "Industrial facilities operate hundreds of environmental sensors (temperature, pressure, leak detection). Planners are overwhelmed by constant noise and false alarms, causing delayed emergency responses.",
-    overview2: "Iris Sense organizes complex spatial data into a high-fidelity visual dashboard. Planners can triage incidents and verify hardware alerts immediately on an interactive floor map.",
+    overview2: "Iris Sense organizes complex spatial data into a high fidelity visual dashboard. Planners can triage incidents and verify hardware alerts immediately on an interactive floor map.",
     stats: [
-      { metric: "50%", label: "Faster Emergency Triage", desc: "Floor-plan integration enabled operators to instantly isolate alarm locations." },
+      { metric: "50%", label: "Faster Emergency Triage", desc: "Floor plan integration enabled operators to instantly isolate alarm locations." },
       { metric: "35%", label: "Fewer Alarm False Positives", desc: "Implemented ambient threshold sliders to filter background noise." },
-      { metric: "99.9%", label: "MQTT Socket Sync", desc: "Telemetry events streamed directly with sub-second canvas rendering." }
+      { metric: "99.9%", label: "MQTT Socket Sync", desc: "Telemetry events streamed directly with sub second canvas rendering." }
     ],
     challengeTitle: "The Danger of Industrial Alarm Fatigue",
     challengeDesc: "When a critical pressure valve alerts, every second counts. However, because ambient sensor alarms were presented in dry spreadsheets, technicians spent critical minutes searching for the physical hardware location.",
     breakdowns: [
       { num: "01 / Zero Spatial Reference", desc: "Alarms listed room numbers but lacked spatial routing maps, forcing manual navigation during crises." },
       { num: "02 / Noisy Threshold Caps", desc: "Static alarm values triggered alarms for harmless ambient humidity shifts, driving alarm fatigue." },
-      { num: "03 / Fragmented Hardware Logs", desc: "Historical calibration data lived in distinct cabinets, hiding wear-and-tear trends." }
+      { num: "03 / Fragmented Hardware Logs", desc: "Historical calibration data lived in distinct cabinets, hiding wear and tear trends." }
     ],
     roleSubtitle: "Unified Operational Control",
-    roleDesc: "We designed Iris Sense to serve central dispatchers and planners, providing a single source of truth for monitoring multiple multi-story warehouses and floor plans.",
+    roleDesc: "We designed Iris Sense to serve central dispatchers and planners, providing a single source of truth for monitoring multiple multi story warehouses and floor plans.",
     role1Name: "operator",
     role1Label: "Control Room Operator",
-    role1Archetype: "High-Density Spatial Triage",
+    role1Archetype: "High Density Spatial Triage",
     role1Desc: "The Operator monitors ambient safety levels across hundreds of rooms. The design optimizes for fast hazard isolation:",
     role1Items: [
       "Presents an interactive vector floor plan showing active sensor hotspots.",
       "Aggregates ambient humidity, pressure, and telemetry metrics into clean card modules.",
-      "Triggers high-visibility red flashing warning sheets when levels breach safe caps."
+      "Triggers high visibility red flashing warning sheets when levels breach safe caps."
     ],
     role1ScreenTitle: "🏭 Spatial Control Console",
     role1ScreenFilter: "Filter: High Temp • Room 204 • Warehouse North",
@@ -324,8 +324,8 @@ const projectsData = {
       { name: "💧 Ambient Humidity H-04", slot: "Status: Normal • Noida Wing", rate: "Level: 45% • 22°C", info: "Action: None Required" }
     ],
     role1ScreenCta: "Initiate Emergency Pressure Purge",
-    designEvolutionDesc: "To ensure safety planners could coordinate crises, the spatial UI underwent multiple gray-box feedback sessions followed by rigorous design token mapping.",
-    wireframeDesc: "Laid out floor plans into vector grid paths. Grey-box testing revealed that overlay panels blocked map paths, prompting us to implement slide-out sidebar drawers.",
+    designEvolutionDesc: "To ensure safety planners could coordinate crises, the spatial UI underwent multiple gray box feedback sessions followed by rigorous design token mapping.",
+    wireframeDesc: "Laid out floor plans into vector grid paths. Grey box testing revealed that overlay panels blocked map paths, prompting us to implement slide out sidebar drawers.",
     designSystemDesc: "Created Figma variables maps for hazard states (Alert, Critical, Safe). Mapped variables directly to class layouts, keeping UI themes highly responsive.",
     designMove1Title: "Spatial Hotspot Mapping",
     designMove1Sub: "Contextualizing industrial alerts",
@@ -368,35 +368,35 @@ const projectsData = {
     techStack: "React, D3.js, WebSockets, Tailwind, TypeScript",
     tagline: "Enterprise network diagnostics dashboard mapping live packet routes and isolating failure points.",
     overview1: "Network administrators struggle to identify silent outages and routing anomalies in cloud setups. Sifting through millions of text logs takes precious hours while customers experience sluggish speeds.",
-    overview2: "Iris Network visualizes live node connections, utilizing custom spatial telemetry D3 charts to spot latency spikes and packet loss instantly on a high-fidelity dashboard.",
+    overview2: "Iris Network visualizes live node connections, utilizing custom spatial telemetry D3 charts to spot latency spikes and packet loss instantly on a high fidelity dashboard.",
     stats: [
-      { metric: "75%", label: "Faster Incident Triage", desc: "Unified routing maps visualised bottlenecks immediately, avoiding text-log crawls." },
+      { metric: "75%", label: "Faster Incident Triage", desc: "Unified routing maps visualised bottlenecks immediately, avoiding text log crawls." },
       { metric: "2x", label: "Root Cause Isolation Speed", desc: "Automated traceroute logs grouped related drops into single event logs." },
-      { metric: "100%", label: "Real-time Socket Update", desc: "WebSocket telemetry feeds updated node states with zero browser lag." }
+      { metric: "100%", label: "Real time Socket Update", desc: "WebSocket telemetry feeds updated node states with zero browser lag." }
     ],
     challengeTitle: "The Danger of Blind Network Failures",
-    challengeDesc: "When a multi-region network gateway drops packets, users notice instantly. But for operators, finding the exact broken hop required tracing hops manually using repetitive terminal inputs.",
+    challengeDesc: "When a multi region network gateway drops packets, users notice instantly. But for operators, finding the exact broken hop required tracing hops manually using repetitive terminal inputs.",
     breakdowns: [
       { num: "01 / Text-Log Overwhelm", desc: "Millions of dry terminal logs hidden latency patterns, making diagnostics highly reactive." },
-      { num: "02 / Isolated Topology Maps", desc: "Static node graphs lacked real-time latency indicators, hiding traffic spikes." },
+      { num: "02 / Isolated Topology Maps", desc: "Static node graphs lacked real time latency indicators, hiding traffic spikes." },
       { num: "03 / Disconnected Triage Loops", desc: "Identifying a broken port required operators to exit the diagnostic panel and check asset lists." }
     ],
     roleSubtitle: "Two Roles, One Reliability Standard",
-    roleDesc: "We designed Iris Network to serve control room operators auditing real-time regional packet flows, and network architects planning cloud node topologies.",
+    roleDesc: "We designed Iris Network to serve control room operators auditing real time regional packet flows, and network architects planning cloud node topologies.",
     role1Name: "buyer",
     role1Label: "Control Room Operator",
-    role1Archetype: "High-Information Diagnostic Triage",
+    role1Archetype: "High Information Diagnostic Triage",
     role1Desc: "The Operator triages immediate connection alarms and redirects traffic nodes. The design optimizes for fast spatial context:",
     role1Items: [
-      "Aggregates multi-region telemetry feeds into a single live connection grid.",
+      "Aggregates multi region telemetry feeds into a single live connection grid.",
       "Highlights packet drop percentages using warning color indicator cards.",
       "Enables fast node restarts through sliding utility control sheets."
     ],
     role1ScreenTitle: "🖥️ Live Packet Telemetry Console",
     role1ScreenFilter: "Filter: High Latency • Delhi Node • Packet Loss > 2%",
     role1ScreenItems: [
-      { name: "⚡ Gateway Delhi-Hub-1", slot: "Status: Packet Drop 4.5% • East Wing", rate: "Latency: 280ms • active", info: "Action: Route Triage Req" },
-      { name: "⚡ Node Noida-Edge-3", slot: "Status: Healthy • North Wing", rate: "Latency: 12ms • active", info: "Action: None Required" }
+      { name: "⚡ Gateway Delhi Hub-1", slot: "Status: Packet Drop 4.5% • East Wing", rate: "Latency: 280ms • active", info: "Action: Route Triage Req" },
+      { name: "⚡ Node Noida Edge-3", slot: "Status: Healthy • North Wing", rate: "Latency: 12ms • active", info: "Action: None Required" }
     ],
     role1ScreenCta: "Restart Selected Gateway",
     role2Name: "seller",
@@ -404,9 +404,9 @@ const projectsData = {
     role2Archetype: "Topology & Capacity Planning",
     role2Desc: "The Architect plans hardware configurations and analyzes historical capacity metrics. The dashboard provides complex trend graphs and sandbox modeling tools:",
     role2Items: [
-      "Provides drag-and-drop spatial model panels to test node configurations.",
+      "Provides drag and drop spatial model panels to test node configurations.",
       "Generates historical latency trends using custom native D3 chart overlays.",
-      "Visualizes packet-size distribution curves across multiple network regions."
+      "Visualizes packet size distribution curves across multiple network regions."
     ],
     role2ScreenTitle: "📊 Network Architecture Sandbox",
     role2ScreenFilter: "Session Status: Topology Synced",
@@ -415,12 +415,12 @@ const projectsData = {
       { name: "Simulation #22 - Failover Test", slot: "State: Failed Hop Isolated • 2 Nodes", rate: "Throughput: 800 Gbps", info: "Outcome: Warning" }
     ],
     role2ScreenCta: "Deploy Simulation to Staging (↑)",
-    designEvolutionDesc: "To ensure network administrators could route heavy traffic during spikes, the console interface went through extensive grey-box layout testing.",
-    wireframeDesc: "Drafted high-density routing tables and nested map views. User testing revealed that hovering node topologies triggered excessive details, prompting us to design clean slide-out detail drawers.",
+    designEvolutionDesc: "To ensure network administrators could route heavy traffic during spikes, the console interface went through extensive grey box layout testing.",
+    wireframeDesc: "Drafted high density routing tables and nested map views. User testing revealed that hovering node topologies triggered excessive details, prompting us to design clean slide out detail drawers.",
     designSystemDesc: "Created Figma styling variables for latency metrics (Red: >100ms, Amber: 50-100ms, Green: <50ms). Mapped classes directly to styled layouts, keeping the console highly responsive.",
     designMove1Title: "Interactive Route Mapping",
     designMove1Sub: "Visualizing packet flow spatial paths",
-    designMove1Desc: "We consolidated raw CLI traceroute strings into interactive, real-time node path visualization. Users can click any hop to view live hardware temperatures and drop rates.",
+    designMove1Desc: "We consolidated raw CLI traceroute strings into interactive, real time node path visualization. Users can click any hop to view live hardware temperatures and drop rates.",
     designMove1GraphTitle: "📊 Multi-Region Throughput Peak",
     designMove1Svg: `<svg className="w-full h-[70%] stroke-[#10b981] fill-none stroke-[2]" viewBox="0 0 100 30">
                     <path d="M 0 25 Q 20 10, 40 20 T 70 5 T 100 15" />
@@ -441,7 +441,7 @@ const projectsData = {
                   <div className="w-8 bg-muted rounded-t-sm" style={{ height: "20%" }} />
                 </div>`,
     learningQuote: "Network diagnostics is a clarity problem, not a log volume problem.",
-    learningDesc: "By placing raw logs onto spatial node hops and building high-performance socket charts, we helped operators keep major cloud services online.",
+    learningDesc: "By placing raw logs onto spatial node hops and building high performance socket charts, we helped operators keep major cloud services online.",
     checkpoints: [
       { title: "Explainability drives action", desc: "Translated dry traceroute terminal dumps into intuitive connection routes." },
       { title: "Design for decision moments", desc: "Positioned gateway restart triggers directly next to latency alerts." }
@@ -460,35 +460,35 @@ const projectsData = {
     techStack: "React, Expo, Mapbox API, Zustand, WebSocket",
     tagline: "Enterprise fleet tracking and route optimization console reducing fuel usage and dispatch latency.",
     overview1: "Fleet dispatchers juggle route mapping, driver capacity, and vehicle maintenance schedules across different tabs, causing delayed deliveries.",
-    overview2: "Iris Fleet unifies operations, placing real-time delivery tracking, Mapbox routing maps, and instant driver chat logs into one high-performance dashboard.",
+    overview2: "Iris Fleet unifies operations, placing real time delivery tracking, Mapbox routing maps, and instant driver chat logs into one high performance dashboard.",
     stats: [
       { metric: "22%", label: "Lower Fuel Usage", desc: "Mapbox route optimization reduced delivery miles." },
       { metric: "15 min", label: "Faster Dispatch Handoff", desc: "Direct route pushing avoided manual address text messages." },
-      { metric: "98.9%", label: "Uptime Sync Rate", desc: "Driver coordinates updated on central maps with sub-second latency." }
+      { metric: "98.9%", label: "Uptime Sync Rate", desc: "Driver coordinates updated on central maps with sub second latency." }
     ],
     challengeTitle: "The Friction of Manual Route Dispatching",
     challengeDesc: "Coordinating deliveries requires continuous route adjustment. But when dispatchers manage routes, drivers, and inventory in separate spreadsheets, delays become the norm.",
     breakdowns: [
       { num: "01 / Broken Route Pipelines", desc: "Dispatchers had to copy destination logs to Google Maps and send directions to drivers." },
-      { num: "02 / Zero Telemetry Sync", desc: "No real-time truck diagnostics meant drivers broke down mid-route without warning." },
+      { num: "02 / Zero Telemetry Sync", desc: "No real time truck diagnostics meant drivers broke down mid route without warning." },
       { num: "03 / Multi-App Swapping Fatigue", desc: "Coordinating delays required dispatchers to switch between phone calls, maps, and schedules." }
     ],
     roleSubtitle: "Two Roles, One Optimized Highway",
     roleDesc: "We designed Iris Fleet to serve logistics planners coordinating thousands of shipments, and drivers navigating heavy city traffic.",
     role1Name: "buyer",
     role1Label: "Logistics Dispatcher",
-    role1Archetype: "High-Density Dispatch Console",
-    role1Desc: "The Dispatcher monitors active trucks, schedules routes, and triages vehicle alerts. The design optimizes for fast multi-tasking:",
+    role1Archetype: "High Density Dispatch Console",
+    role1Desc: "The Dispatcher monitors active trucks, schedules routes, and triages vehicle alerts. The design optimizes for fast multi tasking:",
     role1Items: [
       "Integrates a dynamic Mapbox GIS layout showing active vehicle markers.",
       "Aggregates truck diagnostics (e.g. Engine heat, Tire psi) into styled cards.",
-      "Enables fast route adjustments through drag-and-drop shipment cards."
+      "Enables fast route adjustments through drag and drop shipment cards."
     ],
     role1ScreenTitle: "🚚 Active Logistics Dispatch Console",
     role1ScreenFilter: "Filter: Active Trucks • Delhi Loop • Speed > 60km/h",
     role1ScreenItems: [
-      { name: "🚛 Truck Hub Delhi-West", slot: "Status: Route Delayed • 12 miles near", rate: "Cargo: Electronics • active", info: "Action: Re-route Push" },
-      { name: "🚛 Truck Hub Noida-South", slot: "Status: On Time • 4.8 miles near", rate: "Cargo: Grocery • active", info: "Action: None Required" }
+      { name: "🚛 Truck Hub Delhi West", slot: "Status: Route Delayed • 12 miles near", rate: "Cargo: Electronics • active", info: "Action: Re route Push" },
+      { name: "🚛 Truck Hub Noida South", slot: "Status: On Time • 4.8 miles near", rate: "Cargo: Grocery • active", info: "Action: None Required" }
     ],
     role1ScreenCta: "Push Route Optimization to Driver",
     role2Name: "seller",
@@ -497,7 +497,7 @@ const projectsData = {
     role2Desc: "The Driver needs an experience that presents clear directions with zero distractions. The mobile app acts as a secure route assistant:",
     role2Items: [
       "Features big, clear navigation cards designed for truck mounts.",
-      "Integrates one-tap customer calling and signature proof-of-delivery capture.",
+      "Integrates one tap customer calling and signature proof of delivery capture.",
       "Utilizes offline cache mapping to prevent signal drops in rural tunnels."
     ],
     role2ScreenTitle: "📱 Driver Mobile Assistant",
@@ -507,12 +507,12 @@ const projectsData = {
       { name: "Stop #3 - Noida Sector 62", slot: "Cargo: Box 1C • Delivered", rate: "Action: Complete Signature", info: "Status: Finished" }
     ],
     role2ScreenCta: "Mark Stop Completed (↑)",
-    designEvolutionDesc: "To ensure fleet dispatchers could coordinate rapid deliveries, the console went through extensive grey-box layout testing.",
-    wireframeDesc: "Drafted high-density logistics tables and map views. Gray-box interactive testing verified that modal details blocked route paths, prompting us to design expanding detail drawers.",
+    designEvolutionDesc: "To ensure fleet dispatchers could coordinate rapid deliveries, the console went through extensive grey box layout testing.",
+    wireframeDesc: "Drafted high density logistics tables and map views. Gray box interactive testing verified that modal details blocked route paths, prompting us to design expanding detail drawers.",
     designSystemDesc: "Created Figma color tokens representing truck safety thresholds (Alert: Red, Normal: Teal). Standardized layout grid tokens to keep maps scalable across desktop and tablets.",
     designMove1Title: "Interactive Route Map",
     designMove1Sub: "Contextualizing driver paths spatial layout",
-    designMove1Desc: "We integrated a real-time Mapbox GIS map engine. When a delivery delay triggers, the console highlights the exact vehicle coordinates and suggests alternative paths.",
+    designMove1Desc: "We integrated a real time Mapbox GIS map engine. When a delivery delay triggers, the console highlights the exact vehicle coordinates and suggests alternative paths.",
     designMove1GraphTitle: "📊 Fuel Efficiency Distribution",
     designMove1Svg: `<svg className="w-full h-[70%] stroke-[#06b6d4] fill-none stroke-[2]" viewBox="0 0 100 30">
                     <path d="M 0 25 Q 15 10, 35 20 T 70 5 T 100 25" />
@@ -533,7 +533,7 @@ const projectsData = {
                   <div className="w-8 bg-muted rounded-t-sm" style={{ height: "35%" }} />
                 </div>`,
     learningQuote: "Logistics UX is safety UX. Direct routing paths prevent road distractions.",
-    learningDesc: "By placing truck diagnostics directly onto spatial map markers and designing offline-first navigation steps, we helped logistics drivers execute their daily rounds safely.",
+    learningDesc: "By placing truck diagnostics directly onto spatial map markers and designing offline first navigation steps, we helped logistics drivers execute their daily rounds safely.",
     checkpoints: [
       { title: "Explainability drives action", desc: "Translated complex route options into clean spatial markers." },
       { title: "Design for decision moments", desc: "Positioned optimized route pushes directly below loading alerts." }
@@ -550,15 +550,15 @@ const projectsData = {
     platform: "Consumer App & Merchant Web",
     techStack: "React Native, Tailwind CSS, Stripe API, Node.js",
     tagline: "Sleek P2P microfinance and payment gateway simplifying everyday transactions and cash transfers.",
-    overview1: "Micro-merchants and casual users experience high payment drop-offs when trying to transfer cash through slow, data-heavy banking portals.",
-    overview2: "PayEZ streamlines P2P payments, utilizing modern layout transitions, wallet management tabs, and one-swipe checkout sheets to secure cash flows.",
+    overview1: "Micro merchants and casual users experience high payment drop offs when trying to transfer cash through slow, data heavy banking portals.",
+    overview2: "PayEZ streamlines P2P payments, utilizing modern layout transitions, wallet management tabs, and one swipe checkout sheets to secure cash flows.",
     stats: [
-      { metric: "0.2s", label: "Sub-Second P2P Sync", desc: "Optimized payment routes enabled instant cash transfers." },
-      { metric: "38%", label: "Fewer Checkout Drops", desc: "Simplified form inputs into a single-swipe double-confirmation checkout drawer." },
+      { metric: "0.2s", label: "Sub Second P2P Sync", desc: "Optimized payment routes enabled instant cash transfers." },
+      { metric: "38%", label: "Fewer Checkout Drops", desc: "Simplified form inputs into a single swipe double confirmation checkout drawer." },
       { metric: "100%", label: "Fraud Score Validation", desc: "Integrated biometric fraud checks directly on checkout flow." }
     ],
     challengeTitle: "The Pain of Sluggish Payment Pipelines",
-    challengeDesc: "Sending money should feel like sending a text. But when users face multi-step verification pages, complex routing codes, and dry tables, transaction drop-offs skyrocket.",
+    challengeDesc: "Sending money should feel like sending a text. But when users face multi step verification pages, complex routing codes, and dry tables, transaction drop offs skyrocket.",
     breakdowns: [
       { num: "01 / Opaque Verification Loops", desc: "Multiple verification pages delayed checkout times, driving user frustration." },
       { num: "02 / Zero Balance Visualization", desc: "Static ledgers hid daily spending trends, preventing easy cash flow monitoring." },
@@ -572,7 +572,7 @@ const projectsData = {
     role1Desc: "The Sender wants to transfer cash instantly with zero friction. The design optimizes for fast transaction execution:",
     role1Items: [
       "Replaces dry ledger lists with a sleek, interactive spending history feed.",
-      "Integrates one-swipe checkout sheets to bypass slow routing checks.",
+      "Integrates one swipe checkout sheets to bypass slow routing checks.",
       "Highlights dynamic wallet balance indicators on the main screen."
     ],
     role1ScreenTitle: "📱 P2P Wallet Dashboard",
@@ -598,8 +598,8 @@ const projectsData = {
       { name: "Invoice #4320 - Tim", slot: "State: Refunded • Date: Yesterday", rate: "Amount: Rs. 1,200", info: "Status: Returned" }
     ],
     role2ScreenCta: "Issue Custom Invoicing Sheet (↑)",
-    designEvolutionDesc: "To ensure PayEZ could scale to retail merchants, the interface underwent multiple grey-box layout validation sessions.",
-    wireframeDesc: "Laid out payment tables and invoice inputs. Grey-box testing verified that modal checkout inputs caused user errors, prompting us to design expanding sliding drawer sheets.",
+    designEvolutionDesc: "To ensure PayEZ could scale to retail merchants, the interface underwent multiple grey box layout validation sessions.",
+    wireframeDesc: "Laid out payment tables and invoice inputs. Grey box testing verified that modal checkout inputs caused user errors, prompting us to design expanding sliding drawer sheets.",
     designSystemDesc: "Standardized color tokens representing payment status levels (Success: Emerald, Warning: Red). Kept layout grid tokens clean to maintain readability.",
     designMove1Title: "Sleek Transaction Feed",
     designMove1Sub: "Eliminating table clutter",
@@ -610,9 +610,9 @@ const projectsData = {
                     <circle cx="40" cy="20" r="3" className="fill-[#e11d48] stroke-white stroke-[1]" />
                   </svg>`,
     designMove1GraphFooter: "Savings Curve",
-    designMove2Title: "One-Swipe Checkout",
+    designMove2Title: "One Swipe Checkout",
     designMove2Sub: "Streamlining transaction loops",
-    designMove2Desc: "Designed an interactive payment sliding sheet that executes P2P transfers within sub-seconds, avoiding sluggish page reloads.",
+    designMove2Desc: "Designed an interactive payment sliding sheet that executes P2P transfers within sub seconds, avoiding sluggish page reloads.",
     designMove3Title: "Conversational Financial AI",
     designMove3Sub: "Assisting budgeting diagnostics",
     designMove3Desc: "Integrated an assistive chat helper inside the wallet app. Senders can ask 'How much did I save this week?' and receive instant spending feedback.",
@@ -624,7 +624,7 @@ const projectsData = {
                   <div className="w-8 bg-muted rounded-t-sm" style={{ height: "35%" }} />
                 </div>`,
     learningQuote: "Microfinance UX is trust UX. Frictionless loops convey transaction reliability.",
-    learningDesc: "By placing balance trends directly onto the home screen and designing one-swipe checkout drawer sheets, we helped users manage cash flows confidently.",
+    learningDesc: "By placing balance trends directly onto the home screen and designing one swipe checkout drawer sheets, we helped users manage cash flows confidently.",
     checkpoints: [
       { title: "Explainability drives action", desc: "Translated technical banking codes into clear transaction status tags." },
       { title: "Design for decision moments", desc: "Positioned transfer triggers directly next to active wallet balances." }
@@ -643,7 +643,7 @@ const projectsData = {
     techStack: "React, Next.js, tailwind CSS, GraphQL, Postgres",
     tagline: "Enterprise order management console tracking global retail stock, automated invoicing, and fulfillment.",
     overview1: "Warehouse teams struggle to fulfill wholesale orders because stock data, invoices, and shipment tracking are fragmented across different tools.",
-    overview2: "OMS — Sodexo unifies retail supply pipelines, placing stock tracking, automated supplier orders, and real-time shipment updates into a single dashboard.",
+    overview2: "OMS — Sodexo unifies retail supply pipelines, placing stock tracking, automated supplier orders, and real time shipment updates into a single dashboard.",
     stats: [
       { metric: "40%", label: "Faster Stock Dispatch", desc: "Consolidated incoming orders into a unified warehouse queue." },
       { metric: "2x", label: "Fulfillment Precision", desc: "Integrated live barcode scanning sheets, avoiding manual typing mistakes." },
@@ -652,7 +652,7 @@ const projectsData = {
     challengeTitle: "The Friction of Fragmented Retail Fulfillment",
     challengeDesc: "Processing hundreds of bulk orders requires absolute logistical synchronization. But when warehouse teams manage inventory, shipping labels, and billing separately, fulfillment loops fail.",
     breakdowns: [
-      { num: "01 / Disjointed Order Records", desc: "Storefront orders were manually copy-pasted to inventory logs, causing shipping delays." },
+      { num: "01 / Disjointed Order Records", desc: "Storefront orders were manually copy pasted to inventory logs, causing shipping delays." },
       { num: "02 / Manual Stock Re-orders", desc: "Restocking items required manual review of spreadsheets, causing stockouts." },
       { num: "03 / Fragmented Carrier Chats", desc: "Coordinating logistics partners required staff to exit the app and call carriers." }
     ],
@@ -660,11 +660,11 @@ const projectsData = {
     roleDesc: "We designed OMS — Sodexo to serve logistics operators planning bulk regional restocks, and warehouse workers picking items on the floor.",
     role1Name: "buyer",
     role1Label: "Warehouse Operator",
-    role1Archetype: "High-Information Order Triage",
+    role1Archetype: "High Information Order Triage",
     role1Desc: "The Operator schedules regional shipments and monitors bulk product demands. The design optimizes for fast searchability:",
     role1Items: [
       "Aggregates store orders into a single, ranked fulfillment pipeline.",
-      "Calculates live stock health metrics to trigger automated supplier re-orders.",
+      "Calculates live stock health metrics to trigger automated supplier re orders.",
       "Enables fast cargo dispatcher assignments through styled control sheets."
     ],
     role1ScreenTitle: "🖥️ Fulfillment Operations Panel",
@@ -690,8 +690,8 @@ const projectsData = {
       { name: "Item #203 - Steel Valves", slot: "Aisle: C1 • Shelf: 2 • Depot South", rate: "Action: Complete Inspection", info: "Status: Verified" }
     ],
     role2ScreenCta: "Commit Picking Checklist (↑)",
-    designEvolutionDesc: "To ensure warehouse operators could coordinate fast orders, the console interface underwent multiple grey-box user testing loops.",
-    wireframeDesc: "Laid out high-density order lists and product tables. User testing proved that overlay popups blocked warehouse timelines, prompting us to design sliding detail drawers.",
+    designEvolutionDesc: "To ensure warehouse operators could coordinate fast orders, the console interface underwent multiple grey box user testing loops.",
+    wireframeDesc: "Laid out high density order lists and product tables. User testing proved that overlay popups blocked warehouse timelines, prompting us to design sliding detail drawers.",
     designSystemDesc: "Created Figma styling variables representing stock alert states (Safe: Teal, Warning: Indigo). Standardized card elements to maintain visual structure.",
     designMove1Title: "Unified Fulfillment Feed",
     designMove1Sub: "Replacing spreadsheet triage loops",
@@ -716,7 +716,7 @@ const projectsData = {
                   <div className="w-8 bg-muted rounded-t-sm" style={{ height: "35%" }} />
                 </div>`,
     learningQuote: "Operations UX is systems UX. Smooth fulfillment comes from shared state coherence.",
-    learningDesc: "By placing stock diagnostics directly onto picking routes and designing high-performance scanner sliders, we helped logistics operators dispatch cargo safely.",
+    learningDesc: "By placing stock diagnostics directly onto picking routes and designing high performance scanner sliders, we helped logistics operators dispatch cargo safely.",
     checkpoints: [
       { title: "Explainability drives action", desc: "Translated complex SKU parameters into clear inventory routes." },
       { title: "Design for decision moments", desc: "Positioned bulk shipment releases directly below warehouse alerts." }
@@ -737,7 +737,7 @@ const projectsData = {
     overview2: "Iris RMS consolidates regional safety checks, dynamic threat level analysis, and compliance checklists into a single, secure control console.",
     stats: [
       { metric: "45%", label: "Faster Policy Triaging", desc: "Unified incoming complaints and audits into a single prioritized queue." },
-      { metric: "30%", label: "Fewer Audit Delays", desc: "Simplified audit check sheets with drag-and-drop report builders." },
+      { metric: "30%", label: "Fewer Audit Delays", desc: "Simplified audit check sheets with drag and drop report builders." },
       { metric: "99.8%", label: "System Compliance Sync", desc: "Policy updates synced across site tablets with zero data loss." }
     ],
     challengeTitle: "The Friction of Manual Safety Compliance",
@@ -748,10 +748,10 @@ const projectsData = {
       { num: "03 / Slow Auditing Handoffs", desc: "Safety officers had to print out forms, fill them manually, and scan them back to databases." }
     ],
     roleSubtitle: "Two Roles, One Compliance Layer",
-    roleDesc: "We designed Iris RMS to serve central risk planners coordinating multi-facility regulations, and site auditors inspecting hardware on the floor.",
+    roleDesc: "We designed Iris RMS to serve central risk planners coordinating multi facility regulations, and site auditors inspecting hardware on the floor.",
     role1Name: "buyer",
     role1Label: "Operations Risk Planner",
-    role1Archetype: "High-Density Policy Auditing",
+    role1Archetype: "High Density Policy Auditing",
     role1Desc: "The Planner monitors facility hazard alerts and schedules policy updates. The design dashboard optimizes for fast hazard triage:",
     role1Items: [
       "Aggregates regional safety logs into a single, ranked incident control board.",
@@ -781,8 +781,8 @@ const projectsData = {
       { name: "Aisle #203 - Fire Extinguisher", slot: "Facility ID: DEP-2038 • Noida Area", rate: "Action: Pressure Gauge Test", info: "Evid: Date verified" }
     ],
     role2ScreenCta: "Commit Inspection Checklist (↑)",
-    designEvolutionDesc: "To ensure safety planners could coordinate crises, the interface underwent multiple grey-box feedback sessions followed by rigorous design token mapping.",
-    wireframeDesc: "Laid out safety tables and audit lists. Grey-box testing verified that nested dialogs blocked dispatcher workflows, prompting us to design expanding sliding drawer sheets.",
+    designEvolutionDesc: "To ensure safety planners could coordinate crises, the interface underwent multiple grey box feedback sessions followed by rigorous design token mapping.",
+    wireframeDesc: "Laid out safety tables and audit lists. Grey box testing verified that nested dialogs blocked dispatcher workflows, prompting us to design expanding sliding drawer sheets.",
     designSystemDesc: "Standardized color variables representing threat levels (Danger: Red, Normal: Teal). Kept layout grid tokens clean to maintain readability.",
     designMove1Title: "Spatial Triage Feed",
     designMove1Sub: "Contextualizing incident routes",
@@ -823,35 +823,35 @@ const projectsData = {
     techStack: "React, Vite, D3.js, tailwind CSS, GraphQL",
     tagline: "Enterprise analytics console consolidating scattered business data, customer trends, and query modeling.",
     overview1: "Data analysts and operations planners are overwhelmed trying to query and analyze business intelligence across disjointed metrics software.",
-    overview2: "This project aggregates multi-source database telemetry, query execution progress, and spatial demographic charts into a single workspace.",
+    overview2: "This project aggregates multi source database telemetry, query execution progress, and spatial demographic charts into a single workspace.",
     stats: [
-      { metric: "55%", label: "Faster Query Execution", desc: "Consolidated multi-database streams into a single local cache engine." },
-      { metric: "40%", label: "Fewer Dashboard Crashes", desc: "Designed lazy-loaded widgets that prioritize active route viewport charts." },
-      { metric: "99.9%", label: "Real-time Metrics Sync", desc: "GraphQL subscriptions updated metrics trends with sub-second latency." }
+      { metric: "55%", label: "Faster Query Execution", desc: "Consolidated multi database streams into a single local cache engine." },
+      { metric: "40%", label: "Fewer Dashboard Crashes", desc: "Designed lazy loaded widgets that prioritize active route viewport charts." },
+      { metric: "99.9%", label: "Real time Metrics Sync", desc: "GraphQL subscriptions updated metrics trends with sub second latency." }
     ],
     challengeTitle: "The Danger of Cluttered Metrics Dashboards",
     challengeDesc: "Formulating business decisions requires instant analytical clarity. But when planners are forced to traverse multiple dry widgets, latency and cognitive load spike.",
     breakdowns: [
       { num: "01 / Broken Data Pipelines", desc: "Customer metrics and database telemetry lived in separate systems, requiring manual imports." },
-      { num: "02 / Heavy Widget Lag", desc: "Loading massive time-series plots concurrently blocked browser render routines, causing freezing." },
+      { num: "02 / Heavy Widget Lag", desc: "Loading massive time series plots concurrently blocked browser render routines, causing freezing." },
       { num: "03 / Disjointed Query Tools", desc: "Building dynamic metrics reports required analysts to swap between terminal and graphs." }
     ],
     roleSubtitle: "Two Roles, One Analytical Ground Truth",
     roleDesc: "We designed this console to serve business executives monitoring regional margins, and data scientists running heavy analytical queries.",
     role1Name: "buyer",
     role1Label: "Business Executive",
-    role1Archetype: "High-Level Financial Review",
+    role1Archetype: "High Level Financial Review",
     role1Desc: "The Executive monitors global revenue metrics and schedules regional targets. The design dashboard optimizes for instant visual scanning:",
     role1Items: [
-      "Replaces dense database logs with a clean, high-contrast revenue status feed.",
+      "Replaces dense database logs with a clean, high contrast revenue status feed.",
       "Calculates live regional target indicators with clear trend markers.",
-      "Enables fast report exports through a sliding double-confirmation drawer."
+      "Enables fast report exports through a sliding double confirmation drawer."
     ],
     role1ScreenTitle: "📈 Executive Margin Console",
     role1ScreenFilter: "Filter: Active Regions • Delhi Loop • Margin Target: 42%",
     role1ScreenItems: [
-      { name: "🏢 Region Delhi-NCR", slot: "Status: Target Exceeded • Noida Wing", rate: "Revenue: $120k • Active", info: "Action: Approve Bonus" },
-      { name: "🏢 Region Gurgaon-West", slot: "Status: Warning Level • South Wing", rate: "Revenue: $80k • Active", info: "Action: View Breakdown" }
+      { name: "🏢 Region Delhi NCR", slot: "Status: Target Exceeded • Noida Wing", rate: "Revenue: $120k • Active", info: "Action: Approve Bonus" },
+      { name: "🏢 Region Gurgaon West", slot: "Status: Warning Level • South Wing", rate: "Revenue: $80k • Active", info: "Action: View Breakdown" }
     ],
     role1ScreenCta: "Approve Regional Financial Release",
     role2Name: "seller",
@@ -859,9 +859,9 @@ const projectsData = {
     role2Archetype: "Complex Query Modeling",
     role2Desc: "The Scientist designs custom query structures and monitors database telemetry. The workspace provides deep code editing and performance monitoring tools:",
     role2Items: [
-      "Features a rich code editor panel with syntax auto-completion.",
-      "Visualizes query loading time-distributions using native D3 graphs.",
-      "Enables drag-and-drop layout configuration to position telemetry blocks."
+      "Features a rich code editor panel with syntax auto completion.",
+      "Visualizes query loading time distributions using native D3 graphs.",
+      "Enables drag and drop layout configuration to position telemetry blocks."
     ],
     role2ScreenTitle: "🖥️ Data Science Sandbox",
     role2ScreenFilter: "Session Status: Query Engine Synced",
@@ -870,8 +870,8 @@ const projectsData = {
       { name: "Query #430 - Retention Trend", slot: "DB: MongoDB • Noida Depot", rate: "Execute: 2.3s • Timeout", info: "Status: Failed" }
     ],
     role2ScreenCta: "Run Selected SQL Query (↑)",
-    designEvolutionDesc: "To ensure analysts could formulate fast insights, the dashboard interface went through multiple grey-box user testing loops.",
-    wireframeDesc: "Laid out high-density grid cards and table lists. Grey-box testing verified that overlapping modals blocked dashboard data paths, prompting us to design sliding detail drawers.",
+    designEvolutionDesc: "To ensure analysts could formulate fast insights, the dashboard interface went through multiple grey box user testing loops.",
+    wireframeDesc: "Laid out high density grid cards and table lists. Grey box testing verified that overlapping modals blocked dashboard data paths, prompting us to design sliding detail drawers.",
     designSystemDesc: "Created Figma variables maps for metrics status levels (Safe: Blue, Warning: Red). Kept layout grid tokens clean to maintain readability.",
     designMove1Title: "Unified Analytics Feed",
     designMove1Sub: "Contextualizing metrics paths",
@@ -884,7 +884,7 @@ const projectsData = {
     designMove1GraphFooter: "Fulfillment Curve",
     designMove2Title: "Interactive Chart Sliders",
     designMove2Sub: "Adjusting dynamic thresholds",
-    designMove2Desc: "Designed interactive sliders that let analysts adjust target margins, avoiding slow database query re-runs.",
+    designMove2Desc: "Designed interactive sliders that let analysts adjust target margins, avoiding slow database query re runs.",
     designMove3Title: "Conversational Metrics AI",
     designMove3Sub: "Assisting queries diagnostics",
     designMove3Desc: "Integrated an assistive chat module inside the workspace. Scientists can ask 'Why is PostgreSQL query 430 slow?' and receive diagnostic suggestions.",
@@ -896,7 +896,7 @@ const projectsData = {
                   <div className="w-8 bg-muted rounded-t-sm" style={{ height: "35%" }} />
                 </div>`,
     learningQuote: "Analytics UX is performance UX. Fluid charts build operational confidence.",
-    learningDesc: "By placing database performance diagnostics directly onto spatial map views and designing one-swipe checkout drawer sheets, we helped executives audit metrics safely.",
+    learningDesc: "By placing database performance diagnostics directly onto spatial map views and designing one swipe checkout drawer sheets, we helped executives audit metrics safely.",
     checkpoints: [
       { title: "Explainability drives action", desc: "Translated dry database metrics into intuitive regional target levels." },
       { title: "Design for decision moments", desc: "Positioned financial approve buttons directly below margins charts." }
@@ -904,22 +904,22 @@ const projectsData = {
   },
   "ecommerce-platform": {
     safeName: "EcommercePlatform",
-    displayTitle: "E-Commerce Platform",
+    displayTitle: "E Commerce Platform",
     color: "#db2777",
     timeline: "3 Months (Summer 2025)",
     roleName: "Product Designer",
     platform: "Web Shopper Portal & Admin Panel",
     techStack: "React, tailwind CSS, GraphQL, Postgres, Node.js",
-    tagline: "High-scale e-commerce portal and merchant console streamlining dynamic inventory, checkouts, and sales metrics.",
+    tagline: "High scale e commerce portal and merchant console streamlining dynamic inventory, checkouts, and sales metrics.",
     overview1: "Online shoppers experience high cart abandonments when facing sluggish checkouts and disorienting catalog grids.",
     overview2: "This project optimizes consumer discovery, utilizing smooth transitions, dynamic cart previews, and interactive sales trend graphs to drive conversions.",
     stats: [
-      { metric: "35%", label: "Lower Cart Abandonment", desc: "Simplified form inputs into a single-swipe double-confirmation checkout drawer." },
+      { metric: "35%", label: "Lower Cart Abandonment", desc: "Simplified form inputs into a single swipe double confirmation checkout drawer." },
       { metric: "1.2s", label: "Faster Catalog Search", desc: "Implemented fuzzy search logic and local cache query loaders." },
-      { metric: "100%", label: "Real-time Stock Updates", desc: "GraphQL metrics synced storefront product availability with zero latency." }
+      { metric: "100%", label: "Real time Stock Updates", desc: "GraphQL metrics synced storefront product availability with zero latency." }
     ],
-    challengeTitle: "The Pain of Fragmented E-Commerce Pipelines",
-    challengeDesc: "Shopping should feel delightful and fast. But when users face multi-step verification forms, dry product tables, and slow pages, merchant revenues drop.",
+    challengeTitle: "The Pain of Fragmented E Commerce Pipelines",
+    challengeDesc: "Shopping should feel delightful and fast. But when users face multi step verification forms, dry product tables, and slow pages, merchant revenues drop.",
     breakdowns: [
       { num: "01 / Slow Payment Gateways", desc: "Multiple redirect pages delayed checkouts, causing cart abandonments." },
       { num: "02 / Cluttered Product Lists", desc: "Unstructured catalog grids blocked product comparisons, driving user churn." },
@@ -932,8 +932,8 @@ const projectsData = {
     role1Archetype: "Discovery & Rapid Checkout",
     role1Desc: "The Shopper wants to locate products and buy them with absolute ease. The design optimizes for fast transaction execution:",
     role1Items: [
-      "Replaces dense tables with a sleek, card-based dynamic catalog feed.",
-      "Integrates one-swipe checkout sheets to bypass slow routing checks.",
+      "Replaces dense tables with a sleek, card based dynamic catalog feed.",
+      "Integrates one swipe checkout sheets to bypass slow routing checks.",
       "Highlights dynamic cart balance indicators on the main screen."
     ],
     role1ScreenTitle: "🛒 Dynamic Product Catalog",
@@ -959,8 +959,8 @@ const projectsData = {
       { name: "Order #4320 - Smartwatch", slot: "State: Refunded • Date: Yesterday", rate: "Margin: Rs. 1,200", info: "Status: Returned" }
     ],
     role2ScreenCta: "Issue Custom Stock Sheet (↑)",
-    designEvolutionDesc: "To ensure the catalog could scale to retail merchants, the interface underwent multiple grey-box layout validation sessions.",
-    wireframeDesc: "Laid out product grids and catalog lists. Grey-box testing verified that modal checkout inputs caused user errors, prompting us to design expanding sliding drawer sheets.",
+    designEvolutionDesc: "To ensure the catalog could scale to retail merchants, the interface underwent multiple grey box layout validation sessions.",
+    wireframeDesc: "Laid out product grids and catalog lists. Grey box testing verified that modal checkout inputs caused user errors, prompting us to design expanding sliding drawer sheets.",
     designSystemDesc: "Standardized color tokens representing payment status levels (Success: Emerald, Warning: Pink). Kept layout grid tokens clean to maintain readability.",
     designMove1Title: "Sleek Catalog Feed",
     designMove1Sub: "Eliminating grid clutter",
@@ -971,9 +971,9 @@ const projectsData = {
                     <circle cx="40" cy="20" r="3" className="fill-[#db2777] stroke-white stroke-[1]" />
                   </svg>`,
     designMove1GraphFooter: "Purchase Curve",
-    designMove2Title: "One-Swipe Checkout",
+    designMove2Title: "One Swipe Checkout",
     designMove2Sub: "Streamlining checkout loops",
-    designMove2Desc: "Designed an interactive payment sliding sheet that executes product checkouts within sub-seconds, avoiding sluggish page reloads.",
+    designMove2Desc: "Designed an interactive payment sliding sheet that executes product checkouts within sub seconds, avoiding sluggish page reloads.",
     designMove3Title: "Conversational Catalog AI",
     designMove3Sub: "Assisting product diagnostics",
     designMove3Desc: "Integrated an assistive chat helper inside the shopper app. Shoppers can ask 'What are the top tech deals today?' and receive instant feedback.",
@@ -985,7 +985,7 @@ const projectsData = {
                   <div className="w-8 bg-muted rounded-t-sm" style={{ height: "35%" }} />
                 </div>`,
     learningQuote: "Commerce UX is confidence UX. Fluid checkout loops build buyer trust.",
-    learningDesc: "By placing catalog filters directly onto the home screen and designing one-swipe checkout drawer sheets, we helped users manage shopping baskets confidently.",
+    learningDesc: "By placing catalog filters directly onto the home screen and designing one swipe checkout drawer sheets, we helped users manage shopping baskets confidently.",
     checkpoints: [
       { title: "Explainability drives action", desc: "Translated dry catalog codes into clear shipping status tags." },
       { title: "Design for decision moments", desc: "Positioned buy buttons directly next to active wallet balances." }
@@ -1001,14 +1001,14 @@ const projectsData = {
     techStack: "React Native, Expo, Zustand, LocalAuthentication",
     tagline: "Premium biometric mobile banking application simplifying daily deposits, transfers, and asset tracking.",
     overview1: "Banking clients experience high friction when trying to send transfers and check financial statements through slow legacy portals.",
-    overview2: "This project streamlines mobile finance, utilizing biometric security indicators, dynamic transaction grids, and one-swipe checkout drawer sheets.",
+    overview2: "This project streamlines mobile finance, utilizing biometric security indicators, dynamic transaction grids, and one swipe checkout drawer sheets.",
     stats: [
       { metric: "0.5s", label: "Biometric Auth Sync", desc: "Optimized FaceID handshakes enabled instant safe app logins." },
-      { metric: "40%", label: "Fewer Transfer Drops", desc: "Simplified form inputs into a single-swipe double-confirmation checkout drawer." },
+      { metric: "40%", label: "Fewer Transfer Drops", desc: "Simplified form inputs into a single swipe double confirmation checkout drawer." },
       { metric: "100%", label: "Account Balance Sync", desc: "GraphQL subscriptions updated financial statements with zero data delay." }
     ],
     challengeTitle: "The Pain of Sluggish Banking Pipelines",
-    challengeDesc: "Managing assets should feel secure and fast. But when users face multi-step verification pages, complex routing codes, and dry tables, transaction drop-offs skyrocket.",
+    challengeDesc: "Managing assets should feel secure and fast. But when users face multi step verification pages, complex routing codes, and dry tables, transaction drop offs skyrocket.",
     breakdowns: [
       { num: "01 / Opaque Verification Loops", desc: "Multiple verification pages delayed checkout times, driving user frustration." },
       { num: "02 / Zero Balance Visualization", desc: "Static ledgers hid daily spending trends, preventing easy cash flow monitoring." },
@@ -1022,7 +1022,7 @@ const projectsData = {
     role1Desc: "The Customer wants to transfer cash instantly with zero friction. The design optimizes for fast transaction execution:",
     role1Items: [
       "Replaces dry ledger lists with a sleek, interactive spending history feed.",
-      "Integrates one-swipe checkout sheets to bypass slow routing checks.",
+      "Integrates one swipe checkout sheets to bypass slow routing checks.",
       "Highlights dynamic wallet balance indicators on the main screen."
     ],
     role1ScreenTitle: "📱 Retail Banking Home",
@@ -1048,8 +1048,8 @@ const projectsData = {
       { name: "Invoice #4320 - Tim", slot: "State: Refunded • Date: Yesterday", rate: "Amount: Rs. 1,200", info: "Status: Returned" }
     ],
     role2ScreenCta: "Issue Custom Invoicing Sheet (↑)",
-    designEvolutionDesc: "To ensure the app could scale to wealth managers, the interface underwent multiple grey-box layout validation sessions.",
-    wireframeDesc: "Laid out payment tables and invoice inputs. Grey-box testing verified that modal checkout inputs caused user errors, prompting us to design expanding sliding drawer sheets.",
+    designEvolutionDesc: "To ensure the app could scale to wealth managers, the interface underwent multiple grey box layout validation sessions.",
+    wireframeDesc: "Laid out payment tables and invoice inputs. Grey box testing verified that modal checkout inputs caused user errors, prompting us to design expanding sliding drawer sheets.",
     designSystemDesc: "Standardized color tokens representing payment status levels (Success: Emerald, Warning: Emerald). Kept layout grid tokens clean to maintain readability.",
     designMove1Title: "Sleek Spending Feed",
     designMove1Sub: "Eliminating ledger clutter",
@@ -1060,9 +1060,9 @@ const projectsData = {
                     <circle cx="40" cy="20" r="3" className="fill-[#059669] stroke-white stroke-[1]" />
                   </svg>`,
     designMove1GraphFooter: "Savings Curve",
-    designMove2Title: "One-Swipe Checkout",
+    designMove2Title: "One Swipe Checkout",
     designMove2Sub: "Streamlining transaction loops",
-    designMove2Desc: "Designed an interactive payment sliding sheet that executes P2P transfers within sub-seconds, avoiding sluggish page reloads.",
+    designMove2Desc: "Designed an interactive payment sliding sheet that executes P2P transfers within sub seconds, avoiding sluggish page reloads.",
     designMove3Title: "Conversational Financial AI",
     designMove3Sub: "Assisting wealth diagnostics",
     designMove3Desc: "Integrated an assistive chat helper inside the wallet app. Senders can ask 'How much did I save this week?' and receive instant spending feedback.",
@@ -1074,7 +1074,7 @@ const projectsData = {
                   <div className="w-8 bg-muted rounded-t-sm" style={{ height: "35%" }} />
                 </div>`,
     learningQuote: "Banking UX is trust UX. Frictionless loops convey transaction reliability.",
-    learningDesc: "By placing balance trends directly onto the home screen and designing one-swipe checkout drawer sheets, we helped users manage asset flows confidently.",
+    learningDesc: "By placing balance trends directly onto the home screen and designing one swipe checkout drawer sheets, we helped users manage asset flows confidently.",
     checkpoints: [
       { title: "Explainability drives action", desc: "Translated technical banking codes into clear transaction status tags." },
       { title: "Design for decision moments", desc: "Positioned transfer triggers directly next to active wallet balances." }
@@ -1090,17 +1090,17 @@ const projectsData = {
     techStack: "React, tailwind CSS, GraphQL, Node.js, Slate.js",
     tagline: "Enterprise content management system consolidating scattered draft routes, editorial reviews, and publication assets.",
     overview1: "Content editors and marketing coordinators struggle to format, review, and publish media assets across disjointed publishing systems.",
-    overview2: "This project aggregates scattered draft folders, real-time revision histories, and custom publication pipelines into a single, high-performance editor console.",
+    overview2: "This project aggregates scattered draft folders, real time revision histories, and custom publication pipelines into a single, high performance editor console.",
     stats: [
       { metric: "50%", label: "Faster Article Drafting", desc: "Consolidated editing tools into a single live markdown canvas workspace." },
-      { metric: "35%", label: "Fewer Publishing Drops", desc: "Designed lazy-loaded widgets that prioritize active draft viewports." },
-      { metric: "99.9%", label: "Real-time Editor Sync", desc: "GraphQL subscriptions updated editor states with sub-second latency." }
+      { metric: "35%", label: "Fewer Publishing Drops", desc: "Designed lazy loaded widgets that prioritize active draft viewports." },
+      { metric: "99.9%", label: "Real time Editor Sync", desc: "GraphQL subscriptions updated editor states with sub second latency." }
     ],
     challengeTitle: "The Friction of Cluttered Editing Systems",
     challengeDesc: "Publishing creative drafts requires focus and speed. But when users are forced to swap between text editors, layout checkers, and asset drives, latency and errors grow.",
     breakdowns: [
       { num: "01 / Isolated File Folders", desc: "Written drafts and layout assets lived in disjointed folders, requiring manual uploads." },
-      { num: "02 / Heavy Layout Easing Lag", desc: "Loading dynamic rich-media previews concurrently blocked browser render loops, causing crashes." },
+      { num: "02 / Heavy Layout Easing Lag", desc: "Loading dynamic rich media previews concurrently blocked browser render loops, causing crashes." },
       { num: "03 / Disconnected Revision Tools", desc: "Comparing dynamic draft histories required editors to swap between terminal and editor." }
     ],
     roleSubtitle: "Two Roles, One Content Core",
@@ -1108,11 +1108,11 @@ const projectsData = {
     role1Name: "buyer",
     role1Label: "Creative Writer",
     role1Archetype: "Focused Markdown Drafting",
-    role1Desc: "The Writer drafts high-quality copy and inserts layout elements. The design dashboard optimizes for absolute visual clarity:",
+    role1Desc: "The Writer drafts high quality copy and inserts layout elements. The design dashboard optimizes for absolute visual clarity:",
     role1Items: [
       "Replaces dry settings panels with a sleek, cardless live editor canvas.",
-      "Integrates instant auto-saving modules to eliminate file drops.",
-      "Highlights dynamic word-count progress trackers on the main screen."
+      "Integrates instant auto saving modules to eliminate file drops.",
+      "Highlights dynamic word count progress trackers on the main screen."
     ],
     role1ScreenTitle: "📝 Slate Markdown Editor",
     role1ScreenFilter: "Filter: Active Drafts • Delhi Team • Target: 1,200 words",
@@ -1137,8 +1137,8 @@ const projectsData = {
       { name: "Draft #4320 - DePIN Node", slot: "State: Approved • Time: 2 min", rate: "Auditor: Finished", info: "Action: Publish Live" }
     ],
     role2ScreenCta: "Publish Selected Draft Live (↑)",
-    designEvolutionDesc: "To ensure writers could publish fast copy, the console went through multiple grey-box user testing loops.",
-    wireframeDesc: "Laid out high-density draft queues and canvas panels. Grey-box interactive testing verified that nested dialogs blocked writer focus, prompting us to design expanding sliding drawer sheets.",
+    designEvolutionDesc: "To ensure writers could publish fast copy, the console went through multiple grey box user testing loops.",
+    wireframeDesc: "Laid out high density draft queues and canvas panels. Grey box interactive testing verified that nested dialogs blocked writer focus, prompting us to design expanding sliding drawer sheets.",
     designSystemDesc: "Standardized color variables representing editorial status levels (Draft: Orange, Approved: Teal). Kept layout grid tokens clean to maintain readability.",
     designMove1Title: "Spatial Editor Canvas",
     designMove1Sub: "Contextualizing writer pathways",
@@ -1163,7 +1163,7 @@ const projectsData = {
                   <div className="w-8 bg-muted rounded-t-sm" style={{ height: "35%" }} />
                 </div>`,
     learningQuote: "Operations UX is clarity UX. Fluid drafts build publication confidence.",
-    learningDesc: "By placing editor diagnostics directly onto dynamic canvas panels and designing one-swipe checkout drawer sheets, we helped writers deploy articles safely.",
+    learningDesc: "By placing editor diagnostics directly onto dynamic canvas panels and designing one swipe checkout drawer sheets, we helped writers deploy articles safely.",
     checkpoints: [
       { title: "Explainability drives action", desc: "Translated complex editorial policies into clear layout status levels." },
       { title: "Design for decision moments", desc: "Positioned publish buttons directly next to active editor canvases." }
@@ -1177,9 +1177,9 @@ const projectsData = {
     roleName: "Product Designer",
     platform: "Mobile App & Web Bridge",
     techStack: "React Native, Expo, Zustand, ethers.js, Web3",
-    tagline: "Decentralized crypto wallet and DeFi bridge simplifying multi-chain staking, swap routes, and gas tracking.",
+    tagline: "Decentralized crypto wallet and DeFi bridge simplifying multi chain staking, swap routes, and gas tracking.",
     overview1: "DeFi yield farmers and everyday crypto users experience high transaction failures when trying to bridge assets through slow legacy wallets.",
-    overview2: "This project simplifies multi-chain staking, utilizing biometric security hooks, smart transaction speed sliders, and native SVG asset graphs.",
+    overview2: "This project simplifies multi chain staking, utilizing biometric security hooks, smart transaction speed sliders, and native SVG asset graphs.",
     stats: [
       { metric: "0.3s", label: "Node Connection Sync", desc: "Optimized RPC socket routes enabled instant balance updates." },
       { metric: "35%", label: "Fewer Swap Failures", desc: "Designed dynamic slippage alert widgets that react to gas spikes." },
@@ -1188,9 +1188,9 @@ const projectsData = {
     challengeTitle: "The Danger of Blind Web3 Transactions",
     challengeDesc: "Staking assets should feel secure and clear. But when users face dry hex strings, raw gas inputs, and opaque bridge routes, transaction errors grow.",
     breakdowns: [
-      { num: "01 / Opaque Smart Contracts", desc: "Raw contract bytecodes confused non-technical users, causing security slips." },
-      { num: "02 / Zero Gas Forecasting", desc: "No real-time gas price charts meant transactions failed due to minor spikes." },
-      { num: "03 / Disconnected Bridge Logs", desc: "Tracking cross-chain balances required users to search transaction scanners manually." }
+      { num: "01 / Opaque Smart Contracts", desc: "Raw contract bytecodes confused non technical users, causing security slips." },
+      { num: "02 / Zero Gas Forecasting", desc: "No real time gas price charts meant transactions failed due to minor spikes." },
+      { num: "03 / Disconnected Bridge Logs", desc: "Tracking cross chain balances required users to search transaction scanners manually." }
     ],
     roleSubtitle: "Two Roles, One Unified Ledger",
     roleDesc: "We designed this wallet to serve casual token swappers seeking simplicity, and yield farmers managing complex DeFi portfolios.",
@@ -1199,14 +1199,14 @@ const projectsData = {
     role1Archetype: "Yield & Asset Optimization",
     role1Desc: "The Swapper wants to exchange assets and monitor daily rewards. The design optimizes for fast transaction execution:",
     role1Items: [
-      "Replaces dry ledger lists with a sleek, card-based dynamic portfolio feed.",
-      "Integrates one-swipe swap confirmation sheets to bypass slow routing checks.",
+      "Replaces dry ledger lists with a sleek, card based dynamic portfolio feed.",
+      "Integrates one swipe swap confirmation sheets to bypass slow routing checks.",
       "Highlights dynamic yield metrics on the main screen."
     ],
-    role1ScreenTitle: "🪙 Multi-Chain Staking Feed",
+    role1ScreenTitle: "🪙 Multi Chain Staking Feed",
     role1ScreenFilter: "Filter: High APY • Polygon Grid • Wallet Balance: $4.2k",
     role1ScreenItems: [
-      { name: "💧 USDC-ETH Yield Pool", slot: "Status: APY 12.5% • active", rate: "Rate: $1.02 / unit", info: "Action: Stake Assets" },
+      { name: "💧 USDC ETH Yield Pool", slot: "Status: APY 12.5% • active", rate: "Rate: $1.02 / unit", info: "Action: Stake Assets" },
       { name: "⚡ MATIC Staking Node", slot: "Status: APY 6.2% • active", rate: "Rate: $0.85 / unit", info: "Action: Stake Assets" }
     ],
     role1ScreenCta: "Swipe to Stake Selected Assets [══►]",
@@ -1226,8 +1226,8 @@ const projectsData = {
       { name: "Tx #4320 - Token Bridge", slot: "State: Dropped • Time: 2 min", rate: "Gas: 12 Gwei • Timeout", info: "Status: Failed" }
     ],
     role2ScreenCta: "Deploy Simulation to Mainnet (↑)",
-    designEvolutionDesc: "To ensure the wallet could scale to yield farmers, the interface underwent multiple grey-box layout validation sessions.",
-    wireframeDesc: "Laid out portfolio cards and coin grids. Grey-box testing verified that overlapping dialog blocks caused transaction drop-offs, prompting us to design expanding sliding drawer sheets.",
+    designEvolutionDesc: "To ensure the wallet could scale to yield farmers, the interface underwent multiple grey box layout validation sessions.",
+    wireframeDesc: "Laid out portfolio cards and coin grids. Grey box testing verified that overlapping dialog blocks caused transaction drop offs, prompting us to design expanding sliding drawer sheets.",
     designSystemDesc: "Standardized color variables representing wallet status levels (Success: Indigo, Warning: Red). Kept layout grid tokens clean to maintain readability.",
     designMove1Title: "Sleek Portfolio Feed",
     designMove1Sub: "Contextualizing coin histories spatial layout",
@@ -1238,9 +1238,9 @@ const projectsData = {
                     <circle cx="40" cy="20" r="3" className="fill-[#6366f1] stroke-white stroke-[1]" />
                   </svg>`,
     designMove1GraphFooter: "Yield Curve",
-    designMove2Title: "One-Swipe Swap",
+    designMove2Title: "One Swipe Swap",
     designMove2Sub: "Streamlining transaction loops",
-    designMove2Desc: "Designed an interactive payment sliding sheet that executes coin swaps within sub-seconds, avoiding sluggish browser reloads.",
+    designMove2Desc: "Designed an interactive payment sliding sheet that executes coin swaps within sub seconds, avoiding sluggish browser reloads.",
     designMove3Title: "Conversational Gas Assistant AI",
     designMove3Sub: "Assisting gas diagnostics",
     designMove3Desc: "Integrated an assistive chat helper inside the wallet app. Senders can ask 'Suggest lowest gas times' and receive instant historical feedback.",
@@ -1252,7 +1252,7 @@ const projectsData = {
                   <div className="w-8 bg-muted rounded-t-sm" style={{ height: "35%" }} />
                 </div>`,
     learningQuote: "Web3 UX is trust UX. Frictionless loops convey transaction reliability.",
-    learningDesc: "By placing portfolio trends directly onto the home screen and designing one-swipe checkout drawer sheets, we helped users manage DeFi assets confidently.",
+    learningDesc: "By placing portfolio trends directly onto the home screen and designing one swipe checkout drawer sheets, we helped users manage DeFi assets confidently.",
     checkpoints: [
       { title: "Explainability drives action", desc: "Translated technical smart contracts into clear transaction status tags." },
       { title: "Design for decision moments", desc: "Positioned stake triggers directly next to active wallet balances." }
@@ -1268,9 +1268,9 @@ const projectsData = {
     techStack: "Figma, Notion, Miro, Affinity Mapping, Interviews",
     tagline: "Comprehensive product research and design strategy isolating user pain points and outlining visual solutions.",
     overview1: "Product owners and development teams struggle to validate user requirements and feature priorities due to disjointed research logs.",
-    overview2: "This project aggregates qualitative user interview data, interactive affinity maps, and early grey-box wireframes into a single presentation case study.",
+    overview2: "This project aggregates qualitative user interview data, interactive affinity maps, and early grey box wireframes into a single presentation case study.",
     stats: [
-      { metric: "50+", label: "User Interviews Logged", desc: "Conducted semi-structured sessions to understand deep user friction points." },
+      { metric: "50+", label: "User Interviews Logged", desc: "Conducted semi structured sessions to understand deep user friction points." },
       { metric: "12", label: "User Personas Modeled", desc: "Grouped overlapping user behaviors into clear behavioral archetypes." },
       { metric: "98%", label: "Stakeholder Alignment", desc: "Interactive wireframe galleries successfully aligned design teams." }
     ],
@@ -1288,11 +1288,11 @@ const projectsData = {
     role1Archetype: "UI Flow & Layout Triage",
     role1Desc: "The Designer reviews interactive layout components and dynamic state models. The presentation dashboard optimizes for clean spatial scans:",
     role1Items: [
-      "Replaces dry settings lists with an interactive gray-box layout preview feed.",
+      "Replaces dry settings lists with an interactive gray box layout preview feed.",
       "Highlights dynamic user click maps across multiple mobile screen frames.",
       "Streamlines design audits through a sliding feedback drawer."
     ],
-    role1ScreenTitle: "🎨 Grey-Box Prototype Review",
+    role1ScreenTitle: "🎨 Grey Box Prototype Review",
     role1ScreenFilter: "Filter: Active Screens • Delhi Team • User Rating: 4.8/5",
     role1ScreenItems: [
       { name: "📱 Onboarding Gate Screen", slot: "Friction: High (VC Upload) • Delhi Area", rate: "Click Rate: 23% • active", info: "Action: Review Iteration" },
@@ -1306,21 +1306,21 @@ const projectsData = {
     role2Items: [
       "Features a rich qualitative tag builder to group interview records.",
       "Visualizes user task completion speeds using native SVG graphs.",
-      "Enables drag-and-drop feedback columns to categorize paint points."
+      "Enables drag and drop feedback columns to categorize paint points."
     ],
     role2ScreenTitle: "📊 User Affinity Data Vault",
     role2ScreenFilter: "Session Status: Database Synced",
     role2ScreenItems: [
-      { name: "Interview #42 - Delhi User", slot: "Role: Micro-Prosumer • Delhi Wing", rate: "Time: 42 min • Synced", info: "Status: Analysed" },
+      { name: "Interview #42 - Delhi User", slot: "Role: Micro Prosumer • Delhi Wing", rate: "Time: 42 min • Synced", info: "Status: Analysed" },
       { name: "Interview #41 - Noida User", slot: "Role: Home Consumer • Noida Wing", rate: "Time: 23 min • Pending", info: "Status: Draft" }
     ],
     role2ScreenCta: "Audit Selected Interview Transcript (↑)",
     designEvolutionDesc: "To ensure development teams could act on user research, the presentation interface underwent multiple interactive reviews.",
-    wireframeDesc: "Laid out research columns and affinity board matrices. Gray-box interactive testing verified that dense texts blocked stakeholder alignment, prompting us to group quotes into structured cards.",
+    wireframeDesc: "Laid out research columns and affinity board matrices. Gray box interactive testing verified that dense texts blocked stakeholder alignment, prompting us to group quotes into structured cards.",
     designSystemDesc: "Standardized color variables representing research tags (Insight: Slate, Critical Pain Point: Red). Kept layout grid tokens clean to maintain readability.",
     designMove1Title: "Spatial Affinity Mapping",
     designMove1Sub: "Contextualizing user quotes",
-    designMove1Desc: "We consolidated dry spreadsheets into a clean, card-based affinity mapping layout, enabling team directors to locate insights instantly.",
+    designMove1Desc: "We consolidated dry spreadsheets into a clean, card based affinity mapping layout, enabling team directors to locate insights instantly.",
     designMove1GraphTitle: "📊 User Task Speed Curve",
     designMove1Svg: `<svg className="w-full h-[70%] stroke-[#4b5563] fill-none stroke-[2]" viewBox="0 0 100 30">
                     <path d="M 0 25 Q 20 5, 40 20 T 80 5 T 100 15" />
@@ -1341,7 +1341,7 @@ const projectsData = {
                   <div className="w-8 bg-muted rounded-t-sm" style={{ height: "35%" }} />
                 </div>`,
     learningQuote: "Product UX is human UX. True insights are discovered at the moments of user friction.",
-    learningDesc: "By placing user interviews directly onto dynamic affinity cards and designing one-swipe inspection views, we helped product teams deploy visual solutions confidently.",
+    learningDesc: "By placing user interviews directly onto dynamic affinity cards and designing one swipe inspection views, we helped product teams deploy visual solutions confidently.",
     checkpoints: [
       { title: "Explainability drives action", desc: "Translated complex research metrics into clear visual user personas." },
       { title: "Design for decision moments", desc: "Positioned approval buttons directly below task speed charts." }
@@ -1772,7 +1772,7 @@ export default function ${data.safeName}CaseStudy() {
           <motion.div variants={fadeInUp} className="w-full space-y-4">
             <span className="text-[#3EBAF4] text-xs font-semibold tracking-widest uppercase block">Key Solution / Design Evolution</span>
             <h3 className="text-[22px] font-semibold font-space-grotesk tracking-tight">
-              From Low-Fidelity Blueprints to Figma Tokens
+              From Low Fidelity Blueprints to Figma Tokens
             </h3>
             <p className="text-[20px] text-muted-foreground/80 leading-relaxed text-justify font-inter">
               Our design journey represents a deliberate transition from raw structural layouts to fully realized, production-grade visual systems.
@@ -1787,7 +1787,7 @@ export default function ${data.safeName}CaseStudy() {
             <div className="p-8 rounded-[2rem] bg-card/30 border border-border/30 backdrop-blur-md flex flex-col justify-between space-y-6">
               <div className="space-y-4">
                 <span className="text-xs text-muted-foreground font-mono uppercase tracking-widest block font-bold">Phase 01 / Wireframe</span>
-                <h4 className="text-xl font-bold font-space-grotesk text-foreground">Gray-Box Prototyping</h4>
+                <h4 className="text-xl font-bold font-space-grotesk text-foreground">Gray Box Prototyping</h4>
                 <p className="text-sm text-muted-foreground/90 leading-relaxed text-justify font-inter">
                   Establishing primary layout grids, content density hierarchies, and low-cognitive user flows without visual distractions.
                 </p>
@@ -1813,7 +1813,7 @@ export default function ${data.safeName}CaseStudy() {
               <div className="relative rounded-2xl overflow-hidden border border-border/40 shadow-xl bg-card aspect-[4/3] flex items-center justify-center max-h-[300px]">
                 <img 
                   src="${data.figmaVisualImg}" 
-                  alt="Figma High-Fidelity UI System" 
+                  alt="Figma High Fidelity UI System" 
                   className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
                 />
               </div>

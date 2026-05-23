@@ -134,7 +134,7 @@ export default function FeedzaaCaseStudy() {
               The Chaos of Backyard Kitchen Operations
             </h3>
             <p className="text-lg md:text-[20px] text-muted-foreground/80 leading-relaxed w-full text-justify font-inter">
-              Home chefs are talented cooks but poor logistical coordinators. Managing active customer chats, menu planning, payment verification, and courier handoffs broke their day-to-day culinary focus.
+              Home chefs are talented cooks but poor logistical coordinators. Managing active customer chats, menu planning, payment verification, and courier handoffs broke their day to day culinary focus.
             </p>
           </motion.div>
 
@@ -164,7 +164,7 @@ export default function FeedzaaCaseStudy() {
                     <span className="w-1.5 h-1.5 rounded-full bg-red-500/80 animate-pulse" />
                     03 / Delivery Rider Disconnect
                   </h4>
-                  <p className="text-sm pl-3.5 text-justify font-inter">No unified delivery integration meant chefs spent hours call-triage coordinating local couriers.</p>
+                  <p className="text-sm pl-3.5 text-justify font-inter">No unified delivery integration meant chefs spent hours call triage coordinating local couriers.</p>
                 </div>
   
             </div>
@@ -247,19 +247,19 @@ export default function FeedzaaCaseStudy() {
                     
                       <li key={0} className="flex gap-3 text-sm text-muted-foreground text-justify font-inter">
                         <CheckCircle2 className="w-4 h-4 text-[#DB3D1A] flex-shrink-0 mt-0.5" />
-                        <span>Replaces confusing text broadcast menus with a visually stunning, image-first local chef feed.</span>
+                        <span>Replaces confusing text broadcast menus with a visually stunning, image first local chef feed.</span>
                       </li>
   
 
                       <li key={1} className="flex gap-3 text-sm text-muted-foreground text-justify font-inter">
                         <CheckCircle2 className="w-4 h-4 text-[#DB3D1A] flex-shrink-0 mt-0.5" />
-                        <span>Displays active chef kitchen status (e.g. 'Cooking Now', 'Pre-order for dinner').</span>
+                        <span>Displays active chef kitchen status (e.g. 'Cooking Now', 'Pre order for dinner').</span>
                       </li>
   
 
                       <li key={2} className="flex gap-3 text-sm text-muted-foreground text-justify font-inter">
                         <CheckCircle2 className="w-4 h-4 text-[#DB3D1A] flex-shrink-0 mt-0.5" />
-                        <span>Streamlines order creation into a sliding double-confirmation checkout drawer.</span>
+                        <span>Streamlines order creation into a sliding double confirmation checkout drawer.</span>
                       </li>
   
                   </ul>
@@ -288,7 +288,7 @@ export default function FeedzaaCaseStudy() {
                       <div key={1} className="p-3 rounded-lg bg-card/60 border border-border/40 flex justify-between items-center">
                         <div>
                           <div className="font-bold text-foreground">🥟 The Himalayan Dumpling</div>
-                          <div className="text-[10px]">Status: Pre-order for Dinner</div>
+                          <div className="text-[10px]">Status: Pre order for Dinner</div>
                         </div>
                         <div className="text-right font-mono">
                           <div className="font-bold text-[#DB3D1A] text-xs">Rs. 120 / plate</div>
@@ -323,7 +323,7 @@ export default function FeedzaaCaseStudy() {
                     
                       <li key={0} className="flex gap-3 text-sm text-muted-foreground text-justify font-inter">
                         <CheckCircle2 className="w-4 h-4 text-[#DB3D1A] flex-shrink-0 mt-0.5" />
-                        <span>Presents a dense, scannable kitchen queue (New, Preparing, Ready, Out) to prevent order mix-ups.</span>
+                        <span>Presents a dense, scannable kitchen queue (New, Preparing, Ready, Out) to prevent order mix ups.</span>
                       </li>
   
 
@@ -335,7 +335,7 @@ export default function FeedzaaCaseStudy() {
 
                       <li key={2} className="flex gap-3 text-sm text-muted-foreground text-justify font-inter">
                         <CheckCircle2 className="w-4 h-4 text-[#DB3D1A] flex-shrink-0 mt-0.5" />
-                        <span>Features real-time earnings analytics showing today's margins and portion sales.</span>
+                        <span>Features real time earnings analytics showing today's margins and portion sales.</span>
                       </li>
   
                   </ul>
@@ -380,7 +380,7 @@ export default function FeedzaaCaseStudy() {
           <motion.div variants={fadeInUp} className="w-full space-y-4">
             <span className="text-[#3EBAF4] text-xs font-semibold tracking-widest uppercase block">Key Solution / Design Evolution</span>
             <h3 className="text-[22px] font-semibold font-space-grotesk tracking-tight">
-              From Low-Fidelity Blueprints to Figma Tokens
+              From Low Fidelity Blueprints to Figma Tokens
             </h3>
             <p className="text-[20px] text-muted-foreground/80 leading-relaxed text-justify font-inter">
               Our design journey represents a deliberate transition from raw structural layouts to fully realized, production-grade visual systems.
@@ -395,7 +395,7 @@ export default function FeedzaaCaseStudy() {
             <div className="p-8 rounded-[2rem] bg-card/30 border border-border/30 backdrop-blur-md flex flex-col justify-between space-y-6">
               <div className="space-y-4">
                 <span className="text-xs text-muted-foreground font-mono uppercase tracking-widest block font-bold">Phase 01 / Wireframe</span>
-                <h4 className="text-xl font-bold font-space-grotesk text-foreground">Gray-Box Prototyping</h4>
+                <h4 className="text-xl font-bold font-space-grotesk text-foreground">Gray Box Prototyping</h4>
                 <p className="text-sm text-muted-foreground/90 leading-relaxed text-justify font-inter">
                   Establishing primary layout grids, content density hierarchies, and low-cognitive user flows without visual distractions.
                 </p>
@@ -421,7 +421,7 @@ export default function FeedzaaCaseStudy() {
               <div className="relative rounded-2xl overflow-hidden border border-border/40 shadow-xl bg-card aspect-[4/3] flex items-center justify-center max-h-[300px]">
                 <img 
                   src="undefined" 
-                  alt="Figma High-Fidelity UI System" 
+                  alt="Figma High Fidelity UI System" 
                   className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
                 />
               </div>
@@ -464,7 +464,7 @@ export default function FeedzaaCaseStudy() {
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 leading-relaxed items-center">
               <div className="lg:col-span-7 space-y-5 font-inter text-[18px] text-muted-foreground/90">
                 <p className="text-justify font-inter">
-                  We consolidated WhatsApp chats, spreadsheets, and bank alerts into a single, scannable Kanban-style kitchen control center. Order status updates trigger automated user push-notifications and rider dispatch alerts.
+                  We consolidated WhatsApp chats, spreadsheets, and bank alerts into a single, scannable Kanban style kitchen control center. Order status updates trigger automated user push notifications and rider dispatch alerts.
                 </p>
               </div>
               
@@ -609,7 +609,7 @@ export default function FeedzaaCaseStudy() {
                       Reduced Checkout Friction
                     </h4>
                     <p className="text-xs text-muted-foreground leading-relaxed text-justify font-inter">
-                      Simplified customer payments through integrated one-click UPI checkouts.
+                      Simplified customer payments through integrated one click UPI checkouts.
                     </p>
                   </div>
                 </div>
@@ -669,7 +669,7 @@ export default function FeedzaaCaseStudy() {
               
                 <div key={0} className="space-y-2 text-justify font-inter">
                   <h4 className="font-bold text-foreground font-space-grotesk uppercase tracking-wider text-xs">01 / Speaks the user's language</h4>
-                  <p className="text-sm text-justify font-inter">Renamed complex payment terms to everyday home-cooking metaphors.</p>
+                  <p className="text-sm text-justify font-inter">Renamed complex payment terms to everyday home cooking metaphors.</p>
                 </div>
   
 

@@ -66,12 +66,12 @@ export default function RoneAmsCaseStudy() {
             <div className="flex items-center -ml-4 h-16 sm:h-20 lg:h-24">
               <img
                 src="/logos/r-one.svg"
-                alt="R-One logo"
+                alt="R One logo"
                 className="block max-h-8 sm:max-h-10 lg:max-h-12 w-auto max-w-[110px] sm:max-w-[140px] lg:max-w-[160px] object-contain dark:hidden"
               />
               <img
                 src="/logos/r-one.svg"
-                alt="R-One logo"
+                alt="R One logo"
                 className="hidden max-h-8 sm:max-h-10 lg:max-h-12 w-auto max-w-[110px] sm:max-w-[140px] lg:max-w-[160px] object-contain dark:block"
               />
             </div>
@@ -88,7 +88,7 @@ export default function RoneAmsCaseStudy() {
             >
               <span className="text-[#F76258] text-xs font-semibold tracking-widest uppercase block">Overview</span>
               <p className="border-l-4 border-[#F76258] pl-6 md:pl-8 italic text-justify font-inter leading-relaxed">
-                R-One is a comprehensive B2B application designed to centralize and streamline complex operational workflows for large-scale organizations. Built specifically to translate a high volume of complex data into actionable insights. By bringing two distinct worlds—central operations (web) and field execution (mobile)—into a single cohesive interface, the application ensures that vital information flows instantly and effortlessly.
+                R One is a comprehensive B2B application designed to centralize and streamline complex operational workflows for large scale organizations. Built specifically to translate a high volume of complex data into actionable insights. By bringing two distinct worlds—central operations (web) and field execution (mobile)—into a single cohesive interface, the application ensures that vital information flows instantly and effortlessly.
               </p>
             </motion.div>
 
@@ -164,7 +164,7 @@ export default function RoneAmsCaseStudy() {
                     <span className="w-1.5 h-1.5 rounded-full bg-red-500/80 animate-pulse" />
                     03 / Reactive Operations
                   </h4>
-                  <p className="text-sm pl-3.5 text-justify font-inter">Without real-time field visibility, central management relied on reactive maintenance and manual status updates.</p>
+                  <p className="text-sm pl-3.5 text-justify font-inter">Without real time field visibility, central management relied on reactive maintenance and manual status updates.</p>
                 </div>
   
             </div>
@@ -235,7 +235,7 @@ export default function RoneAmsCaseStudy() {
                     </span>
                     <div>
                       <h4 className="text-xl font-bold font-space-grotesk tracking-wide text-foreground">
-                        Central Manager (Web) (High-Level Proactive Control)
+                        Central Manager (Web) (High Level Proactive Control)
                       </h4>
                       <p className="text-xs text-[#F76258] font-mono tracking-wider uppercase">Archetype: "High-Confidence"</p>
                     </div>
@@ -323,7 +323,7 @@ export default function RoneAmsCaseStudy() {
                     
                       <li key={0} className="flex gap-3 text-sm text-muted-foreground text-justify font-inter">
                         <CheckCircle2 className="w-4 h-4 text-[#F76258] flex-shrink-0 mt-0.5" />
-                        <span>Roots all tasks in Map-First Navigation, eliminating the need to dig through text lists.</span>
+                        <span>Roots all tasks in Map First Navigation, eliminating the need to dig through text lists.</span>
                       </li>
   
 
@@ -335,7 +335,7 @@ export default function RoneAmsCaseStudy() {
 
                       <li key={2} className="flex gap-3 text-sm text-muted-foreground text-justify font-inter">
                         <CheckCircle2 className="w-4 h-4 text-[#F76258] flex-shrink-0 mt-0.5" />
-                        <span>Employs thumb-friendly interaction and camera scanning to replace manual typing.</span>
+                        <span>Employs thumb friendly interaction and camera scanning to replace manual typing.</span>
                       </li>
   
                   </ul>
@@ -346,7 +346,7 @@ export default function RoneAmsCaseStudy() {
                   </div>
                   <div className="border-b border-border/30 pb-3">
                     <div className="font-bold text-foreground text-xs font-space-grotesk uppercase tracking-wider mb-1">{"📱 Tech Mobile Execution App"}</div>
-                    <div className="text-[10px]">{"Session Status: On-Site Verified"}</div>
+                    <div className="text-[10px]">{"Session Status: On Site Verified"}</div>
                   </div>
                   
                       <div key={0} className="p-2.5 rounded-lg bg-card/60 border border-border/30 text-[10px]">
@@ -380,7 +380,7 @@ export default function RoneAmsCaseStudy() {
           <motion.div variants={fadeInUp} className="w-full space-y-4">
             <span className="text-[#3EBAF4] text-xs font-semibold tracking-widest uppercase block">Key Solution / Design Evolution</span>
             <h3 className="text-[22px] font-semibold font-space-grotesk tracking-tight">
-              From Low-Fidelity Blueprints to Figma Tokens
+              From Low Fidelity Blueprints to Figma Tokens
             </h3>
             <p className="text-[20px] text-muted-foreground/80 leading-relaxed text-justify font-inter">
               Our design journey represents a deliberate transition from raw structural layouts to fully realized, production-grade visual systems.
@@ -395,7 +395,7 @@ export default function RoneAmsCaseStudy() {
             <div className="p-8 rounded-[2rem] bg-card/30 border border-border/30 backdrop-blur-md flex flex-col justify-between space-y-6">
               <div className="space-y-4">
                 <span className="text-xs text-muted-foreground font-mono uppercase tracking-widest block font-bold">Phase 01 / Wireframe</span>
-                <h4 className="text-xl font-bold font-space-grotesk text-foreground">Gray-Box Prototyping</h4>
+                <h4 className="text-xl font-bold font-space-grotesk text-foreground">Gray Box Prototyping</h4>
                 <p className="text-sm text-muted-foreground/90 leading-relaxed text-justify font-inter">
                   Establishing primary layout grids, content density hierarchies, and low-cognitive user flows without visual distractions.
                 </p>
@@ -421,7 +421,7 @@ export default function RoneAmsCaseStudy() {
               <div className="relative rounded-2xl overflow-hidden border border-border/40 shadow-xl bg-card aspect-[4/3] flex items-center justify-center max-h-[300px]">
                 <img 
                   src="undefined" 
-                  alt="Figma High-Fidelity UI System" 
+                  alt="Figma High Fidelity UI System" 
                   className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
                 />
               </div>
@@ -453,7 +453,7 @@ export default function RoneAmsCaseStudy() {
                 <div className="w-11 h-11 rounded-full bg-[#F76258]/10 text-[#F76258] flex items-center justify-center font-bold font-space-grotesk text-lg border border-[#F76258]/20">01</div>
                 <div>
                   <h4 className="text-[22px] font-semibold font-space-grotesk tracking-wide text-foreground">
-                    Intelligent Alert Management
+                    Intelligent Alerts & Command Dashboard (Web)
                   </h4>
                   <p className="text-xs text-muted-foreground font-mono">undefined</p>
                 </div>
@@ -464,7 +464,7 @@ export default function RoneAmsCaseStudy() {
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 leading-relaxed items-center">
               <div className="lg:col-span-7 space-y-5 font-inter text-[18px] text-muted-foreground/90">
                 <p className="text-justify font-inter">
-                  To combat information overload for the central user, we designed a smart alert system categorized by severity, ensuring critical safety hazards surface immediately over routine updates.
+                  The heart of the application is a master dashboard that aggregates data into a clean interface. Notifications are categorized by severity, ensuring critical issues—like safety hazards—are surfaced immediately to the top of the central user's dashboard.
                 </p>
               </div>
               
@@ -485,7 +485,7 @@ export default function RoneAmsCaseStudy() {
                 <div className="w-11 h-11 rounded-full bg-[#3EBAF4]/10 text-[#3EBAF4] flex items-center justify-center font-bold font-space-grotesk text-lg border border-[#3EBAF4]/20">02</div>
                 <div>
                   <h4 className="text-[22px] font-semibold font-space-grotesk tracking-wide text-foreground">
-                    Map-First Navigation
+                    Map First Navigation & Contextual Sheets (Mobile)
                   </h4>
                   <p className="text-xs text-muted-foreground font-mono">undefined</p>
                 </div>
@@ -499,7 +499,7 @@ export default function RoneAmsCaseStudy() {
                 <div className="relative rounded-3xl overflow-hidden border border-border/40 shadow-2xl bg-card max-w-[220px]">
                   <img 
                     src="undefined" 
-                    alt="Map-First Navigation" 
+                    alt="Map First Navigation & Contextual Sheets (Mobile)" 
                     className="w-full h-auto object-contain transition-transform duration-300 hover:scale-105"
                   />
                 </div>
@@ -508,7 +508,7 @@ export default function RoneAmsCaseStudy() {
               {/* Text Right */}
               <div className="lg:col-span-7 space-y-5 font-inter text-base md:text-[18px] text-muted-foreground/90 order-1 lg:order-2">
                 <p className="text-justify font-inter">
-                  For field workers, we replaced traditional text-heavy task lists with a geographical map view, allowing them to see nearby stations and tap to view work immediately.
+                  For field users, the primary view is a geographical map. When executing a task, instructions slide up from the bottom as contextual sheets, allowing users to log information without losing sight of the underlying map or their spatial context.
                 </p>
               </div>
             </div>
@@ -521,7 +521,7 @@ export default function RoneAmsCaseStudy() {
                 <div className="w-11 h-11 rounded-full bg-[#F76258]/10 text-[#F76258] flex items-center justify-center font-bold font-space-grotesk text-lg border border-[#F76258]/20">03</div>
                 <div>
                   <h4 className="text-[22px] font-semibold font-space-grotesk tracking-wide text-foreground">
-                    Guided Workflows & Scanning
+                    Proactive Maintenance & Scanning (Unified)
                   </h4>
                   <p className="text-xs text-muted-foreground font-mono">undefined</p>
                 </div>
@@ -532,7 +532,7 @@ export default function RoneAmsCaseStudy() {
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 leading-relaxed items-center">
               <div className="lg:col-span-7 space-y-5 font-inter text-[18px] text-muted-foreground/90">
                 <p className="text-justify font-inter">
-                  We broke down complex project setups into step-by-step flows and introduced camera scanning for equipment identification, removing error-prone manual typing from the field.
+                  Web users create automated preventive maintenance schedules via guided workflows. In the field, technicians use thumb friendly interactions and camera scanning to identify equipment, removing the need for error prone manual typing.
                 </p>
               </div>
               
@@ -587,7 +587,7 @@ export default function RoneAmsCaseStudy() {
                       Faster Task Completion
                     </h4>
                     <p className="text-xs text-muted-foreground leading-relaxed text-justify font-inter">
-                      One-tap scanning and bottom-sheet forms reduced screen time for field workers.
+                      One tap scanning and bottom sheet forms reduced screen time for field workers.
                     </p>
                   </div>
                 </div>
@@ -606,10 +606,10 @@ export default function RoneAmsCaseStudy() {
                   </div>
                   <div>
                     <h4 className="text-base font-bold font-space-grotesk tracking-wide text-foreground mb-1">
-                      Real-Time Visibility
+                      Real Time Visibility
                     </h4>
                     <p className="text-xs text-muted-foreground leading-relaxed text-justify font-inter">
-                      Central management stopped relying on end-of-day reports thanks to unified feeds.
+                      Central management stopped relying on end of day reports thanks to unified feeds.
                     </p>
                   </div>
                 </div>
@@ -662,7 +662,7 @@ export default function RoneAmsCaseStudy() {
               "Context Over Complexity: Users don't need to see everything; they need to see what is immediately relevant to their role."
             </p>
             <p className="text-base md:text-lg text-muted-foreground font-light pl-6 text-justify font-inter">
-              Designing for the Central User reinforced that visual clarity prevents cognitive overload, while designing for the Field User showed that high contrast and thumb-friendly targets are essential for environmental usability.
+              Designing for the Central User reinforced that visual clarity prevents cognitive overload, while designing for the Field User showed that high contrast and thumb friendly targets are essential for environmental usability.
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 pt-4 w-full pl-6">
