@@ -107,31 +107,31 @@ const projectsData = {
     roleName: "Lead Product Designer",
     platform: "Web Console & Field Mobile",
     techStack: "React, Next.js, Framer Motion, TailWind, Expo",
-    tagline: "A unified digital ecosystem seamlessly connecting central management with on the ground field execution.",
-    overview1: "R One is a comprehensive B2B application designed to centralize and streamline complex operational workflows for large scale organizations. Built specifically to translate a high volume of complex data into actionable insights.",
-    overview2: "By bringing two distinct worlds—central operations (web) and field execution (mobile)—into a single cohesive interface, the application ensures that vital information flows instantly and effortlessly.",
+    tagline: "End to end EV charger lifecycle platform connecting central operations and field technicians into one cohesive system.",
+    overview1: "EV charging reliability is an operations problem defined by installation quality, proactive maintenance, and field resolution speed.",
+    overview2: "Iris R One was designed as a unified lifecycle management platform connecting central web operations and mobile field technicians into a cohesive, real time ecosystem.",
     stats: [
-      { metric: "60%", label: "Faster Task Completion", desc: "One tap scanning and bottom sheet forms reduced screen time for field workers." },
-      { metric: "100%", label: "Real Time Visibility", desc: "Central management stopped relying on end of day reports thanks to unified feeds." },
-      { metric: "80%", label: "Reduction in Data Errors", desc: "Replaced manual field typing with camera scanning and large selection toggles." }
+      { metric: "35%", label: "Reduced Repeat Visits", desc: "Improved diagnostic context for field teams significantly decreased revisits and lowered operational costs." },
+      { metric: "2x", label: "Faster Triage & Resolution", desc: "Earlier intervention protocols and predictive R score models reduced system downtime windows." },
+      { metric: "100%", label: "Lifecycle Standardization", desc: "Enforced guided checklists with audit evidence to standardize installation quality and reduce rework." }
     ],
-    challengeTitle: "The Divide Between Central Office and Field Teams",
-    challengeDesc: "Operational efficiency frequently breaks down when the tools used by field teams and central offices are disconnected. Central management teams faced significant hurdles in maintaining visibility across dispersed operations.",
+    challengeTitle: "The Friction of Fragmented Fleet Operations",
+    challengeDesc: "As EV networks scale, each charger becomes a live asset with unique failure patterns. The primary failure mode was the lack of a single operating model to connect monitoring, decision making, and field execution.",
     breakdowns: [
-      { num: "01 / Fragmented Oversight", desc: "Information regarding different locations, assets, and teams was scattered across disparate systems." },
-      { num: "02 / Field Context Loss", desc: "Field teams struggled with clunky interfaces that were hard to read outdoors and use with gloves." },
-      { num: "03 / Reactive Operations", desc: "Without real time field visibility, central management relied on reactive maintenance and manual status updates." }
+      { num: "01 / Disconnected Operational Truth", desc: "Critical health signals, maintenance history, and inventory ledgers existed in disparate, fragmented systems." },
+      { num: "02 / Reactive Maintenance Cycles", desc: "Faults were handled entirely after failure, which extended downtime and reduced network reliability." },
+      { num: "03 / Planning & Execution Gaps", desc: "Technicians arrived without diagnostic context, leading to extended fixes and repeated site visits." }
     ],
-    roleSubtitle: "Two Roles, One Unified Ecosystem",
-    roleDesc: "The platform was designed around two distinct yet complementary user experiences tailored to the specific needs of central dispatchers and field technicians.",
+    roleSubtitle: "Two Teams, One Unified Operating Model",
+    roleDesc: "The platform establishes a shared operational state across two user groups working under different constraints. Assets, alerts, and work orders map back to a single lifecycle timeline.",
     role1Name: "buyer",
-    role1Label: "Central Manager (Web)",
-    role1Archetype: "High Level Proactive Control",
-    role1Desc: "For the central user, the solution prioritizes clarity, data density, and immediate visibility. The focus is to translate complex data into clear actionable insights:",
+    role1Label: "Central Ops Planner (Web)",
+    role1Archetype: "Optimizing Decision Speed",
+    role1Desc: "The web experience accelerates triage and coordination. It reduces decision friction, allowing planners to assign work based on real capacity and risk:",
     role1Items: [
-      "Streamlines project creation through guided workflows, reducing administrative setup time.",
-      "Transforms maintenance from a reactive chore to a proactive strategy via visual calendars.",
-      "Combats information overload with a smart, prioritized alert system across operations."
+      "Structures workflows around a detect, prioritize, assign, and track operational loop.",
+      "Calculates predictive R scores to rank operational risk and assign field capacity.",
+      "Provides a ranked view of critical alerts to prevent failures before downtime occurs."
     ],
     role1ScreenTitle: "⚡ Central Ops Command Dashboard",
     role1ScreenFilter: "Filter: High Priority • Proximity • Active",
@@ -142,12 +142,12 @@ const projectsData = {
     role1ScreenCta: "Review Operations Map",
     role2Name: "seller",
     role2Label: "Field Technician (Mobile)",
-    role2Archetype: "Contextual Field Execution",
-    role2Desc: "For the field user, the solution prioritizes physical context and ease of interaction on the go. The interface feels lightweight and tactile:",
+    role2Archetype: "Optimizing Execution Quality",
+    role2Desc: "The mobile experience ensures execution quality under time pressure. It lowers cognitive load on site and standardizes execution across all technicians:",
     role2Items: [
-      "Roots all tasks in Map First Navigation, eliminating the need to dig through text lists.",
-      "Uses Contextual Bottom Sheets to log information without losing spatial context.",
-      "Employs thumb friendly interaction and camera scanning to replace manual typing."
+      "Delivers guided execution pathways with clear task intent and asset history.",
+      "Integrates fast evidence capture and mandatory audit checklists for validated closure.",
+      "Standardizes installation workflows to reduce downstream chaos and repeat visits."
     ],
     role2ScreenTitle: "📱 Tech Mobile Execution App",
     role2ScreenFilter: "Session Status: On Site Verified",
@@ -156,24 +156,24 @@ const projectsData = {
       { name: "Workpack #430 - KYC Inspect", slot: "Asset ID: CHG-2319 • Slot: C1", rate: "Action: Grounding Test", info: "Evid: Signed form" }
     ],
     role2ScreenCta: "Complete Checklist (↑)",
-    designEvolutionDesc: "To bridge the gap between heavy enterprise data and fast field execution, we tested gray box prototypes with both managers and technicians, identifying key cognitive friction points.",
-    wireframeDesc: "Laid out dense web dashboards and mobile task cards. Usability testing revealed that field workers lost context in nested menus, prompting the shift to map first navigation and bottom sheets.",
+    designEvolutionDesc: "To bridge the gap between heavy enterprise data and fast field execution, we established a shared operational model so both platforms reference the same lifecycle timeline.",
+    wireframeDesc: "Laid out dense web dashboards and mobile task cards. Usability testing revealed that designing for early stage products requires balancing optimism with credibility during critical decision moments.",
     designSystemDesc: "Created a unified visual language with Figma tokens in strict accordance with WCAG (W2AG) European Accessibility Standards. We ensured that contrast ratios, status colors, and interactive elements felt identical across both the high density web app and the high contrast mobile app.",
-    designMove1Title: "Intelligent Alerts & Command Dashboard (Web)",
-    designMove1Sub: "Combating information overload",
-    designMove1Desc: "The heart of the application is a master dashboard that aggregates data into a clean interface. Notifications are categorized by severity, ensuring critical issues—like safety hazards—are surfaced immediately to the top of the central user's dashboard.",
+    designMove1Title: "Predictive Maintenance & R Score (Web)",
+    designMove1Sub: "Reducing cognitive load before commitment",
+    designMove1Desc: "Implemented a unified health layer using R score to combine telemetry and operational signals into an actionable metric, enabling ops teams to allocate field capacity before failures occur.",
     designMove1GraphTitle: "📊 Alert Response Time",
     designMove1Svg: `<svg className="w-full h-[70%] stroke-[#F76258] fill-none stroke-[2]" viewBox="0 0 100 30">
                     <path d="M 0 10 Q 30 25, 50 5 T 90 20 T 100 10" />
                     <circle cx="50" cy="5" r="3" className="fill-[#F76258] stroke-white stroke-[1]" />
                   </svg>`,
     designMove1GraphFooter: "Resolution Curve",
-    designMove2Title: "Map First Navigation & Contextual Sheets (Mobile)",
-    designMove2Sub: "Rooting tasks in physical location",
-    designMove2Desc: "For field users, the primary view is a geographical map. When executing a task, instructions slide up from the bottom as contextual sheets, allowing users to log information without losing sight of the underlying map or their spatial context.",
-    designMove3Title: "Proactive Maintenance & Scanning (Unified)",
-    designMove3Sub: "From reactive to proactive",
-    designMove3Desc: "Web users create automated preventive maintenance schedules via guided workflows. In the field, technicians use thumb friendly interactions and camera scanning to identify equipment, removing the need for error prone manual typing.",
+    designMove2Title: "Guided Field Execution (Mobile)",
+    designMove2Sub: "Reducing hesitation through predictable pathways",
+    designMove2Desc: "Designed the mobile app as a guided execution tool providing clear task intent, asset history, and fast evidence capture to standardize execution quality and improve first time fix rates.",
+    designMove3Title: "Lifecycle Standardization (Unified)",
+    designMove3Sub: "Designing for evaluation, not just browsing",
+    designMove3Desc: "Standardized installation workflows into explicit checklists with audit evidence. This created a shared operational truth where both platforms stay synchronized in real time.",
     designMove3GraphTitle: "📈 Field Data Accuracy",
     designMove3GraphSvg: `<div className="h-28 flex items-end justify-between gap-2 px-4 py-2 border border-border/20 rounded-lg bg-card/30">
                   <div className="w-8 bg-[#F76258] rounded-t-sm" style={{ height: "65%" }} />
@@ -181,12 +181,12 @@ const projectsData = {
                   <div className="w-8 bg-[#FCA59E] rounded-t-sm" style={{ height: "95%" }} />
                   <div className="w-8 bg-muted rounded-t-sm" style={{ height: "45%" }} />
                 </div>`,
-    learningQuote: "Context Over Complexity: Users don't need to see everything; they need to see what is immediately relevant to their role.",
-    learningDesc: "Designing for the Central User reinforced that visual clarity prevents cognitive overload, while designing for the Field User showed that high contrast and thumb friendly targets are essential for environmental usability.",
+    learningQuote: "Operational UX is Systems UX: coherence comes from shared objects and states, not just screens.",
+    learningDesc: "This project reinforced that adoption is a confidence problem. Users need clearer signals at the exact moments of commitment to execute effectively across distributed environments.",
     checkpoints: [
-      { title: "A Shared Visual Language", desc: "Using the same modern typography and card styles across platforms fostered a sense of unity." },
+      { title: "Explainability Drives Action", desc: "Predictive systems only work when users intuitively understand the actionable reasoning behind the data." },
       { title: "European Accessibility Compliance", desc: "Designed according to stringent WCAG European standards (W2AG), guaranteeing high contrast and readability for field workers in harsh outdoor environments." },
-      { title: "Prioritization is Key", desc: "Systems that automatically prioritize urgent tasks are essential for crisis management." }
+      { title: "Design for Decision Moments", desc: "Trust cues must appear exactly where critical commitment and dispatch decisions happen." }
     ]
   },
   "witnesschain": {

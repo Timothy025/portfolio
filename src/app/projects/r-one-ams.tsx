@@ -88,7 +88,7 @@ export default function RoneAmsCaseStudy() {
             >
               <span className="text-[#F76258] text-xs font-semibold tracking-widest uppercase block">Overview</span>
               <p className="border-l-4 border-[#F76258] pl-6 md:pl-8 italic text-justify font-inter leading-relaxed">
-                R One is a comprehensive B2B application designed to centralize and streamline complex operational workflows for large scale organizations. Built specifically to translate a high volume of complex data into actionable insights. By bringing two distinct worlds—central operations (web) and field execution (mobile)—into a single cohesive interface, the application ensures that vital information flows instantly and effortlessly.
+                EV charging reliability is an operations problem defined by installation quality, proactive maintenance, and field resolution speed. Iris R One was designed as a unified lifecycle management platform connecting central web operations and mobile field technicians into a cohesive, real time ecosystem.
               </p>
             </motion.div>
 
@@ -131,10 +131,10 @@ export default function RoneAmsCaseStudy() {
           <motion.div variants={fadeInUp} className="space-y-3">
             <span className="text-[#F76258] text-xs font-semibold tracking-widest uppercase block">Operational Model / The Challenge</span>
             <h3 className="text-[22px] font-semibold font-space-grotesk tracking-tight leading-tight">
-              The Divide Between Central Office and Field Teams
+              The Friction of Fragmented Fleet Operations
             </h3>
             <p className="text-lg md:text-[20px] text-muted-foreground/80 leading-relaxed w-full text-justify font-inter">
-              Operational efficiency frequently breaks down when the tools used by field teams and central offices are disconnected. Central management teams faced significant hurdles in maintaining visibility across dispersed operations.
+              As EV networks scale, each charger becomes a live asset with unique failure patterns. The primary failure mode was the lack of a single operating model to connect monitoring, decision making, and field execution.
             </p>
           </motion.div>
 
@@ -144,27 +144,27 @@ export default function RoneAmsCaseStudy() {
                 <div key={0} className="space-y-1 pt-4 first:pt-0 border-t first:border-t-0 border-border/10">
                   <h4 className="font-bold text-foreground font-space-grotesk uppercase tracking-wider text-xs flex items-center gap-2">
                     <span className="w-1.5 h-1.5 rounded-full bg-red-500/80 animate-pulse" />
-                    01 / Fragmented Oversight
+                    01 / Disconnected Operational Truth
                   </h4>
-                  <p className="text-sm pl-3.5 text-justify font-inter">Information regarding different locations, assets, and teams was scattered across disparate systems.</p>
+                  <p className="text-sm pl-3.5 text-justify font-inter">Critical health signals, maintenance history, and inventory ledgers existed in disparate, fragmented systems.</p>
                 </div>
   
 
                 <div key={1} className="space-y-1 pt-4 first:pt-0 border-t first:border-t-0 border-border/10">
                   <h4 className="font-bold text-foreground font-space-grotesk uppercase tracking-wider text-xs flex items-center gap-2">
                     <span className="w-1.5 h-1.5 rounded-full bg-red-500/80 animate-pulse" />
-                    02 / Field Context Loss
+                    02 / Reactive Maintenance Cycles
                   </h4>
-                  <p className="text-sm pl-3.5 text-justify font-inter">Field teams struggled with clunky interfaces that were hard to read outdoors and use with gloves.</p>
+                  <p className="text-sm pl-3.5 text-justify font-inter">Faults were handled entirely after failure, which extended downtime and reduced network reliability.</p>
                 </div>
   
 
                 <div key={2} className="space-y-1 pt-4 first:pt-0 border-t first:border-t-0 border-border/10">
                   <h4 className="font-bold text-foreground font-space-grotesk uppercase tracking-wider text-xs flex items-center gap-2">
                     <span className="w-1.5 h-1.5 rounded-full bg-red-500/80 animate-pulse" />
-                    03 / Reactive Operations
+                    03 / Planning & Execution Gaps
                   </h4>
-                  <p className="text-sm pl-3.5 text-justify font-inter">Without real time field visibility, central management relied on reactive maintenance and manual status updates.</p>
+                  <p className="text-sm pl-3.5 text-justify font-inter">Technicians arrived without diagnostic context, leading to extended fixes and repeated site visits.</p>
                 </div>
   
             </div>
@@ -181,10 +181,10 @@ export default function RoneAmsCaseStudy() {
           <motion.div variants={fadeInUp} className="space-y-3 w-full">
             <span className="text-[#F76258] text-xs font-semibold tracking-widest uppercase block">Operational Model / Reality</span>
             <h3 className="text-[22px] font-semibold font-space-grotesk tracking-tight md:whitespace-nowrap">
-              Two Roles, One Unified Ecosystem
+              Two Teams, One Unified Operating Model
             </h3>
             <p className="text-lg md:text-[20px] text-muted-foreground w-full text-justify font-inter">
-              The platform was designed around two distinct yet complementary user experiences tailored to the specific needs of central dispatchers and field technicians.
+              The platform establishes a shared operational state across two user groups working under different constraints. Assets, alerts, and work orders map back to a single lifecycle timeline.
             </p>
           </motion.div>
 
@@ -202,7 +202,7 @@ export default function RoneAmsCaseStudy() {
                 )}
               >
                 <Smartphone className="w-4 h-4 mr-2 flex-shrink-0" />
-                <span className="truncate">Central Manager (Web)</span>
+                <span className="truncate">Central Ops Planner (Web)</span>
               </Button>
               <Button
                 onClick={() => setSelectedRole("seller")}
@@ -235,31 +235,31 @@ export default function RoneAmsCaseStudy() {
                     </span>
                     <div>
                       <h4 className="text-xl font-bold font-space-grotesk tracking-wide text-foreground">
-                        Central Manager (Web) (High Level Proactive Control)
+                        Central Ops Planner (Web) (Optimizing Decision Speed)
                       </h4>
                       <p className="text-xs text-[#F76258] font-mono tracking-wider uppercase">Archetype: "High-Confidence"</p>
                     </div>
                   </div>
                   <p className="text-sm text-muted-foreground/90 leading-relaxed font-inter text-justify font-light">
-                    For the central user, the solution prioritizes clarity, data density, and immediate visibility. The focus is to translate complex data into clear actionable insights:
+                    The web experience accelerates triage and coordination. It reduces decision friction, allowing planners to assign work based on real capacity and risk:
                   </p>
                   <ul className="space-y-3.5">
                     
                       <li key={0} className="flex gap-3 text-sm text-muted-foreground text-justify font-inter">
                         <CheckCircle2 className="w-4 h-4 text-[#F76258] flex-shrink-0 mt-0.5" />
-                        <span>Streamlines project creation through guided workflows, reducing administrative setup time.</span>
+                        <span>Structures workflows around a detect, prioritize, assign, and track operational loop.</span>
                       </li>
   
 
                       <li key={1} className="flex gap-3 text-sm text-muted-foreground text-justify font-inter">
                         <CheckCircle2 className="w-4 h-4 text-[#F76258] flex-shrink-0 mt-0.5" />
-                        <span>Transforms maintenance from a reactive chore to a proactive strategy via visual calendars.</span>
+                        <span>Calculates predictive R scores to rank operational risk and assign field capacity.</span>
                       </li>
   
 
                       <li key={2} className="flex gap-3 text-sm text-muted-foreground text-justify font-inter">
                         <CheckCircle2 className="w-4 h-4 text-[#F76258] flex-shrink-0 mt-0.5" />
-                        <span>Combats information overload with a smart, prioritized alert system across operations.</span>
+                        <span>Provides a ranked view of critical alerts to prevent failures before downtime occurs.</span>
                       </li>
   
                   </ul>
@@ -311,31 +311,31 @@ export default function RoneAmsCaseStudy() {
                     </span>
                     <div>
                       <h4 className="text-xl font-bold font-space-grotesk tracking-wide text-foreground">
-                        Field Technician (Mobile) (Contextual Field Execution)
+                        Field Technician (Mobile) (Optimizing Execution Quality)
                       </h4>
                       <p className="text-xs text-[#F76258] font-mono tracking-wider uppercase">Archetype: "Action-Oriented"</p>
                     </div>
                   </div>
                   <p className="text-sm text-muted-foreground/90 leading-relaxed font-inter text-justify font-light">
-                    For the field user, the solution prioritizes physical context and ease of interaction on the go. The interface feels lightweight and tactile:
+                    The mobile experience ensures execution quality under time pressure. It lowers cognitive load on site and standardizes execution across all technicians:
                   </p>
                   <ul className="space-y-3.5">
                     
                       <li key={0} className="flex gap-3 text-sm text-muted-foreground text-justify font-inter">
                         <CheckCircle2 className="w-4 h-4 text-[#F76258] flex-shrink-0 mt-0.5" />
-                        <span>Roots all tasks in Map First Navigation, eliminating the need to dig through text lists.</span>
+                        <span>Delivers guided execution pathways with clear task intent and asset history.</span>
                       </li>
   
 
                       <li key={1} className="flex gap-3 text-sm text-muted-foreground text-justify font-inter">
                         <CheckCircle2 className="w-4 h-4 text-[#F76258] flex-shrink-0 mt-0.5" />
-                        <span>Uses Contextual Bottom Sheets to log information without losing spatial context.</span>
+                        <span>Integrates fast evidence capture and mandatory audit checklists for validated closure.</span>
                       </li>
   
 
                       <li key={2} className="flex gap-3 text-sm text-muted-foreground text-justify font-inter">
                         <CheckCircle2 className="w-4 h-4 text-[#F76258] flex-shrink-0 mt-0.5" />
-                        <span>Employs thumb friendly interaction and camera scanning to replace manual typing.</span>
+                        <span>Standardizes installation workflows to reduce downstream chaos and repeat visits.</span>
                       </li>
   
                   </ul>
@@ -453,7 +453,7 @@ export default function RoneAmsCaseStudy() {
                 <div className="w-11 h-11 rounded-full bg-[#F76258]/10 text-[#F76258] flex items-center justify-center font-bold font-space-grotesk text-lg border border-[#F76258]/20">01</div>
                 <div>
                   <h4 className="text-[22px] font-semibold font-space-grotesk tracking-wide text-foreground">
-                    Intelligent Alerts & Command Dashboard (Web)
+                    Predictive Maintenance & R Score (Web)
                   </h4>
                   <p className="text-xs text-muted-foreground font-mono">undefined</p>
                 </div>
@@ -464,7 +464,7 @@ export default function RoneAmsCaseStudy() {
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 leading-relaxed items-center">
               <div className="lg:col-span-7 space-y-5 font-inter text-[18px] text-muted-foreground/90">
                 <p className="text-justify font-inter">
-                  The heart of the application is a master dashboard that aggregates data into a clean interface. Notifications are categorized by severity, ensuring critical issues—like safety hazards—are surfaced immediately to the top of the central user's dashboard.
+                  Implemented a unified health layer using R score to combine telemetry and operational signals into an actionable metric, enabling ops teams to allocate field capacity before failures occur.
                 </p>
               </div>
               
@@ -485,7 +485,7 @@ export default function RoneAmsCaseStudy() {
                 <div className="w-11 h-11 rounded-full bg-[#3EBAF4]/10 text-[#3EBAF4] flex items-center justify-center font-bold font-space-grotesk text-lg border border-[#3EBAF4]/20">02</div>
                 <div>
                   <h4 className="text-[22px] font-semibold font-space-grotesk tracking-wide text-foreground">
-                    Map First Navigation & Contextual Sheets (Mobile)
+                    Guided Field Execution (Mobile)
                   </h4>
                   <p className="text-xs text-muted-foreground font-mono">undefined</p>
                 </div>
@@ -499,7 +499,7 @@ export default function RoneAmsCaseStudy() {
                 <div className="relative rounded-3xl overflow-hidden border border-border/40 shadow-2xl bg-card max-w-[220px]">
                   <img 
                     src="undefined" 
-                    alt="Map First Navigation & Contextual Sheets (Mobile)" 
+                    alt="Guided Field Execution (Mobile)" 
                     className="w-full h-auto object-contain transition-transform duration-300 hover:scale-105"
                   />
                 </div>
@@ -508,7 +508,7 @@ export default function RoneAmsCaseStudy() {
               {/* Text Right */}
               <div className="lg:col-span-7 space-y-5 font-inter text-base md:text-[18px] text-muted-foreground/90 order-1 lg:order-2">
                 <p className="text-justify font-inter">
-                  For field users, the primary view is a geographical map. When executing a task, instructions slide up from the bottom as contextual sheets, allowing users to log information without losing sight of the underlying map or their spatial context.
+                  Designed the mobile app as a guided execution tool providing clear task intent, asset history, and fast evidence capture to standardize execution quality and improve first time fix rates.
                 </p>
               </div>
             </div>
@@ -521,7 +521,7 @@ export default function RoneAmsCaseStudy() {
                 <div className="w-11 h-11 rounded-full bg-[#F76258]/10 text-[#F76258] flex items-center justify-center font-bold font-space-grotesk text-lg border border-[#F76258]/20">03</div>
                 <div>
                   <h4 className="text-[22px] font-semibold font-space-grotesk tracking-wide text-foreground">
-                    Proactive Maintenance & Scanning (Unified)
+                    Lifecycle Standardization (Unified)
                   </h4>
                   <p className="text-xs text-muted-foreground font-mono">undefined</p>
                 </div>
@@ -532,7 +532,7 @@ export default function RoneAmsCaseStudy() {
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 leading-relaxed items-center">
               <div className="lg:col-span-7 space-y-5 font-inter text-[18px] text-muted-foreground/90">
                 <p className="text-justify font-inter">
-                  Web users create automated preventive maintenance schedules via guided workflows. In the field, technicians use thumb friendly interactions and camera scanning to identify equipment, removing the need for error prone manual typing.
+                  Standardized installation workflows into explicit checklists with audit evidence. This created a shared operational truth where both platforms stay synchronized in real time.
                 </p>
               </div>
               
@@ -580,14 +580,14 @@ export default function RoneAmsCaseStudy() {
                 <div className="absolute inset-0 bg-gradient-to-br from-[#F76258]/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
                 <div className="relative z-10 space-y-4">
                   <div className="text-4xl font-black font-space-grotesk bg-gradient-to-r from-[#F76258] to-foreground bg-clip-text text-transparent">
-                    60%
+                    35%
                   </div>
                   <div>
                     <h4 className="text-base font-bold font-space-grotesk tracking-wide text-foreground mb-1">
-                      Faster Task Completion
+                      Reduced Repeat Visits
                     </h4>
                     <p className="text-xs text-muted-foreground leading-relaxed text-justify font-inter">
-                      One tap scanning and bottom sheet forms reduced screen time for field workers.
+                      Improved diagnostic context for field teams significantly decreased revisits and lowered operational costs.
                     </p>
                   </div>
                 </div>
@@ -602,14 +602,14 @@ export default function RoneAmsCaseStudy() {
                 <div className="absolute inset-0 bg-gradient-to-br from-[#F76258]/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
                 <div className="relative z-10 space-y-4">
                   <div className="text-4xl font-black font-space-grotesk bg-gradient-to-r from-[#F76258] to-foreground bg-clip-text text-transparent">
-                    100%
+                    2x
                   </div>
                   <div>
                     <h4 className="text-base font-bold font-space-grotesk tracking-wide text-foreground mb-1">
-                      Real Time Visibility
+                      Faster Triage & Resolution
                     </h4>
                     <p className="text-xs text-muted-foreground leading-relaxed text-justify font-inter">
-                      Central management stopped relying on end of day reports thanks to unified feeds.
+                      Earlier intervention protocols and predictive R score models reduced system downtime windows.
                     </p>
                   </div>
                 </div>
@@ -624,14 +624,14 @@ export default function RoneAmsCaseStudy() {
                 <div className="absolute inset-0 bg-gradient-to-br from-[#F76258]/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
                 <div className="relative z-10 space-y-4">
                   <div className="text-4xl font-black font-space-grotesk bg-gradient-to-r from-[#F76258] to-foreground bg-clip-text text-transparent">
-                    80%
+                    100%
                   </div>
                   <div>
                     <h4 className="text-base font-bold font-space-grotesk tracking-wide text-foreground mb-1">
-                      Reduction in Data Errors
+                      Lifecycle Standardization
                     </h4>
                     <p className="text-xs text-muted-foreground leading-relaxed text-justify font-inter">
-                      Replaced manual field typing with camera scanning and large selection toggles.
+                      Enforced guided checklists with audit evidence to standardize installation quality and reduce rework.
                     </p>
                   </div>
                 </div>
@@ -659,17 +659,17 @@ export default function RoneAmsCaseStudy() {
             className="space-y-8 text-lg md:text-[20px] leading-relaxed text-muted-foreground/90 font-inter w-full"
           >
             <p className="text-lg md:text-[20px] font-light text-foreground leading-relaxed border-l-4 border-[#F76258] pl-6 italic text-justify w-full font-inter font-light">
-              "Context Over Complexity: Users don't need to see everything; they need to see what is immediately relevant to their role."
+              "Operational UX is Systems UX: coherence comes from shared objects and states, not just screens."
             </p>
             <p className="text-base md:text-lg text-muted-foreground font-light pl-6 text-justify font-inter">
-              Designing for the Central User reinforced that visual clarity prevents cognitive overload, while designing for the Field User showed that high contrast and thumb friendly targets are essential for environmental usability.
+              This project reinforced that adoption is a confidence problem. Users need clearer signals at the exact moments of commitment to execute effectively across distributed environments.
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 pt-4 w-full pl-6">
               
                 <div key={0} className="space-y-2 text-justify font-inter">
-                  <h4 className="font-bold text-foreground font-space-grotesk uppercase tracking-wider text-xs">01 / A Shared Visual Language</h4>
-                  <p className="text-sm text-justify font-inter">Using the same modern typography and card styles across platforms fostered a sense of unity.</p>
+                  <h4 className="font-bold text-foreground font-space-grotesk uppercase tracking-wider text-xs">01 / Explainability Drives Action</h4>
+                  <p className="text-sm text-justify font-inter">Predictive systems only work when users intuitively understand the actionable reasoning behind the data.</p>
                 </div>
   
 
@@ -680,8 +680,8 @@ export default function RoneAmsCaseStudy() {
   
 
                 <div key={2} className="space-y-2 text-justify font-inter">
-                  <h4 className="font-bold text-foreground font-space-grotesk uppercase tracking-wider text-xs">03 / Prioritization is Key</h4>
-                  <p className="text-sm text-justify font-inter">Systems that automatically prioritize urgent tasks are essential for crisis management.</p>
+                  <h4 className="font-bold text-foreground font-space-grotesk uppercase tracking-wider text-xs">03 / Design for Decision Moments</h4>
+                  <p className="text-sm text-justify font-inter">Trust cues must appear exactly where critical commitment and dispatch decisions happen.</p>
                 </div>
   
             </div>
