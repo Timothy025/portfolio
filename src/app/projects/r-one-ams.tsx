@@ -674,7 +674,13 @@ export default function RoneAmsCaseStudy() {
   
 
                 <div key={1} className="space-y-2 text-justify font-inter">
-                  <h4 className="font-bold text-foreground font-space-grotesk uppercase tracking-wider text-xs">02 / Prioritization is Key</h4>
+                  <h4 className="font-bold text-foreground font-space-grotesk uppercase tracking-wider text-xs">02 / European Accessibility Compliance</h4>
+                  <p className="text-sm text-justify font-inter">Designed according to stringent WCAG European standards (W2AG), guaranteeing high contrast and readability for field workers in harsh outdoor environments.</p>
+                </div>
+  
+
+                <div key={2} className="space-y-2 text-justify font-inter">
+                  <h4 className="font-bold text-foreground font-space-grotesk uppercase tracking-wider text-xs">03 / Prioritization is Key</h4>
                   <p className="text-sm text-justify font-inter">Systems that automatically prioritize urgent tasks are essential for crisis management.</p>
                 </div>
   

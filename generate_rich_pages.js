@@ -158,7 +158,7 @@ const projectsData = {
     role2ScreenCta: "Complete Checklist (↑)",
     designEvolutionDesc: "To bridge the gap between heavy enterprise data and fast field execution, we tested gray-box prototypes with both managers and technicians, identifying key cognitive friction points.",
     wireframeDesc: "Laid out dense web dashboards and mobile task cards. Usability testing revealed that field workers lost context in nested menus, prompting the shift to map-first navigation and bottom sheets.",
-    designSystemDesc: "Created a unified visual language with Figma tokens. We ensured that status colors and interactive elements felt identical across both the high-density web app and the high-contrast mobile app.",
+    designSystemDesc: "Created a unified visual language with Figma tokens in strict accordance with WCAG (W2AG) European Accessibility Standards. We ensured that contrast ratios, status colors, and interactive elements felt identical across both the high-density web app and the high-contrast mobile app.",
     designMove1Title: "Intelligent Alert Management",
     designMove1Sub: "Prioritizing critical signals",
     designMove1Desc: "To combat information overload for the central user, we designed a smart alert system categorized by severity, ensuring critical safety hazards surface immediately over routine updates.",
@@ -185,6 +185,7 @@ const projectsData = {
     learningDesc: "Designing for the Central User reinforced that visual clarity prevents cognitive overload, while designing for the Field User showed that high contrast and thumb-friendly targets are essential for environmental usability.",
     checkpoints: [
       { title: "A Shared Visual Language", desc: "Using the same modern typography and card styles across platforms fostered a sense of unity." },
+      { title: "European Accessibility Compliance", desc: "Designed according to stringent WCAG European standards (W2AG), guaranteeing high contrast and readability for field workers in harsh outdoor environments." },
       { title: "Prioritization is Key", desc: "Systems that automatically prioritize urgent tasks are essential for crisis management." }
     ]
   },
