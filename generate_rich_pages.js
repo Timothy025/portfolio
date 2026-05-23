@@ -1709,35 +1709,12 @@ export default function ${data.safeName}CaseStudy() {
 
       <div className="container mx-auto px-6 lg:px-12 max-w-6xl mt-16">
         
-        {/* 3. METRICS / WHAT CHANGED */}
-        <motion.div 
-          variants={staggerContainer} 
-          initial="initial" 
-          whileInView="whileInView"
-          className="space-y-8 animate-fade-in"
-        >
-          <motion.div variants={fadeInUp} className="space-y-4">
-            <span className="text-[${data.color}] text-xs font-semibold tracking-widest uppercase block">Impact</span>
-            <h3 className="text-[22px] font-semibold font-space-grotesk tracking-tight">What Changed Operationally</h3>
-            <p className="text-lg md:text-[20px] text-muted-foreground/80 w-full leading-relaxed text-justify font-inter">
-              These outcomes represent the real-world operational changes and UX transformations achieved during our iterative product cycles. By putting user choice, accessibility, and smooth performance first, we converted a highly technical console into a self-serve portal.
-            </p>
-          </motion.div>
-
-          <motion.div 
-            variants={staggerContainer} 
-            className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6"
-          >
-            ${statsHtml}
-          </motion.div>
-        </motion.div>
-
         {/* 4. THE OPERATIONAL BREAKDOWN (THE PROBLEM) */}
         <motion.div 
           variants={staggerContainer} 
           initial="initial" 
           whileInView="whileInView"
-          className="mt-32 space-y-8"
+          className="space-y-8 animate-fade-in"
         >
           <motion.div variants={fadeInUp} className="space-y-3">
             <span className="text-[${data.color}] text-xs font-semibold tracking-widest uppercase block">Operational Model / The Challenge</span>
@@ -1957,6 +1934,29 @@ export default function ${data.safeName}CaseStudy() {
                 </div>
               </div>
             </div>
+          </motion.div>
+        </motion.div>
+
+        {/* 8. METRICS / WHAT CHANGED (IMPACT) */}
+        <motion.div 
+          variants={staggerContainer} 
+          initial="initial" 
+          whileInView="whileInView"
+          className="mt-32 space-y-8"
+        >
+          <motion.div variants={fadeInUp} className="space-y-4">
+            <span className="text-[${data.color}] text-xs font-semibold tracking-widest uppercase block">Impact</span>
+            <h3 className="text-[22px] font-semibold font-space-grotesk tracking-tight">What Changed Operationally</h3>
+            <p className="text-lg md:text-[20px] text-muted-foreground/80 w-full leading-relaxed text-justify font-inter">
+              These outcomes represent the real-world operational changes and UX transformations achieved during our iterative product cycles. By putting user choice, accessibility, and smooth performance first, we converted a highly technical console into a self-serve portal.
+            </p>
+          </motion.div>
+
+          <motion.div 
+            variants={staggerContainer} 
+            className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6"
+          >
+            ${statsHtml}
           </motion.div>
         </motion.div>
 

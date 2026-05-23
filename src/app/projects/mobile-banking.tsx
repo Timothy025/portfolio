@@ -112,100 +112,12 @@ export default function MobileBankingCaseStudy() {
 
       <div className="container mx-auto px-6 lg:px-12 max-w-6xl mt-16">
         
-        {/* 3. METRICS / WHAT CHANGED */}
-        <motion.div 
-          variants={staggerContainer} 
-          initial="initial" 
-          whileInView="whileInView"
-          className="space-y-8 animate-fade-in"
-        >
-          <motion.div variants={fadeInUp} className="space-y-4">
-            <span className="text-[#059669] text-xs font-semibold tracking-widest uppercase block">Impact</span>
-            <h3 className="text-[22px] font-semibold font-space-grotesk tracking-tight">What Changed Operationally</h3>
-            <p className="text-lg md:text-[20px] text-muted-foreground/80 w-full leading-relaxed text-justify font-inter">
-              These outcomes represent the real-world operational changes and UX transformations achieved during our iterative product cycles. By putting user choice, accessibility, and smooth performance first, we converted a highly technical console into a self-serve portal.
-            </p>
-          </motion.div>
-
-          <motion.div 
-            variants={staggerContainer} 
-            className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6"
-          >
-            
-              <motion.div 
-                key={0} 
-                variants={fadeInUp} 
-                className="p-6 rounded-2xl bg-card/30 border border-border/30 flex flex-col justify-between hover:border-foreground/20 transition-all duration-300 relative group overflow-hidden"
-              >
-                <div className="absolute inset-0 bg-gradient-to-br from-[#059669]/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
-                <div className="relative z-10 space-y-4">
-                  <div className="text-4xl font-black font-space-grotesk bg-gradient-to-r from-[#059669] to-foreground bg-clip-text text-transparent">
-                    0.5s
-                  </div>
-                  <div>
-                    <h4 className="text-base font-bold font-space-grotesk tracking-wide text-foreground mb-1">
-                      Biometric Auth Sync
-                    </h4>
-                    <p className="text-xs text-muted-foreground leading-relaxed text-justify font-inter">
-                      Optimized FaceID handshakes enabled instant safe app logins.
-                    </p>
-                  </div>
-                </div>
-              </motion.div>
-  
-
-              <motion.div 
-                key={1} 
-                variants={fadeInUp} 
-                className="p-6 rounded-2xl bg-card/30 border border-border/30 flex flex-col justify-between hover:border-foreground/20 transition-all duration-300 relative group overflow-hidden"
-              >
-                <div className="absolute inset-0 bg-gradient-to-br from-[#059669]/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
-                <div className="relative z-10 space-y-4">
-                  <div className="text-4xl font-black font-space-grotesk bg-gradient-to-r from-[#059669] to-foreground bg-clip-text text-transparent">
-                    40%
-                  </div>
-                  <div>
-                    <h4 className="text-base font-bold font-space-grotesk tracking-wide text-foreground mb-1">
-                      Fewer Transfer Drops
-                    </h4>
-                    <p className="text-xs text-muted-foreground leading-relaxed text-justify font-inter">
-                      Simplified form inputs into a single-swipe double-confirmation checkout drawer.
-                    </p>
-                  </div>
-                </div>
-              </motion.div>
-  
-
-              <motion.div 
-                key={2} 
-                variants={fadeInUp} 
-                className="p-6 rounded-2xl bg-card/30 border border-border/30 flex flex-col justify-between hover:border-foreground/20 transition-all duration-300 relative group overflow-hidden"
-              >
-                <div className="absolute inset-0 bg-gradient-to-br from-[#059669]/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
-                <div className="relative z-10 space-y-4">
-                  <div className="text-4xl font-black font-space-grotesk bg-gradient-to-r from-[#059669] to-foreground bg-clip-text text-transparent">
-                    100%
-                  </div>
-                  <div>
-                    <h4 className="text-base font-bold font-space-grotesk tracking-wide text-foreground mb-1">
-                      Account Balance Sync
-                    </h4>
-                    <p className="text-xs text-muted-foreground leading-relaxed text-justify font-inter">
-                      GraphQL subscriptions updated financial statements with zero data delay.
-                    </p>
-                  </div>
-                </div>
-              </motion.div>
-  
-          </motion.div>
-        </motion.div>
-
         {/* 4. THE OPERATIONAL BREAKDOWN (THE PROBLEM) */}
         <motion.div 
           variants={staggerContainer} 
           initial="initial" 
           whileInView="whileInView"
-          className="mt-32 space-y-8"
+          className="space-y-8 animate-fade-in"
         >
           <motion.div variants={fadeInUp} className="space-y-3">
             <span className="text-[#059669] text-xs font-semibold tracking-widest uppercase block">Operational Model / The Challenge</span>
@@ -628,6 +540,94 @@ export default function MobileBankingCaseStudy() {
                 </div>
               </div>
             </div>
+          </motion.div>
+        </motion.div>
+
+        {/* 8. METRICS / WHAT CHANGED (IMPACT) */}
+        <motion.div 
+          variants={staggerContainer} 
+          initial="initial" 
+          whileInView="whileInView"
+          className="mt-32 space-y-8"
+        >
+          <motion.div variants={fadeInUp} className="space-y-4">
+            <span className="text-[#059669] text-xs font-semibold tracking-widest uppercase block">Impact</span>
+            <h3 className="text-[22px] font-semibold font-space-grotesk tracking-tight">What Changed Operationally</h3>
+            <p className="text-lg md:text-[20px] text-muted-foreground/80 w-full leading-relaxed text-justify font-inter">
+              These outcomes represent the real-world operational changes and UX transformations achieved during our iterative product cycles. By putting user choice, accessibility, and smooth performance first, we converted a highly technical console into a self-serve portal.
+            </p>
+          </motion.div>
+
+          <motion.div 
+            variants={staggerContainer} 
+            className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6"
+          >
+            
+              <motion.div 
+                key={0} 
+                variants={fadeInUp} 
+                className="p-6 rounded-2xl bg-card/30 border border-border/30 flex flex-col justify-between hover:border-foreground/20 transition-all duration-300 relative group overflow-hidden"
+              >
+                <div className="absolute inset-0 bg-gradient-to-br from-[#059669]/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
+                <div className="relative z-10 space-y-4">
+                  <div className="text-4xl font-black font-space-grotesk bg-gradient-to-r from-[#059669] to-foreground bg-clip-text text-transparent">
+                    0.5s
+                  </div>
+                  <div>
+                    <h4 className="text-base font-bold font-space-grotesk tracking-wide text-foreground mb-1">
+                      Biometric Auth Sync
+                    </h4>
+                    <p className="text-xs text-muted-foreground leading-relaxed text-justify font-inter">
+                      Optimized FaceID handshakes enabled instant safe app logins.
+                    </p>
+                  </div>
+                </div>
+              </motion.div>
+  
+
+              <motion.div 
+                key={1} 
+                variants={fadeInUp} 
+                className="p-6 rounded-2xl bg-card/30 border border-border/30 flex flex-col justify-between hover:border-foreground/20 transition-all duration-300 relative group overflow-hidden"
+              >
+                <div className="absolute inset-0 bg-gradient-to-br from-[#059669]/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
+                <div className="relative z-10 space-y-4">
+                  <div className="text-4xl font-black font-space-grotesk bg-gradient-to-r from-[#059669] to-foreground bg-clip-text text-transparent">
+                    40%
+                  </div>
+                  <div>
+                    <h4 className="text-base font-bold font-space-grotesk tracking-wide text-foreground mb-1">
+                      Fewer Transfer Drops
+                    </h4>
+                    <p className="text-xs text-muted-foreground leading-relaxed text-justify font-inter">
+                      Simplified form inputs into a single-swipe double-confirmation checkout drawer.
+                    </p>
+                  </div>
+                </div>
+              </motion.div>
+  
+
+              <motion.div 
+                key={2} 
+                variants={fadeInUp} 
+                className="p-6 rounded-2xl bg-card/30 border border-border/30 flex flex-col justify-between hover:border-foreground/20 transition-all duration-300 relative group overflow-hidden"
+              >
+                <div className="absolute inset-0 bg-gradient-to-br from-[#059669]/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
+                <div className="relative z-10 space-y-4">
+                  <div className="text-4xl font-black font-space-grotesk bg-gradient-to-r from-[#059669] to-foreground bg-clip-text text-transparent">
+                    100%
+                  </div>
+                  <div>
+                    <h4 className="text-base font-bold font-space-grotesk tracking-wide text-foreground mb-1">
+                      Account Balance Sync
+                    </h4>
+                    <p className="text-xs text-muted-foreground leading-relaxed text-justify font-inter">
+                      GraphQL subscriptions updated financial statements with zero data delay.
+                    </p>
+                  </div>
+                </div>
+              </motion.div>
+  
           </motion.div>
         </motion.div>
 
