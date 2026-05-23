@@ -305,9 +305,9 @@ const projectsData = {
       { num: "02 / Noisy Threshold Caps", desc: "Static alarm values triggered alarms for harmless ambient humidity shifts, driving alarm fatigue." },
       { num: "03 / Fragmented Hardware Logs", desc: "Historical calibration data lived in distinct cabinets, hiding wear-and-tear trends." }
     ],
-    roleSubtitle: "Two Roles, One Connected Floor",
-    roleDesc: "We designed Iris Sense to serve central dispatchers coordinating multiple multi-story warehouses, and mobile inspectors executing field audits on the floor.",
-    role1Name: "buyer",
+    roleSubtitle: "Unified Operational Control",
+    roleDesc: "We designed Iris Sense to serve central dispatchers and planners, providing a single source of truth for monitoring multiple multi-story warehouses and floor plans.",
+    role1Name: "operator",
     role1Label: "Control Room Operator",
     role1Archetype: "High-Density Spatial Triage",
     role1Desc: "The Operator monitors ambient safety levels across hundreds of rooms. The design optimizes for fast hazard isolation:",
@@ -323,22 +323,6 @@ const projectsData = {
       { name: "💧 Ambient Humidity H-04", slot: "Status: Normal • Noida Wing", rate: "Level: 45% • 22°C", info: "Action: None Required" }
     ],
     role1ScreenCta: "Initiate Emergency Pressure Purge",
-    role2Name: "seller",
-    role2Label: "Field Inspector",
-    role2Archetype: "Sensor Calibration Focus",
-    role2Desc: "The Inspector traverses the warehouse checking physical hardware. The tablet experience provides offline diagnostic tools and quick checklist runs:",
-    role2Items: [
-      "Provides structured checklist templates detailing calibration tasks.",
-      "Uses Bluetooth local scanning to fetch ambient sensor data instantly.",
-      "Enables offline logging to queue compliance reports inside insulated steel rooms."
-    ],
-    role2ScreenTitle: "📋 Field Ambient Inspector App",
-    role2ScreenFilter: "Session Status: Offline Cache Active",
-    role2ScreenItems: [
-      { name: "Sensor #104 - Temp Gauge", slot: "Type: Thermocouple • Room 102", rate: "Action: Ref Lead Calib", info: "Status: Out of bounds" },
-      { name: "Sensor #103 - Press Gauge", slot: "Type: Piezoelectric • Room 104", rate: "Action: Seal Integrity Test", info: "Status: Verified" }
-    ],
-    role2ScreenCta: "Commit Calibration Checklist (↑)",
     designEvolutionDesc: "To ensure safety planners could coordinate crises, the spatial UI underwent multiple gray-box feedback sessions followed by rigorous design token mapping.",
     wireframeDesc: "Laid out floor plans into vector grid paths. Grey-box testing revealed that overlay panels blocked map paths, prompting us to implement slide-out sidebar drawers.",
     designSystemDesc: "Created Figma variables maps for hazard states (Alert, Critical, Safe). Mapped variables directly to class layouts, keeping UI themes highly responsive.",
@@ -1441,14 +1425,14 @@ const makePageContent = (key, data) => {
                       </div>
   `).join('\n');
 
-  const role2ItemsHtml = data.role2Items.map((item, idx) => `
+  const role2ItemsHtml = (data.role2Items || []).map((item, idx) => `
                       <li key={${idx}} className="flex gap-3 text-sm text-muted-foreground text-justify font-inter">
                         <CheckCircle2 className="w-4 h-4 text-[${data.color}] flex-shrink-0 mt-0.5" />
                         <span>${item}</span>
                       </li>
   `).join('\n');
 
-  const role2ScreenItemsHtml = data.role2ScreenItems.map((item, idx) => `
+  const role2ScreenItemsHtml = (data.role2ScreenItems || []).map((item, idx) => `
                       <div key={${idx}} className="p-2.5 rounded-lg bg-card/60 border border-border/30 text-[10px]">
                         <span className="font-bold text-foreground block mb-0.5">${item.name}</span>
                         ${item.slot} • ${item.rate}
@@ -1471,6 +1455,149 @@ const makePageContent = (key, data) => {
                   <p className="text-sm text-justify font-inter">${item.desc}</p>
                 </div>
   `).join('\n');
+
+  const roleSwitchHtml = data.role2Name ? `
+          {/* Interactive Role Switcher Selector Tabs */}
+          <motion.div variants={fadeInUp} className="flex justify-center w-full">
+            <div className="bg-[#0B0B0C]/80 backdrop-blur-md border border-border/40 p-1.5 rounded-2xl sm:rounded-full flex flex-col sm:flex-row items-stretch sm:items-center justify-center max-w-md w-full shadow-2xl gap-1">
+              <Button
+                onClick={() => setSelectedRole("${data.role1Name}")}
+                variant="ghost"
+                className={"flex-1 rounded-xl sm:rounded-full py-3.5 sm:py-5.5 cursor-pointer font-space-grotesk transition-all duration-300 " + (
+                  selectedRole === "${data.role1Name}" 
+                    ? "bg-[${data.color}] text-black font-semibold shadow-[0_4px_15px_rgba(0,230,115,0.25)] hover:bg-[${data.color}]" 
+                    : "text-muted-foreground hover:text-foreground hover:bg-foreground/5"
+                )}
+              >
+                <Smartphone className="w-4 h-4 mr-2 flex-shrink-0" />
+                <span className="truncate">${data.role1Label}</span>
+              </Button>
+              <Button
+                onClick={() => setSelectedRole("${data.role2Name}")}
+                variant="ghost"
+                className={"flex-1 rounded-xl sm:rounded-full py-3.5 sm:py-5.5 cursor-pointer font-space-grotesk transition-all duration-300 " + (
+                  selectedRole === "${data.role2Name}" 
+                    ? "bg-[${data.color}] text-black font-semibold shadow-[0_4px_15px_rgba(31,208,180,0.25)] hover:bg-[${data.color}]" 
+                    : "text-muted-foreground hover:text-foreground hover:bg-foreground/5"
+                )}
+              >
+                <Bot className="w-4 h-4 mr-2 flex-shrink-0" />
+                <span className="truncate">${data.role2Label}</span>
+              </Button>
+            </div>
+          </motion.div>
+  ` : "";
+
+  const roleContentHtml = data.role2Name ? `
+            {selectedRole === "${data.role1Name}" ? (
+              <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-center font-inter">
+                <div className="md:col-span-7 space-y-6">
+                  <div className="flex items-center gap-3">
+                    <span className="p-3.5 rounded-full bg-[${data.color}]/10 text-[${data.color}]">
+                      <Zap className="w-6 h-6" />
+                    </span>
+                    <div>
+                      <h4 className="text-xl font-bold font-space-grotesk tracking-wide text-foreground">
+                        ${data.role1Label} (${data.role1Archetype})
+                      </h4>
+                      <p className="text-xs text-[${data.color}] font-mono tracking-wider uppercase">Archetype: "High-Confidence"</p>
+                    </div>
+                  </div>
+                  <p className="text-sm text-muted-foreground/90 leading-relaxed font-inter text-justify font-light">
+                    ${data.role1Desc}
+                  </p>
+                  <ul className="space-y-3.5">
+                    ${role1ItemsHtml}
+                  </ul>
+                </div>
+                <div className="md:col-span-5 p-4 bg-[#0B0B0C] border border-border/30 rounded-2xl flex flex-col gap-4 font-mono text-[11px] text-muted-foreground shadow-2xl relative overflow-hidden">
+                  <div className="absolute top-2 right-2 px-2 py-0.5 rounded bg-[${data.color}]/10 border border-[${data.color}]/30 text-[${data.color}] text-[9px] uppercase tracking-widest font-mono">
+                    Overview Screen
+                  </div>
+                  <div className="border-b border-border/30 pb-3">
+                    <div className="font-bold text-foreground text-xs font-space-grotesk uppercase tracking-wider mb-1">{${JSON.stringify(data.role1ScreenTitle)}}</div>
+                    <div className="text-[10px]">{${JSON.stringify(data.role1ScreenFilter)}}</div>
+                  </div>
+                  ${role1ScreenItemsHtml}
+                  <div className="p-2.5 rounded-lg bg-[${data.color}]/10 border border-[${data.color}]/20 flex items-center justify-between text-foreground">
+                    <span>Double Confirmation</span>
+                    <span className="font-bold text-xs uppercase tracking-wider">{${JSON.stringify(data.role1ScreenCta)}}</span>
+                  </div>
+                </div>
+              </div>
+            ) : (
+              <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-center font-inter">
+                <div className="md:col-span-7 space-y-6">
+                  <div className="flex items-center gap-3">
+                    <span className="p-3.5 rounded-full bg-[${data.color}]/10 text-[${data.color}]">
+                      <Bot className="w-6 h-6" />
+                    </span>
+                    <div>
+                      <h4 className="text-xl font-bold font-space-grotesk tracking-wide text-foreground">
+                        ${data.role2Label} (${data.role2Archetype})
+                      </h4>
+                      <p className="text-xs text-[${data.color}] font-mono tracking-wider uppercase">Archetype: "Action-Oriented"</p>
+                    </div>
+                  </div>
+                  <p className="text-sm text-muted-foreground/90 leading-relaxed font-inter text-justify font-light">
+                    ${data.role2Desc}
+                  </p>
+                  <ul className="space-y-3.5">
+                    ${role2ItemsHtml}
+                  </ul>
+                </div>
+                <div className="md:col-span-5 p-4 bg-[#0B0B0C] border border-border/30 rounded-2xl flex flex-col gap-4 font-mono text-[11px] text-muted-foreground shadow-2xl relative overflow-hidden">
+                  <div className="absolute top-2 right-2 px-2 py-0.5 rounded bg-[${data.color}]/10 border border-[${data.color}]/30 text-[${data.color}] text-[9px] uppercase tracking-widest font-mono">
+                    Action Panel
+                  </div>
+                  <div className="border-b border-border/30 pb-3">
+                    <div className="font-bold text-foreground text-xs font-space-grotesk uppercase tracking-wider mb-1">{${JSON.stringify(data.role2ScreenTitle)}}</div>
+                    <div className="text-[10px]">{${JSON.stringify(data.role2ScreenFilter)}}</div>
+                  </div>
+                  ${role2ScreenItemsHtml}
+                  <div className="flex gap-2">
+                    <span className="px-2.5 py-1.5 rounded-full border border-border/30 bg-card text-[9px] cursor-pointer">{${JSON.stringify(data.role2ScreenCta)}}</span>
+                  </div>
+                </div>
+              </div>
+            )}
+  ` : `
+              <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-center font-inter">
+                <div className="md:col-span-7 space-y-6">
+                  <div className="flex items-center gap-3">
+                    <span className="p-3.5 rounded-full bg-[${data.color}]/10 text-[${data.color}]">
+                      <Zap className="w-6 h-6" />
+                    </span>
+                    <div>
+                      <h4 className="text-xl font-bold font-space-grotesk tracking-wide text-foreground">
+                        ${data.role1Label} (${data.role1Archetype})
+                      </h4>
+                      <p className="text-xs text-[${data.color}] font-mono tracking-wider uppercase">Archetype: "High-Confidence"</p>
+                    </div>
+                  </div>
+                  <p className="text-sm text-muted-foreground/90 leading-relaxed font-inter text-justify font-light">
+                    ${data.role1Desc}
+                  </p>
+                  <ul className="space-y-3.5">
+                    ${role1ItemsHtml}
+                  </ul>
+                </div>
+                <div className="md:col-span-5 p-4 bg-[#0B0B0C] border border-border/30 rounded-2xl flex flex-col gap-4 font-mono text-[11px] text-muted-foreground shadow-2xl relative overflow-hidden">
+                  <div className="absolute top-2 right-2 px-2 py-0.5 rounded bg-[${data.color}]/10 border border-[${data.color}]/30 text-[${data.color}] text-[9px] uppercase tracking-widest font-mono">
+                    Overview Screen
+                  </div>
+                  <div className="border-b border-border/30 pb-3">
+                    <div className="font-bold text-foreground text-xs font-space-grotesk uppercase tracking-wider mb-1">{${JSON.stringify(data.role1ScreenTitle)}}</div>
+                    <div className="text-[10px]">{${JSON.stringify(data.role1ScreenFilter)}}</div>
+                  </div>
+                  ${role1ScreenItemsHtml}
+                  <div className="p-2.5 rounded-lg bg-[${data.color}]/10 border border-[${data.color}]/20 flex items-center justify-between text-foreground">
+                    <span>Double Confirmation</span>
+                    <span className="font-bold text-xs uppercase tracking-wider">{${JSON.stringify(data.role1ScreenCta)}}</span>
+                  </div>
+                </div>
+              </div>
+  `;
 
   return `"use client"
 
@@ -1646,113 +1773,14 @@ export default function ${data.safeName}CaseStudy() {
             </p>
           </motion.div>
 
-          {/* Interactive Role Switcher Selector Tabs */}
-          <motion.div variants={fadeInUp} className="flex justify-center w-full">
-            <div className="bg-[#0B0B0C]/80 backdrop-blur-md border border-border/40 p-1.5 rounded-2xl sm:rounded-full flex flex-col sm:flex-row items-stretch sm:items-center justify-center max-w-md w-full shadow-2xl gap-1">
-              <Button
-                onClick={() => setSelectedRole("${data.role1Name}")}
-                variant="ghost"
-                className={"flex-1 rounded-xl sm:rounded-full py-3.5 sm:py-5.5 cursor-pointer font-space-grotesk transition-all duration-300 " + (
-                  selectedRole === "${data.role1Name}" 
-                    ? "bg-[${data.color}] text-black font-semibold shadow-[0_4px_15px_rgba(0,230,115,0.25)] hover:bg-[${data.color}]" 
-                    : "text-muted-foreground hover:text-foreground hover:bg-foreground/5"
-                )}
-              >
-                <Smartphone className="w-4 h-4 mr-2 flex-shrink-0" />
-                <span className="truncate">${data.role1Label}</span>
-              </Button>
-              <Button
-                onClick={() => setSelectedRole("${data.role2Name}")}
-                variant="ghost"
-                className={"flex-1 rounded-xl sm:rounded-full py-3.5 sm:py-5.5 cursor-pointer font-space-grotesk transition-all duration-300 " + (
-                  selectedRole === "${data.role2Name}" 
-                    ? "bg-[${data.color}] text-black font-semibold shadow-[0_4px_15px_rgba(31,208,180,0.25)] hover:bg-[${data.color}]" 
-                    : "text-muted-foreground hover:text-foreground hover:bg-foreground/5"
-                )}
-              >
-                <Bot className="w-4 h-4 mr-2 flex-shrink-0" />
-                <span className="truncate">${data.role2Label}</span>
-              </Button>
-            </div>
-          </motion.div>
+          ${roleSwitchHtml}
 
           {/* Role Showcase Display */}
           <motion.div 
             variants={fadeInUp} 
             className="p-8 rounded-3xl bg-card/30 border border-border/30 backdrop-blur-md"
           >
-            {selectedRole === "${data.role1Name}" ? (
-              <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-center font-inter">
-                <div className="md:col-span-7 space-y-6">
-                  <div className="flex items-center gap-3">
-                    <span className="p-3.5 rounded-full bg-[${data.color}]/10 text-[${data.color}]">
-                      <Zap className="w-6 h-6" />
-                    </span>
-                    <div>
-                      <h4 className="text-xl font-bold font-space-grotesk tracking-wide text-foreground">
-                        ${data.role1Label} (${data.role1Archetype})
-                      </h4>
-                      <p className="text-xs text-[${data.color}] font-mono tracking-wider uppercase">Archetype: "High-Confidence"</p>
-                    </div>
-                  </div>
-                  <p className="text-sm text-muted-foreground/90 leading-relaxed font-inter text-justify font-light">
-                    ${data.role1Desc}
-                  </p>
-                  <ul className="space-y-3.5">
-                    ${role1ItemsHtml}
-                  </ul>
-                </div>
-                <div className="md:col-span-5 p-4 bg-[#0B0B0C] border border-border/30 rounded-2xl flex flex-col gap-4 font-mono text-[11px] text-muted-foreground shadow-2xl relative overflow-hidden">
-                  <div className="absolute top-2 right-2 px-2 py-0.5 rounded bg-[${data.color}]/10 border border-[${data.color}]/30 text-[${data.color}] text-[9px] uppercase tracking-widest font-mono">
-                    Overview Screen
-                  </div>
-                  <div className="border-b border-border/30 pb-3">
-                    <div className="font-bold text-foreground text-xs font-space-grotesk uppercase tracking-wider mb-1">{${JSON.stringify(data.role1ScreenTitle)}}</div>
-                    <div className="text-[10px]">{${JSON.stringify(data.role1ScreenFilter)}}</div>
-                  </div>
-                  ${role1ScreenItemsHtml}
-                  <div className="p-2.5 rounded-lg bg-[${data.color}]/10 border border-[${data.color}]/20 flex items-center justify-between text-foreground">
-                    <span>Double Confirmation</span>
-                    <span className="font-bold text-xs uppercase tracking-wider">{${JSON.stringify(data.role1ScreenCta)}}</span>
-                  </div>
-                </div>
-              </div>
-            ) : (
-              <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-center font-inter">
-                <div className="md:col-span-7 space-y-6">
-                  <div className="flex items-center gap-3">
-                    <span className="p-3.5 rounded-full bg-[${data.color}]/10 text-[${data.color}]">
-                      <Bot className="w-6 h-6" />
-                    </span>
-                    <div>
-                      <h4 className="text-xl font-bold font-space-grotesk tracking-wide text-foreground">
-                                                ${data.role2Label} (${data.role2Archetype})
-                      </h4>
-                      <p className="text-xs text-[${data.color}] font-mono tracking-wider uppercase">Archetype: "Action-Oriented"</p>
-                    </div>
-                  </div>
-                  <p className="text-sm text-muted-foreground/90 leading-relaxed font-inter text-justify font-light">
-                    ${data.role2Desc}
-                  </p>
-                  <ul className="space-y-3.5">
-                    ${role2ItemsHtml}
-                  </ul>
-                </div>
-                <div className="md:col-span-5 p-4 bg-[#0B0B0C] border border-border/30 rounded-2xl flex flex-col gap-4 font-mono text-[11px] text-muted-foreground shadow-2xl relative overflow-hidden">
-                  <div className="absolute top-2 right-2 px-2 py-0.5 rounded bg-[${data.color}]/10 border border-[${data.color}]/30 text-[${data.color}] text-[9px] uppercase tracking-widest font-mono">
-                    Action Panel
-                  </div>
-                  <div className="border-b border-border/30 pb-3">
-                    <div className="font-bold text-foreground text-xs font-space-grotesk uppercase tracking-wider mb-1">{${JSON.stringify(data.role2ScreenTitle)}}</div>
-                    <div className="text-[10px]">{${JSON.stringify(data.role2ScreenFilter)}}</div>
-                  </div>
-                  ${role2ScreenItemsHtml}
-                  <div className="flex gap-2">
-                    <span className="px-2.5 py-1.5 rounded-full border border-border/30 bg-card text-[9px] cursor-pointer">{${JSON.stringify(data.role2ScreenCta)}}</span>
-                  </div>
-                </div>
-              </div>
-            )}
+            ${roleContentHtml}
           </motion.div>
         </motion.div>
 

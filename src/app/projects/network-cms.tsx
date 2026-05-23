@@ -267,6 +267,7 @@ export default function NetworkCmsCaseStudy() {
             </p>
           </motion.div>
 
+          
           {/* Interactive Role Switcher Selector Tabs */}
           <motion.div variants={fadeInUp} className="flex justify-center w-full">
             <div className="bg-[#0B0B0C]/80 backdrop-blur-md border border-border/40 p-1.5 rounded-2xl sm:rounded-full flex flex-col sm:flex-row items-stretch sm:items-center justify-center max-w-md w-full shadow-2xl gap-1">
@@ -296,12 +297,14 @@ export default function NetworkCmsCaseStudy() {
               </Button>
             </div>
           </motion.div>
+  
 
           {/* Role Showcase Display */}
           <motion.div 
             variants={fadeInUp} 
             className="p-8 rounded-3xl bg-card/30 border border-border/30 backdrop-blur-md"
           >
+            
             {selectedRole === "buyer" ? (
               <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-center font-inter">
                 <div className="md:col-span-7 space-y-6">
@@ -387,7 +390,7 @@ export default function NetworkCmsCaseStudy() {
                     </span>
                     <div>
                       <h4 className="text-xl font-bold font-space-grotesk tracking-wide text-foreground">
-                                                Editorial Auditor (Compliance & Layout Review)
+                        Editorial Auditor (Compliance & Layout Review)
                       </h4>
                       <p className="text-xs text-[#ea580c] font-mono tracking-wider uppercase">Archetype: "Action-Oriented"</p>
                     </div>
@@ -442,6 +445,7 @@ export default function NetworkCmsCaseStudy() {
                 </div>
               </div>
             )}
+  
           </motion.div>
         </motion.div>
 
