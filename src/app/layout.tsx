@@ -3,6 +3,8 @@ import { Inter, Space_Grotesk } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "./providers";
 import { Navbar } from "@/components/navbar";
+import { ThemeToggle } from "@/components/theme-toggle";
+import { CustomCursor } from "@/components/custom-cursor";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -15,8 +17,15 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
-  title: "Timothy Jerald Xavier - UI/UX Designer",
-  description: "UI/UX Designer with a passion for meaningful interfaces and impactful digital products.",
+  title: "Timothy Jerald Xavier | Product Designer",
+  description: "Product Designer & UI/UX Expert specializing in User Experience, User Interface Design, Interaction Design, User Research, Prototyping, Wireframing, Figma, Design Systems, Information Architecture, and Usability Testing. Delivering high-impact B2B SaaS, Web3, and Enterprise Design solutions through User-Centered Design.",
+  keywords: [
+    "Product Designer", "UI/UX Designer", "User Experience Design", "User Interface Design", 
+    "UX Researcher", "Interaction Design", "Wireframing", "Prototyping", "Figma", 
+    "Design Systems", "SaaS Design", "Enterprise UX", "Web3 Design", "Mobile App Design",
+    "Usability Testing", "Information Architecture", "User-Centered Design", "Agile Design",
+    "Cross-functional Collaboration", "B2B", "B2C", "Visual Design"
+  ],
   icons: {
     icon: '/browser_top.png',
     shortcut: '/browser_top.png',
@@ -44,7 +53,14 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <div className="flex min-h-screen flex-col">
+            <CustomCursor />
             <Navbar />
+            
+            {/* Symmetrical Floating Theme Toggle */}
+            <div className="fixed top-6 right-6 sm:right-8 lg:right-12 z-[100]">
+              <ThemeToggle />
+            </div>
+
             <main className="flex-1 pt-16">
               {children}
             </main>

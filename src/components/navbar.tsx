@@ -2,89 +2,174 @@
 
 import Link from "next/link"
 import { usePathname } from "next/navigation"
-import { motion } from "framer-motion"
-import { ThemeToggle } from "./theme-toggle"
-import { MobileNav } from "./mobile-nav"
-import { Button } from "@/components/ui/button"
-import { Download } from "lucide-react"
+import { motion, AnimatePresence } from "framer-motion"
+import { useState, useEffect } from "react"
+import { Menu, X, Download } from "lucide-react"
 import { downloadResume } from "@/lib/utils"
 
-const navItems = [
-  { name: "Home", href: "/" },
-  { name: "Projects", href: "/projects" },
+const projects = [
+  { num: "01", title: "Feedzaa", href: "/projects/feedzaa" },
+  { num: "02", title: "Iris Sense", href: "/projects/iris-sense" },
+  { num: "03", title: "Iris Network", href: "/projects/iris-network" },
+  { num: "04", title: "Iris R-one", href: "/projects/r-one-ams" },
+]
+
+const navLinks = [
+  { name: "Work", href: "/#work" },
   { name: "About", href: "/about" },
-  { name: "Contact", href: "/contact" },
+  { name: "Resume", action: "resume" },
+  { name: "LinkedIn", href: "https://linkedin.com/in/timothy-jerald/", external: true },
 ]
 
 export function Navbar() {
   const pathname = usePathname()
+  const [scrolled, setScrolled] = useState(false)
+  const [mobileOpen, setMobileOpen] = useState(false)
+
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 20)
+    window.addEventListener("scroll", onScroll, { passive: true })
+    return () => window.removeEventListener("scroll", onScroll)
+  }, [])
+
+  // Lock body scroll when mobile menu is open
+  useEffect(() => {
+    if (mobileOpen) {
+      document.body.style.overflow = "hidden"
+    } else {
+      document.body.style.overflow = ""
+    }
+    return () => { document.body.style.overflow = "" }
+  }, [mobileOpen])
 
   return (
-    <motion.nav
-      initial={{ y: -100 }}
-      animate={{ y: 0 }}
-      transition={{ duration: 0.5 }}
-      className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border"
-    >
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16">
-          {/* Logo */}
-          <Link href="/" className="flex items-center space-x-2">
-            <motion.div
-              whileHover={{ scale: 1.05 }}
-              className="text-xl font-droga bg-gradient-to-r from-blue-500 to-cyan-500 bg-clip-text text-transparent"
-            >
-              TJX
-            </motion.div>
-          </Link>
+    <>
+      <motion.nav
+        initial={{ opacity: 0, y: -20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6 }}
+        className={`fixed top-6 left-1/2 -translate-x-1/2 z-50 transition-all duration-500 rounded-full px-6 sm:px-10 py-3 sm:py-4 flex items-center justify-between gap-8 sm:gap-24 w-[90%] sm:w-auto max-w-5xl ${
+          scrolled
+            ? "bg-background/70 backdrop-blur-2xl border border-border/40 shadow-2xl"
+            : "bg-background/40 backdrop-blur-xl border border-white/10 shadow-lg"
+        }`}
+      >
+        {/* Logo */}
+            <Link href="/" className="flex items-center">
+              <span className="text-lg font-droga text-foreground">TJX</span>
+            </Link>
 
-          {/* Desktop Navigation Links */}
-          <div className="hidden md:flex items-center space-x-8">
-            {navItems.map((item) => (
-              <Link
-                key={item.name}
-                href={item.href}
-                className={`relative px-3 py-2 text-sm font-medium transition-colors hover:text-primary ${
-                  pathname === item.href
-                    ? "text-primary"
-                    : "text-muted-foreground"
-                }`}
-              >
-                {item.name}
-                {pathname === item.href && (
-                  <motion.div
-                    layoutId="activeTab"
-                    className="absolute inset-0 bg-primary/10 rounded-md"
-                    initial={false}
-                    transition={{ type: "spring", stiffness: 500, damping: 30 }}
-                  />
+            <div className="hidden lg:flex items-center gap-8">
+              {navLinks.map((item) =>
+                item.action === "resume" ? (
+                  <button
+                    key={item.name}
+                    onClick={downloadResume}
+                    className="text-[13px] tracking-wide text-muted-foreground hover:text-foreground transition-colors duration-300 font-medium cursor-pointer"
+                  >
+                    {item.name}
+                  </button>
+                ) : (
+                  <Link
+                    key={item.name}
+                    href={item.href!}
+                    target={item.external ? "_blank" : undefined}
+                    rel={item.external ? "noopener noreferrer" : undefined}
+                    className="text-[13px] tracking-wide text-muted-foreground hover:text-foreground transition-colors duration-300 font-medium"
+                  >
+                    {item.name}
+                  </Link>
+                )
+              )}
+            </div>
+
+            {/* Hamburger (mobile) */}
+            <button
+              onClick={() => setMobileOpen(!mobileOpen)}
+              className="lg:hidden w-10 h-10 flex items-center justify-center text-foreground relative z-[60]"
+            >
+              <AnimatePresence mode="wait">
+                {mobileOpen ? (
+                  <motion.div key="x" initial={{ rotate: -90, opacity: 0 }} animate={{ rotate: 0, opacity: 1 }} exit={{ rotate: 90, opacity: 0 }} transition={{ duration: 0.15 }}>
+                    <X className="w-5 h-5" />
+                  </motion.div>
+                ) : (
+                  <motion.div key="m" initial={{ rotate: 90, opacity: 0 }} animate={{ rotate: 0, opacity: 1 }} exit={{ rotate: -90, opacity: 0 }} transition={{ duration: 0.15 }}>
+                    <Menu className="w-5 h-5" />
+                  </motion.div>
                 )}
-              </Link>
-            ))}
-          </div>
+              </AnimatePresence>
+            </button>
+      </motion.nav>
 
-          {/* Right Side - Resume Download, Theme Toggle & Mobile Nav */}
-          <div className="flex items-center space-x-4">
-            <motion.div
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              className="hidden md:block"
-            >
-              <Button
-                variant="outline"
-                size="sm"
-                className="border-blue-500/30 hover:border-blue-500 text-blue-500 hover:text-blue-600"
-                onClick={downloadResume}
-              >
-                <Download className="w-4 h-4 mr-2" />
-                Resume
-              </Button>
-            </motion.div>
-            <ThemeToggle />
-            <MobileNav />
-          </div>
-        </div>
-      </div>
-    </motion.nav>
+      {/* Mobile fullscreen overlay */}
+      <AnimatePresence>
+        {mobileOpen && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.3 }}
+            className="fixed inset-0 z-[55] bg-background flex flex-col justify-center items-center"
+          >
+            <nav className="flex flex-col items-center gap-6">
+              {navLinks.map((item, idx) =>
+                item.action === "resume" ? (
+                  <motion.button
+                    key={item.name}
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: idx * 0.08 }}
+                    onClick={() => { downloadResume(); setMobileOpen(false) }}
+                    className="text-2xl font-medium text-foreground"
+                  >
+                    {item.name}
+                  </motion.button>
+                ) : (
+                  <motion.div
+                    key={item.name}
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: idx * 0.08 }}
+                  >
+                    <Link
+                      href={item.href!}
+                      target={item.external ? "_blank" : undefined}
+                      rel={item.external ? "noopener noreferrer" : undefined}
+                      onClick={() => setMobileOpen(false)}
+                      className="text-2xl font-medium text-foreground"
+                    >
+                      {item.name}
+                    </Link>
+                  </motion.div>
+                )
+              )}
+
+              {/* Project list in mobile menu */}
+              <div className="mt-8 pt-8 border-t border-border/20 flex flex-col items-center gap-3">
+                <span className="text-[10px] uppercase tracking-[0.2em] text-muted-foreground/50 mb-2">Projects</span>
+                {projects.map((p, idx) => (
+                  <motion.div
+                    key={p.num}
+                    initial={{ opacity: 0, y: 10 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: 0.3 + idx * 0.06 }}
+                  >
+                    <Link
+                      href={p.href}
+                      onClick={() => setMobileOpen(false)}
+                      className="text-base text-muted-foreground hover:text-foreground transition-colors"
+                    >
+                      <span className="text-muted-foreground/40 mr-2">{p.num}.</span>
+                      {p.title}
+                    </Link>
+                  </motion.div>
+                ))}
+              </div>
+            </nav>
+          </motion.div>
+        )}
+      </AnimatePresence>
+    </>
   )
-} 
+}

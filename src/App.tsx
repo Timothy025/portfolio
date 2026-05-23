@@ -1,31 +1,32 @@
-import { BrowserRouter, Routes, Route, Navigate, Outlet } from "react-router-dom"
+import { useEffect } from "react"
+import { BrowserRouter, Routes, Route, Navigate, Outlet, useLocation } from "react-router-dom"
 import { Navbar } from "@/components/navbar"
 import { Footer } from "@/components/footer"
 import { ThemeProvider } from "@/app/providers"
+import { ThemeToggle } from "@/components/theme-toggle"
+import { CustomCursor } from "@/components/custom-cursor"
 
 // Import Pages
 import Home from "./app/page"
 import About from "./app/about/page"
-import Contact from "./app/contact/page"
-import Projects from "./app/projects/page"
 
 // Import Case Studies
-import Feedzaa from "./app/projects/feedzaa/page"
-import IrisSense from "./app/projects/iris-sense/page"
-import IrisNetwork from "./app/projects/iris-network/page"
-import IrisROne from "./app/projects/r-one-ams/page"
-import WitnessChain from "./app/projects/witnesschain/page"
-import OMS from "./app/projects/oms-order-management/page"
-import IrisRMS from "./app/projects/rms/page"
-import IrisFleet from "./app/projects/fleet/page"
-import PayEZ from "./app/projects/payez/page"
-import Energy from "./app/projects/energy/page"
-import AnalyticsDashboard from "./app/projects/analytics-dashboard/page"
-import EcommercePlatform from "./app/projects/ecommerce-platform/page"
-import MobileBanking from "./app/projects/mobile-banking/page"
-import NetworkCMS from "./app/projects/network-cms/page"
-import Web3Wallet from "./app/projects/web3-wallet/page"
-import ProductCasestudy from "./app/projects/product-casestudy/page"
+import Feedzaa from "./app/projects/feedzaa"
+import IrisSense from "./app/projects/iris-sense"
+import IrisNetwork from "./app/projects/iris-network"
+import IrisROne from "./app/projects/r-one-ams"
+import WitnessChain from "./app/projects/witnesschain"
+import OMS from "./app/projects/oms-order-management"
+import IrisRMS from "./app/projects/rms"
+import IrisFleet from "./app/projects/fleet"
+import PayEZ from "./app/projects/payez"
+import Energy from "./app/projects/energy"
+import AnalyticsDashboard from "./app/projects/analytics-dashboard"
+import EcommercePlatform from "./app/projects/ecommerce-platform"
+import MobileBanking from "./app/projects/mobile-banking"
+import NetworkCMS from "./app/projects/network-cms"
+import Web3Wallet from "./app/projects/web3-wallet"
+import ProductCasestudy from "./app/projects/product-casestudy"
 
 // Layout Wrapper
 function Layout() {
@@ -37,8 +38,15 @@ function Layout() {
       disableTransitionOnChange
     >
       <div className="flex min-h-screen flex-col bg-background text-foreground antialiased font-sans">
+        <CustomCursor />
         <Navbar />
-        <main className="flex-1 pt-16">
+
+        {/* Symmetrical Floating Theme Toggle */}
+        <div className="fixed top-6 right-6 sm:right-8 lg:right-12 z-[100]">
+          <ThemeToggle />
+        </div>
+
+        <main className="flex-1">
           <Outlet />
         </main>
         <Footer />
@@ -47,16 +55,26 @@ function Layout() {
   )
 }
 
+// Scroll to Top Utility
+function ScrollToTop() {
+  const { pathname } = useLocation()
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [pathname])
+  return null
+}
+
 export default function App() {
   return (
     <BrowserRouter>
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<Layout />}>
           {/* Main Pages */}
           <Route index element={<Home />} />
           <Route path="about" element={<About />} />
-          <Route path="contact" element={<Contact />} />
-          <Route path="projects" element={<Projects />} />
+          <Route path="contact" element={<Navigate to="/#contact" replace />} />
+          <Route path="projects" element={<Navigate to="/#work" replace />} />
 
           {/* Project Case Studies */}
           <Route path="projects/feedzaa" element={<Feedzaa />} />

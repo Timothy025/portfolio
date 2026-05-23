@@ -30,7 +30,7 @@ const projects: Project[] = [
     image: "/logos/Feedzaa.png",
     link: "/projects/feedzaa",
     category: "Mobile Design",
-    theme: { primary: "#ef4444", secondary: "#f43f5e" }
+    theme: { primary: "#DB3D1A", secondary: "#F7D61C" }
   },
   {
     id: "2",
@@ -40,7 +40,7 @@ const projects: Project[] = [
     image: "/logos/Sense.png",
     link: "/projects/iris-sense",
     category: "Web & Mobile Design",
-    theme: { primary: "#F7CF58", secondary: "#EB5851" }
+    theme: { primary: "#F7CF58", secondary: "#F09343" }
   },
   {
     id: "3",
@@ -50,7 +50,7 @@ const projects: Project[] = [
     image: "/logos/netwrok.png",
     link: "/projects/iris-network",
     category: "Web Design",
-    theme: { primary: "#10b981", secondary: "#059669" }
+    theme: { primary: "#32B34F", secondary: "#83DA6F" }
   },
   {
     id: "4",
@@ -60,7 +60,7 @@ const projects: Project[] = [
     image: "/logos/R-one.png",
     link: "/projects/r-one-ams",
     category: "Web Design",
-    theme: { primary: "#3b82f6", secondary: "#6366f1" }
+    theme: { primary: "#F76258", secondary: "#E74803" }
   },
   {
     id: "5",
@@ -70,7 +70,7 @@ const projects: Project[] = [
     image: "/logos/Witnesschain.png",
     link: "/projects/witnesschain",
     category: "Mobile Design",
-    theme: { primary: "#7CFF92", secondary: "#10B981" }
+    theme: { primary: "#A4A4A4", secondary: "#FFFFFF" }
   },
   {
     id: "6",
@@ -80,7 +80,7 @@ const projects: Project[] = [
     image: "/logos/OMS.png",
     link: "/projects/oms-order-management",
     category: "Web Design",
-    theme: { primary: "#14b8a6", secondary: "#0d9488" }
+    theme: { primary: "#00229E", secondary: "#051118" }
   },
   {
     id: "7",
@@ -90,7 +90,7 @@ const projects: Project[] = [
     image: "/logos/Planet 3.svg",
     link: "/projects/rms",
     category: "Web Design",
-    theme: { primary: "#ec008c", secondary: "#6366f1" }
+    theme: { primary: "#EC008C", secondary: "#26247B" }
   },
   {
     id: "8",
@@ -100,7 +100,7 @@ const projects: Project[] = [
     image: "/logos/fleet.svg",
     link: "/projects/fleet",
     category: "Web Design",
-    theme: { primary: "#429ae7", secondary: "#d34657" }
+    theme: { primary: "#429AE7", secondary: "#E98510" }
   },
   {
     id: "9",
@@ -110,19 +110,36 @@ const projects: Project[] = [
     image: "/logos/PayEz.png",
     link: "/projects/payez",
     category: "Mobile Design",
-    theme: { primary: "#4a69d8", secondary: "#061753" }
+    theme: { primary: "#4A69D8", secondary: "#061753" }
   },
   {
     id: "10",
-    title: "Iris Energy",
+    title: "Aatral",
     description: "An energy management platform focused on smart energy monitoring, load balancing, grid load visibility, and charging optimization.",
     tags: ["Energy Management", "Smart Load Balancing", "Grid Monitoring", "Load Shifting"],
     image: "/logos/aatral.svg",
     link: "/projects/energy",
     category: "Web Design",
-    theme: { primary: "#00e673", secondary: "#3ebaf4" }
+    theme: { primary: "#00E673", secondary: "#1FD0B4" }
   }
 ]
+
+function getReadableTextColor(hex: string) {
+  const clean = hex.replace("#", "")
+  const channels = [
+    parseInt(clean.slice(0, 2), 16),
+    parseInt(clean.slice(2, 4), 16),
+    parseInt(clean.slice(4, 6), 16),
+  ].map((channel) => {
+    const value = channel / 255
+    return value <= 0.03928 ? value / 12.92 : ((value + 0.055) / 1.055) ** 2.4
+  })
+  const luminance = 0.2126 * channels[0] + 0.7152 * channels[1] + 0.0722 * channels[2]
+  const blackContrast = (luminance + 0.05) / 0.05
+  const whiteContrast = 1.05 / (luminance + 0.05)
+
+  return blackContrast > whiteContrast ? "#000000" : "#ffffff"
+}
 
 export default function Projects() {
   const [hoveredId, setHoveredId] = useState<string | null>(null)
@@ -240,9 +257,7 @@ export default function Projects() {
                       style={{
                         backgroundColor: isHovered ? project.theme.primary : 'transparent',
                         borderColor: isHovered ? project.theme.primary : 'rgba(255,255,255,0.1)',
-                        color: isHovered 
-                          ? (project.theme.primary === '#7CFF92' ? '#000000' : '#ffffff') 
-                          : undefined
+                        color: isHovered ? getReadableTextColor(project.theme.primary) : undefined
                       }}
                     >
                       <Link href={project.link} className="flex items-center justify-center gap-2 w-full">
