@@ -360,91 +360,91 @@ const projectsData = {
     logoLight: "/logos/network.svg",
     logoDark: "/logos/network.svg",
     safeName: "IrisNetwork",
-    displayTitle: "Iris Network",
+    displayTitle: "Network CSMS",
     color: "#32B34F",
-    timeline: "3 Months (Spring 2025)",
-    roleName: "Product Designer",
-    platform: "Web Network Console",
-    techStack: "React, D3.js, WebSockets, Tailwind, TypeScript",
-    tagline: "Enterprise network diagnostics dashboard mapping live packet routes and isolating failure points.",
-    overview1: "Network administrators struggle to identify silent outages and routing anomalies in cloud setups. Sifting through millions of text logs takes precious hours while customers experience sluggish speeds.",
-    overview2: "Iris Network visualizes live node connections, utilizing custom spatial telemetry D3 charts to spot latency spikes and packet loss instantly on a high fidelity dashboard.",
+    timeline: "3 Months",
+    roleName: "Lead UI/UX Designer",
+    platform: "Web Dashboard & Mobile App",
+    techStack: "React, React Native, Tailwind CSS, Node.js",
+    tagline: "Charge Station Management System designed to help Charge Point Operators manage and monitor EV charging operations from a single platform.",
+    overview1: "Managing EV charging infrastructure involves multiple workflows happening at the same time. Operators needed to monitor charging stations, track sessions, handle customer support, manage finances, and generate reports without feeling overwhelmed.",
+    overview2: "The goal of the platform was to simplify charging operations for both operators and EV drivers while improving visibility, accessibility, and ease of use across the entire charging journey.",
     stats: [
-      { metric: "75%", label: "Faster Incident Triage", desc: "Unified routing maps visualised bottlenecks immediately, avoiding text log crawls." },
-      { metric: "2x", label: "Root Cause Isolation Speed", desc: "Automated traceroute logs grouped related drops into single event logs." },
-      { metric: "100%", label: "Real time Socket Update", desc: "WebSocket telemetry feeds updated node states with zero browser lag." }
+      { metric: "3x", label: "Faster Incident Monitoring", desc: "Real-time session visibility allowed operators to identify ongoing issues in seconds instead of manually checking multiple records." },
+      { metric: "50%", label: "Reduced Mobile Friction", desc: "Faster QR scanning and easier CPID entry made charging simple and stress-free for first-time EV users." },
+      { metric: "100%", label: "Unified Dashboard Control", desc: "Consolidated live charger status, active sessions, and revenue into a clear, prioritized hierarchy." }
     ],
-    challengeTitle: "The Danger of Blind Network Failures",
-    challengeDesc: "When a multi region network gateway drops packets, users notice instantly. But for operators, finding the exact broken hop required tracing hops manually using repetitive terminal inputs.",
+    challengeTitle: "The Challenge of Scattered Operational Data",
+    challengeDesc: "Managing EV charging infrastructure involves multiple workflows happening at the same time. The biggest challenge was reducing operational complexity while making the entire experience feel intuitive and stress-free.",
     breakdowns: [
-      { num: "01 / Text-Log Overwhelm", desc: "Millions of dry terminal logs hidden latency patterns, making diagnostics highly reactive." },
-      { num: "02 / Isolated Topology Maps", desc: "Static node graphs lacked real time latency indicators, hiding traffic spikes." },
-      { num: "03 / Disconnected Triage Loops", desc: "Identifying a broken port required operators to exit the diagnostic panel and check asset lists." }
+      { num: "01 / Scattered Information", desc: "Important information was scattered across different sections. Monitoring charging sessions required too many steps." },
+      { num: "02 / Complicated Reporting", desc: "Finance and reporting workflows felt complicated for non-technical users. Customer management lacked clarity." },
+      { num: "03 / Intimidating Mobile Experience", desc: "First-time EV users found the entire charging process confusing and difficult to navigate." }
     ],
-    roleSubtitle: "Two Roles, One Reliability Standard",
-    roleDesc: "We designed Iris Network to serve control room operators auditing real time regional packet flows, and network architects planning cloud node topologies.",
-    role1Name: "buyer",
-    role1Label: "Control Room Operator",
-    role1Archetype: "High Information Diagnostic Triage",
-    role1Desc: "The Operator triages immediate connection alarms and redirects traffic nodes. The design optimizes for fast spatial context:",
+    roleSubtitle: "Two Roles, One Charging Ecosystem",
+    roleDesc: "We designed the CSMS to serve Charge Point Operators monitoring high-level station health, and EV Drivers executing seamless charging sessions on their mobile devices.",
+    role1Name: "operator",
+    role1Label: "Charge Point Operator (CPO)",
+    role1Archetype: "Monitoring & Control Focus",
+    role1Desc: "The Operator tracks sessions, manages finances, and handles support without feeling overwhelmed. The web dashboard optimizes for fast visibility:",
     role1Items: [
-      "Aggregates multi region telemetry feeds into a single live connection grid.",
-      "Highlights packet drop percentages using warning color indicator cards.",
-      "Enables fast node restarts through sliding utility control sheets."
+      "Simplifies dashboards by prioritizing live charger status, revenue overview, and alerts.",
+      "Provides real-time charging session timelines with clear states (Available, Charging, Faulted).",
+      "Consolidates unified customer profiles and simplifies financial report generation."
     ],
-    role1ScreenTitle: "🖥️ Live Packet Telemetry Console",
-    role1ScreenFilter: "Filter: High Latency • Delhi Node • Packet Loss > 2%",
+    role1ScreenTitle: "🖥️ CSMS Operational Dashboard",
+    role1ScreenFilter: "Filter: High Fault Rate • Area 2 • Utilization > 80%",
     role1ScreenItems: [
-      { name: "⚡ Gateway Delhi Hub-1", slot: "Status: Packet Drop 4.5% • East Wing", rate: "Latency: 280ms • active", info: "Action: Route Triage Req" },
-      { name: "⚡ Node Noida Edge-3", slot: "Status: Healthy • North Wing", rate: "Latency: 12ms • active", info: "Action: None Required" }
+      { name: "⚡ Charger Hub-1", slot: "Status: Faulted • East Wing", rate: "Revenue: $280 • active", info: "Action: Maintenance Req" },
+      { name: "⚡ Charger Edge-3", slot: "Status: Available • North Wing", rate: "Revenue: $12 • active", info: "Action: None Required" }
     ],
-    role1ScreenCta: "Restart Selected Gateway",
-    role2Name: "seller",
-    role2Label: "Network Architect",
-    role2Archetype: "Topology & Capacity Planning",
-    role2Desc: "The Architect plans hardware configurations and analyzes historical capacity metrics. The dashboard provides complex trend graphs and sandbox modeling tools:",
+    role1ScreenCta: "Restart Selected Charger",
+    role2Name: "driver",
+    role2Label: "EV Driver / Mobile User",
+    role2Archetype: "Frictionless Initiation Focus",
+    role2Desc: "The Driver wants to start charging their vehicle with zero friction. The mobile app optimizes for confidence and simplicity:",
     role2Items: [
-      "Provides drag and drop spatial model panels to test node configurations.",
-      "Generates historical latency trends using custom native D3 chart overlays.",
-      "Visualizes packet size distribution curves across multiple network regions."
+      "Streamlines the initiation process with faster QR scanning and easy CPID entry.",
+      "Displays clear, predictable charging instructions and status visibility.",
+      "Provides a clean, familiar interface consistent with the overall brand design language."
     ],
-    role2ScreenTitle: "📊 Network Architecture Sandbox",
-    role2ScreenFilter: "Session Status: Topology Synced",
+    role2ScreenTitle: "📱 Mobile Charging App",
+    role2ScreenFilter: "Session Status: Charging Active",
     role2ScreenItems: [
-      { name: "Simulation #23 - Load Balancing", slot: "State: Capacity Verified • 24 Nodes", rate: "Throughput: 1.2 Tbps", info: "Outcome: Stable" },
-      { name: "Simulation #22 - Failover Test", slot: "State: Failed Hop Isolated • 2 Nodes", rate: "Throughput: 800 Gbps", info: "Outcome: Warning" }
+      { name: "Session #23 - Fast Charge", slot: "State: Charging • 24 kWh", rate: "Cost: $12.40", info: "Outcome: Stable" },
+      { name: "Session #22 - Standard", slot: "State: Completed • 2 hrs", rate: "Cost: $8.00", info: "Outcome: Paid" }
     ],
-    role2ScreenCta: "Deploy Simulation to Staging (↑)",
-    designEvolutionDesc: "To ensure network administrators could route heavy traffic during spikes, the console interface went through extensive grey box layout testing.",
-    wireframeDesc: "Drafted high density routing tables and nested map views. User testing revealed that hovering node topologies triggered excessive details, prompting us to design clean slide out detail drawers.",
-    designSystemDesc: "Created Figma styling variables for latency metrics (Red: >100ms, Amber: 50-100ms, Green: <50ms). Mapped classes directly to styled layouts, keeping the console highly responsive.",
-    designMove1Title: "Interactive Route Mapping",
-    designMove1Sub: "Visualizing packet flow spatial paths",
-    designMove1Desc: "We consolidated raw CLI traceroute strings into interactive, real time node path visualization. Users can click any hop to view live hardware temperatures and drop rates.",
-    designMove1GraphTitle: "📊 Multi-Region Throughput Peak",
+    role2ScreenCta: "Stop Charging Session (↑)",
+    designEvolutionDesc: "To ensure operators could coordinate fast workflows, the console interface underwent multiple grey box user testing loops.",
+    wireframeDesc: "Drafted high density charging tables and nested map views. User testing revealed that hovering node topologies triggered excessive details, prompting us to design clean slide out detail drawers.",
+    designSystemDesc: "Created Figma styling variables for operational metrics. Mapped classes directly to styled layouts, keeping the console highly responsive.",
+    designMove1Title: "Simplified Dashboard Experience",
+    designMove1Sub: "Visualizing operational paths",
+    designMove1Desc: "Instead of overwhelming users with dense tables, the interface prioritizes live charger status, active sessions, and revenue. Clear visual hierarchy helped operators identify problems instantly.",
+    designMove1GraphTitle: "📊 Multi-Region Charger Availability",
     designMove1Svg: `<svg className="w-full h-[70%] stroke-[#10b981] fill-none stroke-[2]" viewBox="0 0 100 30">
                     <path d="M 0 25 Q 20 10, 40 20 T 70 5 T 100 15" />
                     <circle cx="70" cy="5" r="3" className="fill-[#10b981] stroke-white stroke-[1]" />
                   </svg>`,
-    designMove1GraphFooter: "Bandwidth Curve",
-    designMove2Title: "Interactive Port Sliders",
-    designMove2Sub: "Adjusting bandwidth caps",
-    designMove2Desc: "Designed interactive sliders that let architects scale node capacity limits dynamically, avoiding overload during massive traffic events.",
-    designMove3Title: "Conversational Architect AI",
-    designMove3Sub: "Assisting node failure diagnostics",
-    designMove3Desc: "Integrated an intelligent chat module inside the architect workspace. Architects can ask 'Why is node Delhi-4 slow?' and get a breakdown of hardware performance.",
-    designMove3GraphTitle: "📈 Packet Loss Reduction",
+    designMove1GraphFooter: "Availability Curve",
+    designMove2Title: "Improved Mobile Charging Experience",
+    designMove2Sub: "Frictionless initiation",
+    designMove2Desc: "The mobile app experience was redesigned to reduce friction. Improvements included faster QR scanning, easier CPID entry, clear instructions, and cleaner payment feedback.",
+    designMove3Title: "Better Finance & Reporting",
+    designMove3Sub: "Assisting non-technical users",
+    designMove3Desc: "Financial workflows were simplified to improve readability. By focusing on easy-to-understand summaries, non-technical users could confidently access insights.",
+    designMove3GraphTitle: "📈 Charging Revenue Growth",
     designMove3GraphSvg: `<div className="h-28 flex items-end justify-between gap-2 px-4 py-2 border border-border/20 rounded-lg bg-card/30">
                   <div className="w-8 bg-[#10b981] rounded-t-sm" style={{ height: "45%" }} />
                   <div className="w-8 bg-[#15c981] rounded-t-sm" style={{ height: "65%" }} />
                   <div className="w-8 bg-[#20d981] rounded-t-sm" style={{ height: "85%" }} />
                   <div className="w-8 bg-muted rounded-t-sm" style={{ height: "20%" }} />
                 </div>`,
-    learningQuote: "Network diagnostics is a clarity problem, not a log volume problem.",
-    learningDesc: "By placing raw logs onto spatial node hops and building high performance socket charts, we helped operators keep major cloud services online.",
+    learningQuote: "Network was redesigned with a strong focus on usability, operational clarity, and customer convenience.",
+    learningDesc: "Simplifying complex workflows evolved the platform into a more intuitive EV charging ecosystem.",
     checkpoints: [
-      { title: "Explainability drives action", desc: "Translated dry traceroute terminal dumps into intuitive connection routes." },
-      { title: "Design for decision moments", desc: "Positioned gateway restart triggers directly next to latency alerts." }
+      { title: "Operational Simplicity", desc: "Simplifying workflows had a major impact on usability and confidence." },
+      { title: "Consistency Builds Confidence", desc: "Maintaining a consistent interaction pattern across web and mobile experiences helped users navigate comfortably." }
     ]
   },
   "fleet": {
@@ -2016,6 +2016,9 @@ export default function ${data.safeName}CaseStudy() {
 };
 // Write files
 Object.entries(projectsData).forEach(([key, value]) => {
+  // Skip manual case studies to preserve the new Aatral design layout
+  if (key === 'iris-network' || key === 'witnesschain') return;
+
   const filePath = path.join(projectsDir, key + '.tsx');
   
   // Ensure base directory exists
