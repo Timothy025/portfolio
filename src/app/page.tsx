@@ -130,34 +130,24 @@ function getReadableTextColor(hex: string) {
 
 const testimonials = [
   {
-    name: "Srinath R.",
-    role: "Manager @Tata Elxsi",
-    quote: "Timothy quickly mastered new skills and his design precision was key to delivering complex features on schedule. He is hardworking and stays calm even under pressure.",
+    name: "Surya",
+    role: "Planet 3 energy",
+    quote: "From my experience working with you, you are very supportive and easy to collaborate with. You communicate clearly and make sure things move forward without delays. I really appreciate your responsiveness and willingness to help whenever needed. Your contributions have helped keep the work organized and on track.",
   },
   {
-    name: "Shahi N.",
-    role: "Sr. Tech Lead @Aatral",
-    quote: "Timothy grasped complex concepts and delivered high-quality results in record time. His strong UI/UX knowledge made remote collaboration easy. You can rely on him for final delivery with minimal oversight.",
+    name: "Vishwanath",
+    role: "CEO, Steam-A",
+    quote: "Timothy played an important role in elevating the product experience at Steam-A through his strong UI/UX skills and attention to detail. His ability to rethink user journeys and transform complex ideas into intuitive experiences brought real value to the team and product. He approaches design with ownership, curiosity, and a clear understanding of user needs.",
   },
   {
-    name: "Varad V.",
-    role: "Sr. Research Scientist @Amazon",
-    quote: "Timothy's strong UX Design skills and attention to detail shine in his projects. He brings professionalism, meets deadlines, and takes ownership of his work.",
+    name: "Pratheep",
+    role: "Head of Design, Steam-A",
+    quote: "Timothy has a strong eye for product thinking and visual execution. During his time at Steam-A, he consistently improved user flows with thoughtful UX decisions and brought a fresh level of polish to the product experience. His ability to balance creativity with usability made him a valuable part of the design team.",
   },
   {
-    name: "Harsh V.",
-    role: "Founder @PixiuAI",
-    quote: "Timothy's approach to the user journey is outstanding, making complex projects seem effortless. He collaborates across teams to balance high ROI and quick wins.",
-  },
-  {
-    name: "Rajesh K.",
-    role: "Founder @PipeIQ",
-    quote: "Timothy is a talented designer with excellent communication skills, effectively articulating design choices and recommendations.",
-  },
-  {
-    name: "Quenton P.",
-    role: "Product Manager @The Verse",
-    quote: "Timothy has worked outside of his comfort zone and provided results well above what was asked. His humble nature and ability to grow would be an asset to any organization.",
+    name: "Ramya",
+    role: "Product Manager – Steam-A",
+    quote: "Timothy contributed significantly to the user experience of both the Network and Sense products at Steam-A. He has a sharp understanding of product requirements and consistently translated complex workflows into clean, user-friendly experiences. His collaboration with the product and development teams helped improve both usability and visual consistency across the platform.",
   },
 ]
 
