@@ -19,7 +19,7 @@ import Link from "next/link"
 import { Button } from "@/components/ui/button"
 
 export default function RmsCaseStudy() {
-  const [selectedRole, setSelectedRole] = useState<"buyer" | "seller">("buyer")
+  const [selectedRole, setSelectedRole] = useState<"buyer" | "undefined">("buyer")
 
   const fadeInUp = {
     initial: { opacity: 0, y: 30 },
@@ -181,7 +181,7 @@ export default function RmsCaseStudy() {
           <motion.div variants={fadeInUp} className="space-y-3 w-full">
             <span className="text-[#EC008C] text-xs font-semibold tracking-widest uppercase block">Operational Model / Reality</span>
             <h3 className="text-[22px] font-semibold font-space-grotesk tracking-tight md:whitespace-nowrap">
-              Two Roles, One Compliance Layer
+              Unified Operations
             </h3>
             <p className="text-lg md:text-[20px] text-muted-foreground w-full text-justify font-inter">
               We designed Iris RMS to serve central risk planners coordinating multi facility regulations, and site auditors inspecting hardware on the floor.
@@ -189,36 +189,6 @@ export default function RmsCaseStudy() {
           </motion.div>
 
           
-          {/* Interactive Role Switcher Selector Tabs */}
-          <motion.div variants={fadeInUp} className="flex justify-center w-full">
-            <div className="bg-[#0B0B0C]/80 backdrop-blur-md border border-border/40 p-1.5 rounded-2xl sm:rounded-full flex flex-col sm:flex-row items-stretch sm:items-center justify-center max-w-md w-full shadow-2xl gap-1">
-              <Button
-                onClick={() => setSelectedRole("buyer")}
-                variant="ghost"
-                className={"flex-1 rounded-xl sm:rounded-full py-3.5 sm:py-5.5 cursor-pointer font-space-grotesk transition-all duration-300 " + (
-                  selectedRole === "buyer" 
-                    ? "bg-[#EC008C] text-black font-semibold shadow-[0_4px_15px_rgba(0,230,115,0.25)] hover:bg-[#EC008C]" 
-                    : "text-muted-foreground hover:text-foreground hover:bg-foreground/5"
-                )}
-              >
-                <Smartphone className="w-4 h-4 mr-2 flex-shrink-0" />
-                <span className="truncate">Operations Risk Planner</span>
-              </Button>
-              <Button
-                onClick={() => setSelectedRole("seller")}
-                variant="ghost"
-                className={"flex-1 rounded-xl sm:rounded-full py-3.5 sm:py-5.5 cursor-pointer font-space-grotesk transition-all duration-300 " + (
-                  selectedRole === "seller" 
-                    ? "bg-[#EC008C] text-black font-semibold shadow-[0_4px_15px_rgba(31,208,180,0.25)] hover:bg-[#EC008C]" 
-                    : "text-muted-foreground hover:text-foreground hover:bg-foreground/5"
-                )}
-              >
-                <Bot className="w-4 h-4 mr-2 flex-shrink-0" />
-                <span className="truncate">Site Auditor</span>
-              </Button>
-            </div>
-          </motion.div>
-  
 
           {/* Role Showcase Display */}
           <motion.div 
@@ -226,7 +196,6 @@ export default function RmsCaseStudy() {
             className="p-8 rounded-3xl bg-card/30 border border-border/30 backdrop-blur-md"
           >
             
-            {selectedRole === "buyer" ? (
               <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-center font-inter">
                 <div className="md:col-span-7 space-y-6">
                   <div className="flex items-center gap-3">
@@ -302,70 +271,6 @@ export default function RmsCaseStudy() {
                   </div>
                 </div>
               </div>
-            ) : (
-              <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-center font-inter">
-                <div className="md:col-span-7 space-y-6">
-                  <div className="flex items-center gap-3">
-                    <span className="p-3.5 rounded-full bg-[#EC008C]/10 text-[#EC008C]">
-                      <Bot className="w-6 h-6" />
-                    </span>
-                    <div>
-                      <h4 className="text-xl font-bold font-space-grotesk tracking-wide text-foreground">
-                        Site Auditor (Guided Site Inspection)
-                      </h4>
-                      <p className="text-xs text-[#EC008C] font-mono tracking-wider uppercase">Archetype: "Action-Oriented"</p>
-                    </div>
-                  </div>
-                  <p className="text-sm text-muted-foreground/90 leading-relaxed font-inter text-justify font-light">
-                    The Auditor traverses local depots checking hardware compliance. The tablet experience provides offline diagnostic checklists and photo evidence tools:
-                  </p>
-                  <ul className="space-y-3.5">
-                    
-                      <li key={0} className="flex gap-3 text-sm text-muted-foreground text-justify font-inter">
-                        <CheckCircle2 className="w-4 h-4 text-[#EC008C] flex-shrink-0 mt-0.5" />
-                        <span>Provides structured compliance templates detailing safety check items.</span>
-                      </li>
-  
-
-                      <li key={1} className="flex gap-3 text-sm text-muted-foreground text-justify font-inter">
-                        <CheckCircle2 className="w-4 h-4 text-[#EC008C] flex-shrink-0 mt-0.5" />
-                        <span>Integrates instant barcode scanning to pull facility log records.</span>
-                      </li>
-  
-
-                      <li key={2} className="flex gap-3 text-sm text-muted-foreground text-justify font-inter">
-                        <CheckCircle2 className="w-4 h-4 text-[#EC008C] flex-shrink-0 mt-0.5" />
-                        <span>Enables offline data caching to record logs in thick concrete vaults.</span>
-                      </li>
-  
-                  </ul>
-                </div>
-                <div className="md:col-span-5 p-4 bg-[#0B0B0C] border border-border/30 rounded-2xl flex flex-col gap-4 font-mono text-[11px] text-muted-foreground shadow-2xl relative overflow-hidden">
-                  <div className="absolute top-2 right-2 px-2 py-0.5 rounded bg-[#EC008C]/10 border border-[#EC008C]/30 text-[#EC008C] text-[9px] uppercase tracking-widest font-mono">
-                    Action Panel
-                  </div>
-                  <div className="border-b border-border/30 pb-3">
-                    <div className="font-bold text-foreground text-xs font-space-grotesk uppercase tracking-wider mb-1">{"📋 Mobile Site Auditor App"}</div>
-                    <div className="text-[10px]">{"Session Status: Database Synced"}</div>
-                  </div>
-                  
-                      <div key={0} className="p-2.5 rounded-lg bg-card/60 border border-border/30 text-[10px]">
-                        <span className="font-bold text-foreground block mb-0.5">Aisle #204 - Emergency Exit</span>
-                        Facility ID: DEP-2041 • Delhi Area • Action: Blockage Inspection
-                      </div>
-  
-
-                      <div key={1} className="p-2.5 rounded-lg bg-card/60 border border-border/30 text-[10px]">
-                        <span className="font-bold text-foreground block mb-0.5">Aisle #203 - Fire Extinguisher</span>
-                        Facility ID: DEP-2038 • Noida Area • Action: Pressure Gauge Test
-                      </div>
-  
-                  <div className="flex gap-2">
-                    <span className="px-2.5 py-1.5 rounded-full border border-border/30 bg-card text-[9px] cursor-pointer">{"Commit Inspection Checklist (↑)"}</span>
-                  </div>
-                </div>
-              </div>
-            )}
   
           </motion.div>
         </motion.div>

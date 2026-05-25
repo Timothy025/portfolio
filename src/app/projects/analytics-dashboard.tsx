@@ -19,7 +19,7 @@ import Link from "next/link"
 import { Button } from "@/components/ui/button"
 
 export default function AnalyticsDashboardCaseStudy() {
-  const [selectedRole, setSelectedRole] = useState<"buyer" | "seller">("buyer")
+  const [selectedRole, setSelectedRole] = useState<"buyer" | "undefined">("buyer")
 
   const fadeInUp = {
     initial: { opacity: 0, y: 30 },
@@ -172,7 +172,7 @@ export default function AnalyticsDashboardCaseStudy() {
           <motion.div variants={fadeInUp} className="space-y-3 w-full">
             <span className="text-[#2563eb] text-xs font-semibold tracking-widest uppercase block">Operational Model / Reality</span>
             <h3 className="text-[22px] font-semibold font-space-grotesk tracking-tight md:whitespace-nowrap">
-              Two Roles, One Analytical Ground Truth
+              Unified Operations
             </h3>
             <p className="text-lg md:text-[20px] text-muted-foreground w-full text-justify font-inter">
               We designed this console to serve business executives monitoring regional margins, and data scientists running heavy analytical queries.
@@ -180,36 +180,6 @@ export default function AnalyticsDashboardCaseStudy() {
           </motion.div>
 
           
-          {/* Interactive Role Switcher Selector Tabs */}
-          <motion.div variants={fadeInUp} className="flex justify-center w-full">
-            <div className="bg-[#0B0B0C]/80 backdrop-blur-md border border-border/40 p-1.5 rounded-2xl sm:rounded-full flex flex-col sm:flex-row items-stretch sm:items-center justify-center max-w-md w-full shadow-2xl gap-1">
-              <Button
-                onClick={() => setSelectedRole("buyer")}
-                variant="ghost"
-                className={"flex-1 rounded-xl sm:rounded-full py-3.5 sm:py-5.5 cursor-pointer font-space-grotesk transition-all duration-300 " + (
-                  selectedRole === "buyer" 
-                    ? "bg-[#2563eb] text-black font-semibold shadow-[0_4px_15px_rgba(0,230,115,0.25)] hover:bg-[#2563eb]" 
-                    : "text-muted-foreground hover:text-foreground hover:bg-foreground/5"
-                )}
-              >
-                <Smartphone className="w-4 h-4 mr-2 flex-shrink-0" />
-                <span className="truncate">Business Executive</span>
-              </Button>
-              <Button
-                onClick={() => setSelectedRole("seller")}
-                variant="ghost"
-                className={"flex-1 rounded-xl sm:rounded-full py-3.5 sm:py-5.5 cursor-pointer font-space-grotesk transition-all duration-300 " + (
-                  selectedRole === "seller" 
-                    ? "bg-[#2563eb] text-black font-semibold shadow-[0_4px_15px_rgba(31,208,180,0.25)] hover:bg-[#2563eb]" 
-                    : "text-muted-foreground hover:text-foreground hover:bg-foreground/5"
-                )}
-              >
-                <Bot className="w-4 h-4 mr-2 flex-shrink-0" />
-                <span className="truncate">Data Scientist</span>
-              </Button>
-            </div>
-          </motion.div>
-  
 
           {/* Role Showcase Display */}
           <motion.div 
@@ -217,7 +187,6 @@ export default function AnalyticsDashboardCaseStudy() {
             className="p-8 rounded-3xl bg-card/30 border border-border/30 backdrop-blur-md"
           >
             
-            {selectedRole === "buyer" ? (
               <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-center font-inter">
                 <div className="md:col-span-7 space-y-6">
                   <div className="flex items-center gap-3">
@@ -293,70 +262,6 @@ export default function AnalyticsDashboardCaseStudy() {
                   </div>
                 </div>
               </div>
-            ) : (
-              <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-center font-inter">
-                <div className="md:col-span-7 space-y-6">
-                  <div className="flex items-center gap-3">
-                    <span className="p-3.5 rounded-full bg-[#2563eb]/10 text-[#2563eb]">
-                      <Bot className="w-6 h-6" />
-                    </span>
-                    <div>
-                      <h4 className="text-xl font-bold font-space-grotesk tracking-wide text-foreground">
-                        Data Scientist (Complex Query Modeling)
-                      </h4>
-                      <p className="text-xs text-[#2563eb] font-mono tracking-wider uppercase">Archetype: "Action-Oriented"</p>
-                    </div>
-                  </div>
-                  <p className="text-sm text-muted-foreground/90 leading-relaxed font-inter text-justify font-light">
-                    The Scientist designs custom query structures and monitors database telemetry. The workspace provides deep code editing and performance monitoring tools:
-                  </p>
-                  <ul className="space-y-3.5">
-                    
-                      <li key={0} className="flex gap-3 text-sm text-muted-foreground text-justify font-inter">
-                        <CheckCircle2 className="w-4 h-4 text-[#2563eb] flex-shrink-0 mt-0.5" />
-                        <span>Features a rich code editor panel with syntax auto completion.</span>
-                      </li>
-  
-
-                      <li key={1} className="flex gap-3 text-sm text-muted-foreground text-justify font-inter">
-                        <CheckCircle2 className="w-4 h-4 text-[#2563eb] flex-shrink-0 mt-0.5" />
-                        <span>Visualizes query loading time distributions using native D3 graphs.</span>
-                      </li>
-  
-
-                      <li key={2} className="flex gap-3 text-sm text-muted-foreground text-justify font-inter">
-                        <CheckCircle2 className="w-4 h-4 text-[#2563eb] flex-shrink-0 mt-0.5" />
-                        <span>Enables drag and drop layout configuration to position telemetry blocks.</span>
-                      </li>
-  
-                  </ul>
-                </div>
-                <div className="md:col-span-5 p-4 bg-[#0B0B0C] border border-border/30 rounded-2xl flex flex-col gap-4 font-mono text-[11px] text-muted-foreground shadow-2xl relative overflow-hidden">
-                  <div className="absolute top-2 right-2 px-2 py-0.5 rounded bg-[#2563eb]/10 border border-[#2563eb]/30 text-[#2563eb] text-[9px] uppercase tracking-widest font-mono">
-                    Action Panel
-                  </div>
-                  <div className="border-b border-border/30 pb-3">
-                    <div className="font-bold text-foreground text-xs font-space-grotesk uppercase tracking-wider mb-1">{"🖥️ Data Science Sandbox"}</div>
-                    <div className="text-[10px]">{"Session Status: Query Engine Synced"}</div>
-                  </div>
-                  
-                      <div key={0} className="p-2.5 rounded-lg bg-card/60 border border-border/30 text-[10px]">
-                        <span className="font-bold text-foreground block mb-0.5">Query #431 - Margin Forecast</span>
-                        DB: PostgreSQL • Delhi Depot • Execute: 0.12s • Passed
-                      </div>
-  
-
-                      <div key={1} className="p-2.5 rounded-lg bg-card/60 border border-border/30 text-[10px]">
-                        <span className="font-bold text-foreground block mb-0.5">Query #430 - Retention Trend</span>
-                        DB: MongoDB • Noida Depot • Execute: 2.3s • Timeout
-                      </div>
-  
-                  <div className="flex gap-2">
-                    <span className="px-2.5 py-1.5 rounded-full border border-border/30 bg-card text-[9px] cursor-pointer">{"Run Selected SQL Query (↑)"}</span>
-                  </div>
-                </div>
-              </div>
-            )}
   
           </motion.div>
         </motion.div>

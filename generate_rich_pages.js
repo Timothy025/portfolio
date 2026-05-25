@@ -1334,6 +1334,14 @@ const projectsData = {
 };
 
 const makePageContent = (key, data) => {
+  const allowedTwoRoles = ["energy", "r-one-ams", "iris-network", "feedzaa"];
+  if (!allowedTwoRoles.includes(key)) {
+    data.role2Name = undefined;
+    if (data.roleSubtitle && data.roleSubtitle.includes("Two Roles")) {
+      data.roleSubtitle = "Unified Operations";
+    }
+  }
+
   const defaultLogoClasses = "max-h-10 sm:max-h-12 lg:max-h-14 w-auto max-w-[140px] sm:max-w-[180px] lg:max-w-[200px]";
   const logoClasses = data.logoClasses || defaultLogoClasses;
 
