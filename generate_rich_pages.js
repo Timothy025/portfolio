@@ -473,8 +473,8 @@ const projectsData = {
       { num: "02 / Zero Telemetry Sync", desc: "No real time truck diagnostics meant drivers broke down mid route without warning." },
       { num: "03 / Multi-App Swapping Fatigue", desc: "Coordinating delays required dispatchers to switch between phone calls, maps, and schedules." }
     ],
-    roleSubtitle: "Two Roles, One Optimized Highway",
-    roleDesc: "We designed Iris Fleet to serve logistics planners coordinating thousands of shipments, and drivers navigating heavy city traffic.",
+    roleSubtitle: "Unified Dispatch Operations",
+    roleDesc: "We designed Iris Fleet to serve logistics planners coordinating thousands of shipments and managing active routes in real time.",
     role1Name: "buyer",
     role1Label: "Logistics Dispatcher",
     role1Archetype: "High Density Dispatch Console",
@@ -491,22 +491,6 @@ const projectsData = {
       { name: "🚛 Truck Hub Noida South", slot: "Status: On Time • 4.8 miles near", rate: "Cargo: Grocery • active", info: "Action: None Required" }
     ],
     role1ScreenCta: "Push Route Optimization to Driver",
-    role2Name: "seller",
-    role2Label: "Delivery Driver",
-    role2Archetype: "Guided Route Navigation",
-    role2Desc: "The Driver needs an experience that presents clear directions with zero distractions. The mobile app acts as a secure route assistant:",
-    role2Items: [
-      "Features big, clear navigation cards designed for truck mounts.",
-      "Integrates one tap customer calling and signature proof of delivery capture.",
-      "Utilizes offline cache mapping to prevent signal drops in rural tunnels."
-    ],
-    role2ScreenTitle: "📱 Driver Mobile Assistant",
-    role2ScreenFilter: "Session Status: Route Active",
-    role2ScreenItems: [
-      { name: "Stop #4 - Delhi Hub Center", slot: "Cargo: Box 2A • Due in 12 min", rate: "Action: Proof of delivery", info: "Status: Pending" },
-      { name: "Stop #3 - Noida Sector 62", slot: "Cargo: Box 1C • Delivered", rate: "Action: Complete Signature", info: "Status: Finished" }
-    ],
-    role2ScreenCta: "Mark Stop Completed (↑)",
     designEvolutionDesc: "To ensure fleet dispatchers could coordinate rapid deliveries, the console went through extensive grey box layout testing.",
     wireframeDesc: "Drafted high density logistics tables and map views. Gray box interactive testing verified that modal details blocked route paths, prompting us to design expanding detail drawers.",
     designSystemDesc: "Created Figma color tokens representing truck safety thresholds (Alert: Red, Normal: Teal). Standardized layout grid tokens to keep maps scalable across desktop and tablets.",
