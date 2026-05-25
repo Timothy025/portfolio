@@ -458,69 +458,69 @@ const projectsData = {
     roleName: "Product Designer",
     platform: "Web Manager & Driver Mobile",
     techStack: "React, Expo, Mapbox API, Zustand, WebSocket",
-    tagline: "Enterprise fleet tracking and route optimization console reducing fuel usage and dispatch latency.",
-    overview1: "Fleet dispatchers juggle route mapping, driver capacity, and vehicle maintenance schedules across different tabs, causing delayed deliveries.",
-    overview2: "Iris Fleet unifies operations, placing real time delivery tracking, Mapbox routing maps, and instant driver chat logs into one high performance dashboard.",
+    tagline: "Fleet Charging Management is an experience designed for teams who manage electric vehicle fleets, depot charging, and daily trip schedules.",
+    overview1: "Fleet charging operations involve many moving parts. Managers must track battery levels, trip readiness, depot availability, and charging delays without becoming overwhelmed.",
+    overview2: "The improved UX was shaped as a fleet control workspace around one core question: 'What needs attention right now, and what should I do next?'",
     stats: [
-      { metric: "22%", label: "Lower Fuel Usage", desc: "Mapbox route optimization reduced delivery miles." },
-      { metric: "15 min", label: "Faster Dispatch Handoff", desc: "Direct route pushing avoided manual address text messages." },
-      { metric: "98.9%", label: "Uptime Sync Rate", desc: "Driver coordinates updated on central maps with sub second latency." }
+      { metric: "100%", label: "Priority Vehicle Visibility", desc: "Urgent vehicles and charging issues are surfaced with clear priority and context." },
+      { metric: "3x", label: "Faster Decision Making", desc: "A clear timeline schedule connected past activity, today's plan, and future charging sessions." },
+      { metric: "0", label: "Decision Fatigue", desc: "Separated operational needs into connected, guided workflows from overview to detail." }
     ],
-    challengeTitle: "The Friction of Manual Route Dispatching",
-    challengeDesc: "Coordinating deliveries requires continuous route adjustment. But when dispatchers manage routes, drivers, and inventory in separate spreadsheets, delays become the norm.",
+    challengeTitle: "The Overwhelming Data of Fleet Operations",
+    challengeDesc: "If everything is shown with the same priority, the user spends too much time figuring out what is actually important. The challenge was transitioning from a data heavy tool into a clear decision making workspace.",
     breakdowns: [
-      { num: "01 / Broken Route Pipelines", desc: "Dispatchers had to copy destination logs to Google Maps and send directions to drivers." },
-      { num: "02 / Zero Telemetry Sync", desc: "No real time truck diagnostics meant drivers broke down mid route without warning." },
-      { num: "03 / Multi-App Swapping Fatigue", desc: "Coordinating delays required dispatchers to switch between phone calls, maps, and schedules." }
+      { num: "01 / Slow Fleet Readiness", desc: "Managers needed a faster way to understand fleet readiness and identify urgent vehicles without scanning rows manually." },
+      { num: "02 / Hidden Charging Delays", desc: "Charging issues lacked priority context, making it hard to know if a vehicle was safe for its next trip." },
+      { num: "03 / Disconnected Planning", desc: "Depot and charging information felt disconnected from the overall fleet plan, hindering quick decisions." }
     ],
-    roleSubtitle: "Unified Dispatch Operations",
-    roleDesc: "We designed Iris Fleet to serve logistics planners coordinating thousands of shipments and managing active routes in real time.",
+    roleSubtitle: "A Unified Fleet Control Workspace",
+    roleDesc: "The experience was designed as a workspace where the most important decisions are visible first, focusing on clarity, urgency, and quick comparison.",
     role1Name: "buyer",
-    role1Label: "Logistics Dispatcher",
-    role1Archetype: "High Density Dispatch Console",
-    role1Desc: "The Dispatcher monitors active trucks, schedules routes, and triages vehicle alerts. The design optimizes for fast multi tasking:",
+    role1Label: "Fleet Manager",
+    role1Archetype: "High Level Fleet Health & Decision Making",
+    role1Desc: "The manager focuses on readiness, risk, and planning. The design prioritizes actionable intelligence:",
     role1Items: [
-      "Integrates a dynamic Mapbox GIS layout showing active vehicle markers.",
-      "Aggregates truck diagnostics (e.g. Engine heat, Tire psi) into styled cards.",
-      "Enables fast route adjustments through drag and drop shipment cards."
+      "Highlights urgent vehicles, at risk trips, and expected costs at the top of the dashboard.",
+      "Organizes vehicles by urgency (battery condition, next trip readiness).",
+      "Provides a charging schedule timeline to understand the day at a glance."
     ],
-    role1ScreenTitle: "🚚 Active Logistics Dispatch Console",
-    role1ScreenFilter: "Filter: Active Trucks • Delhi Loop • Speed > 60km/h",
+    role1ScreenTitle: "⚡ Fleet Operations Dashboard",
+    role1ScreenFilter: "Filter: Needs Charging • At-Risk Trips",
     role1ScreenItems: [
-      { name: "🚛 Truck Hub Delhi West", slot: "Status: Route Delayed • 12 miles near", rate: "Cargo: Electronics • active", info: "Action: Re route Push" },
-      { name: "🚛 Truck Hub Noida South", slot: "Status: On Time • 4.8 miles near", rate: "Cargo: Grocery • active", info: "Action: None Required" }
+      { name: "⚠️ Vehicle 42 - Low Battery", slot: "Status: 15% • Next Trip: 2 hrs", rate: "Action: Route to Depot A", info: "Risk: High" },
+      { name: "🔋 Charger 04 - Available", slot: "Status: Online • Depot B", rate: "Action: Assign Vehicle", info: "Speed: 150kW" }
     ],
-    role1ScreenCta: "Push Route Optimization to Driver",
-    designEvolutionDesc: "To ensure fleet dispatchers could coordinate rapid deliveries, the console went through extensive grey box layout testing.",
-    wireframeDesc: "Drafted high density logistics tables and map views. Gray box interactive testing verified that modal details blocked route paths, prompting us to design expanding detail drawers.",
-    designSystemDesc: "Created Figma color tokens representing truck safety thresholds (Alert: Red, Normal: Teal). Standardized layout grid tokens to keep maps scalable across desktop and tablets.",
-    designMove1Title: "Interactive Route Map",
-    designMove1Sub: "Contextualizing driver paths spatial layout",
-    designMove1Desc: "We integrated a real time Mapbox GIS map engine. When a delivery delay triggers, the console highlights the exact vehicle coordinates and suggests alternative paths.",
-    designMove1GraphTitle: "📊 Fuel Efficiency Distribution",
+    role1ScreenCta: "Review Charging Schedule",
+    designEvolutionDesc: "To ensure fleet managers could coordinate rapid charging schedules, the console went through extensive testing to optimize information priority.",
+    wireframeDesc: "Drafted high density charging tables and map views. Testing verified that raw data lists caused decision fatigue, prompting a shift toward priority based vehicle visibility.",
+    designSystemDesc: "Created Figma color tokens representing vehicle readiness and urgency thresholds (Alert: Red, Normal: Teal). Standardized layout tokens to support a clear visual hierarchy.",
+    designMove1Title: "Priority Based Dashboard",
+    designMove1Sub: "Instant understanding over statistics",
+    designMove1Desc: "Redesigned the top area to highlight urgent daily signals: vehicles needing charge, at risk trips, and expected downtime costs. Vehicles are organized by urgency rather than raw lists.",
+    designMove1GraphTitle: "📊 Fleet Readiness Impact",
     designMove1Svg: `<svg className="w-full h-[70%] stroke-[#06b6d4] fill-none stroke-[2]" viewBox="0 0 100 30">
                     <path d="M 0 25 Q 15 10, 35 20 T 70 5 T 100 25" />
                     <circle cx="70" cy="5" r="3" className="fill-[#06b6d4] stroke-white stroke-[1]" />
                   </svg>`,
-    designMove1GraphFooter: "Fulfillment Curve",
-    designMove2Title: "Interactive Route Sliders",
-    designMove2Sub: "Adjusting load distribution",
-    designMove2Desc: "Designed interactive sliders that let dispatchers balance load weights across available trucks, preventing engine wear.",
-    designMove3Title: "Conversational Driver Assistant AI",
-    designMove3Sub: "Assisting route diagnostics",
-    designMove3Desc: "Integrated an assistive chat module inside the driver workspace. Drivers can ask 'What is my next route?' and get a clear voice-guided breakdown.",
-    designMove3GraphTitle: "📈 Safe Driver Compliance Rate",
+    designMove1GraphFooter: "Readiness Curve",
+    designMove2Title: "Map Based Operational Awareness",
+    designMove2Sub: "Connecting status with location",
+    designMove2Desc: "Added a map view to help managers naturally answer where a vehicle is, nearest charger availability, and if an issue is urgent due to location or timing.",
+    designMove3Title: "Visual Charging Schedule",
+    designMove3Sub: "Planning across past, present, and future",
+    designMove3Desc: "Shaped the charging schedule as a visual timeline, highlighting past activity, today's active plan, and future sessions. Conflict handling provides guided practical options.",
+    designMove3GraphTitle: "📈 Charging Issue Resolution",
     designMove3GraphSvg: `<div className="h-28 flex items-end justify-between gap-2 px-4 py-2 border border-border/20 rounded-lg bg-card/30">
                   <div className="w-8 bg-[#06b6d4] rounded-t-sm" style={{ height: "45%" }} />
                   <div className="w-8 bg-[#16c6d4] rounded-t-sm" style={{ height: "65%" }} />
                   <div className="w-8 bg-[#26d6d4] rounded-t-sm" style={{ height: "85%" }} />
                   <div className="w-8 bg-muted rounded-t-sm" style={{ height: "35%" }} />
                 </div>`,
-    learningQuote: "Logistics UX is safety UX. Direct routing paths prevent road distractions.",
-    learningDesc: "By placing truck diagnostics directly onto spatial map markers and designing offline first navigation steps, we helped logistics drivers execute their daily rounds safely.",
+    learningQuote: "Operational products need more than clean layouts. They need strong information priority.",
+    learningDesc: "UX improvement in fleet operations is about helping users trust the information, understand the priority, and take the next step with confidence, rather than just adding more information.",
     checkpoints: [
-      { title: "Explainability drives action", desc: "Translated complex route options into clean spatial markers." },
-      { title: "Design for decision moments", desc: "Positioned optimized route pushes directly below loading alerts." }
+      { title: "Guided Conflict Handling", desc: "Alerts become far more useful when they are connected to clear, practical actions." },
+      { title: "Visual Urgency", desc: "Helps users act faster, but must be used carefully to avoid unnecessary stress or alarm fatigue." }
     ]
   },
   "payez": {
