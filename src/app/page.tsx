@@ -42,7 +42,7 @@ const projects: Project[] = [
     title: "Iris Fleet",
     subtitle: "Optimizing commercial EV fleet dispatch, charging schedules, and state-of-charge tracking.",
     tags: ["Fleet Management", "Scheduling"],
-    image: "/thumnail/fleet-thumnail.png",
+    image: "/Fleet/depots.png",
     link: "/projects/fleet",
     color: "#429AE7",
   },
