@@ -212,6 +212,32 @@ export default function WitnessChainCaseStudy() {
           </div>
         </motion.section>
 
+        {/* BEFORE & AFTER */}
+        <motion.section 
+          initial="hidden" 
+          whileInView="visible" 
+          viewport={{ once: true }} 
+          variants={sectionVariants}
+          className="space-y-8"
+        >
+          <h3 className="text-sm font-bold tracking-widest text-muted-foreground uppercase border-b border-border/30 pb-4">Before & After</h3>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8 items-center">
+            <div className="space-y-4 flex flex-col items-center">
+              <Badge variant="outline" className="mb-2 uppercase tracking-widest">Before</Badge>
+              <div className="w-full flex justify-center">
+                <img src="/witness/5before.png" alt="WitnessChain Original Design" className="w-full max-w-[240px] h-auto object-contain rounded-3xl border border-border/20 shadow-xl opacity-80 grayscale-[30%]" />
+              </div>
+            </div>
+            <div className="space-y-4 flex flex-col items-center">
+              <Badge className="mb-2 bg-[#7CFF92] text-black hover:bg-[#7CFF92] uppercase tracking-widest">After</Badge>
+              <div className="w-full flex justify-center">
+                <img src="/witness/2.png" alt="WitnessChain Redesign" className="w-full max-w-[240px] h-auto object-contain rounded-3xl border border-border/20 shadow-2xl" />
+              </div>
+            </div>
+          </div>
+        </motion.section>
+
         {/* THE SOLUTION */}
         <motion.section 
           initial="hidden" 
