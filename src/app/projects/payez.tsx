@@ -371,63 +371,7 @@ export default function PayezCaseStudy() {
         </motion.div>
 
         {/* 6. THE DESIGN EVOLUTION */}
-        <motion.div 
-          variants={staggerContainer} 
-          initial="initial" 
-          whileInView="whileInView"
-          className="mt-32 space-y-8 font-inter"
-        >
-          <motion.div variants={fadeInUp} className="w-full space-y-4">
-            <span className="text-[#3EBAF4] text-xs font-semibold tracking-widest uppercase block">Key Solution / Design Evolution</span>
-            <h3 className="text-[22px] font-semibold font-space-grotesk tracking-tight">
-              The Design Evolution
-            </h3>
-            <p className="text-[20px] text-muted-foreground/80 leading-relaxed text-justify font-inter">
-              Our design journey represents a deliberate transition from raw structural layouts to fully realized, production-grade visual systems.
-            </p>
-          </motion.div>
-
-          <motion.div 
-            variants={fadeInUp}
-            className="grid grid-cols-1 md:grid-cols-2 gap-8 items-stretch pt-4"
-          >
-            {/* Design Evolution Block 1 */}
-            <div className="p-8 rounded-[2rem] bg-card/30 border border-border/30 backdrop-blur-md flex flex-col justify-between space-y-6">
-              <div className="space-y-4">
-                <span className="text-xs text-muted-foreground font-mono uppercase tracking-widest block font-bold">Phase 01 / Wireframe</span>
-                <h4 className="text-xl font-bold font-space-grotesk text-foreground">Gray Box Prototyping</h4>
-                <p className="text-sm text-muted-foreground/90 leading-relaxed text-justify font-inter">
-                  Establishing primary layout grids, content density hierarchies, and low-cognitive user flows without visual distractions.
-                </p>
-              </div>
-              <div className="relative rounded-2xl overflow-hidden border border-border/40 shadow-xl bg-card aspect-[4/3] flex items-center justify-center max-h-[300px]">
-                <img 
-                  src="undefined" 
-                  alt="Figma Wireframe Blueprint" 
-                  className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
-                />
-              </div>
-            </div>
-
-            {/* Design Evolution Block 2 */}
-            <div className="p-8 rounded-[2rem] bg-card/30 border border-border/30 backdrop-blur-md flex flex-col justify-between space-y-6">
-              <div className="space-y-4">
-                <span className="text-xs text-muted-foreground font-mono uppercase tracking-widest block font-bold">Phase 02 / Visual System</span>
-                <h4 className="text-xl font-bold font-space-grotesk text-foreground">Figma Tokens & Brand System</h4>
-                <p className="text-sm text-muted-foreground/90 leading-relaxed text-justify font-inter">
-                  Injecting consistent spacing scales, brand colorways, typographic sub-themes, and interactive states directly into production.
-                </p>
-              </div>
-              <div className="relative rounded-2xl overflow-hidden border border-border/40 shadow-xl bg-card aspect-[4/3] flex items-center justify-center max-h-[300px]">
-                <img 
-                  src="undefined" 
-                  alt="Figma High Fidelity UI System" 
-                  className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
-                />
-              </div>
-            </div>
-          </motion.div>
-        </motion.div>
+        
 
         {/* 7. THE SOLUTION DETAILS (DESIGN MOVES) */}
         <motion.div 
