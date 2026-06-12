@@ -9,7 +9,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 
-export default function PayezCaseStudy() {
+export default function RmsCaseStudy() {
   const sectionVariants = {
     hidden: { opacity: 0, y: 20 },
     visible: { opacity: 1, y: 0, transition: { duration: 0.6 } }
@@ -39,56 +39,48 @@ export default function PayezCaseStudy() {
             
             <div className="flex items-center -ml-4 h-16 sm:h-20 lg:h-24">
               <img
-                src="/logos/PayEz.svg"
-                alt="PayEZ logo"
+                src="/logos/Planet 3_light.svg"
+                alt="Planet3 RMS logo"
                 className="block max-h-10 sm:max-h-12 lg:max-h-14 w-auto max-w-[140px] sm:max-w-[180px] lg:max-w-[200px] object-contain dark:hidden"
               />
               <img
-                src="/logos/PayEz.svg"
-                alt="PayEZ logo"
+                src="/logos/Planet 3_dark.svg"
+                alt="Planet3 RMS logo"
                 className="hidden max-h-10 sm:max-h-12 lg:max-h-14 w-auto max-w-[140px] sm:max-w-[180px] lg:max-w-[200px] object-contain dark:block"
               />
             </div>
             <h2 className="text-xl md:text-2xl text-muted-foreground font-light leading-relaxed">
-              Sleek P2P microfinance and payment gateway simplifying everyday transactions and cash transfers.
+              Planet3 RMS Charger Details - UX Case Study: turning complex charger behavior into a simple decision-support screen.
             </h2>
           </div>
 
-          <div className="w-full mt-4 flex justify-center">
-            <img 
-              src="/payez.png" 
-              alt="PayEZ Mobile App Mockup" 
-              className="w-full max-w-4xl h-auto object-contain rounded-2xl border border-border/20 shadow-2xl"
-            />
-          </div>
-
-          <div className="space-y-4 mt-8">
+          <div className="space-y-4">
             <h3 className="text-sm font-bold tracking-widest text-muted-foreground uppercase">Overview</h3>
             <p className="text-lg leading-relaxed text-foreground/90">
-              Micro merchants and casual users experience high payment drop offs when trying to transfer cash through slow, data heavy banking portals. PayEZ streamlines P2P payments, utilizing modern layout transitions, wallet management tabs, and one swipe checkout sheets to secure cash flows.
+              This case study focuses on the Charger Details experience in the Planet3 Remote Management System, created from scratch to help teams monitor and manage EV chargers with clarity. The goal was to create a practical, user-friendly experience for operations teams, service teams, site managers, and business stakeholders. Instead of simply displaying data, the product explains condition and highlights next actions.
             </p>
           </div>
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 py-8 border-y border-border/30">
             <div className="space-y-2">
               <h4 className="text-xs font-bold tracking-widest text-muted-foreground uppercase">Timeline</h4>
-              <p className="text-sm font-medium">3 Months (Spring 2025)</p>
+              <p className="text-sm font-medium">2023 - 2024</p>
             </div>
             <div className="space-y-2">
               <h4 className="text-xs font-bold tracking-widest text-muted-foreground uppercase">Role</h4>
-              <p className="text-sm font-medium">Product Designer</p>
+              <p className="text-sm font-medium">Business Analyst & Product Owner</p>
             </div>
             <div className="space-y-2">
               <h4 className="text-xs font-bold tracking-widest text-muted-foreground uppercase">Platform</h4>
-              <p className="text-sm font-medium">Consumer App & Merchant Web</p>
+              <p className="text-sm font-medium">Web Application</p>
             </div>
             <div className="space-y-2">
               <h4 className="text-xs font-bold tracking-widest text-muted-foreground uppercase">Tech Stack</h4>
               <div className="flex flex-wrap gap-2">
-                <Badge variant="secondary">React Native</Badge>
-                <Badge variant="secondary">Tailwind CSS</Badge>
-                <Badge variant="secondary">Stripe API</Badge>
-                <Badge variant="secondary">Node.js</Badge>
+                <Badge variant="secondary">Product Requirements</Badge>
+                <Badge variant="secondary">Jira</Badge>
+                <Badge variant="secondary">UX Strategy</Badge>
+                <Badge variant="secondary">Systems Analysis</Badge>
               </div>
             </div>
           </div>
@@ -106,19 +98,19 @@ export default function PayezCaseStudy() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             
             <div className="space-y-2">
-              <div className="text-4xl font-black font-space-grotesk" style={{ color: "#4A69D8" }}>0.2s</div>
-              <h4 className="font-bold text-foreground">Sub Second P2P Sync</h4>
-              <p className="text-sm text-muted-foreground">Optimized payment routes enabled instant cash transfers.</p>
+              <div className="text-4xl font-black font-space-grotesk" style={{ color: "#EC008C" }}>100%</div>
+              <h4 className="font-bold text-foreground">Decision Focus</h4>
+              <p className="text-sm text-muted-foreground">Designed the experience around actionable insights rather than raw data.</p>
             </div>
             <div className="space-y-2">
-              <div className="text-4xl font-black font-space-grotesk" style={{ color: "#4A69D8" }}>38%</div>
-              <h4 className="font-bold text-foreground">Fewer Checkout Drops</h4>
-              <p className="text-sm text-muted-foreground">Simplified form inputs into a single swipe double confirmation checkout drawer.</p>
+              <div className="text-4xl font-black font-space-grotesk" style={{ color: "#EC008C" }}>1st</div>
+              <h4 className="font-bold text-foreground">Overview Priority</h4>
+              <p className="text-sm text-muted-foreground">Placed key health indicators at the top for immediate understanding.</p>
             </div>
             <div className="space-y-2">
-              <div className="text-4xl font-black font-space-grotesk" style={{ color: "#4A69D8" }}>100%</div>
-              <h4 className="font-bold text-foreground">Fraud Score Validation</h4>
-              <p className="text-sm text-muted-foreground">Integrated biometric fraud checks directly on checkout flow.</p>
+              <div className="text-4xl font-black font-space-grotesk" style={{ color: "#EC008C" }}>Clear</div>
+              <h4 className="font-bold text-foreground">Mental Model</h4>
+              <p className="text-sm text-muted-foreground">Separated charger-level from connector-level information.</p>
             </div>
           </div>
         </motion.section>
@@ -133,7 +125,7 @@ export default function PayezCaseStudy() {
         >
           <h3 className="text-sm font-bold tracking-widest text-muted-foreground uppercase border-b border-border/30 pb-4">The Problem</h3>
           <p className="text-xl text-foreground font-medium leading-relaxed">
-            Sending money should feel like sending a text. But when users face multi step verification pages, complex routing codes, and dry tables, transaction drop offs skyrocket.
+            An EV charger produces live status, connector availability, sessions, alerts, and maintenance needs. The biggest challenge was organizing this into a clear, usable product experience.
           </p>
           
           <div className="grid gap-4 mt-8">
@@ -142,33 +134,33 @@ export default function PayezCaseStudy() {
               <CardHeader>
                 <CardTitle className="text-base flex items-center gap-2">
                   <div className="w-2 h-2 rounded-full bg-red-500" />
-                  Opaque Verification Loops
+                  Information Overload
                 </CardTitle>
               </CardHeader>
               <CardContent className="text-muted-foreground text-sm leading-relaxed">
-                Multiple verification pages delayed checkout times, driving user frustration.
+                Understanding what charger information matters most to users to avoid data-heavy screens.
               </CardContent>
             </Card>
             <Card className="bg-card/50">
               <CardHeader>
                 <CardTitle className="text-base flex items-center gap-2">
                   <div className="w-2 h-2 rounded-full bg-red-500" />
-                  Zero Balance Visualization
+                  Complex Relationships
                 </CardTitle>
               </CardHeader>
               <CardContent className="text-muted-foreground text-sm leading-relaxed">
-                Static ledgers hid daily spending trends, preventing easy cash flow monitoring.
+                Defining how charger status, connector status, alerts, sessions, and maintenance connect.
               </CardContent>
             </Card>
             <Card className="bg-card/50">
               <CardHeader>
                 <CardTitle className="text-base flex items-center gap-2">
                   <div className="w-2 h-2 rounded-full bg-red-500" />
-                  Scattered Cash Tools
+                  Varied User Contexts
                 </CardTitle>
               </CardHeader>
               <CardContent className="text-muted-foreground text-sm leading-relaxed">
-                Invoicing, sending, and receiving required users to navigate disjointed menus.
+                Creating a clear structure for users with different levels of responsibility (monitoring vs troubleshooting).
               </CardContent>
             </Card>
           </div>
@@ -184,46 +176,34 @@ export default function PayezCaseStudy() {
         >
           <h3 className="text-sm font-bold tracking-widest text-muted-foreground uppercase border-b border-border/30 pb-4">The Process & Operational Reality</h3>
           <p className="text-lg leading-relaxed text-foreground/90">
-            We designed PayEZ to serve casual consumers sending instant P2P payments, and merchants tracking incoming cash flows.
+            As a BA and Product Owner, I bridged the gap between how the charger communicates with the system and how users expect to experience that information.
           </p>
           
           
-          <Tabs defaultValue="role1" className="w-full mt-8">
-            <TabsList className="grid w-full grid-cols-2 h-auto p-1 bg-muted/50">
-              <TabsTrigger value="role1" className="py-3 text-sm font-bold data-[state=active]:bg-[#4A69D8] data-[state=active]:text-black transition-all">
-                P2P Sender
-              </TabsTrigger>
-              <TabsTrigger value="role2" className="py-3 text-sm font-bold data-[state=active]:bg-[#4A69D8] data-[state=active]:text-black transition-all">
-                Retail Merchant
-              </TabsTrigger>
-            </TabsList>
-            <TabsContent value="role1" className="mt-6">
-              <Card>
-                <CardContent className="p-6 space-y-4">
-                  <h4 className="font-bold text-lg">Transfer & Savings Focus</h4>
-                  <p className="text-muted-foreground text-sm leading-relaxed">The Sender wants to transfer cash instantly with zero friction. The design optimizes for fast transaction execution:</p>
-                  <ul className="list-disc pl-5 space-y-2 text-sm text-muted-foreground">
-                    <li>Replaces dry ledger lists with a sleek, interactive spending history feed.</li>
-                    <li>Integrates one swipe checkout sheets to bypass slow routing checks.</li>
-                    <li>Highlights dynamic wallet balance indicators on the main screen.</li>
-                  </ul>
-                </CardContent>
-              </Card>
-            </TabsContent>
-            <TabsContent value="role2" className="mt-6">
-              <Card>
-                <CardContent className="p-6 space-y-4">
-                  <h4 className="font-bold text-lg">Sales & Invoicing Focus</h4>
-                  <p className="text-muted-foreground text-sm leading-relaxed">The Merchant coordinates incoming payments and tracks invoice compliance. The interface optimizes for clear status auditing:</p>
-                  <ul className="list-disc pl-5 space-y-2 text-sm text-muted-foreground">
-                    <li>Provides rapid invoice creators to collect customer payments.</li>
-                    <li>Visualizes daily sales margins through clean native SVG graphs.</li>
-                    <li>Enables fast transaction refunds through sliding checkout sheets.</li>
-                  </ul>
-                </CardContent>
-              </Card>
-            </TabsContent>
-          </Tabs>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
+            <Card>
+              <CardContent className="p-6 space-y-4">
+                <h4 className="font-bold text-lg">Operations Teams</h4>
+                <p className="text-muted-foreground text-sm leading-relaxed">Operations teams need a quick understanding of whether the charger is working well or needs attention:</p>
+                <ul className="list-disc pl-5 space-y-2 text-sm text-muted-foreground">
+                  <li>Requires overview-first experience to assess overall health.</li>
+                  <li>Needs to identify faults, warnings, and service needs immediately.</li>
+                  <li>Benefits from simple status language without deep technical detail.</li>
+                </ul>
+              </CardContent>
+            </Card>
+            <Card>
+              <CardContent className="p-6 space-y-4">
+                <h4 className="font-bold text-lg">Service Teams</h4>
+                <p className="text-muted-foreground text-sm leading-relaxed">Service teams need to understand exactly what is failing and why. The experience supports deeper troubleshooting:</p>
+                <ul className="list-disc pl-5 space-y-2 text-sm text-muted-foreground">
+                  <li>Separates charger health from connector-level performance.</li>
+                  <li>Groups sessions, alerts, and maintenance to support workflows.</li>
+                  <li>Creates a clear flow from 'What is happening?' to 'What should I check next?'</li>
+                </ul>
+              </CardContent>
+            </Card>
+          </div>
         </motion.section>
 
         {/* THE SOLUTION */}
@@ -241,15 +221,15 @@ export default function PayezCaseStudy() {
 
           <div className="space-y-6 mt-8">
             
-            <Card className="border-l-4 bg-card/40" style={{ borderLeftColor: "#4A69D8" }}>
+            <Card className="border-l-4 bg-card/40" style={{ borderLeftColor: "#EC008C" }}>
               <CardContent className="p-6 grid gap-4">
                 <div>
                   <h4 className="text-sm font-bold text-muted-foreground uppercase">Problem Tackled</h4>
-                  <p className="font-medium mt-1 leading-relaxed">Eliminating table clutter</p>
+                  <p className="font-medium mt-1 leading-relaxed">Prioritizing key health indicators</p>
                 </div>
                 <div className="mt-2 pt-4 border-t border-border/20">
-                  <h4 className="text-sm font-bold text-muted-foreground uppercase flex items-center gap-2"><ShieldCheck className="w-4 h-4"/> Sleek Transaction Feed</h4>
-                  <p className="text-sm mt-2 leading-relaxed text-muted-foreground">We replaced dry transaction tables with a beautiful, interactive spending feed showing daily cash flows and category tags.</p>
+                  <h4 className="text-sm font-bold text-muted-foreground uppercase flex items-center gap-2"><ShieldCheck className="w-4 h-4"/> Overview-First Experience</h4>
+                  <p className="text-sm mt-2 leading-relaxed text-muted-foreground">The experience starts with the most important information: energy delivered, successful sessions, faulted sessions, charger health, connection status, and service details.</p>
                 </div>
               </CardContent>
             </Card>
@@ -258,11 +238,11 @@ export default function PayezCaseStudy() {
               <CardContent className="p-6 grid gap-4">
                 <div>
                   <h4 className="text-sm font-bold text-muted-foreground uppercase">Problem Tackled</h4>
-                  <p className="font-medium mt-1 leading-relaxed">Streamlining transaction loops</p>
+                  <p className="font-medium mt-1 leading-relaxed">Contextualizing the physical charger</p>
                 </div>
                 <div className="mt-2 pt-4 border-t border-border/20">
-                  <h4 className="text-sm font-bold text-muted-foreground uppercase flex items-center gap-2"><Activity className="w-4 h-4"/> One Swipe Checkout</h4>
-                  <p className="text-sm mt-2 leading-relaxed text-muted-foreground">Designed an interactive payment sliding sheet that executes P2P transfers within sub seconds, avoiding sluggish page reloads.</p>
+                  <h4 className="text-sm font-bold text-muted-foreground uppercase flex items-center gap-2"><Activity className="w-4 h-4"/> Visual Health View</h4>
+                  <p className="text-sm mt-2 leading-relaxed text-muted-foreground">Important details are placed around the charger image. This helps users connect information to the physical charger and makes the experience much easier to scan.</p>
                 </div>
               </CardContent>
             </Card>
@@ -272,15 +252,27 @@ export default function PayezCaseStudy() {
               <CardContent className="p-6 grid gap-4">
                 <div>
                   <h4 className="text-sm font-bold text-muted-foreground uppercase">Problem Tackled</h4>
-                  <p className="font-medium mt-1 leading-relaxed">Assisting budgeting diagnostics</p>
+                  <p className="font-medium mt-1 leading-relaxed">Charger vs. Connector Information</p>
                 </div>
                 <div className="mt-2 pt-4 border-t border-border/20">
-                  <h4 className="text-sm font-bold text-muted-foreground uppercase flex items-center gap-2"><Bot className="w-4 h-4"/> Conversational Financial AI</h4>
-                  <p className="text-sm mt-2 leading-relaxed text-muted-foreground">Integrated an assistive chat helper inside the wallet app. Senders can ask 'How much did I save this week?' and receive instant spending feedback.</p>
+                  <h4 className="text-sm font-bold text-muted-foreground uppercase flex items-center gap-2"><Bot className="w-4 h-4"/> Separating Contexts</h4>
+                  <p className="text-sm mt-2 leading-relaxed text-muted-foreground">Separating charger-level information (overall machine) from connector-level information (individual ports) creates a clearer mental model and reduces confusion.</p>
                 </div>
               </CardContent>
             </Card>
             
+          </div>
+
+          <div className="space-y-12 md:space-y-16 mt-12 md:mt-16 pt-8">
+            <div className="">
+              <img src="/rms/dashboard.png" alt="RMS Dashboard Overview" className="w-full h-auto object-contain" />
+            </div>
+            <div className="">
+              <img src="/rms/charger.png" alt="RMS Charger Visual Health" className="w-full h-auto object-contain" />
+            </div>
+            <div className="">
+              <img src="/rms/alerts.png" alt="RMS Alerts and Connector Information" className="w-full h-auto object-contain" />
+            </div>
           </div>
         </motion.section>
 
@@ -296,23 +288,23 @@ export default function PayezCaseStudy() {
           
           <div className="p-8 bg-muted/30 rounded-2xl border border-border/50">
             <p className="text-2xl font-light text-foreground leading-relaxed italic text-center mb-8">
-              "Microfinance UX is trust UX. Frictionless loops convey transaction reliability."
+              "A strong product experience starts with understanding the system, but becomes valuable only when translated into a clear user journey."
             </p>
             
             <p className="text-muted-foreground text-center mb-12 max-w-2xl mx-auto leading-relaxed">
-              By placing balance trends directly onto the home screen and designing one swipe checkout drawer sheets, we helped users manage cash flows confidently.
+              By defining the experience from a product owner perspective, the page became more than a data view. It became a decision-support screen that guides meaningful action.
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               
               <div className="space-y-3">
-                <h4 className="font-bold text-foreground">Explainability drives action</h4>
-                <p className="text-sm text-muted-foreground leading-relaxed">Translated technical banking codes into clear transaction status tags.</p>
+                <h4 className="font-bold text-foreground">Product clarity begins with system behavior</h4>
+                <p className="text-sm text-muted-foreground leading-relaxed">Learning how the charger communicates helped define what users should see.</p>
               </div>
 
               <div className="space-y-3">
-                <h4 className="font-bold text-foreground">Design for decision moments</h4>
-                <p className="text-sm text-muted-foreground leading-relaxed">Positioned transfer triggers directly next to active wallet balances.</p>
+                <h4 className="font-bold text-foreground">Prioritize user needs over available data</h4>
+                <p className="text-sm text-muted-foreground leading-relaxed">A Product Owner needs to prioritize what users need first, not just what data is available.</p>
               </div>
             </div>
           </div>

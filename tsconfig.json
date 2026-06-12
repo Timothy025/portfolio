@@ -2,32 +2,56 @@
   "compilerOptions": {
     "target": "ES2020",
     "useDefineForClassFields": true,
-    "lib": ["DOM", "DOM.Iterable", "ES2020"],
+    "lib": [
+      "DOM",
+      "DOM.Iterable",
+      "ES2020"
+    ],
     "module": "ESNext",
     "skipLibCheck": true,
-
     /* Bundler mode */
     "moduleResolution": "bundler",
     "allowImportingTsExtensions": true,
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react-jsx",
-
+    "jsx": "preserve",
     /* Linting */
     "strict": true,
     "noUnusedLocals": false,
     "noUnusedParameters": false,
     "noFallthroughCasesInSwitch": true,
-
     "paths": {
-      "@/*": ["./src/*"],
-      "next/link": ["./stubs/next-link.tsx"],
-      "next/navigation": ["./stubs/next-navigation.tsx"],
-      "next/font/google": ["./stubs/next-font.tsx"]
-    }
+      "@/*": [
+        "./src/*"
+      ],
+      "next/link": [
+        "./stubs/next-link.tsx"
+      ],
+      "next/navigation": [
+        "./stubs/next-navigation.tsx"
+      ],
+      "next/font/google": [
+        "./stubs/next-font.tsx"
+      ]
+    },
+    "allowJs": true,
+    "incremental": true,
+    "esModuleInterop": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ]
   },
-  "include": ["src", "stubs"],
-  "exclude": ["src/app/layout.tsx", "src/app/projects/energy-aatral/page.tsx"],
+  "include": [
+    "src",
+    "stubs",
+    ".next/types/**/*.ts"
+  ],
+  "exclude": [
+    "src/app/layout.tsx",
+    "src/app/projects/energy-aatral/page.tsx"
+  ],
   "references": []
 }

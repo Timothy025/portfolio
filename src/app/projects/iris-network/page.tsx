@@ -262,13 +262,13 @@ export default function NetworkCaseStudy() {
 
               <div className="flex flex-col space-y-12 pt-8 items-center">
                 <div className="w-full flex justify-center">
-                  <img src="/network/web1.png" alt="Iris Network Web Dashboard" className="w-full max-w-5xl h-auto object-contain rounded-2xl border border-border/20 shadow-2xl" />
+                  <img src="/network/web1.png" alt="Iris Network Web Dashboard" className="w-full max-w-5xl h-auto object-contain" />
                 </div>
                 <div className="w-full flex justify-center">
-                  <img src="/network/web2.png" alt="Iris Network Web Finance" className="w-full max-w-5xl h-auto object-contain rounded-2xl border border-border/20 shadow-2xl" />
+                  <img src="/network/web2.png" alt="Iris Network Web Finance" className="w-full max-w-5xl h-auto object-contain" />
                 </div>
                 <div className="w-full flex justify-center">
-                  <img src="/network/web3.png" alt="Iris Network Web Reporting" className="w-full max-w-5xl h-auto object-contain rounded-2xl border border-border/20 shadow-2xl" />
+                  <img src="/network/web3.png" alt="Iris Network Web Reporting" className="w-full max-w-5xl h-auto object-contain" />
                 </div>
               </div>
             </div>
@@ -291,7 +291,7 @@ export default function NetworkCaseStudy() {
               </Card>
 
               <div className="w-full pt-8 flex justify-center">
-                <img src="/network/network_mob.png" alt="Iris Network Mobile Experience" className="w-full max-w-4xl h-auto object-contain rounded-2xl border border-border/20 shadow-2xl" />
+                <img src="/network/network_mob.png" alt="Iris Network Mobile Experience" className="w-full max-w-4xl h-auto object-contain" />
               </div>
             </div>
             

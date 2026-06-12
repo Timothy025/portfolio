@@ -9,7 +9,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 
-export default function RmsCaseStudy() {
+export default function FeedzaaCaseStudy() {
   const sectionVariants = {
     hidden: { opacity: 0, y: 20 },
     visible: { opacity: 1, y: 0, transition: { duration: 0.6 } }
@@ -39,48 +39,56 @@ export default function RmsCaseStudy() {
             
             <div className="flex items-center -ml-4 h-16 sm:h-20 lg:h-24">
               <img
-                src="/logos/Planet 3_light.svg"
-                alt="Planet3 RMS logo"
-                className="block max-h-10 sm:max-h-12 lg:max-h-14 w-auto max-w-[140px] sm:max-w-[180px] lg:max-w-[200px] object-contain dark:hidden"
+                src="/logos/Feedzaa.svg"
+                alt="Feedzaa logo"
+                className="block max-h-14 sm:max-h-16 lg:max-h-20 w-auto max-w-[200px] sm:max-w-[260px] lg:max-w-[300px] object-contain dark:hidden"
               />
               <img
-                src="/logos/Planet 3_dark.svg"
-                alt="Planet3 RMS logo"
-                className="hidden max-h-10 sm:max-h-12 lg:max-h-14 w-auto max-w-[140px] sm:max-w-[180px] lg:max-w-[200px] object-contain dark:block"
+                src="/logos/Feedzaa.svg"
+                alt="Feedzaa logo"
+                className="hidden max-h-14 sm:max-h-16 lg:max-h-20 w-auto max-w-[200px] sm:max-w-[260px] lg:max-w-[300px] object-contain dark:block"
               />
             </div>
             <h2 className="text-xl md:text-2xl text-muted-foreground font-light leading-relaxed">
-              Planet3 RMS Charger Details - UX Case Study: turning complex charger behavior into a simple decision-support screen.
+              Helping home chefs spend 60% less time managing orders, and more time crafting authentic culinary experiences.
             </h2>
           </div>
 
-          <div className="space-y-4">
+          <div className="w-full mt-4 flex justify-center">
+            <img 
+              src="/chef_app.png" 
+              alt="Feedzaa App Mockup" 
+              className="w-full max-w-4xl h-auto object-contain"
+            />
+          </div>
+
+          <div className="space-y-4 mt-8">
             <h3 className="text-sm font-bold tracking-widest text-muted-foreground uppercase">Overview</h3>
             <p className="text-lg leading-relaxed text-foreground/90">
-              This case study focuses on the Charger Details experience in the Planet3 Remote Management System, created from scratch to help teams monitor and manage EV chargers with clarity. The goal was to create a practical, user-friendly experience for operations teams, service teams, site managers, and business stakeholders. Instead of simply displaying data, the product explains condition and highlights next actions.
+              Feedzaa helps home chefs run their entire food commerce operation without juggling multiple apps. Previously, chefs relied on disconnected tools like WhatsApp, spreadsheets, and standalone payment apps. This project was designed as a unified commerce system connecting customer ordering with direct kitchen execution and automated local rider dispatching.
             </p>
           </div>
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 py-8 border-y border-border/30">
             <div className="space-y-2">
               <h4 className="text-xs font-bold tracking-widest text-muted-foreground uppercase">Timeline</h4>
-              <p className="text-sm font-medium">2023 - 2024</p>
+              <p className="text-sm font-medium">3 Months (Spring 2025)</p>
             </div>
             <div className="space-y-2">
               <h4 className="text-xs font-bold tracking-widest text-muted-foreground uppercase">Role</h4>
-              <p className="text-sm font-medium">Business Analyst & Product Owner</p>
+              <p className="text-sm font-medium">Product Designer</p>
             </div>
             <div className="space-y-2">
               <h4 className="text-xs font-bold tracking-widest text-muted-foreground uppercase">Platform</h4>
-              <p className="text-sm font-medium">Web Application</p>
+              <p className="text-sm font-medium">Mobile Web & Kitchen App</p>
             </div>
             <div className="space-y-2">
               <h4 className="text-xs font-bold tracking-widest text-muted-foreground uppercase">Tech Stack</h4>
               <div className="flex flex-wrap gap-2">
-                <Badge variant="secondary">Product Requirements</Badge>
-                <Badge variant="secondary">Jira</Badge>
-                <Badge variant="secondary">UX Strategy</Badge>
-                <Badge variant="secondary">Systems Analysis</Badge>
+                <Badge variant="secondary">React Native</Badge>
+                <Badge variant="secondary">Expo</Badge>
+                <Badge variant="secondary">Tailwind CSS</Badge>
+                <Badge variant="secondary">Stripe API</Badge>
               </div>
             </div>
           </div>
@@ -98,19 +106,19 @@ export default function RmsCaseStudy() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             
             <div className="space-y-2">
-              <div className="text-4xl font-black font-space-grotesk" style={{ color: "#EC008C" }}>100%</div>
-              <h4 className="font-bold text-foreground">Decision Focus</h4>
-              <p className="text-sm text-muted-foreground">Designed the experience around actionable insights rather than raw data.</p>
+              <div className="text-4xl font-black font-space-grotesk" style={{ color: "#DB3D1A" }}>60%</div>
+              <h4 className="font-bold text-foreground">Faster Order Prep Time</h4>
+              <p className="text-sm text-muted-foreground">Consolidated WhatsApp orders into a single live kitchen dashboard, reducing errors.</p>
             </div>
             <div className="space-y-2">
-              <div className="text-4xl font-black font-space-grotesk" style={{ color: "#EC008C" }}>1st</div>
-              <h4 className="font-bold text-foreground">Overview Priority</h4>
-              <p className="text-sm text-muted-foreground">Placed key health indicators at the top for immediate understanding.</p>
+              <div className="text-4xl font-black font-space-grotesk" style={{ color: "#DB3D1A" }}>42%</div>
+              <h4 className="font-bold text-foreground">Reduced Checkout Friction</h4>
+              <p className="text-sm text-muted-foreground">Simplified customer payments through integrated one click UPI checkouts.</p>
             </div>
             <div className="space-y-2">
-              <div className="text-4xl font-black font-space-grotesk" style={{ color: "#EC008C" }}>Clear</div>
-              <h4 className="font-bold text-foreground">Mental Model</h4>
-              <p className="text-sm text-muted-foreground">Separated charger-level from connector-level information.</p>
+              <div className="text-4xl font-black font-space-grotesk" style={{ color: "#DB3D1A" }}>3x</div>
+              <h4 className="font-bold text-foreground">Increase in Weekly Orders</h4>
+              <p className="text-sm text-muted-foreground">Automated recurring orders let customers subscribe to their favorite chefs easily.</p>
             </div>
           </div>
         </motion.section>
@@ -125,7 +133,7 @@ export default function RmsCaseStudy() {
         >
           <h3 className="text-sm font-bold tracking-widest text-muted-foreground uppercase border-b border-border/30 pb-4">The Problem</h3>
           <p className="text-xl text-foreground font-medium leading-relaxed">
-            An EV charger produces live status, connector availability, sessions, alerts, and maintenance needs. The biggest challenge was organizing this into a clear, usable product experience.
+            Home chefs are talented cooks but poor logistical coordinators. Managing active customer chats, menu planning, payment verification, and courier handoffs broke their day to day culinary focus.
           </p>
           
           <div className="grid gap-4 mt-8">
@@ -134,33 +142,33 @@ export default function RmsCaseStudy() {
               <CardHeader>
                 <CardTitle className="text-base flex items-center gap-2">
                   <div className="w-2 h-2 rounded-full bg-red-500" />
-                  Information Overload
+                  Manual Order Trapping
                 </CardTitle>
               </CardHeader>
               <CardContent className="text-muted-foreground text-sm leading-relaxed">
-                Understanding what charger information matters most to users to avoid data-heavy screens.
+                WhatsApp orders were manually transcribed to paper or spreadsheets, causing delayed orders during rush hours.
               </CardContent>
             </Card>
             <Card className="bg-card/50">
               <CardHeader>
                 <CardTitle className="text-base flex items-center gap-2">
                   <div className="w-2 h-2 rounded-full bg-red-500" />
-                  Complex Relationships
+                  Reconciling Bank Payments
                 </CardTitle>
               </CardHeader>
               <CardContent className="text-muted-foreground text-sm leading-relaxed">
-                Defining how charger status, connector status, alerts, sessions, and maintenance connect.
+                Chefs had to stop cooking to manually check bank apps for incoming transfers, causing delays and food spoilage.
               </CardContent>
             </Card>
             <Card className="bg-card/50">
               <CardHeader>
                 <CardTitle className="text-base flex items-center gap-2">
                   <div className="w-2 h-2 rounded-full bg-red-500" />
-                  Varied User Contexts
+                  Delivery Rider Disconnect
                 </CardTitle>
               </CardHeader>
               <CardContent className="text-muted-foreground text-sm leading-relaxed">
-                Creating a clear structure for users with different levels of responsibility (monitoring vs troubleshooting).
+                No unified delivery integration meant chefs spent hours call triage coordinating local couriers.
               </CardContent>
             </Card>
           </div>
@@ -176,34 +184,46 @@ export default function RmsCaseStudy() {
         >
           <h3 className="text-sm font-bold tracking-widest text-muted-foreground uppercase border-b border-border/30 pb-4">The Process & Operational Reality</h3>
           <p className="text-lg leading-relaxed text-foreground/90">
-            As a BA and Product Owner, I bridged the gap between how the charger communicates with the system and how users expect to experience that information.
+            We designed the Feedzaa marketplace around two distinct user groups who participate in the same local food network but operate under opposite time constraints.
           </p>
           
           
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
-            <Card>
-              <CardContent className="p-6 space-y-4">
-                <h4 className="font-bold text-lg">Operations Teams</h4>
-                <p className="text-muted-foreground text-sm leading-relaxed">Operations teams need a quick understanding of whether the charger is working well or needs attention:</p>
-                <ul className="list-disc pl-5 space-y-2 text-sm text-muted-foreground">
-                  <li>Requires overview-first experience to assess overall health.</li>
-                  <li>Needs to identify faults, warnings, and service needs immediately.</li>
-                  <li>Benefits from simple status language without deep technical detail.</li>
-                </ul>
-              </CardContent>
-            </Card>
-            <Card>
-              <CardContent className="p-6 space-y-4">
-                <h4 className="font-bold text-lg">Service Teams</h4>
-                <p className="text-muted-foreground text-sm leading-relaxed">Service teams need to understand exactly what is failing and why. The experience supports deeper troubleshooting:</p>
-                <ul className="list-disc pl-5 space-y-2 text-sm text-muted-foreground">
-                  <li>Separates charger health from connector-level performance.</li>
-                  <li>Groups sessions, alerts, and maintenance to support workflows.</li>
-                  <li>Creates a clear flow from 'What is happening?' to 'What should I check next?'</li>
-                </ul>
-              </CardContent>
-            </Card>
-          </div>
+          <Tabs defaultValue="role1" className="w-full mt-8">
+            <TabsList className="grid w-full grid-cols-2 h-auto p-1 bg-muted/50">
+              <TabsTrigger value="role1" className="py-3 text-sm font-bold data-[state=active]:bg-[#DB3D1A] data-[state=active]:text-black transition-all">
+                The Hungry Customer
+              </TabsTrigger>
+              <TabsTrigger value="role2" className="py-3 text-sm font-bold data-[state=active]:bg-[#DB3D1A] data-[state=active]:text-black transition-all">
+                The Home Chef
+              </TabsTrigger>
+            </TabsList>
+            <TabsContent value="role1" className="mt-6">
+              <Card>
+                <CardContent className="p-6 space-y-4">
+                  <h4 className="font-bold text-lg">Discovery & Instant Checkout</h4>
+                  <p className="text-muted-foreground text-sm leading-relaxed">The Buyer wants to discover local home chefs and order food instantly without dealing with messy group chats or unverified links. The design optimizes for absolute checkout speed:</p>
+                  <ul className="list-disc pl-5 space-y-2 text-sm text-muted-foreground">
+                    <li>Replaces confusing text broadcast menus with a visually stunning, image first local chef feed.</li>
+                    <li>Displays active chef kitchen status (e.g. 'Cooking Now', 'Pre order for dinner').</li>
+                    <li>Streamlines order creation into a sliding double confirmation checkout drawer.</li>
+                  </ul>
+                </CardContent>
+              </Card>
+            </TabsContent>
+            <TabsContent value="role2" className="mt-6">
+              <Card>
+                <CardContent className="p-6 space-y-4">
+                  <h4 className="font-bold text-lg">Fulfillment & Yield Focus</h4>
+                  <p className="text-muted-foreground text-sm leading-relaxed">The Chef wants to track incoming orders, schedule menus, and manage delivery riders with zero technical overhead. The design optimizes for cognitive simplicity during busy kitchen hours:</p>
+                  <ul className="list-disc pl-5 space-y-2 text-sm text-muted-foreground">
+                    <li>Presents a dense, scannable kitchen queue (New, Preparing, Ready, Out) to prevent order mix ups.</li>
+                    <li>Integrates an automated local rider dispatch engine that triggers when food state is marked 'Ready'.</li>
+                    <li>Features real time earnings analytics showing today's margins and portion sales.</li>
+                  </ul>
+                </CardContent>
+              </Card>
+            </TabsContent>
+          </Tabs>
         </motion.section>
 
         {/* THE SOLUTION */}
@@ -221,15 +241,15 @@ export default function RmsCaseStudy() {
 
           <div className="space-y-6 mt-8">
             
-            <Card className="border-l-4 bg-card/40" style={{ borderLeftColor: "#EC008C" }}>
+            <Card className="border-l-4 bg-card/40" style={{ borderLeftColor: "#DB3D1A" }}>
               <CardContent className="p-6 grid gap-4">
                 <div>
                   <h4 className="text-sm font-bold text-muted-foreground uppercase">Problem Tackled</h4>
-                  <p className="font-medium mt-1 leading-relaxed">Prioritizing key health indicators</p>
+                  <p className="font-medium mt-1 leading-relaxed">Eliminating spreadsheeting</p>
                 </div>
                 <div className="mt-2 pt-4 border-t border-border/20">
-                  <h4 className="text-sm font-bold text-muted-foreground uppercase flex items-center gap-2"><ShieldCheck className="w-4 h-4"/> Overview-First Experience</h4>
-                  <p className="text-sm mt-2 leading-relaxed text-muted-foreground">The experience starts with the most important information: energy delivered, successful sessions, faulted sessions, charger health, connection status, and service details.</p>
+                  <h4 className="text-sm font-bold text-muted-foreground uppercase flex items-center gap-2"><ShieldCheck className="w-4 h-4"/> Unified Kitchen Dashboard</h4>
+                  <p className="text-sm mt-2 leading-relaxed text-muted-foreground">We consolidated WhatsApp chats, spreadsheets, and bank alerts into a single, scannable Kanban style kitchen control center. Order status updates trigger automated user push notifications and rider dispatch alerts.</p>
                 </div>
               </CardContent>
             </Card>
@@ -238,11 +258,11 @@ export default function RmsCaseStudy() {
               <CardContent className="p-6 grid gap-4">
                 <div>
                   <h4 className="text-sm font-bold text-muted-foreground uppercase">Problem Tackled</h4>
-                  <p className="font-medium mt-1 leading-relaxed">Contextualizing the physical charger</p>
+                  <p className="font-medium mt-1 leading-relaxed">Replacing fragmented transfers</p>
                 </div>
                 <div className="mt-2 pt-4 border-t border-border/20">
-                  <h4 className="text-sm font-bold text-muted-foreground uppercase flex items-center gap-2"><Activity className="w-4 h-4"/> Visual Health View</h4>
-                  <p className="text-sm mt-2 leading-relaxed text-muted-foreground">Important details are placed around the charger image. This helps users connect information to the physical charger and makes the experience much easier to scan.</p>
+                  <h4 className="text-sm font-bold text-muted-foreground uppercase flex items-center gap-2"><Activity className="w-4 h-4"/> Frictionless Checkout</h4>
+                  <p className="text-sm mt-2 leading-relaxed text-muted-foreground">Designed a secure checkout sheet that automatically verifies bank deposits via instant webhooks. Customers get a verified order confirmation badge within seconds, without manual chef verification.</p>
                 </div>
               </CardContent>
             </Card>
@@ -252,27 +272,19 @@ export default function RmsCaseStudy() {
               <CardContent className="p-6 grid gap-4">
                 <div>
                   <h4 className="text-sm font-bold text-muted-foreground uppercase">Problem Tackled</h4>
-                  <p className="font-medium mt-1 leading-relaxed">Charger vs. Connector Information</p>
+                  <p className="font-medium mt-1 leading-relaxed">Assisting menu planning</p>
                 </div>
                 <div className="mt-2 pt-4 border-t border-border/20">
-                  <h4 className="text-sm font-bold text-muted-foreground uppercase flex items-center gap-2"><Bot className="w-4 h-4"/> Separating Contexts</h4>
-                  <p className="text-sm mt-2 leading-relaxed text-muted-foreground">Separating charger-level information (overall machine) from connector-level information (individual ports) creates a clearer mental model and reduces confusion.</p>
+                  <h4 className="text-sm font-bold text-muted-foreground uppercase flex items-center gap-2"><Bot className="w-4 h-4"/> Conversational AI Helper</h4>
+                  <p className="text-sm mt-2 leading-relaxed text-muted-foreground">Integrated a conversational AI bot directly inside the chef dashboard to assist with daily menu pricing. Chefs can ask 'How much did I earn today?' and get a breakdown of top-selling dishes and dynamic margins.</p>
                 </div>
               </CardContent>
             </Card>
             
           </div>
 
-          <div className="space-y-12 md:space-y-16 mt-12 md:mt-16 pt-8">
-            <div className="rounded-3xl overflow-hidden border border-border/30 shadow-2xl bg-muted/20">
-              <img src="/rms/dashboard.png" alt="RMS Dashboard Overview" className="w-full h-auto object-contain" />
-            </div>
-            <div className="rounded-3xl overflow-hidden border border-border/30 shadow-2xl bg-muted/20">
-              <img src="/rms/charger.png" alt="RMS Charger Visual Health" className="w-full h-auto object-contain" />
-            </div>
-            <div className="rounded-3xl overflow-hidden border border-border/30 shadow-2xl bg-muted/20">
-              <img src="/rms/alerts.png" alt="RMS Alerts and Connector Information" className="w-full h-auto object-contain" />
-            </div>
+          <div className="w-full mt-16 flex justify-center">
+            <img src="/feedzaa_mock.png" alt="Feedzaa App Showcase" className="w-full max-w-5xl h-auto object-contain" />
           </div>
         </motion.section>
 
@@ -288,23 +300,23 @@ export default function RmsCaseStudy() {
           
           <div className="p-8 bg-muted/30 rounded-2xl border border-border/50">
             <p className="text-2xl font-light text-foreground leading-relaxed italic text-center mb-8">
-              "A strong product experience starts with understanding the system, but becomes valuable only when translated into a clear user journey."
+              "This project taught me that unifying tools isn't enough; you must unify how people think and talk about their business."
             </p>
             
             <p className="text-muted-foreground text-center mb-12 max-w-2xl mx-auto leading-relaxed">
-              By defining the experience from a product owner perspective, the page became more than a data view. It became a decision-support screen that guides meaningful action.
+              Home chefs didn't think in terms of 'inventory APIs' or 'payment corridors'. They thought in terms of 'plates prepared' and 'getting paid'. Aligning our design language with their mental models was the single biggest driver of adoption.
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               
               <div className="space-y-3">
-                <h4 className="font-bold text-foreground">Product clarity begins with system behavior</h4>
-                <p className="text-sm text-muted-foreground leading-relaxed">Learning how the charger communicates helped define what users should see.</p>
+                <h4 className="font-bold text-foreground">Speaks the user's language</h4>
+                <p className="text-sm text-muted-foreground leading-relaxed">Renamed complex payment terms to everyday home cooking metaphors.</p>
               </div>
 
               <div className="space-y-3">
-                <h4 className="font-bold text-foreground">Prioritize user needs over available data</h4>
-                <p className="text-sm text-muted-foreground leading-relaxed">A Product Owner needs to prioritize what users need first, not just what data is available.</p>
+                <h4 className="font-bold text-foreground">Inclusive UX bridges gaps</h4>
+                <p className="text-sm text-muted-foreground leading-relaxed">Designed simplified touch targets for chefs who manage screens while cooking.</p>
               </div>
             </div>
           </div>

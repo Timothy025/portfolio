@@ -255,7 +255,7 @@ export default function IrisSenseCaseStudy() {
             <img 
               src="/thumnail/Sense-thumnail.png" 
               alt="Iris Sense Dashboard Showcase" 
-              className="w-full max-w-5xl h-auto object-contain rounded-2xl border border-border/20 shadow-2xl"
+              className="w-full max-w-5xl h-auto object-contain"
             />
           </div>
         </motion.section>

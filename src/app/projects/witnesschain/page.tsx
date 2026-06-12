@@ -57,7 +57,7 @@ export default function WitnessChainCaseStudy() {
             <img 
               src="/witnesschain.png" 
               alt="WitnessChain App Mockup" 
-              className="w-full max-w-4xl h-auto object-contain rounded-2xl border border-border/20 shadow-2xl"
+              className="w-full max-w-4xl h-auto object-contain"
             />
           </div>
 
@@ -226,13 +226,13 @@ export default function WitnessChainCaseStudy() {
             <div className="space-y-4 flex flex-col items-center">
               <Badge variant="outline" className="mb-2 uppercase tracking-widest">Before</Badge>
               <div className="w-full flex justify-center">
-                <img src="/witness/5before.png" alt="WitnessChain Original Design" className="w-full max-w-[240px] h-auto object-contain rounded-3xl border border-border/20 shadow-xl opacity-80 grayscale-[30%]" />
+                <img src="/witness/5before.png" alt="WitnessChain Original Design" className="w-full max-w-[240px] h-auto object-contain opacity-80 grayscale-[30%]" />
               </div>
             </div>
             <div className="space-y-4 flex flex-col items-center">
               <Badge className="mb-2 bg-[#7CFF92] text-black hover:bg-[#7CFF92] uppercase tracking-widest">After</Badge>
               <div className="w-full flex justify-center">
-                <img src="/witness/2.png" alt="WitnessChain Redesign" className="w-full max-w-[240px] h-auto object-contain rounded-3xl border border-border/20 shadow-2xl" />
+                <img src="/witness/2.png" alt="WitnessChain Redesign" className="w-full max-w-[240px] h-auto object-contain" />
               </div>
             </div>
           </div>
@@ -265,7 +265,7 @@ export default function WitnessChainCaseStudy() {
                   </div>
                 </div>
                 <div className="lg:col-span-5 flex items-center justify-center">
-                  <div className="relative rounded-3xl overflow-hidden border border-border/40 shadow-2xl bg-card max-w-[220px]">
+                  <div className="relative max-w-[220px]">
                     <img src="/witness/1.png" alt="Redesigned Mining Experience" className="w-full h-auto object-contain" />
                   </div>
                 </div>
@@ -275,7 +275,7 @@ export default function WitnessChainCaseStudy() {
             <Card className="border-l-4 border-l-[#F59E0B] bg-card/40 mt-6">
               <CardContent className="p-6 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
                 <div className="lg:col-span-5 flex items-center justify-center order-2 lg:order-1">
-                  <div className="relative rounded-3xl overflow-hidden border border-border/40 shadow-2xl bg-card max-w-[220px]">
+                  <div className="relative max-w-[220px]">
                     <img src="/witness/2.png" alt="Reward Visibility & Gamification" className="w-full h-auto object-contain" />
                   </div>
                 </div>
@@ -305,10 +305,10 @@ export default function WitnessChainCaseStudy() {
                   </div>
                 </div>
                 <div className="lg:col-span-5 flex flex-col sm:flex-row gap-4 items-center justify-center">
-                  <div className="relative rounded-3xl overflow-hidden border border-border/40 shadow-2xl bg-card max-w-[160px]">
+                  <div className="relative max-w-[160px]">
                     <img src="/witness/3.png" alt="Modernized UI View 1" className="w-full h-auto object-contain" />
                   </div>
-                  <div className="relative rounded-3xl overflow-hidden border border-border/40 shadow-2xl bg-card max-w-[160px]">
+                  <div className="relative max-w-[160px]">
                     <img src="/witness/4.png" alt="Modernized UI View 2" className="w-full h-auto object-contain" />
                   </div>
                 </div>

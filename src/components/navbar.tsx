@@ -1,10 +1,10 @@
 "use client"
 
 import Link from "next/link"
-import { usePathname } from "next/navigation"
+// import { usePathname } from "next/navigation"
 import { motion, AnimatePresence } from "framer-motion"
 import { useState, useEffect } from "react"
-import { Menu, X, Download } from "lucide-react"
+import { Menu, X } from "lucide-react"
 import { downloadResume } from "@/lib/utils"
 
 const projects = [
@@ -22,7 +22,7 @@ const navLinks = [
 ]
 
 export function Navbar() {
-  const pathname = usePathname()
+  // const pathname = usePathname()
   const [scrolled, setScrolled] = useState(false)
   const [mobileOpen, setMobileOpen] = useState(false)
 

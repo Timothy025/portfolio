@@ -26,11 +26,6 @@ export const metadata: Metadata = {
     "Usability Testing", "Information Architecture", "User-Centered Design", "Agile Design",
     "Cross-functional Collaboration", "B2B", "B2C", "Visual Design"
   ],
-  icons: {
-    icon: '/browser_top.png',
-    shortcut: '/browser_top.png',
-    apple: '/browser_top.png',
-  },
 };
 
 export default function RootLayout({
@@ -41,7 +36,6 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
-        <link rel="icon" href="/browser_top.png" type="image/png" />
       </head>
       <body
         className={`${inter.variable} ${spaceGrotesk.variable} antialiased min-h-screen bg-background text-foreground`}

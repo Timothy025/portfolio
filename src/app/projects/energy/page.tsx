@@ -188,12 +188,12 @@ export default function AatralCaseStudy() {
             <Card className="bg-card/40 border-border/30 shadow-xl overflow-hidden flex flex-col justify-between items-center text-center p-8">
               <div className="w-12 h-12 rounded-full bg-muted/50 flex items-center justify-center font-bold font-space-grotesk text-lg border border-border/30 mb-6">1</div>
               <h4 className="text-xl font-bold font-space-grotesk tracking-wide text-foreground uppercase mb-8">Gray-Box Prototyping</h4>
-              <img src="/Aatral/figma_grey.png" alt="Gray-Box Prototyping" className="max-w-[180px] rounded-2xl shadow-2xl border border-border/20 transition-transform hover:scale-105" />
+              <img src="/Aatral/figma_grey.png" alt="Gray-Box Prototyping" className="max-w-[180px] transition-transform hover:scale-105" />
             </Card>
             <Card className="bg-card/40 border-border/30 shadow-xl overflow-hidden flex flex-col justify-between items-center text-center p-8">
               <div className="w-12 h-12 rounded-full bg-[#3EBAF4]/20 text-[#3EBAF4] flex items-center justify-center font-bold font-space-grotesk text-lg border border-[#3EBAF4]/30 mb-6">2</div>
               <h4 className="text-xl font-bold font-space-grotesk tracking-wide text-foreground uppercase mb-8">Figma Tokens</h4>
-              <img src="/Aatral/Sell_1.png" alt="Figma Tokens System" className="max-w-[180px] rounded-2xl shadow-2xl border border-border/20 transition-transform hover:scale-105" />
+              <img src="/Aatral/Sell_1.png" alt="Figma Tokens System" className="max-w-[180px] transition-transform hover:scale-105" />
             </Card>
           </div>
         </motion.section>
@@ -233,10 +233,10 @@ export default function AatralCaseStudy() {
                     </ul>
                   </div>
                   <div className="lg:col-span-5 flex flex-col sm:flex-row gap-4 items-center justify-center">
-                    <div className="relative rounded-3xl overflow-hidden border border-border/40 shadow-2xl bg-card max-w-[160px]">
+                    <div className="relative max-w-[160px]">
                       <img src="/Aatral/Buy_1.png" alt="Aatral Buyer Screen 1" className="w-full h-auto object-contain transition-transform duration-300 hover:scale-105" />
                     </div>
-                    <div className="relative rounded-3xl overflow-hidden border border-border/40 shadow-2xl bg-card max-w-[160px]">
+                    <div className="relative max-w-[160px]">
                       <img src="/Aatral/Buy_2.png" alt="Aatral Buyer Screen 2" className="w-full h-auto object-contain transition-transform duration-300 hover:scale-105" />
                     </div>
                   </div>
@@ -256,10 +256,10 @@ export default function AatralCaseStudy() {
                     </ul>
                   </div>
                   <div className="lg:col-span-5 flex flex-col sm:flex-row gap-4 items-center justify-center">
-                    <div className="relative rounded-3xl overflow-hidden border border-border/40 shadow-2xl bg-card max-w-[160px]">
+                    <div className="relative max-w-[160px]">
                       <img src="/Aatral/Sell_1.png" alt="Aatral Seller Screen 1" className="w-full h-auto object-contain transition-transform duration-300 hover:scale-105" />
                     </div>
-                    <div className="relative rounded-3xl overflow-hidden border border-border/40 shadow-2xl bg-card max-w-[160px]">
+                    <div className="relative max-w-[160px]">
                       <img src="/Aatral/Sell_2.png" alt="Aatral Seller Screen 2" className="w-full h-auto object-contain transition-transform duration-300 hover:scale-105" />
                     </div>
                   </div>
@@ -296,7 +296,7 @@ export default function AatralCaseStudy() {
                   </div>
                 </div>
                 <div className="lg:col-span-5 flex items-center justify-center">
-                  <div className="relative rounded-3xl overflow-hidden border border-border/40 shadow-2xl bg-card max-w-[220px]">
+                  <div className="relative max-w-[220px]">
                     <img src="/Aatral/Onboard.png" alt="Aatral Onboarding Screen" className="w-full h-auto object-contain transition-transform duration-300 hover:scale-105" />
                   </div>
                 </div>
@@ -306,7 +306,7 @@ export default function AatralCaseStudy() {
             <Card className="border-l-4 border-l-[#3EBAF4] bg-card/40 mt-6">
               <CardContent className="p-6 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
                 <div className="lg:col-span-5 flex items-center justify-center order-2 lg:order-1">
-                  <div className="relative rounded-3xl overflow-hidden border border-border/40 shadow-2xl bg-card max-w-[220px]">
+                  <div className="relative max-w-[220px]">
                     <img src="/Aatral/Sell_1.png" alt="Aatral Seller Publishing Screen" className="w-full h-auto object-contain transition-transform duration-300 hover:scale-105" />
                   </div>
                 </div>
@@ -336,7 +336,7 @@ export default function AatralCaseStudy() {
                   </div>
                 </div>
                 <div className="lg:col-span-5 flex items-center justify-center">
-                  <div className="relative rounded-3xl overflow-hidden border border-border/40 shadow-2xl bg-card max-w-[220px]">
+                  <div className="relative max-w-[220px]">
                     <img src="/Aatral/Wallet.png" alt="Aatral Order Ledger & Wallet Screen" className="w-full h-auto object-contain transition-transform duration-300 hover:scale-105" />
                   </div>
                 </div>

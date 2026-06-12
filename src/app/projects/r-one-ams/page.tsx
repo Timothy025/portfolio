@@ -287,21 +287,21 @@ export default function RoneAmsCaseStudy() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-16 max-w-7xl mx-auto">
             <div className="w-full flex justify-center">
-              <img src="/r-one/cs.png" alt="R-One System Architecture" className="w-full h-auto object-contain rounded-2xl border border-border/20 shadow-2xl" />
+              <img src="/r-one/cs.png" alt="R-One System Architecture" className="w-full h-auto object-contain" />
             </div>
             <div className="w-full flex justify-center">
-              <img src="/r-one/dashboard.png" alt="R-One Web Dashboard" className="w-full h-auto object-contain rounded-2xl border border-border/20 shadow-2xl" />
+              <img src="/r-one/dashboard.png" alt="R-One Web Dashboard" className="w-full h-auto object-contain" />
             </div>
             <div className="w-full flex justify-center">
-              <img src="/r-one/in.png" alt="R-One Mobile Application" className="w-full h-auto object-contain rounded-2xl border border-border/20 shadow-2xl" />
+              <img src="/r-one/in.png" alt="R-One Mobile Application" className="w-full h-auto object-contain" />
             </div>
             <div className="w-full flex justify-center">
-              <img src="/r-one/project.png" alt="R-One Project Detail View" className="w-full h-auto object-contain rounded-2xl border border-border/20 shadow-2xl" />
+              <img src="/r-one/project.png" alt="R-One Project Detail View" className="w-full h-auto object-contain" />
             </div>
           </div>
 
           <div className="w-full mt-12 flex justify-center">
-            <img src="/r-one/r-one_mob.png" alt="R-One Mobile Showcase" className="w-full max-w-2xl h-auto object-contain rounded-2xl border border-border/20 shadow-2xl" />
+            <img src="/r-one/r-one_mob.png" alt="R-One Mobile Showcase" className="w-full max-w-2xl h-auto object-contain" />
           </div>
         </motion.section>
 
