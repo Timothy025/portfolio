@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { downloadResume } from "@/lib/utils"
+
 
 export function Footer() {
   return (
@@ -10,12 +10,12 @@ export function Footer() {
             Copyright © 2026 Timothy Jerald Xavier
           </p>
           <div className="flex items-center gap-6">
-            <button
-              onClick={downloadResume}
-              className="text-xs text-muted-foreground/60 hover:text-foreground transition-colors duration-300 cursor-pointer tracking-wide"
+            <Link
+              href="/resume"
+              className="text-xs text-muted-foreground/60 hover:text-foreground transition-colors duration-300 tracking-wide"
             >
               Resume
-            </button>
+            </Link>
             <Link
               href="https://linkedin.com/in/timothy-jerald/"
               target="_blank"

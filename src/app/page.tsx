@@ -465,7 +465,7 @@ export default function Home() {
           >
             {[
               { value: "10+", label: "Products Shipped", color: "blue", desc: "Web, Mobile & Enterprise" },
-              { value: "3+", label: "Years Experience", color: "emerald", desc: "Product Design & UX" },
+              { value: "4", label: "Years Experience", color: "emerald", desc: "Product Design & UX" },
               { value: "B2B", label: "SaaS Focus", color: "amber", desc: "Enterprise & Data Platforms" },
               { value: "E2E", label: "Design Ownership", color: "purple", desc: "Research → Delivery" },
             ].map((stat, i) => (

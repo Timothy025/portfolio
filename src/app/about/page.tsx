@@ -20,7 +20,7 @@ export default function AboutPage() {
 
   const experience = [
     { role: "Product Designer", company: "Aatral", link: "#" },
-    { role: "UI/UX Designer", company: "Tata Elxsi", link: "#" },
+    { role: "Product Designer", company: "Tata Elxsi", link: "#" },
     { role: "Product Designer", company: "PixiuAI", link: "#" },
     { role: "Product Designer", company: "PipeIQ", link: "#" },
   ]
@@ -80,7 +80,7 @@ export default function AboutPage() {
               
               <div className="space-y-6 text-lg text-foreground/90 font-light leading-relaxed max-w-2xl">
                 <p>
-                  I've been a computer science engineer, a musician, and a UI/UX designer before this stuck. It's product design, specifically, the slow, careful work of making something complicated feel obvious.
+                  I've been a computer science engineer, a musician, and a product designer before this stuck. It's product design, specifically, the slow, careful work of making something complicated feel obvious.
                 </p>
                 <p>
                   Right now, my focus is on designing B2B SaaS products for energy infrastructure and smart networks, refining complex design systems, and producing music.
@@ -102,7 +102,7 @@ export default function AboutPage() {
                     <p className="text-base text-muted-foreground">Sodexo</p>
                   </div>
                   <div className="flex flex-col sm:flex-row sm:items-center justify-between group">
-                    <p className="text-lg text-foreground/90">UI/UX Designer</p>
+                    <p className="text-lg text-foreground/90">Product Designer</p>
                     <p className="text-base text-muted-foreground">KGX</p>
                   </div>
                 </div>
@@ -131,10 +131,10 @@ export default function AboutPage() {
                     <Mail className="w-4 h-4" />
                     Email
                   </a>
-                  <button onClick={() => window.open('/Timothy_CV.pdf', '_blank')} className="inline-flex items-center gap-2 text-sm font-medium text-foreground px-6 py-3 rounded-full border border-border/40 bg-foreground/[0.03] dark:bg-white/5 hover:border-foreground/30 hover:bg-foreground/10 transition-all duration-300 shadow-sm">
+                  <Link href="/resume" className="inline-flex items-center gap-2 text-sm font-medium text-foreground px-6 py-3 rounded-full border border-border/40 bg-foreground/[0.03] dark:bg-white/5 hover:border-foreground/30 hover:bg-foreground/10 transition-all duration-300 shadow-sm">
                     <Download className="w-4 h-4" />
                     Resume
-                  </button>
+                  </Link>
                 </div>
               </motion.div>
             </div>

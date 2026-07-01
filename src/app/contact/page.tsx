@@ -8,7 +8,7 @@ import { Textarea } from "@/components/ui/textarea"
 import { Label } from "@/components/ui/label"
 import { Mail, Phone, MapPin, Linkedin, Globe, Send, Download } from "lucide-react"
 import Link from "next/link"
-import { downloadResume } from "@/lib/utils"
+
 
 export default function Contact() {
   const contactInfo = [
@@ -203,10 +203,12 @@ export default function Contact() {
                       <Button
                         size="sm"
                         className="bg-gradient-to-r from-blue-500 to-cyan-500 hover:from-blue-600 hover:to-cyan-600 text-white"
-                        onClick={downloadResume}
+                        asChild
                       >
-                        <Download className="w-4 h-4 mr-2" />
-                        Resume CV
+                        <Link href="/resume">
+                          <Download className="w-4 h-4 mr-2" />
+                          Resume CV
+                        </Link>
                       </Button>
                     </div>
                   </div>

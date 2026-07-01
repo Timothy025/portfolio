@@ -5,8 +5,6 @@ import Link from "next/link"
 import { motion, AnimatePresence } from "framer-motion"
 import { useState, useEffect } from "react"
 import { Menu, X } from "lucide-react"
-import { downloadResume } from "@/lib/utils"
-
 const projects = [
   { num: "01", title: "Feedzaa", href: "/projects/feedzaa" },
   { num: "02", title: "Iris Sense", href: "/projects/iris-sense" },
@@ -17,7 +15,7 @@ const projects = [
 const navLinks = [
   { name: "Work", href: "/#work" },
   { name: "About", href: "/about" },
-  { name: "Resume", action: "resume" },
+  { name: "Resume", href: "/resume" },
   { name: "LinkedIn", href: "https://linkedin.com/in/timothy-jerald/", external: true },
 ]
 
@@ -60,16 +58,7 @@ export function Navbar() {
             </Link>
 
             <div className="hidden lg:flex items-center gap-8">
-              {navLinks.map((item) =>
-                item.action === "resume" ? (
-                  <button
-                    key={item.name}
-                    onClick={downloadResume}
-                    className="text-[13px] tracking-wide text-muted-foreground hover:text-foreground transition-colors duration-300 font-medium cursor-pointer"
-                  >
-                    {item.name}
-                  </button>
-                ) : (
+              {navLinks.map((item) => (
                   <Link
                     key={item.name}
                     href={item.href!}
@@ -79,8 +68,7 @@ export function Navbar() {
                   >
                     {item.name}
                   </Link>
-                )
-              )}
+              ))}
             </div>
 
             {/* Hamburger (mobile) */}
@@ -113,19 +101,7 @@ export function Navbar() {
             className="fixed inset-0 z-[55] bg-background flex flex-col justify-center items-center"
           >
             <nav className="flex flex-col items-center gap-6">
-              {navLinks.map((item, idx) =>
-                item.action === "resume" ? (
-                  <motion.button
-                    key={item.name}
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ delay: idx * 0.08 }}
-                    onClick={() => { downloadResume(); setMobileOpen(false) }}
-                    className="text-2xl font-medium text-foreground"
-                  >
-                    {item.name}
-                  </motion.button>
-                ) : (
+              {navLinks.map((item, idx) => (
                   <motion.div
                     key={item.name}
                     initial={{ opacity: 0, y: 20 }}
@@ -142,8 +118,7 @@ export function Navbar() {
                       {item.name}
                     </Link>
                   </motion.div>
-                )
-              )}
+              ))}
 
               {/* Project list in mobile menu */}
               <div className="mt-8 pt-8 border-t border-border/20 flex flex-col items-center gap-3">
